@@ -1,0 +1,1507 @@
+/*
+	Tutorial: Css3 hover effect
+	Author : WpFreeware
+	Author URI: http://www.wpfreeware.com/
+	Version: 1.0
+
+*/
+/* Style for Demo */
+/* LAYOUTS - Page layout styles */
+/*  Start CSS3 Preloader */
+/*=============Loader One=================*/
+@-webkit-keyframes loader-one-transition {
+  100% {
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader-one-transition {
+  100% {
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes loader-one-spinner-one-transition {
+  50% {
+    left: 63px;
+    top: 37px;
+  }
+}
+
+@keyframes loader-one-spinner-one-transition {
+  50% {
+    left: 60px;
+    top: 35px;
+  }
+}
+
+@-webkit-keyframes loader-one-spinner-two-transition {
+  50% {
+    right: 63px;
+    top: 37px;
+  }
+}
+
+@keyframes loader-one-spinner-two-transition {
+  50% {
+    right: 63px;
+    top: 37px;
+  }
+}
+
+@-webkit-keyframes loader-one-spinner-three-transition {
+  50% {
+    bottom: 37px;
+    right: 63px;
+  }
+}
+
+@keyframes loader-one-spinner-three-transition {
+  50% {
+    bottom: 37px;
+    right: 63px;
+  }
+}
+
+@-webkit-keyframes loader-one-spinner-four-transition {
+  50% {
+    bottom: 37px;
+    left: 63px;
+  }
+}
+
+@keyframes loader-one-spinner-four-transition {
+  50% {
+    bottom: 37px;
+    left: 63px;
+  }
+}
+
+#wpf-loader-one {
+  background-color: #2c3e50;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 999;
+}
+#wpf-loader-one .wpf-loader-one-inner {
+  height: 100px;
+  position: relative;
+  width: 150px;
+  left: 44%;
+  top: 40%;
+  -webkit-animation-name: loader-one-transition;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: loader-one-transition;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+#wpf-loader-one .wpf-loader-one-inner span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  position: absolute;
+}
+#wpf-loader-one .wpf-loader-one-inner span:nth-child(1) {
+  background-color: red;
+  left: 0;
+  top: 0;
+  -webkit-animation-name: loader-one-spinner-one-transition;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: loader-one-spinner-one-transition;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+#wpf-loader-one .wpf-loader-one-inner span:nth-child(2) {
+  background-color: orange;
+  right: 0%;
+  top: 0%;
+  -webkit-animation-name: loader-one-spinner-two-transition;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: loader-one-spinner-two-transition;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+#wpf-loader-one .wpf-loader-one-inner span:nth-child(3) {
+  background-color: yellow;
+  right: 0%;
+  bottom: 0%;
+  -webkit-animation-name: loader-one-spinner-three-transition;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: loader-one-spinner-three-transition;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+#wpf-loader-one .wpf-loader-one-inner span:nth-child(4) {
+  background-color: green;
+  left: 0%;
+  bottom: 0%;
+  -webkit-animation-name: loader-one-spinner-four-transition;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: loader-one-spinner-four-transition;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/*============= Loader Two =================*/
+@-webkit-keyframes loader-two-before-transition {
+  50% {
+    left: -154px;
+  }
+
+  100% {
+    left: -97px;
+  }
+}
+
+@keyframes loader-two-before-transition {
+  50% {
+    left: -154px;
+  }
+
+  100% {
+    left: -97px;
+  }
+}
+
+@-webkit-keyframes loader-two-after-transition {
+  50% {
+    left: 54px;
+  }
+
+  100% {
+    left: -4px;
+  }
+}
+
+@keyframes loader-two-after-transition {
+  50% {
+    left: 54px;
+  }
+
+  100% {
+    left: -4px;
+  }
+}
+
+#wpf-loader-two {
+  background-color: #16a085;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+#wpf-loader-two .wpf-loader-two-inner {
+  border: 2px solid #ccc;
+  border-radius: 50%;
+  height: 100px;
+  left: 46%;
+  position: absolute;
+  top: 40%;
+  width: 100px;
+  text-align: center;
+}
+#wpf-loader-two .wpf-loader-two-inner:before {
+  background: #16A085 none repeat scroll 0 0;
+  content: "";
+  height: 57%;
+  left: -204px;
+  position: absolute;
+  top: -5px;
+  transition: all 0.5s ease 0s;
+  width: 200px;
+  -webkit-animation-name: loader-two-before-transition;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: loader-two-before-transition;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+#wpf-loader-two .wpf-loader-two-inner:after {
+  background: #16A085 none repeat scroll 0 0;
+  content: "";
+  height: 57%;
+  left: 104%;
+  position: absolute;
+  top: 50%;
+  transition: all 0.5s ease 0s;
+  width: 200px;
+  -webkit-animation-name: loader-two-after-transition;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: loader-two-after-transition;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+#wpf-loader-two .wpf-loader-two-inner span {
+  color: #fff;
+  display: inline-block;
+  margin-top: 42%;
+}
+
+/*============= Loader Three =================*/
+@-webkit-keyframes loader-three-transition {
+  100% {
+    color: #2980B9;
+  }
+}
+
+@keyframes loader-three-transition {
+  100% {
+    color: #2980B9;
+  }
+}
+
+@-webkit-keyframes loader-three-before-transition {
+  50% {
+    height: 25%;
+  }
+
+  100% {
+    height: 0;
+  }
+}
+
+@keyframes loader-three-before-transition {
+  50% {
+    height: 25%;
+  }
+
+  100% {
+    height: 0;
+  }
+}
+
+@-webkit-keyframes loader-three-after-transition {
+  100% {
+    -moz-transform: translateY(90px);
+    -o-transform: translateY(90px);
+    -ms-transform: translateY(90px);
+    -webkit-transform: translateY(90px);
+    transform: translateY(90px);
+  }
+}
+
+@keyframes loader-three-after-transition {
+  100% {
+    -moz-transform: translateY(90px);
+    -o-transform: translateY(90px);
+    -ms-transform: translateY(90px);
+    -webkit-transform: translateY(90px);
+    transform: translateY(90px);
+  }
+}
+
+#wpf-loader-three {
+  background-color: #2980b9;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+#wpf-loader-three .wpf-loader-three-inner {
+  background-color: #FFF;
+  border-radius: 50%;
+  height: 100px;
+  left: 46%;
+  position: absolute;
+  top: 40%;
+  width: 100px;
+  text-align: center;
+}
+#wpf-loader-three .wpf-loader-three-inner:after {
+  background: #2980B9 none repeat scroll 0 0;
+  border-radius: 50%;
+  content: "";
+  height: 105%;
+  left: -5px;
+  position: absolute;
+  bottom: -2%;
+  transition: all 0.5s ease 0s;
+  width: 110px;
+  -webkit-animation-name: loader-three-after-transition;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: loader-three-after-transition;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+#wpf-loader-three .wpf-loader-three-inner span {
+  color: #ff0000;
+  display: inline-block;
+  margin-top: 42%;
+  -webkit-animation-name: loader-three-transition;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: loader-three-transition;
+  animation-duration: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+/*============= Loader Four =================*/
+@-webkit-keyframes loader-four-transition {
+  100% {
+    -moz-transform: rotateY(0deg) skewY(0deg) scale(1);
+    -o-transform: rotateY(0deg) skewY(0deg) scale(1);
+    -ms-transform: rotateY(0deg) skewY(0deg) scale(1);
+    -webkit-transform: rotateY(0deg) skewY(0deg) scale(1);
+    transform: rotateY(0deg) skewY(0deg) scale(1);
+  }
+}
+
+@keyframes loader-four-transition {
+  100% {
+    -moz-transform: rotateY(0deg) skewY(0deg) scale(1);
+    -o-transform: rotateY(0deg) skewY(0deg) scale(1);
+    -ms-transform: rotateY(0deg) skewY(0deg) scale(1);
+    -webkit-transform: rotateY(0deg) skewY(0deg) scale(1);
+    transform: rotateY(0deg) skewY(0deg) scale(1);
+  }
+}
+
+#wpf-loader-four {
+  background-color: #DCC6E0;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+#wpf-loader-four .wpf-loader-four-inner {
+  left: 39.8%;
+  padding: 5px;
+  position: absolute;
+  text-align: center;
+  top: 47%;
+}
+#wpf-loader-four .wpf-loader-four-inner span {
+  background-color: #ff0080;
+  color: #f8f8f8;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -moz-transform: rotateY(-180deg) skewY(-45deg) scale(0);
+  -o-transform: rotateY(-180deg) skewY(-45deg) scale(0);
+  -ms-transform: rotateY(-180deg) skewY(-45deg) scale(0);
+  -webkit-transform: rotateY(-180deg) skewY(-45deg) scale(0);
+  transform: rotateY(-180deg) skewY(-45deg) scale(0);
+  -webkit-animation-name: loader-four-transition;
+  -webkit-animation-duration: 950ms;
+  -webkit-animation-timing-function: cubic-bezier(0.17, 0.67, 0.49, 0.93);
+  -webkit-animation-iteration-count: infinite;
+  animation-name: loader-four-transition;
+  animation-duration: 950ms;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.49, 0.93);
+  animation-iteration-count: infinite;
+  -webkit-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.5);
+}
+#wpf-loader-four .wpf-loader-four-inner span:nth-child(1) {
+  -webkit-animation-delay: 450ms;
+  animation-delay: 450ms;
+}
+#wpf-loader-four .wpf-loader-four-inner span:nth-child(2) {
+  -webkit-animation-delay: 500ms;
+  animation-delay: 500ms;
+}
+#wpf-loader-four .wpf-loader-four-inner span:nth-child(3) {
+  -webkit-animation-delay: 550ms;
+  animation-delay: 550ms;
+}
+#wpf-loader-four .wpf-loader-four-inner span:nth-child(4) {
+  -webkit-animation-delay: 600ms;
+  animation-delay: 600ms;
+}
+#wpf-loader-four .wpf-loader-four-inner span:nth-child(5) {
+  -webkit-animation-delay: 650ms;
+  animation-delay: 650ms;
+}
+#wpf-loader-four .wpf-loader-four-inner span:nth-child(6) {
+  -webkit-animation-delay: 700ms;
+  animation-delay: 700ms;
+}
+#wpf-loader-four .wpf-loader-four-inner span:nth-child(7) {
+  -webkit-animation-delay: 750ms;
+  animation-delay: 450ms;
+}
+#wpf-loader-four .wpf-loader-four-inner span:nth-child(8) {
+  -webkit-animation-delay: 800ms;
+  animation-delay: 800ms;
+}
+#wpf-loader-four .wpf-loader-four-inner span:nth-child(9) {
+  -webkit-animation-delay: 850ms;
+  animation-delay: 850ms;
+}
+#wpf-loader-four .wpf-loader-four-inner span:nth-child(10) {
+  -webkit-animation-delay: 900ms;
+  animation-delay: 900ms;
+}
+#wpf-loader-four .wpf-loader-four-inner span:nth-child(11) {
+  -webkit-animation-delay: 950ms;
+  animation-delay: 950ms;
+}
+
+/*============= Loader Five =================*/
+@-webkit-keyframes loader-tweleve-transition {
+  25% {
+    -moz-transform: scale(2);
+    -o-transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    margin-left: 25%;
+  }
+
+  50% {
+    -moz-transform: scale(3);
+    -o-transform: scale(3);
+    -ms-transform: scale(3);
+    -webkit-transform: scale(3);
+    transform: scale(3);
+    margin-left: 55%;
+  }
+
+  75% {
+    -moz-transform: scale(2);
+    -o-transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    margin-left: 75%;
+  }
+
+  100% {
+    -moz-transform: scale(2);
+    -o-transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    margin-left: 100%;
+  }
+}
+
+@keyframes loader-tweleve-transition {
+  25% {
+    -moz-transform: scale(2);
+    -o-transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    margin-left: 25%;
+  }
+
+  50% {
+    -moz-transform: scale(3);
+    -o-transform: scale(3);
+    -ms-transform: scale(3);
+    -webkit-transform: scale(3);
+    transform: scale(3);
+    margin-left: 55%;
+  }
+
+  75% {
+    -moz-transform: scale(2);
+    -o-transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    margin-left: 75%;
+  }
+
+  100% {
+    -moz-transform: scale(2);
+    -o-transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    margin-left: 100%;
+  }
+}
+
+#wpf-loader-five {
+  background-color: #ECF0F1;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+#wpf-loader-five .wpf-loader-five-inner {
+  background: #f39c12 none repeat scroll 0 0;
+  left: 40%;
+  position: absolute;
+  text-align: center;
+  top: 48%;
+  width: 250px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#wpf-loader-five .wpf-loader-five-inner:before {
+  background-color: #f39c12;
+  content: "";
+  height: 20px;
+  left: 8px;
+  position: absolute;
+  top: -5px;
+  width: 14px;
+}
+#wpf-loader-five .wpf-loader-five-inner:after {
+  background-color: #f39c12;
+  content: "";
+  height: 20px;
+  right: 8px;
+  position: absolute;
+  top: -5px;
+  width: 14px;
+}
+#wpf-loader-five .wpf-loader-five-inner span:nth-child(1) {
+  background-color: #f39c12;
+  display: block;
+  height: 10px;
+  margin-left: 0%;
+  transform: scale(1);
+  width: 15px;
+  webkit-animation-name: loader-tweleve-transition;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.17, 0.67, 0.49, 0.93);
+  -webkit-animation-iteration-count: infinite;
+  animation-name: loader-tweleve-transition;
+  animation-duration: 1.5s;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.49, 0.93);
+  animation-iteration-count: infinite;
+}
+#wpf-loader-five .wpf-loader-five-inner span:nth-child(2) {
+  background-color: #f39c12;
+  display: block;
+  height: 10px;
+  left: 50%;
+  position: absolute;
+  top: 0;
+  transform: scale(2);
+  width: 14px;
+}
+
+/*============= Loader Six =================*/
+@-webkit-keyframes loader-six-transition {
+  20% {
+    width: 150px;
+    height: 10px;
+    -moz-transform: translateX(0px) rotate(0deg);
+    -o-transform: translateX(0px) rotate(0deg);
+    -ms-transform: translateX(0px) rotate(0deg);
+    -webkit-transform: translateX(0px) rotate(0deg);
+    transform: translateX(0px) rotate(0deg);
+  }
+
+  40% {
+    width: 50px;
+    height: 50px;
+    -moz-transform: translateX(0px) rotate(0deg);
+    -o-transform: translateX(0px) rotate(0deg);
+    -ms-transform: translateX(0px) rotate(0deg);
+    -webkit-transform: translateX(0px) rotate(0deg);
+    transform: translateX(0px) rotate(0deg);
+  }
+
+  60% {
+    width: 50px;
+    height: 50px;
+    -moz-transform: translateX(90px) rotate(30deg);
+    -o-transform: translateX(90px) rotate(30deg);
+    -ms-transform: translateX(90px) rotate(30deg);
+    -webkit-transform: translateX(90px) rotate(30deg);
+    transform: translateX(90px) rotate(30deg);
+  }
+
+  80% {
+    -moz-transform: translateX(-90px) rotate(-30deg);
+    -o-transform: translateX(-90px) rotate(-30deg);
+    -ms-transform: translateX(-90px) rotate(-30deg);
+    -webkit-transform: translateX(-90px) rotate(-30deg);
+    transform: translateX(-90px) rotate(-30deg);
+  }
+
+  100% {
+    -moz-transform: translateX(0px) rotate(0deg);
+    -o-transform: translateX(0px) rotate(0deg);
+    -ms-transform: translateX(0px) rotate(0deg);
+    -webkit-transform: translateX(0px) rotate(0deg);
+    transform: translateX(0px) rotate(0deg);
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@keyframes loader-six-transition {
+  20% {
+    width: 150px;
+    height: 10px;
+    -moz-transform: translateX(0px) rotate(0deg);
+    -o-transform: translateX(0px) rotate(0deg);
+    -ms-transform: translateX(0px) rotate(0deg);
+    -webkit-transform: translateX(0px) rotate(0deg);
+    transform: translateX(0px) rotate(0deg);
+  }
+
+  40% {
+    width: 50px;
+    height: 50px;
+    -moz-transform: translateX(0px) rotate(0deg);
+    -o-transform: translateX(0px) rotate(0deg);
+    -ms-transform: translateX(0px) rotate(0deg);
+    -webkit-transform: translateX(0px) rotate(0deg);
+    transform: translateX(0px) rotate(0deg);
+  }
+
+  60% {
+    width: 50px;
+    height: 50px;
+    -moz-transform: translateX(90px) rotate(30deg);
+    -o-transform: translateX(90px) rotate(30deg);
+    -ms-transform: translateX(90px) rotate(30deg);
+    -webkit-transform: translateX(90px) rotate(30deg);
+    transform: translateX(90px) rotate(30deg);
+  }
+
+  80% {
+    -moz-transform: translateX(-90px) rotate(-30deg);
+    -o-transform: translateX(-90px) rotate(-30deg);
+    -ms-transform: translateX(-90px) rotate(-30deg);
+    -webkit-transform: translateX(-90px) rotate(-30deg);
+    transform: translateX(-90px) rotate(-30deg);
+  }
+
+  100% {
+    -moz-transform: translateX(0px) rotate(0deg);
+    -o-transform: translateX(0px) rotate(0deg);
+    -ms-transform: translateX(0px) rotate(0deg);
+    -webkit-transform: translateX(0px) rotate(0deg);
+    transform: translateX(0px) rotate(0deg);
+    width: 50px;
+    height: 50px;
+  }
+}
+
+#wpf-loader-six {
+  background-color: #e67e22;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+#wpf-loader-six .wpf-loader-six-inner {
+  left: 44%;
+  padding: 5px;
+  position: absolute;
+  text-align: center;
+  top: 40%;
+  height: 100px;
+  width: 150px;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  transition: all 0.7s;
+}
+#wpf-loader-six .wpf-loader-six-inner span {
+  background-color: #fff;
+  border-radius: 10px;
+  color: #f8f8f8;
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  -moz-transform: translateX(0px) rotate(0deg);
+  -o-transform: translateX(0px) rotate(0deg);
+  -ms-transform: translateX(0px) rotate(0deg);
+  -webkit-transform: translateX(0px) rotate(0deg);
+  transform: translateX(0px) rotate(0deg);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-box-shadow: 0 58px 6px 0 rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 0 58px 6px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 58px 6px 0 rgba(0, 0, 0, 0.4);
+  webkit-animation-name: loader-six-transition;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-timing-function: cubic-bezier(0.17, 0.67, 0.49, 0.93);
+  -webkit-animation-iteration-count: infinite;
+  animation-name: loader-six-transition;
+  animation-duration: 5s;
+  animation-timing-function: cubic-bezier(0.17, 0.67, 0.49, 0.93);
+  animation-iteration-count: infinite;
+}
+
+/*============= Loader Seven =================*/
+@-webkit-keyframes loader-seven-before-transition {
+  50% {
+    left: -100px;
+  }
+
+  100% {
+    left: -24px;
+  }
+}
+
+@keyframes loader-seven-before-transition {
+  50% {
+    left: -100px;
+  }
+
+  100% {
+    left: -24px;
+  }
+}
+
+@-webkit-keyframes loader-seven-after-transition {
+  50% {
+    right: -100px;
+  }
+
+  100% {
+    right: -23px;
+  }
+}
+
+@keyframes loader-seven-after-transition {
+  50% {
+    right: -100px;
+  }
+
+  100% {
+    right: -23px;
+  }
+}
+#wpf-loader-seven {
+  background-color: #000;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+#wpf-loader-seven .wpf-loader-seven-inner {
+  left: 44%;
+  padding: 5px;
+  position: relative;
+  text-align: center;
+  top: 46%;
+  height: 100px;
+  width: 150px;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  transition: all 0.7s;
+}
+#wpf-loader-seven .wpf-loader-seven-inner span {
+  background-color: #fff;
+  border-radius: 9px;
+  color: #f8f8f8;
+  display: inline-block;
+  height: 20px;
+  width: 50px;
+  -moz-transform: translateX(0px) rotate(0deg);
+  -o-transform: translateX(0px) rotate(0deg);
+  -ms-transform: translateX(0px) rotate(0deg);
+  -webkit-transform: translateX(0px) rotate(0deg);
+  transform: translateX(0px) rotate(0deg);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-box-shadow: 0 1px 7px #ccc;
+  -moz-box-shadow: 0 1px 7px #ccc;
+  box-shadow: 0 1px 7px #ccc;
+}
+#wpf-loader-seven .wpf-loader-seven-inner span:before {
+  background-color: #cc0722;
+  border-radius: 35% 0 0 35%;
+  content: "";
+  height: 26px;
+  left: -24px;
+  position: absolute;
+  top: -3px;
+  width: 50px;
+  z-index: 99;
+  webkit-animation-name: loader-seven-before-transition;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: liner;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: loader-seven-before-transition;
+  animation-duration: 3s;
+  animation-timing-function: liner;
+  animation-iteration-count: infinite;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+#wpf-loader-seven .wpf-loader-seven-inner span:after {
+  background-color: #02afd9;
+  border-radius: 0 35% 35% 0;
+  content: "";
+  height: 26px;
+  position: absolute;
+  right: -23px;
+  top: -3px;
+  width: 47px;
+  webkit-animation-name: loader-seven-after-transition;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: liner;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: loader-seven-after-transition;
+  animation-duration: 3s;
+  animation-timing-function: liner;
+  animation-iteration-count: infinite;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+}
+
+
+/*============= Loader Eight =================*/
+@-webkit-keyframes loader-eight-transition {
+  100% {
+    -moz-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+
+@keyframes loader-eight-transition {
+  100% {
+    -moz-transform: rotateZ(360deg);
+    -o-transform: rotateZ(360deg);
+    -ms-transform: rotateZ(360deg);
+    -webkit-transform: rotateZ(360deg);
+    transform: rotateZ(360deg);
+  }
+}
+
+#wpf-loader-eight {
+  background-color: #22313f;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+#wpf-loader-eight .wpf-loader-eight-inner {
+  left: 46%;
+  padding: 5px;
+  position: absolute;
+  text-align: center;
+  top: 34%;
+  height: 100px;
+  width: 100px;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  transition: all 0.7s;
+}
+#wpf-loader-eight .wpf-loader-eight-inner span:nth-child(1) {
+  background-color: #5c97bf;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  height: 100px;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  width: 100px;
+  top: 0;
+  -moz-transform: rotateZ(0deg);
+  -o-transform: rotateZ(0deg);
+  -ms-transform: rotateZ(0deg);
+  -webkit-transform: rotateZ(0deg);
+  transform: rotateZ(0deg);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  webkit-animation-name: loader-eight-transition;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-timing-function: liner;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: loader-eight-transition;
+  animation-duration: 1s;
+  animation-timing-function: liner;
+  animation-iteration-count: infinite;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+#wpf-loader-eight .wpf-loader-eight-inner span:nth-child(1):before {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  content: "";
+  height: 150px;
+  left: -39%;
+  position: absolute;
+  top: 0;
+  width: 100px;
+}
+#wpf-loader-eight .wpf-loader-eight-inner span:nth-child(1):after {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  content: "";
+  height: 150px;
+  position: absolute;
+  right: -24%;
+  top: 27px;
+  width: 100px;
+}
+#wpf-loader-eight .wpf-loader-eight-inner span:nth-child(2) {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  height: 50px;
+  left: 0;
+  position: absolute;
+  top: 100%;
+  width: 100px;
+}
+
+/*============= Loader Nine =================*/
+@-webkit-keyframes loader-nine-transition {
+  50% {
+    left: 50%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes loader-nine-transition {
+  50% {
+    left: 50%;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes loader-nine-content-transition {
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes loader-nine-content-transition {
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+#wpf-loader-nine {
+  background-color: #000;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+#wpf-loader-nine .wpf-loader-nine-inner {
+  left: 0;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -ms-transition: all 0.7s;
+  -o-transition: all 0.7s;
+  transition: all 0.7s;
+}
+#wpf-loader-nine .wpf-loader-nine-inner span:nth-child(1) {
+  background-color: #fff;
+  display: inline-block;
+  height: 1px;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: 40%;
+  transition: all 0.5s ease 0s;
+  width: 400px;
+  z-index: 99;
+  -moz-transform: rotateZ(0deg);
+  -o-transform: rotateZ(0deg);
+  -ms-transform: rotateZ(0deg);
+  -webkit-transform: rotateZ(0deg);
+  transform: rotateZ(0deg);
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  webkit-animation-name: loader-nine-transition;
+  -webkit-animation-duration: 0.3s;
+  -webkit-animation-timing-function: liner;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: loader-nine-transition;
+  animation-duration: 0.3s;
+  animation-timing-function: liner;
+  animation-iteration-count: infinite;
+}
+#wpf-loader-nine .wpf-loader-nine-inner span:nth-child(2) {
+  background-color: #fff;
+  display: inline-block;
+  height: 1px;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: 45%;
+  transition: all 0.5s ease 0s;
+  width: 400px;
+  webkit-animation-name: loader-nine-transition;
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: liner;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: loader-nine-transition;
+  animation-duration: 0.5s;
+  animation-timing-function: liner;
+  animation-iteration-count: infinite;
+}
+#wpf-loader-nine .wpf-loader-nine-inner span:nth-child(3) {
+  background-color: #fff;
+  display: inline-block;
+  height: 1px;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: 50%;
+  transition: all 0.5s ease 0s;
+  width: 400px;
+  webkit-animation-name: loader-nine-transition;
+  -webkit-animation-duration: 0.7s;
+  -webkit-animation-timing-function: liner;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: loader-nine-transition;
+  animation-duration: 0.7s;
+  animation-timing-function: liner;
+  animation-iteration-count: infinite;
+}
+#wpf-loader-nine .wpf-loader-nine-inner span:nth-child(4) {
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  height: 1px;
+  left: 0;
+  opacity: 0.2;
+  position: absolute;
+  text-align: center;
+  top: 65%;
+  transition: all 0.5s ease 0s;
+  width: 100%;
+  webkit-animation-name: loader-nine-content-transition;
+  -webkit-animation-duration: 0.8s;
+  -webkit-animation-timing-function: liner;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: loader-nine-content-transition;
+  animation-duration: 0.8s;
+  animation-timing-function: liner;
+  animation-iteration-count: infinite;
+}
+
+/*============= Loader Ten =================*/
+@-webkit-keyframes loader-ten-transition {
+  20% {
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  40% {
+    left: 80%;
+    top: 5%;
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    left: 80%;
+    top: 80%;
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  80% {
+    left: 5%;
+    top: 80%;
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    left: 5%;
+    top: 5%;
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes loader-ten-transition {
+  20% {
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  40% {
+    left: 80%;
+    top: 5%;
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    left: 80%;
+    top: 80%;
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  80% {
+    left: 5%;
+    top: 80%;
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    left: 5%;
+    top: 5%;
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+#wpf-loader-ten {
+  background-color: #e9a349;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+#wpf-loader-ten .wpf-loader-ten-inner {
+  background-color: #d1443a;
+  height: 80px;
+  left: 47%;
+  position: absolute;
+  top: 42%;
+  transform: rotate(45deg);
+  width: 80px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#wpf-loader-ten .wpf-loader-ten-inner span {
+  background-color: #fff;
+  border-radius: 50%;
+  display: inline-block;
+  height: 10px;
+  left: 5%;
+  position: absolute;
+  top: 5%;
+  width: 10px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  webkit-animation-name: loader-ten-transition;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: loader-ten-transition;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+
+/*============= Loader Eleven =================*/
+@-webkit-keyframes loader-eleven-transition {
+  20% {
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  40% {
+    left: 25%;
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    left: 50%;
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  80% {
+    left: 100%;
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    left: 100%;
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    box-shadow: 0 0 15px #fff;
+  }
+}
+
+@keyframes loader-eleven-transition {
+  20% {
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  40% {
+    left: 25%;
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  60% {
+    left: 50%;
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  80% {
+    left: 100%;
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+
+  100% {
+    left: 100%;
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
+    -ms-transform: scale(0);
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    box-shadow: 0 0 15px #fff;
+  }
+}
+
+#wpf-loader-eleven {
+  background-color: #4B77BE;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+#wpf-loader-eleven .wpf-loader-eleven-inner {
+  background-color: #516777;
+  border-radius: 8px;
+  height: 18px;
+  left: 40%;
+  position: absolute;
+  top: 49%;
+  width: 250px;
+  overflow: hidden;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#wpf-loader-eleven .wpf-loader-eleven-inner span {
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 3px #fff;
+  display: inline-block;
+  height: 10px;
+  left: 1%;
+  position: absolute;
+  top: 4px;
+  width: 10px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  -moz-transform: scale(0);
+  -o-transform: scale(0);
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  webkit-animation-name: loader-eleven-transition;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: loader-eleven-transition;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
