@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Toaq - A tonal logical language</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="../../assets/images/favicon.ico"/>
+    <!-- Font Awesome -->
+    <link href="../../assets/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet">
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/slick.css"/> 
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="../../assets/css/jquery.fancybox.css" type="text/css" media="screen" /> 
+    <!-- Animate css -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/animate.css"/>  
+     <!-- Theme color -->
+    <link id="switcher" href="../../assets/css/theme-color/default.css" rel="stylesheet">
+    
+    <link href="../../preloader.css" rel="stylesheet">
+    <!-- Main Style -->
+    <link href="../../style.css" rel="stylesheet">
+
+<script defer>
+    function PlaySound(melody) {
+        var path = "../sounds/"
+        var snd = new Audio(path + melody + ".mp3");
+        snd.play();
+    }
+</script>
+
+
+    <!-- Fonts -->
+    <!-- Open Sans for body font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Raleway for Title -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <!-- Pacifico for 404 page   -->
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+  <!-- BEGAIN PRELOADER -->
+  <div id="preloader">
+    <div class="loader">&nbsp;</div>
+  </div>
+  <!-- END PRELOADER -->    
+
+  <!-- SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#"><i class="fa fa-chevron-up"></i></a>
+  <!-- END SCROLL TOP BUTTON -->
+
+
+
+  <!-- Start menu section -->
+  <section id="menu-area">
+    <nav class="navbar navbar-default main-navbar" role="navigation">  
+      <div class="container">
+        <div class="navbar-header">
+          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- LOGO -->                                               
+           <a class="navbar-brand logo" href="https://toaq.net/jemu/"><img title="Jemu says Hello!" src="../../assets/images/jemu.png" alt="logo" ></a>                      
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav main-nav menu-scroll">
+            <li class="active"><a href="https://toaq.net/">Home</a></li>
+            <li><a href="https://toaq.net/#overview">OVERVIEW</a></li> 
+	    <li><a href="https://toaq.net/#learning">LEARNING</a></li> 
+	    <li><a href="https://toaq.net/#community">COMMUNITY</a></li>
+            <li><a href="https://toaq.net/refgram/00/">GRAMMAR</a></li>                    
+            <li><a href="https://toadua.uakci.pl/">DICTIONARY</a></li>
+          </ul>                            
+        </div><!--/.nav-collapse -->
+                
+      </div>          
+    </nav> 
+  </section>
+  <!-- End menu section -->
+
+
+
+ <div class="textbody">
+       
+
+<div class="welcome-content">
+              <h2 class="tittle">The post-field</h2>
+              <span class="tittle-line-2"></span>
+
+<p>Recall the sentence structure template. The following sections deal with the post-field. First up, the different ways of constructing phrases that can be passed as arguments to a verb.</p>
+
+</div></div>
+<img class="diagram" src="../../assets/images/diagrams/sentencetemplate.svg" width="850px;"></img>
+<div class="textbody"><div class="welcome-content">
+
+<h3>Determiner phrases</h3>
+
+<p>Since Toaq only has verbs, there are a number of determiners to turn those verbs into things which can appear in argument position. The following table lists them:</p>
+
+<table class="vocabtable">
+<tr>
+	<td>Pattern:<br>determiner + verb(al complex) → argument</td>
+</tr>
+</table>
+
+<table class="vocabtable">
+<tr>
+	<th>Determiner</th>
+	<th>Meaning</th>
+</tr>
+<tr>
+	<td><img class="tn" src="../../assets/images/tones/t2.png"></td>
+	<td>the X (previously bound)</td>
+</tr>
+<tr>
+	<td><span class="toaq">sa</span></td>
+	<td>some X</td>
+</tr>
+<tr>
+	<td><span class="toaq">tu</span></td>
+	<td>every X</td>
+</tr>
+<tr>
+	<td><span class="toaq">tushı</span></td>
+	<td>each X</td>
+</tr>
+<tr>
+	<td><span class="toaq">tuq</span></td>
+	<td>all X</td>
+</tr>
+<tr>
+	<td><span class="toaq">sıa</span></td>
+	<td>no X</td>
+</tr>
+<tr>
+	<td><span class="toaq">ke</span></td>
+	<td>the X</td>
+</tr>
+<tr>
+	<td><span class="toaq">hoı</span></td>
+	<td>the aforementioned X</td>
+</tr>
+<tr>
+	<td><span class="toaq">baq</span></td>
+	<td>X in general, X-kind</td>
+</tr>
+<tr>
+	<td><span class="toaq">hı</span></td>
+	<td>which X</td>
+</tr>
+<tr>
+	<td><span class="toaq">ja</span></td>
+	<td>λ (lambda)</td>
+</tr>
+</table>
+
+<p>(For an explanation of <span class="toaq">ja</span>, see <a href="https://toaq.net/refgram/15/">the section on properties</a>.)</p>
+
+<button class="listen" onclick="PlaySound('tỉ sa pỏq')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Tỉ</th><th>sa</th><th>pỏq.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>at</td><td>some</td><td>person</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="3">"There are some people."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('zảo súq tu sảo jỉo')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Zảo</th><th>súq</th><th>tu</th><th>sảo</th><th>jỉo.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>know</td><td>you</td><td>every</td><td>large</td><td>building</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="5">"You know every large building."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('fảq sıa rảı')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Fảq</th><th>sıa</th><th>rảı.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>happen</td><td>no</td><td>thing</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="3">"Nothing happened."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<p>Once the syntax is understood, most of the determiners should be self-explanatory. However, a few deserve further inspection:</p>
+
+<p>The determiner <span class="toaq">hı</span> “which” is Toaq’s primary way of asking wh-questions:</p>
+
+<button class="listen" onclick="PlaySound('jỏaı súq hı rảı moq')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Jỏaı</th><th>súq</th><th>hı</th><th>rảı</th><th>moq?</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>search</td><td>you</td><td>which</td><td>thing</td><td>INT</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="5">"What are you looking for?"</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('nỉe máq hı tỉaı moq')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Nỉe</th><th>máq</th><th>hı</th><th>tỉaı</th><th>moq?</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>inside</td><td>it<sub>II</sub></td><td>which</td><td>box</td><td>INT</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="5">"Which box is it in?"</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('tỉ jí hı rảı moq')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Tỉ</th><th>jí</th><th>hı</th><th>rảı</th><th>moq?</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>at</td><td>I</td><td>which</td><td>thing</td><td>INT</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="5">"Where am I?"</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('chủq déo rào hı rảı moq')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Chủq</th><th>déo</th><th>rào</th><th>hı</th><th>rảı</th><th>moq?</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>eat</td><td>the-child</td><td>P-when</td><td>which</td><td>thing</td><td>INT</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="6">"When did the children eat?"</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('tỉsha nháo rào hı chảq moq')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Tỉsha</th><th>nháo</th><th>rào</th><th>hı</th><th>chảq</th><th>moq?</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>arrive</td><td>they</td><td>P-when</td><td>which</td><td>day</td><td>INT</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="6">"On which day do they arrive?"</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<p>(For more examples of <span class="toaq">hı</span>, see also the table dealing with question words in <a href="https://toaq.net/refgram/25/">this section</a>.)</p>
+
+<p>The determiner <span class="toaq">baq</span> creates references to kinds:</p>
+
+
+<button class="listen" onclick="PlaySound('hẻ bủa baq lảbı áfari')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Hẻ</th><th>bủa</th><th>baq</th><th>lảbı</th><th>Áfari.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>GNO</td><td>inhabit</td><td>GEN</td><td>lion</td><td>Africa</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="5">"The lion lives in Africa."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('jỏaı nháo baq dảragoq')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Jỏaı</th><th>nháo</th><th>baq</th><th>dảragoq.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>search</td><td>they</td><td>GEN</td><td>dragon</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="4">"They are looking for dragons."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<div class="table_wrapper">
+<button class="listen" onclick="PlaySound('baq sủhu bı tỉfaı hó ru bı pủ tỉ hó jíbo sỏaq rào púchaq')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Baq</th><th>sủhu</th><th>bı</th><th>tỉfaı</th><th>hó</th><th>ru&nbsp;bı</th><th>pủ</th><th>tỉ</th><th>hó</th><th>jíbo</th><th>sỏaq</th><th>rào</th><th>púchaq</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>GEN</td><td>pig</td><td>TOP</td><td>widespread</td><td>it<sub>I</sub></td><td>and TOP</td><td>PST</td><td>at</td><td>it<sub>I</sub></td><td>the-my</td><td>garden</td><td>P-when</td><td>yesterday</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="13">"As for pigs, they are widespread and they were in my garden yesterday."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+</div>
+
+
+<h3>Determiners without overt complement</h3>
+
+<p>It is possible to use determiners without an overt complement. The complement is then analogous to an implicit <span class="toaq">rảı</span> “thing”. This rule does not apply to the <img class="tn" src="../../assets/images/tones/t2.png"> tone, because it needs an overt complement as a carrier.</p>
+
+<button class="listen" onclick="PlaySound('kảqgaı jí sıa')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Kảqgaı</th><th>jí</th><th>sıa.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>see</td><td>I</td><td>no</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="3">"I don’t see anything."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('mả kủq súq sa moq')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Mả</th><th>kủq</th><th>súq</th><th>sa</th><th>moq?</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>C<sub>[+int]</sub></td><td>say</td><td>you</td><td>some</td><td>INT</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="5">"Did you say something?"</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+
+
+
+
+<div class="left-btn">
+    <a href="https://toaq.net/refgram/13/" class="button button-default" data-text="fıa"><span>Previous section</span></a>
+</div>
+<div class="right-btn">
+    <a href="https://toaq.net/refgram/15/" class="button button-default" data-text="sıe"><span>Next section</span></a>
+</div>
+
+
+	</div>
+</div>
+
+
+
+
+  <!-- Start Footer -->    
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2017-2021 toaq.net</p>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- initialize jQuery Library --> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Bootstrap -->
+  <script src="../../assets/js/bootstrap.js"></script>
+  <!-- Slick Slider -->
+  <script type="text/javascript" src="../../assets/js/slick.js"></script>
+  <!-- Counter -->
+  <script type="text/javascript" src="../../assets/js/waypoints.js"></script>
+  <script type="text/javascript" src="../../assets/js/jquery.counterup.js"></script>
+  <!-- mixit slider -->
+  <script type="text/javascript" src="../../assets/js/jquery.mixitup.js"></script>
+  <!-- Add fancyBox -->        
+  <script type="text/javascript" src="../../assets/js/jquery.fancybox.pack.js"></script>
+  <!-- Wow animation -->
+  <script type="text/javascript" src="../../assets/js/wow.js"></script> 
+
+  <!-- Custom js -->
+  <script type="text/javascript" src="../../assets/js/custom.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Toaq - A tonal logical language</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="../../assets/images/favicon.ico"/>
+    <!-- Font Awesome -->
+    <link href="../../assets/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet">
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/slick.css"/> 
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="../../assets/css/jquery.fancybox.css" type="text/css" media="screen" /> 
+    <!-- Animate css -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/animate.css"/>  
+     <!-- Theme color -->
+    <link id="switcher" href="../../assets/css/theme-color/default.css" rel="stylesheet">
+    
+    <link href="../../preloader.css" rel="stylesheet">
+    <!-- Main Style -->
+    <link href="../../style.css" rel="stylesheet">
+
+<script defer>
+    function PlaySound(melody) {
+        var path = "../sounds/"
+        var snd = new Audio(path + melody + ".mp3");
+        snd.play();
+    }
+</script>
+
+
+    <!-- Fonts -->
+    <!-- Open Sans for body font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Raleway for Title -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <!-- Pacifico for 404 page   -->
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+  <!-- BEGAIN PRELOADER -->
+  <div id="preloader">
+    <div class="loader">&nbsp;</div>
+  </div>
+  <!-- END PRELOADER -->    
+
+  <!-- SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#"><i class="fa fa-chevron-up"></i></a>
+  <!-- END SCROLL TOP BUTTON -->
+
+
+
+  <!-- Start menu section -->
+  <section id="menu-area">
+    <nav class="navbar navbar-default main-navbar" role="navigation">  
+      <div class="container">
+        <div class="navbar-header">
+          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- LOGO -->                                               
+           <a class="navbar-brand logo" href="https://toaq.net/jemu/"><img title="Jemu says Hello!" src="../../assets/images/jemu.png" alt="logo" ></a>                      
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav main-nav menu-scroll">
+            <li class="active"><a href="https://toaq.net/">Home</a></li>
+            <li><a href="https://toaq.net/#overview">OVERVIEW</a></li> 
+	    <li><a href="https://toaq.net/#learning">LEARNING</a></li> 
+	    <li><a href="https://toaq.net/#community">COMMUNITY</a></li>
+            <li><a href="https://toaq.net/refgram/00/">GRAMMAR</a></li>                    
+            <li><a href="https://toadua.uakci.pl/">DICTIONARY</a></li>
+          </ul>                            
+        </div><!--/.nav-collapse -->
+                
+      </div>          
+    </nav> 
+  </section>
+  <!-- End menu section -->
+
+
+
+ <div class="textbody">
+       
+
+<div class="welcome-content">
+              <h2 class="tittle">Phonology</h2>
+              <span class="tittle-line-2"></span>
+
+               <p>Toaq comes with a simple phonology that is characterized by a complete lack of consonant clusters. Its syllables are rich in vowels and carry one of seven tones, giving the language a melodic character.</p>
+
+<h3>Consonants</h3>
+
+<p>There are 21 consonant phonemes:</p>
+
+<table class="phonemes">
+    <tr>
+      <th></th>
+      <th>Labial</th>
+      <th>Alveolar</th>
+      <th>Palatal</th>
+      <th>Velar</th>
+      <th>Glottal</th>
+    </tr>
+    <tr>
+      <td>Nasals</td>
+      <td>m</td>
+      <td>n</td>
+      <td>ɲ</td>
+      <td>ŋ</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Plosives</td>
+      <td>pʰ b</td>
+      <td>tʰ d</td>
+      <td></td>
+      <td>kʰ g</td>
+      <td>ʔ</td>
+    </tr>
+    <tr>
+      <td>Affricates</td>
+      <td></td>
+      <td>t͡sʰ d͡z</td>
+      <td>t͡ɕʰ d͡ʑ</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Fricatives</td>
+      <td>f</td>
+      <td>s</td>
+      <td>ɕ</td>
+      <td></td>
+      <td>h</td>
+    </tr>
+    <tr>
+      <td>Taps</td>
+      <td></td>
+      <td>ɾ</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Laterals</td>
+      <td></td>
+      <td>l</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </table>
+
+<h3>Vowels</h3>
+
+<p>There are 6 vowel phonemes.</p>
+
+<table class="graphemes">
+    <tr>
+      <th>Grapheme</th>
+      <th>Pronunciation</th>
+      <th>Allophones</th>
+	  <th></th>
+    </tr>
+    <tr>
+      <td>a</td>
+      <td>[a]</td>
+      <td></td>
+    </tr>
+	<tr>
+      <td>u</td>
+      <td>[u]</td>
+      <td>[ʊ] in closed syllables</td>
+    </tr>
+	<tr>
+      <td>ı</td>
+      <td>[i]</td>
+      <td>[ɪ] in closed syllables</td>
+    </tr>
+	<tr>
+      <td>o</td>
+      <td>[o]</td>
+      <td>[ɔ] in closed syllables</td>
+    </tr>
+	<tr>
+      <td>e</td>
+      <td>[ɛ]</td>
+      <td>[e] before /a/ and /o/</td>
+    </tr>
+	<tr>
+      <td>y</td>
+      <td>[ə]</td>
+      <td></td>
+    </tr>
+  </table>
+
+
+<p>The vowel /ə/ avoids stressed syllables.</p>
+
+<p>The falling dipthongs are ⟨aı⟩ /aj/, ⟨ao⟩ /aw/, ⟨ou⟩ /ow/, ⟨oı⟩ /oj/ and ⟨eı⟩ /ɛj/. Vowels in any other vowel sequence are pronounced individually.</p>
+
+<p>Toaq does not have on-glides.</p>
+
+<p>Vowel length is not phonemic. In slow and clear speech, stressed vowels tend to be long in open syllables and short in closed syllables, and vowels are generally short in syllables which carry the neutral tone.</p>
+
+
+<h3>Syllable structure</h3>
+
+<p>Toaq's syllable structure is simple: An initial consonant is followed by one of the following endings:</p>
+
+<table class="endings">
+	<tr>
+		<td> a </td>
+		<td> aq </td>
+		<td>  </td>
+		<td>  </td>
+		<td> aı </td>
+		<td> ao </td>
+		<td>  </td>
+		<td>  </td>
+		<td>  </td>
+		<td>  </td>
+		<td>  </td>
+		<td>  </td>
+		<td>  </td>
+		<td>  </td>
+	</tr>
+	<tr>
+		<td> u </td>
+		<td> uq </td>
+		<td> ua </td>
+		<td> uaq</td>
+		<td> uı </td>
+		<td> uo </td>
+		<td> uoı </td>
+		<td> uoq </td>
+		<td> ue </td>
+		<td> ueq </td>
+		<td> uaı </td>
+		<td> uao </td>
+		<td>  </td>
+		<td> uy </td>
+	</tr>
+	<tr>
+		<td> ı </td>
+		<td> ıq </td>
+		<td> ıa </td>
+		<td> ıaq </td>
+		<td>  </td>
+		<td> ıo </td>
+		<td>  </td>
+		<td> ıoq </td>
+		<td> ıe </td>
+		<td> ıeq </td>
+		<td> ıaı </td>
+		<td> ıao </td>
+		<td> ıu </td>
+		<td> ıy </td>
+	</tr>
+	<tr>
+		<td> o </td>
+		<td> oq </td>
+		<td> oa </td>
+		<td> oaq </td>
+		<td> oı </td>
+		<td>  </td>
+		<td>  </td>
+		<td>  </td>
+		<td> oe </td>
+		<td> oeq </td>
+		<td> oaı </td>
+		<td>  </td>
+		<td> ou </td>
+		<td> uy </td>
+	</tr>
+	<tr>
+		<td> e </td>
+		<td> eq </td>
+		<td> ea </td>
+		<td> eaq </td>
+		<td> eı </td>
+		<td> eo </td>
+		<td>  </td>
+		<td>  </td>
+		<td>  </td>
+		<td> eoq </td>
+		<td> eaı </td>
+		<td>  </td>
+		<td>  </td>
+		<td> uy </td>
+	</tr>
+	<tr>
+		<td> y </td>
+		<td>  </td>
+		<td>  </td>
+		<td>  </td>
+		<td>  </td>
+		<td>  </td>
+		<td>  </td>
+		<td>  </td>
+		<td>  </td>
+		<td>  </td>
+		<td>  </td>
+		<td>  </td>
+		<td>  </td>
+		<td>  </td>
+	</tr>
+</table>
+
+<p>Any consonant other than /ŋ/ is a valid initial. Consonant clusters (sequences of more than one consonant phoneme in a row) are not permissible in onset position, but can occur at the word or syllable boundary (/ŋ/ followed by a simple onset).</p>
+
+
+
+
+<p>As mentioned in the previous section, any combination of two vowels other than the falling diphthongs is pronounced disyllabically. Also, the emphasis is always on the first vowel of a syllable, even in a rising diphthong, unless the syllable begins with a simple vowel followed by /ao/, in which case the /a/ is stressed. For example, <span class="toaq">puaq</span> is pronounced [ˈpʰu.aŋ] and not [pʰu.ˈaŋ] let alone [pʰwaŋ], <span class="toaq">jia</span> is pronounced [ˈd͡ʑi.a] and not [d͡ʑi.ˈa] or [d͡ʑja], and <span class="toaq">kuao</span> is pronounced [kʰu.ˈa.o] or [kʰu.ˈa.ʊ] and not [ˈkʰu.a.o] or [ˈkʰu.aʊ].</p>
+
+<p>This is a list of example words for each possible kind of syllable:</p>
+
+ <table class="tones">
+    <tr>
+      <th>Syllable</th>
+      <th>Example</th>
+      <th>Pronunciation</th>
+      <th>Translation</th>
+    </tr>
+    <tr>
+      <td>CV</td>
+      <td><span class="toaq">ji</span></td>
+      <td>[d͡ʑiː]</td>
+      <td>"I, me, myself"</td>
+    </tr>
+    <tr>
+      <td>CVq</td>
+      <td><span class="toaq">raq</span></td>
+      <td>[ɾaŋ]</td>
+      <td>"about, pertaining to"</td>
+    </tr>
+    <tr>
+      <td>CVv</td>
+      <td><span class="toaq">jai</span></td>
+      <td>[d͡ʑaj]</td>
+      <td>"to be happy"</td>
+    </tr>
+    <tr>
+      <td>CvV</td>
+      <td><span class="toaq">dua</span></td>
+      <td>[ˈduː.a]</td>
+      <td>"to know"</td>
+    </tr>
+    <tr>
+      <td>CvVq</td>
+      <td><span class="toaq">ruaq</span></td>
+      <td>[ˈɾuː.aŋ]</td>
+      <td>"to assert"</td>
+    </tr>
+    <tr>
+      <td>CVV</td>
+      <td><span class="toaq">keo</span></td>
+      <td>[ˈkʰeː.o]</td>
+      <td>"but, however"</td>
+    </tr>
+    <tr>
+      <td>Cvai</td>
+      <td><span class="toaq">nuai</span></td>
+      <td>[ˈnuː.aj]</td>
+      <td>"money"</td>
+    </tr>
+    <tr>
+      <td>Cvao</td>
+      <td><span class="toaq">luao</span></td>
+      <td>[lu.ˈaː.ʊ]</td>
+      <td>"lip"</td>
+    </tr>
+  </table>
+
+
+
+<h3>The tones</h3>
+
+<p>There are seven meaningful tones in Toaq. The following table lists for each tone its name, its spelling, an image describing its pitch contour and an example word using that tone.</p>
+
+<table class="tones">
+    <tr>
+      <th>Rising</th>
+      <th>Rising glottal</th>
+      <th>Falling</th>
+      <th>Rising-falling</th>
+    </tr>
+    <tr>
+      <td><img class="tn" src="../../assets/images/tones/t2.png"></img></td>
+      <td><img class="tn" src="../../assets/images/tones/t3.png"></img></td>
+      <td><img class="tn" src="../../assets/images/tones/t4.png"></img></td>
+      <td><img class="tn" src="../../assets/images/tones/t5.png"></img></td>
+    </tr>
+    <tr>
+      <td><img src="../../assets/images/contours/t2.png" width="100px"></td>
+      <td><img src="../../assets/images/contours/t3.png" width="100px"></td>
+      <td><img src="../../assets/images/contours/t4.png" width="100px"></td>
+      <td><img src="../../assets/images/contours/t5.png" width="100px"></td>
+    </tr>
+    <tr>
+      <td><span class="toaq">nháo</span><br>"they"</td>
+      <td><span class="toaq">jäı</span><br>"who is happy"</td>
+      <td><span class="toaq">shủa</span><br>"fall"</td>
+      <td><span class="toaq">fâ</span><br>"that someone<br> is going"</td>
+    </tr>
+  </table>
+  
+  <table class="tones">
+    <tr>
+      <th>Mid</th>
+      <th>Low glottal</th>
+      <th>Neutral</th>
+      <th></th>
+    </tr>
+    <tr>
+      <td><img class="tn" src="../../assets/images/tones/t6.png"></img></td>
+      <td><img class="tn" src="../../assets/images/tones/t7.png"></img></td>
+      <td><img class="tn" src="../../assets/images/tones/t8.png"></img></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><img src="../../assets/images/contours/t6.png" width="100px"></td>
+      <td><img src="../../assets/images/contours/t7.png" width="100px"></td>
+      <td><img src="../../assets/images/contours/t0.png" width="100px"></td>
+      <td><img src="" width="100px"></td>
+    </tr>
+    <tr>
+      <td><span class="toaq">tì</span><br>"at"</td>
+      <td><span class="toaq">bũ</span><br>"not"</td>
+      <td><span class="toaq">keo</span><br>"but"</td>
+      <td></td>
+    </tr>
+  </table>
+
+
+
+
+
+<h4>Pronunciation of the neutral tone</h4>
+
+<p>Syllables carrying the neutral tone are generally unstressed, lighter and shorter than other syllables. The neutral tone differs from the six main tones in that its pronunciation changes depending on the tone of the previous syllable.</p>
+
+  <p>The following table shows how the neutral tone (grey) is pronounced after each of the six main tones:</p>
+
+  <table class="tones">
+    <tr>
+      <th><img class="tn" src="../../assets/images/tones/t2.png"> + <img class="tn" src="../../assets/images/tones/t8.png"></th>
+      <th><img class="tn" src="../../assets/images/tones/t3.png"> + <img class="tn" src="../../assets/images/tones/t8.png"></th>
+    </tr>
+    <tr>
+      <td><img src="../../assets/images/contours/t2.png" width="100px"><img src="../../assets/images/contours/n1.png" width="100px"></td>
+      <td><img src="../../assets/images/contours/t3.png" width="100px"><img src="../../assets/images/contours/n1.png" width="100px"></td>
+    </tr>
+    <tr>
+      <td><span class="toaq">kúe bı</span><br>"as for the book"</td>
+      <td><span class="toaq"><u>chö sa</u> hóa</span><br>"who is liked by some"</td>
+    </tr>
+  </table>
+
+  <table class="tones">
+    <tr>
+      <th><img class="tn" src="../../assets/images/tones/t4.png"> + <img class="tn" src="../../assets/images/tones/t8.png"></th>
+      <th><img class="tn" src="../../assets/images/tones/t5.png"> + <img class="tn" src="../../assets/images/tones/t8.png"></th>
+    </tr>
+    <tr>
+      <td><img src="../../assets/images/contours/t4.png" width="100px"><img src="../../assets/images/contours/n2.png" width="100px"></td>
+      <td><img src="../../assets/images/contours/t5.png" width="100px"><img src="../../assets/images/contours/n2.png" width="100px"></td>
+    </tr>
+    <tr>
+      <td><span class="toaq">Hỉo ka</span><br>"Hello."</td>
+      <td><span class="toaq">mâı ja</span><br>"the property of loving"</td>
+    </tr>
+  </table>
+
+  <table class="tones">
+    <tr>
+      <th><img class="tn" src="../../assets/images/tones/t6.png"> + <img class="tn" src="../../assets/images/tones/t8.png"></th>
+      <th><img class="tn" src="../../assets/images/tones/t7.png"> + <img class="tn" src="../../assets/images/tones/t8.png"></th>
+    </tr>
+    <tr>
+      <td><img src="../../assets/images/contours/t6.png" width="100px"><img src="../../assets/images/contours/n3.png" width="100px"></td>
+      <td><img src="../../assets/images/contours/t7.png" width="100px"><img src="../../assets/images/contours/n3.png" width="100px"></td>
+    </tr>
+    <tr>
+      <td><span class="toaq">tì sıa</span><br>"nowhere"</td>
+      <td><span class="toaq">... bũ da</span><br>"... is not the case"</td>
+    </tr>
+  </table>
+
+
+  <p>While these neutral tone pronunciations are the standard, it is equally acceptable to pronounce them differently, as long as the neutral tone does not continue the tone contour of the previous word. The reason for this will become apparent in the next subsection.</p>
+
+
+<h3>Word segmentation via tones</h3>
+
+<p>Every inflectable word (i.e. verb or verbal particle) is stressed on its first syllable. The stressed syllable carries the main tonal inflection of the word.</p>
+
+<p>Toaq's word segmentation (where one word ends and the next one begins) is made unambiguous by the following rule:</p>
+
+<p>A word continues until its tone contour is broken, either by a change in direction or a jump in pitch. For the simple tones, this means that a word continues for as long as the contour keeps rising or falling. For the two-part tones, the second portion of the tone is the one that needs to keep going. The following table contains illustrative examples:</p>
+
+  <table class="tones">
+    <tr>
+      <th>Rising</th>
+      <th>Rising glottal</th>
+    </tr>
+    <tr>
+      <td><img src="../../assets/images/contours/t2l.png" width="200px"></td>
+      <td><img src="../../assets/images/contours/t3l.png" width="200px"></td>
+    </tr>
+    <tr>
+      <td><span class="toaq">gáqguru</span><br>"the kangaroo"</td>
+      <td><span class="toaq">tïjao</span><br>"who is far away"</td>
+    </tr>
+  </table>
+
+  <table class="tones">
+    <tr>
+      <th>Falling</th>
+      <th>Rising-falling</th>
+    </tr>
+    <tr>
+      <td><img src="../../assets/images/contours/t4l.png" width="200px"></td>
+      <td><img src="../../assets/images/contours/t5l.png" width="200px"></td>
+    </tr>
+    <tr>
+      <td><span class="toaq">rủqshua</span><br>"it's raining"</td>
+      <td><span class="toaq">rûqshua</span><br>"that it's raining"</td>
+    </tr>
+  </table>
+
+  <table class="tones">
+    <tr>
+      <th>Mid</th>
+      <th>Low glottal</th>
+    </tr>
+    <tr>
+      <td><img src="../../assets/images/contours/t6l.png" width="200px"></td>
+      <td><img src="../../assets/images/contours/t7l.png" width="200px"></td>
+    </tr>
+    <tr>
+      <td><span class="toaq">tìjuı</span><br>"near ..."</td>
+      <td><span class="toaq">tãocıa</span><br>"unintentionally"</td>
+    </tr>
+  </table>
+
+<p>Since a person's vocal range is finite, it is not feasible to keep going up or down indefinitely. Therefore, it is possible to plateau once the ceiling or bottom of the normal speaking range has been reached in order to keep a contour going.</p>
+
+<p>The word segmentation rules apply to all words equally. Verbs and particles use the same segmentation rules and are not distinguished by their shape. Any class is potentially an open class.</p>
+
+<p>Toaq enables and encourages complete freedom in word creation. The only restriction to this is that there can’t be homonyms (words that share the same spelling/pronunciation but have different meanings). This is because it would undermine the loglang-inherent goal of monoparsing.</p>
+
+
+
+
+<div class="left-btn">
+    <a href="https://toaq.net/refgram/02/" class="button button-default" data-text="fıa"><span>Previous section</span></a>
+</div>
+<div class="right-btn">
+    <a href="https://toaq.net/refgram/04/" class="button button-default" data-text="sıe"><span>Next section</span></a>
+</div>
+
+
+	</div>
+</div>
+
+
+
+
+  <!-- Start Footer -->    
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2017-2021 toaq.net</p>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- initialize jQuery Library --> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Bootstrap -->
+  <script src="../../assets/js/bootstrap.js"></script>
+  <!-- Slick Slider -->
+  <script type="text/javascript" src="../../assets/js/slick.js"></script>
+  <!-- Counter -->
+  <script type="text/javascript" src="../../assets/js/waypoints.js"></script>
+  <script type="text/javascript" src="../../assets/js/jquery.counterup.js"></script>
+  <!-- mixit slider -->
+  <script type="text/javascript" src="../../assets/js/jquery.mixitup.js"></script>
+  <!-- Add fancyBox -->        
+  <script type="text/javascript" src="../../assets/js/jquery.fancybox.pack.js"></script>
+  <!-- Wow animation -->
+  <script type="text/javascript" src="../../assets/js/wow.js"></script> 
+
+  <!-- Custom js -->
+  <script type="text/javascript" src="../../assets/js/custom.js"></script>
+    
+  </body>
+</html>

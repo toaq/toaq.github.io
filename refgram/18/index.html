@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Toaq - A tonal logical language</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="../../assets/images/favicon.ico"/>
+    <!-- Font Awesome -->
+    <link href="../../assets/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet">
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/slick.css"/> 
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="../../assets/css/jquery.fancybox.css" type="text/css" media="screen" /> 
+    <!-- Animate css -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/animate.css"/>  
+     <!-- Theme color -->
+    <link id="switcher" href="../../assets/css/theme-color/default.css" rel="stylesheet">
+    
+    <link href="../../preloader.css" rel="stylesheet">
+    <!-- Main Style -->
+    <link href="../../style.css" rel="stylesheet">
+
+<script defer>
+    function PlaySound(melody) {
+        var path = "../sounds/"
+        var snd = new Audio(path + melody + ".mp3");
+        snd.play();
+    }
+</script>
+
+
+    <!-- Fonts -->
+    <!-- Open Sans for body font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Raleway for Title -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <!-- Pacifico for 404 page   -->
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+  <!-- BEGAIN PRELOADER -->
+  <div id="preloader">
+    <div class="loader">&nbsp;</div>
+  </div>
+  <!-- END PRELOADER -->    
+
+  <!-- SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#"><i class="fa fa-chevron-up"></i></a>
+  <!-- END SCROLL TOP BUTTON -->
+
+
+
+  <!-- Start menu section -->
+  <section id="menu-area">
+    <nav class="navbar navbar-default main-navbar" role="navigation">  
+      <div class="container">
+        <div class="navbar-header">
+          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- LOGO -->                                               
+           <a class="navbar-brand logo" href="https://toaq.net/jemu/"><img title="Jemu says Hello!" src="../../assets/images/jemu.png" alt="logo" ></a>                      
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav main-nav menu-scroll">
+            <li class="active"><a href="https://toaq.net/">Home</a></li>
+            <li><a href="https://toaq.net/#overview">OVERVIEW</a></li> 
+	    <li><a href="https://toaq.net/#learning">LEARNING</a></li> 
+	    <li><a href="https://toaq.net/#community">COMMUNITY</a></li>
+            <li><a href="https://toaq.net/refgram/00/">GRAMMAR</a></li>                    
+            <li><a href="https://toadua.uakci.pl/">DICTIONARY</a></li>
+          </ul>                            
+        </div><!--/.nav-collapse -->
+                
+      </div>          
+    </nav> 
+  </section>
+  <!-- End menu section -->
+
+
+
+ <div class="textbody">
+       
+
+<div class="welcome-content">
+              <h2 class="tittle">Illocution</h2>
+              <span class="tittle-line-2"></span>
+
+</div></div>
+<img class="diagram" src="../../assets/images/diagrams/sentencetemplate.svg" width="850px;"></img>
+<div class="textbody"><div class="welcome-content">
+
+<p>These particles specify the illocutionary force of an utterance. They tell you whether a sentence is an assertion, a command, a question, and so on.</p>
+
+<p>Illocution markers unambiguously mark the end of a sentence. </p>
+
+
+<table class="vocabtable">
+<tr>
+	<th>Illocution</th>
+	<th>Default</th>
+	<th>With <img class="tn" src="../../assets/images/tones/t5.png"></th>
+</tr>
+<tr>
+	<td><span class="toaq">da</span></td>
+	<td>assertive</td>
+	<td>explanatory</td>
+</tr>
+<tr>
+	<td><span class="toaq">ka</span></td>
+	<td>performative</td>
+	<td></td>
+</tr>
+<tr>
+	<td><span class="toaq">moq</span></td>
+	<td>interrogative</td>
+	<td>rhetorical interrogative</td>
+</tr>
+<tr>
+	<td><span class="toaq">ba</span></td>
+	<td>optative</td>
+	<td></td>
+</tr>
+<tr>
+	<td><span class="toaq">nha</span></td>
+	<td>promissive</td>
+	<td></td>
+</tr>
+<tr>
+	<td><span class="toaq">shou</span></td>
+	<td>permissive</td>
+	<td></td>
+</tr>
+<tr>
+	<td><span class="toaq">???</span></td>
+	<td>warning</td>
+	<td></td>
+</tr>
+<tr>
+	<td><span class="toaq">go</span></td>
+	<td>question tag</td>
+	<td></td>
+</tr>
+</table>
+
+<p><span class="toaq">da</span> is the default illocution. It is implied when no overt illocution marker is present. Its communicative purpose is to mark a sentence as an assertion.</p>
+
+<button class="listen" onclick="PlaySound('gẻo ní chảo da')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Gẻo</th><th>ní</th><th>chảo</th><th>da.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>old</td><td>the-this</td><td>vehicle</td><td>ASS</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="4">"This vehicle is old."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<p>If <span class="toaq">da</span> carries the <img class="tn" src="../../assets/images/tones/t5.png"> tone, its meaning is slightly altered to an explanation for something, for example when answering a question like “Why aren’t you working on your project?”:</p>
+
+<button class="listen" onclick="PlaySound('dủı nủokuaı jí dâ')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Dủı</th><th>nủokuaı</th><th>jí</th><th>dâ.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>too.much</td><td>tired</td><td>I</td><td>ASS<sub>expl</sub></td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="4">"It’s [just] that I’m too tired."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<p>If <span class="toaq">da</span> is left implicit, then, in order to avoid sentence boundary ambiguities, the following sentence has to begin with a <a href="https://toaq.net/refgram/19/">sentence connector</a> or with an overt <a href="https://toaq.net/refgram/20/">matrix clause complementizer</a>.</p>
+
+<button class="listen" onclick="PlaySound('dảı hóq keo bủ lẻ hóq da')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Dảı</th><th>hóq.</th><th>Keo</th><th>bủ</th><th>lẻ</th><th>hóq</th><th>da.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>possible</td><td>it<sub>III</sub></td><td>but</td><td>not</td><td>likely</td><td>it<sub>III</sub></td><td>ASS</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="7">"It’s possible, but it’s not likely."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('dẻ súq. lả mảı jí súq')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Dẻ</th><th>súq.</th><th>Lả</th><th>mảı</th><th>jí</th><th>súq.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>beautiful</td><td>you</td><td>C</td><td>love</td><td>I</td><td>you</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="6">"You are beautiful. I love you."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<p>Performative statements with <span class="toaq">ka</span> are true by virtue of being uttered. Common examples are apologies, greetings, and pronouncements.</p>
+
+<button class="listen" onclick="PlaySound('hỉo jí ka')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Hỉo</th><th>jí</th><th>ka.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>greet</td><td>I</td><td>PER</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="3">"I hereby greet<br>(i.e. Hello)."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('chẻo sẻo súq ka')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Chẻo</th><th>sẻo</th><th>súq</th><th>ka.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>reciprocal</td><td>spouse</td><td>you</td><td>PER</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="4">"You are hereby husband and wife."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('kủaq kỉe jí ka')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Kủaq</th><th>kỉe</th><th>jí</th><th>ka.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>express</td><td>thankful</td><td>I</td><td>PER</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="4">"I hereby express my gratitude<br>(i.e. Thank you)."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<p>The interrogative illocution <span class="toaq">moq</span> is used to form questions. The questions can be polar questions (yes-no questions, i.e. sentences with a <span class="toaq">mả</span> complementizer):</p>
+
+<button class="listen" onclick="PlaySound('mả dủa nháo rûqshua moq')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Mả</th><th>dủa</th><th>nháo</th><th>rûqshua</th><th>moq?</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>C<sub>[+int]</sub></td><td>know</td><td>they</td><td>that-rain</td><td>INT</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="5">"Do they know that it’s raining?"</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<p>or wh-questions (sentences with one or more <span class="toaq">hı</span> in the matrix clause):</p>
+
+<button class="listen" onclick="PlaySound('nỉe hı rảı tíaı moq')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Nỉe</th><th>hı</th><th>rảı</th><th>tíaı</th><th>moq?</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>inside</td><td>which</td><td>thing</td><td>the-box</td><td>INT</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="5">"What’s in the box?"</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<p>With the <img class="tn" src="../../assets/images/tones/t5.png"> tone, <span class="toaq">moq</span> turns into a rhetorical question:</p>
+
+<button class="listen" onclick="PlaySound('tảo jí hı rảı môq')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Tảo</th><th>jí</th><th>hı</th><th>rảı</th><th>môq?</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>do</td><td>I</td><td>which</td><td>thing</td><td>INT<sub>rhet</sub></td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="5">"What am I doing?"</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<p>The optative illocution <span class="toaq">ba</span> expresses wishes, hopes and general purpose imperatives (third-person imperatives).</p>
+
+<button class="listen" onclick="PlaySound('tảı gáqme ba')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Tảı</th><th>gáqme</th><th>ba.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>succeed</td><td>the-team</td><td>OPT</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="3">"May (our) team succeed."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('lảo tu pỏq ba')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Lảo</th><th>tu</th><th>pỏq</th><th>ba.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>wait</td><td>every</td><td>person</td><td>OPT</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="4">"Everybody wait."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<p>The promissive illocution <span class="toaq">nha</span> is used for promises and threats:</p>
+
+<button class="listen" onclick="PlaySound('jỉa tỉ jí nha')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Jỉa</th><th>tỉ</th><th>jí</th><th>nha.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>FUT</td><td>at</td><td>I</td><td>PRM</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="4">"(I promise) I’ll be there."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<p>The permissive illocution <span class="toaq">shou</span> is used to grant permission or make offers:</p>
+
+<button class="listen" onclick="PlaySound('tủı súq shou')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Tủı</th><th>súq</th><th>shou.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>sit</td><td>you</td><td>PERM</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="3">"Feel free to take a seat."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<p>The <span class="toaq">za</span> illocution expresses warnings by providing information the listener should heed.:</p>
+
+<button class="listen" onclick="PlaySound('tủı súq shou')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Jỉa</th><th>rủqshua</th><th>rào</th><th>níchaq</th><th>za.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>FUT</td><td>rain</td><td>P-when</td><td>today</td><td>ADM</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="5">"(Be aware) it’s going to rain today."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('ảrane za')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Ảrane</th><th>za!</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>spider</td><td>ADM</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="2">"Spider!"</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<p><span class="toaq">go</span> works like a question tag and is used when the speaker seeks agreement from the listener:</p>
+
+<button class="listen" onclick="PlaySound('gỉ táosıo go')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Gỉ</th><th>táosıo</th><th>go?</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>good</td><td>the-idea</td><td>right?</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="3">"The idea is good, isn’t it?"</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="left-btn">
+    <a href="https://toaq.net/refgram/17/" class="button button-default" data-text="fıa"><span>Previous section</span></a>
+</div>
+<div class="right-btn">
+    <a href="https://toaq.net/refgram/19/" class="button button-default" data-text="sıe"><span>Next section</span></a>
+</div>
+
+
+	</div>
+</div>
+
+
+
+
+  <!-- Start Footer -->    
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2017-2021 toaq.net</p>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- initialize jQuery Library --> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Bootstrap -->
+  <script src="../../assets/js/bootstrap.js"></script>
+  <!-- Slick Slider -->
+  <script type="text/javascript" src="../../assets/js/slick.js"></script>
+  <!-- Counter -->
+  <script type="text/javascript" src="../../assets/js/waypoints.js"></script>
+  <script type="text/javascript" src="../../assets/js/jquery.counterup.js"></script>
+  <!-- mixit slider -->
+  <script type="text/javascript" src="../../assets/js/jquery.mixitup.js"></script>
+  <!-- Add fancyBox -->        
+  <script type="text/javascript" src="../../assets/js/jquery.fancybox.pack.js"></script>
+  <!-- Wow animation -->
+  <script type="text/javascript" src="../../assets/js/wow.js"></script> 
+
+  <!-- Custom js -->
+  <script type="text/javascript" src="../../assets/js/custom.js"></script>
+    
+  </body>
+</html>

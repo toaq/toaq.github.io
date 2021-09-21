@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Toaq - A tonal logical language</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="../../assets/images/favicon.ico"/>
+    <!-- Font Awesome -->
+    <link href="../../assets/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet">
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/slick.css"/> 
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="../../assets/css/jquery.fancybox.css" type="text/css" media="screen" /> 
+    <!-- Animate css -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/animate.css"/>  
+     <!-- Theme color -->
+    <link id="switcher" href="../../assets/css/theme-color/default.css" rel="stylesheet">
+    
+    <link href="../../preloader.css" rel="stylesheet">
+    <!-- Main Style -->
+    <link href="../../style.css" rel="stylesheet">
+
+<script defer>
+    function PlaySound(melody) {
+        var path = "../sounds/"
+        var snd = new Audio(path + melody + ".mp3");
+        snd.play();
+    }
+</script>
+
+
+    <!-- Fonts -->
+    <!-- Open Sans for body font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Raleway for Title -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <!-- Pacifico for 404 page   -->
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+  <!-- BEGAIN PRELOADER -->
+  <div id="preloader">
+    <div class="loader">&nbsp;</div>
+  </div>
+  <!-- END PRELOADER -->    
+
+  <!-- SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#"><i class="fa fa-chevron-up"></i></a>
+  <!-- END SCROLL TOP BUTTON -->
+
+
+
+  <!-- Start menu section -->
+  <section id="menu-area">
+    <nav class="navbar navbar-default main-navbar" role="navigation">  
+      <div class="container">
+        <div class="navbar-header">
+          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- LOGO -->                                               
+           <a class="navbar-brand logo" href="https://toaq.net/jemu/"><img title="Jemu says Hello!" src="../../assets/images/jemu.png" alt="logo" ></a>                      
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav main-nav menu-scroll">
+            <li class="active"><a href="https://toaq.net/">Home</a></li>
+            <li><a href="https://toaq.net/#overview">OVERVIEW</a></li> 
+	    <li><a href="https://toaq.net/#learning">LEARNING</a></li> 
+	    <li><a href="https://toaq.net/#community">COMMUNITY</a></li>
+            <li><a href="https://toaq.net/refgram/00/">GRAMMAR</a></li>                    
+            <li><a href="https://toadua.uakci.pl/">DICTIONARY</a></li>
+          </ul>                            
+        </div><!--/.nav-collapse -->
+                
+      </div>          
+    </nav> 
+  </section>
+  <!-- End menu section -->
+
+
+
+ <div class="textbody">
+       
+
+<div class="welcome-content">
+              <h2 class="tittle">Serial verbs</h2>
+              <span class="tittle-line-2"></span>
+
+<p>This section deals with the most important and most powerful mechanism of the verbal complex and the main reason why it’s called the verbal <em>complex</em>.</p>
+
+<p>Serial verbs are, in essence, a shortcut mechanism. They are like compounds in that they create new meanings by putting words together. But unlike compounds, the meaning of a serial verb is completely predictable from the words that compose it, and the order they appear in. This means that a serial verb is understandable to anyone who knows the words that make it up and knows how serial predicates work, without requiring a dictionary. </p>
+
+<p>While compounds are new lexemes and thus add entirely new meanings to the dictionary, serial verbs do not create new meanings, they merely combine words efficiently to express a more complex meaning and make sentences a lot shorter in the process. And, the more complex a serial verb, the less complex the rest of the sentence!</p>
+
+<p>To understand serial verbs, it is useful to have some understanding of <a href="https://toaq.net/refgram/15/">complementizer phrases</a>.</p>
+
+<p>The following very simple example illustrates the idea behind serial verbs:</p>
+
+<button class="listen" onclick="PlaySound('tủa jí jâı nháo')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Tủa</th><th>jí</th><th>jâı</th><th>nháo.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>make</td><td>I</td><td>that-happy</td><td>they</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="4">“I make them happy.”</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('tủa jảı jí nháo')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Tủa</th><th>jảı</th><th>jí</th><th>nháo.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>make</td><td>happy</td><td>I</td><td>they</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="4">“I make them happy.”</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<p>The first sentence contains a simple verb <span class="toaq">tua</span> ”to bring about something” whose arguments are <span class="toaq">jí</span> ”I” and the content clause <span class="toaq">jâı nháo</span> ”that they are happy”. The second sentence, while looking very similar, has both verbs in the front, and the second argument is not a content clause but just <span class="toaq">nháo</span> ”they”. By moving the verb out of the content clause into the verbal complex of the matrix clause, the content clause is no longer needed, and a level of nesting is eliminated.</p>
+
+<p>This process can be applied to any polyadic verb whose last argument place selects for a non-interrogative complementizer phrase. This can be a content clause: </p>
+
+<button class="listen" onclick="PlaySound('dủa sıa pỏq têa jí')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Dủa</th><th>sıa</th><th>pỏq</th><th>têa</th><th>jí.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>know</td><td>no</td><td>person</td><td>that-scared</td><td>I</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="5">“Nobody knows that I’m scared.”</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('dủa tẻa sıa pỏq jí')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Dủa</th><th>tẻa</th><th>sıa</th><th>pỏq</th><th>jí.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>know</td><td>scared</td><td>no</td><td>person</td><td>I</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="5">“Nobody knows that I’m scared.”</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<p>or a property:</p>
+
+<button class="listen" onclick="PlaySound('lẻo jí nûo ja')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Lẻo</th><th>jí</th><th>nûo</th><th>ja.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>try</td><td>I</td><td>that-sleep</td><td>λ</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="4">“I try to sleep.”</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('lẻo nủo jí')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Lẻo</th><th>nủo</th><th>jí</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>try</td><td>sleep</td><td>I</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="3">“I try to sleep.”</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<p>Serial verbs can be stacked ad infinitum:</p>
+
+<button class="listen" onclick="PlaySound('lẻo jí tûa ja jâı nháo')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Lẻo</th><th>jí</th><th>tûa</th><th>ja</th><th>jâı</th><th>nháo.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>try</td><td>I</td><td>that-make</td><td>λ</td><td>that-happy</td><td>they</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="6">“I try to make them happy.”</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('lẻo tủa jảı jí nháo')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Lẻo</th><th>tủa</th><th>jảı</th><th>jí</th><th>nháo.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>try</td><td>make</td><td>happy</td><td>I</td><td>they</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="5">“I try to make them happy.”</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<p>This example makes the difference in complexity very apparent: while the first sentence contains two levels of nesting and an explicit lambda variable, the second sentence contains no nesting and only uses simple pronouns. One could liken the difference to that between the pseudo-English “I try that I make that they happy” and “I try make happy them”.</p>
+
+<button class="listen" onclick="PlaySound('shỏ jảq jỏe hảqbaı súq')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Shỏ</th><th>jảq</th><th>jỏe</th><th>hảqbaı</th><th>súq.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>become</td><td>very</td><td>skilled</td><td>prepare.food</td><td>you</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="5">“You are getting very good at preparing food.”</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('chẻo mảı gú kủne')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Chẻo</th><th>mảı</th><th>gú</th><th>kủne.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>reciprocal</td><td>love</td><td>the-two</td><td>dog</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="4">“The two dogs love each other.”</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('cẻo tảq chỏ jí')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Cẻo</th><th>tảq</th><th>chỏ</th><th>jí.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>begin</td><td>reflexive</td><td>like</td><td>I</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="4">“I’m beginning to like myself.”</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+
+<h3>Genitival serial constructions</h3>
+
+<p>Genitival serial constructions are a mechanism which is available for diadic verbs which select for determiner phrases (i.e. not <img class="tn" src="../../assets/images/tones/t5.png">, because then the normal serial verb rules apply) in their second argument place. <span class="toaq">joaı</span> “to look for” is one such verb:</p>
+
+<button class="listen" onclick="PlaySound('jỏaı jí púefuq')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Jỏaı</th><th>jí</th><th>púefuq.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>search</td><td>I</td><td>the-shoe</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="3">“I’m looking for [my] shoes.”</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('jỏaı jí baq kủrı')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Jỏaı</th><th>jí</th><th>baq</th><th>kủrı.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>search</td><td>I</td><td>GEN</td><td>berry</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="4">“I’m looking for berries.”</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<p>The latter example is exactly equivalent to the following sentence using a genitival construction:</p>
+
+<button class="listen" onclick="PlaySound('jỏaı kủrı jí')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Jỏaı</th><th>kủrı</th><th>jí.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>search</td><td>berry</td><td>I</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="3">“I’m berry-searching.”</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<p>The expansion (i.e. the semantically equivalent paraphrase not involving a genitival construction) always involves a <span class="toaq">baq</span> phrase, making these constructions fully generic and thus widely applicable.</p>
+
+<button class="listen" onclick="PlaySound('sỉu ỏcha ní sỉmo')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Sỉu</th><th>ỏcha</th><th>ní</th><th>sỉmo.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>similar</td><td>human</td><td>the-this</td><td>simian</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="4">“This ape is human-like.”</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('jủqkuaı jí héa nảra')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Jủqkuaı</th><th>jí</th><th>héa</th><th>nảra.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>long.for</td><td>I</td><td>the-piece</td><td>bread</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="4">“I’m longing for that piece of bread.”</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+
+<h3>Adjectival constructions</h3>
+
+<p>Adjectives are verbs in Toaq. They fall into three classes: predicative adjectives, attributive adjectives, and alienans adjectives. These types determine how to interpret different A B constructions, where A is an adjective and B is the modificand.</p>
+
+<h4>Predicative adjectives</h4>
+
+<p>Predicative adjectives are characterized by the following logical property: for any x, the fact that “x is an A B” allows the inference “x is A and x is B”. Even though this is the simplest possible interpretation for adjectives, it applies to surprisingly few.</p>
+
+<p><span class="toaq">jỉbo chảo X.</span> “X is my car.” → “X is a car and X is mine”</p>
+
+<p><span class="toaq">kỉa shảtı X.</span> “X is a red shirt.” → “X is a shirt and X is red”</p>
+
+<p>A much more commonly applicable interpretation of adjectives is the next one.</p>
+
+
+<h4>Attributive adjectives</h4>
+
+<p>Attributive adjectives are characterized by failure of the following test, where A is the adjective, and B and C are modificands:</p>
+
+<table class="vocabtable">
+<tr>
+	<td>Any x which is a B is a C.</td>
+</tr>
+<tr>
+	<td>Therefore, any x which is an A B is an A C.</td>
+</tr>
+</table>
+
+<p>Plugging in <span class="toaq">kıa</span> “red”, <span class="toaq">shatı</span> “shirt” and <span class="toaq">fuq</span> “item of clothing” yields:</p>
+
+<p>Any x which is a <span class="toaq">shatı</span> “shirt” is a <span class="toaq">fuq</span> “item of clothing”.<br>
+Therefore, any x which is a <span class="toaq">kıa shảtı</span> “red shirt” is a <span class="toaq">kıa fủq</span> “red item of clothing”.</p>
+
+<p>As this inference is valid, the adjective “red” is not attributive but predicative. On the other hand, plugging in <span class="toaq">nuı</span> “small”, <span class="toaq">elu</span> “elephant” and <span class="toaq">nıaı</span> “animal” gives a different result:</p>
+
+<p>Any x which is an <span class="toaq">elu</span> “elephant” is a <span class="toaq">nıaı</span> “animal”.<br>
+Therefore, any x which is a <span class="toaq">nuı ẻlu</span> “small elephant” is a <span class="toaq">nuı nỉaı</span> “small animal”.</p>
+
+<p>This is not a valid inference. The adjective “small” is attributive.</p>
+
+<button class="listen" onclick="PlaySound('bủ nûı nỉaı núı ẻlu')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Bủ</th><th>nûı</th><th>nỉaı</th><th>núı</th><th>ẻlu.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>not</td><td>that-small</td><td>animal</td><td>the-small</td><td>elephant</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="5">“The small elephant is not a small animal.”</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<p>As it turns out, most adjectives are attributive. </p>
+
+<p>While both predicative and attributive adjectives are monadic verbs in Toaq, the next type is better handled by diadic verbs.</p>
+
+
+<h4>Alienans adjectives</h4>
+
+<p>Both attributive adjectives and alienans adjectives fail the above test. However, alienans adjectives differ in the following way:</p>
+
+<p>While something that satisfies <span class="toaq">nuı ẻlu</span> “small elephant” must also be an <span class="toaq">elu</span> ”elephant”, the same cannot be said for alienans adjectives. From <span class="toaq">kuqnu mủaqtua</span> “x is an alleged killer”, one cannot infer <span class="toaq">muaqtua</span> “x is a killer”. The adjective changes the nature of the modificand, making it unclear what it is. This is the characterizing trait of alienans adjectives.</p>
+
+<button class="listen" onclick="PlaySound('dủasho jí bû mủaqtua kúqnu mủaqtua')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Dủasho</th><th>jí</th><th>bû</th><th>mủaqtua</th><th>kúqnu</th><th>mủaqtua.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>discover</td><td>I</td><td>that-not</td><td>kill</td><td>the-alleged</td><td>kill</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="6">“I discovered that the alleged killer did not kill.”</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<p>In Toaq, alienans adjectives are diadic verbs whose second argument place is a property place. Because of this, they actually fall under true serial verbs and don’t require special adjectival semantics.</p>
+
+<p><span class="toaq">joe nỏaq</span> “skilled reader” → “to be skilled at reading”</p>
+
+<p><span class="toaq">luı cảqche</span> “former director” → “to be one who has been a director”</p>
+
+<p><span class="toaq">jaq sảo</span> “very large” → “to be extreme in largeness“</p>
+
+
+<h4>Summary</h4>
+
+<p>For an adjective A and modificand B, the construction A B has the following behavior:</p>
+
+<p>if A is predicative → x is an A B implies the conjunction (A and B)</p>
+
+<p>if A is attributive → x is an A B does not imply the conjunction, but only implies the modificant (B)</p>
+
+<p>if A is alienans → x is an A B implies neither A nor B</p>
+
+<p>Predicative and attributive adjectives are monadic verbs. They invoke special adjectival semantics.</p>
+
+<p>Alienans adjectives are diadic verbs. They use the normal serial verb machinery.</p>
+
+
+
+
+<div class="left-btn">
+    <a href="https://toaq.net/refgram/08/" class="button button-default" data-text="fıa"><span>Previous section</span></a>
+</div>
+<div class="right-btn">
+    <a href="https://toaq.net/refgram/10/" class="button button-default" data-text="sıe"><span>Next section</span></a>
+</div>
+
+
+	</div>
+</div>
+
+
+
+
+  <!-- Start Footer -->    
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2017-2021 toaq.net</p>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- initialize jQuery Library --> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Bootstrap -->
+  <script src="../../assets/js/bootstrap.js"></script>
+  <!-- Slick Slider -->
+  <script type="text/javascript" src="../../assets/js/slick.js"></script>
+  <!-- Counter -->
+  <script type="text/javascript" src="../../assets/js/waypoints.js"></script>
+  <script type="text/javascript" src="../../assets/js/jquery.counterup.js"></script>
+  <!-- mixit slider -->
+  <script type="text/javascript" src="../../assets/js/jquery.mixitup.js"></script>
+  <!-- Add fancyBox -->        
+  <script type="text/javascript" src="../../assets/js/jquery.fancybox.pack.js"></script>
+  <!-- Wow animation -->
+  <script type="text/javascript" src="../../assets/js/wow.js"></script> 
+
+  <!-- Custom js -->
+  <script type="text/javascript" src="../../assets/js/custom.js"></script>
+    
+  </body>
+</html>

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Toaq - A tonal logical language</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="../../assets/images/favicon.ico"/>
+    <!-- Font Awesome -->
+    <link href="../../assets/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet">
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/slick.css"/> 
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="../../assets/css/jquery.fancybox.css" type="text/css" media="screen" /> 
+    <!-- Animate css -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/animate.css"/>  
+     <!-- Theme color -->
+    <link id="switcher" href="../../assets/css/theme-color/default.css" rel="stylesheet">
+    
+    <link href="../../preloader.css" rel="stylesheet">
+    <!-- Main Style -->
+    <link href="../../style.css" rel="stylesheet">
+
+<script defer>
+    function PlaySound(melody) {
+        var path = "../sounds/"
+        var snd = new Audio(path + melody + ".mp3");
+        snd.play();
+    }
+</script>
+
+
+    <!-- Fonts -->
+    <!-- Open Sans for body font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Raleway for Title -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <!-- Pacifico for 404 page   -->
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+  <!-- BEGAIN PRELOADER -->
+  <div id="preloader">
+    <div class="loader">&nbsp;</div>
+  </div>
+  <!-- END PRELOADER -->    
+
+  <!-- SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#"><i class="fa fa-chevron-up"></i></a>
+  <!-- END SCROLL TOP BUTTON -->
+
+
+
+  <!-- Start menu section -->
+  <section id="menu-area">
+    <nav class="navbar navbar-default main-navbar" role="navigation">  
+      <div class="container">
+        <div class="navbar-header">
+          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- LOGO -->                                               
+           <a class="navbar-brand logo" href="https://toaq.net/jemu/"><img title="Jemu says Hello!" src="../../assets/images/jemu.png" alt="logo" ></a>                      
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav main-nav menu-scroll">
+            <li class="active"><a href="https://toaq.net/">Home</a></li>
+            <li><a href="https://toaq.net/#overview">OVERVIEW</a></li> 
+	    <li><a href="https://toaq.net/#learning">LEARNING</a></li> 
+	    <li><a href="https://toaq.net/#community">COMMUNITY</a></li>
+            <li><a href="https://toaq.net/refgram/00/">GRAMMAR</a></li>                    
+            <li><a href="https://toadua.uakci.pl/">DICTIONARY</a></li>
+          </ul>                            
+        </div><!--/.nav-collapse -->
+                
+      </div>          
+    </nav> 
+  </section>
+  <!-- End menu section -->
+
+
+
+ <div class="textbody">
+       
+
+<div class="welcome-content">
+              <h2 class="tittle">Modality</h2>
+              <span class="tittle-line-2"></span>
+
+<p>Modal verbs are used to discuss possible situations ("possible worlds") and make various kinds of conditional statements.</p>
+
+<p>Toaq's modal verbs are based on the following grid:</p>
+
+<table class="phonemes">
+    <tr>
+      <th></th>
+      <th>Indicative</th>
+      <th>Subjunctive</th>
+    </tr>
+    <tr>
+      <td>Necessity</td>
+      <td><span class="toaq">she</span></td>
+      <td><span class="toaq">ao</span></td>
+    </tr>
+    <tr>
+      <td>Possibility</td>
+      <td><span class="toaq">daı</span></td>
+      <td><span class="toaq">ea</span></td>
+    </tr>
+</table>
+
+<p>Each modality type (necessity vs possibility) comes in two forms: indicative and subjunctive.</p>
+
+<p>The general place structure pattern of modal verbs is as follows:</p>
+
+<table class="vocabtable">
+<tr>
+	<td>Pattern:<br>monadic → ___ is [modal]-ly the case.</td>
+</tr>
+<tr>
+	<td>Pattern:<br>diadic → ___ is [modal]-ly the case in world(s) where ___ is the case.</td>
+</tr>
+</table>
+
+<p>Thanks to their place structure, Toaq’s modals can be used to express bare (unrestricted) modal claims and subjunctives by using the monadic meaning, or to express a (restricted) conditional statement by using the diadic meaning via a prepositional construction (<img class="tn" src="../../assets/images/tones/t6.png"> tone).</p>
+
+<h3>Indicative</h3>
+
+<p>With indicative predicates we make claims about the actual (current) world. We increment our stock of knowledge hypothetically with the antecedent and then evaluate on that basis the consequent.</p>
+
+<p>Necessity:</p>
+
+<button class="listen" onclick="PlaySound('shè tî jí mí Pảrı bı tỉ jí fárāqsegua')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Shè</th><th>tî</th><th>jí</th><th>mí</th><th>Pảrı</th><th>bı</th><th>tỉ</th><th>jí</th><th>Fáraqsegua.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>□<sub>ind</sub></td><td>that-at</td><td>I</td><td>the-named</td><td>Paris</td><td>TOP</td><td>at</td><td>I</td><td>the-France</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="9">“If I’m in Paris, then I am in France.”</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<p>Possibility:</p>
+
+<button class="listen" onclick="PlaySound('dàı tî súq ru jí ní dỏaq bı chẻo gẻq múy')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Dàı</th><th>tî</th><th>súq&nbsp;ru&nbsp;jí</th><th>ní</th><th>dỏaq</th><th>bı</th><th>chẻo</th><th>gẻq</th><th>múy.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>◇<sub>ind</sub></td><td>that-at</td><td>you and I</td><td>the-this</td><td>city</td><td>TOP</td><td>reciprocal</td><td>meet</td><td>we<sub>(1+2)</sub></td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="9">“If you and I are both in this city, we can meet.”</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<h3>Subjunctive</h3>
+
+<p>The subjunctive verbs are counterfactual, i.e., the antecedent is contrary to the facts of the current world. They make claims about alternative universes, ones in which the antecedent holds.</p>
+
+<p>Necessity:</p>
+
+<button class="listen" onclick="PlaySound('ào tî hó ní bı hỉaı hó')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Ào</th><th>tî</th><th>nháo</th><th>ní</th><th>bı</th><th>hỉaı</th><th>nháo.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>□<sub>subj</sub></td><td>that-at</td><td>they</td><td>this</td><td>TOP</td><td>laugh</td><td>they</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="7">“If they were here, they would laugh.”<br>(but they are not here)</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<p>Possibility:</p>
+
+<button class="listen" onclick="PlaySound('èa tî súq ní bı sỏa súq jí')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Èa</th><th>tî</th><th>súq</th><th>ní</th><th>bı</th><th>sỏa</th><th>súq</th><th>jí.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>◇<sub>subj</sub></td><td>that-at</td><td>you</td><td>this</td><td>TOP</td><td>help</td><td>you</td><td>I</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="8">“If you were here, you could help me.”<br>(but you are not here)</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<p>Every modal verb can also be used without the restrictor phrase. Usually, this will mean using it as the head of the verbal complex. An unrestricted <span class="toaq">ao</span> corresponds to a bare "if"-less <em>would</em>-sentence in English, for example:</p>
+
+<button class="listen" onclick="PlaySound('ảo pủa súq')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Ảo</th><th>pủa </th><th>súq.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>□<sub>subj</sub></td><td>enjoy</td><td>you</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="3">“You would have a good time.”<br>(but you are doing something else)</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+
+
+
+
+
+
+<div class="left-btn">
+    <a href="https://toaq.net/refgram/12/" class="button button-default" data-text="fıa"><span>Previous section</span></a>
+</div>
+<div class="right-btn">
+    <a href="https://toaq.net/refgram/14/" class="button button-default" data-text="sıe"><span>Next section</span></a>
+</div>
+
+
+	</div>
+</div>
+
+
+
+
+  <!-- Start Footer -->    
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2017-2021 toaq.net</p>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- initialize jQuery Library --> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Bootstrap -->
+  <script src="../../assets/js/bootstrap.js"></script>
+  <!-- Slick Slider -->
+  <script type="text/javascript" src="../../assets/js/slick.js"></script>
+  <!-- Counter -->
+  <script type="text/javascript" src="../../assets/js/waypoints.js"></script>
+  <script type="text/javascript" src="../../assets/js/jquery.counterup.js"></script>
+  <!-- mixit slider -->
+  <script type="text/javascript" src="../../assets/js/jquery.mixitup.js"></script>
+  <!-- Add fancyBox -->        
+  <script type="text/javascript" src="../../assets/js/jquery.fancybox.pack.js"></script>
+  <!-- Wow animation -->
+  <script type="text/javascript" src="../../assets/js/wow.js"></script> 
+
+  <!-- Custom js -->
+  <script type="text/javascript" src="../../assets/js/custom.js"></script>
+    
+  </body>
+</html>

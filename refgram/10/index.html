@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Toaq - A tonal logical language</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="../../assets/images/favicon.ico"/>
+    <!-- Font Awesome -->
+    <link href="../../assets/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet">
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/slick.css"/> 
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="../../assets/css/jquery.fancybox.css" type="text/css" media="screen" /> 
+    <!-- Animate css -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/animate.css"/>  
+     <!-- Theme color -->
+    <link id="switcher" href="../../assets/css/theme-color/default.css" rel="stylesheet">
+    
+    <link href="../../preloader.css" rel="stylesheet">
+    <!-- Main Style -->
+    <link href="../../style.css" rel="stylesheet">
+
+<script defer>
+    function PlaySound(melody) {
+        var path = "../sounds/"
+        var snd = new Audio(path + melody + ".mp3");
+        snd.play();
+    }
+</script>
+
+
+    <!-- Fonts -->
+    <!-- Open Sans for body font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Raleway for Title -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <!-- Pacifico for 404 page   -->
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+  <!-- BEGAIN PRELOADER -->
+  <div id="preloader">
+    <div class="loader">&nbsp;</div>
+  </div>
+  <!-- END PRELOADER -->    
+
+  <!-- SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#"><i class="fa fa-chevron-up"></i></a>
+  <!-- END SCROLL TOP BUTTON -->
+
+
+
+  <!-- Start menu section -->
+  <section id="menu-area">
+    <nav class="navbar navbar-default main-navbar" role="navigation">  
+      <div class="container">
+        <div class="navbar-header">
+          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- LOGO -->                                               
+           <a class="navbar-brand logo" href="https://toaq.net/jemu/"><img title="Jemu says Hello!" src="../../assets/images/jemu.png" alt="logo" ></a>                      
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav main-nav menu-scroll">
+            <li class="active"><a href="https://toaq.net/">Home</a></li>
+            <li><a href="https://toaq.net/#overview">OVERVIEW</a></li> 
+	    <li><a href="https://toaq.net/#learning">LEARNING</a></li> 
+	    <li><a href="https://toaq.net/#community">COMMUNITY</a></li>
+            <li><a href="https://toaq.net/refgram/00/">GRAMMAR</a></li>                    
+            <li><a href="https://toadua.uakci.pl/">DICTIONARY</a></li>
+          </ul>                            
+        </div><!--/.nav-collapse -->
+                
+      </div>          
+    </nav> 
+  </section>
+  <!-- End menu section -->
+
+
+
+ <div class="textbody">
+       
+
+<div class="welcome-content">
+              <h2 class="tittle">Numbers</h2>
+              <span class="tittle-line-2"></span>
+
+<p>In Toaq, numbers are verbs. In their most basic function, they express the numerosity of their argument. Their place structure follows this pattern:</p>
+
+<table class="vocabtable">
+<tr>
+	<td><span class="toaq">Num</span></td>
+	<td>“___ are Num in number"</td>
+</tr>
+</table>
+
+<p>For example, the word <span class="toaq">shı</span> “one“ means “to be one in number“, the word <span class="toaq">gu</span> means “to be two in number”, and so forth:</p>
+
+<button class="listen" onclick="PlaySound('shỉ lú shảo jí hóa')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Shỉ</th><th>lú</th><th>shảo</th><th>jí</th><th>hóa.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>one</td><td>the-such.that</td><td>want</td><td>I</td><td>it<sub>RES</sub></td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="5">"I have (only) one wish."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('gủ jíbo fủ')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Gủ</th><th>jíbo</th><th>fủ.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>two</td><td>the-my</td><td>offspring</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="3">"My children are two in number."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<p>The following table lists the numbers from 1 to 1000.</p>
+
+<table class="vocabtable2">
+<tr>
+	<td>1</td>
+	<td>shı</td>
+</tr>
+<tr>
+	<td>2</td>
+	<td>gu</td>
+</tr>
+<tr>
+	<td>3</td>
+	<td>saq</td>
+</tr>
+<tr>
+	<td>4</td>
+	<td>jo</td>
+</tr>
+<tr>
+	<td>5</td>
+	<td>fe</td>
+</tr>
+<tr>
+	<td>6</td>
+	<td>cı</td>
+</tr>
+<tr>
+	<td>7</td>
+	<td>dıaı</td>
+</tr>
+<tr>
+	<td>8</td>
+	<td>roaı</td>
+</tr>
+<tr>
+	<td>9</td>
+	<td>neı</td>
+</tr>
+<tr>
+	<td>10</td>
+	<td>heı</td>
+</tr>
+<tr>
+	<td>20</td>
+	<td>guheı</td>
+</tr>
+<tr>
+	<td>30</td>
+	<td>saqheı</td>
+</tr>
+<tr>
+	<td>100</td>
+	<td>fue</td>
+</tr>
+<tr>
+	<td>200</td>
+	<td>gufue</td>
+</tr>
+<tr>
+	<td>300</td>
+	<td>saqfue</td>
+</tr>
+<tr>
+	<td>1000</td>
+	<td>bıq</td>
+</tr>
+</table>
+
+<p>Numbers are put together from left to right, like this:</p>
+
+<p>31 <span class="toaq">saqheı shı</span> “three-ten one” </p>
+
+<p>452 <span class="toaq">jofue feheı gu</span> “four-hundred five-ten two“</p>
+
+<p>8564 <span class="toaq">roaıbıq fefue cıheı jo</span> “eight-thousand five-hundred three-ten four”</p>
+
+<p>(N.B. These constructions are neither serial verbs nor genitival or adjectival constructions. Number verbs are their own class of verbs whose behavior is optimized for number-related expressions.)</p>
+
+<p>A few more examples of expressing numerosity:</p>
+
+<button class="listen" onclick="PlaySound('gủ múy')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Gủ</th><th>múy.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>two</td><td>we<sub>1+2</sub></td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="2">"We are two."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('jỏheı sảq kúe')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Jỏheı</th><th>sảq</th><th>kúe.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>fourty</td><td>three</td><td>the-book</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="3">"The books are fourty-three in number."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('lủı tảo jí hoı jỏ')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Lủı</th><th>tảo</th><th>jí</th><th>hoı</th><th>jỏ.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>PRF</td><td>do</td><td>I</td><td>the.aforementioned</td><td>four</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="5">"I have done the aforementioned four things."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+
+<h3>Numbers as modifiers of generic verbs</h3>
+
+<p>Generic verbs include everything that isn’t a measurement verb, i.e. one expressing an abstract quantity. Modifying these verbs with a number has the expected behavior:</p>
+
+<button class="listen" onclick="PlaySound('hẻı kủe ní')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Hẻı</th><th>kủe</th><th>ní.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>ten</td><td>book</td><td>this</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="3">"These are <u>ten books</u>."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('jảı gú chỏaq')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Jảı</th><th>gú</th><th>chỏaq.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>happy</td><td>the-two</td><td>guest</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="3">"The <u>two guests</u> are happy."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('zảo jí tuq shỉfue fẻheı shỉ pỏkemoq')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Zảo</th><th>jí</th><th>tuq</th><th>shỉfue</th><th>fẻheı</th><th>shỉ</th><th>pỏkemoq.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>know</td><td>I</td><td>all</td><td>one-hundred</td><td>fifty</td><td>one</td><td>pokémon</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="7">"I know all <u>151 Pokémon</u>."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<p>The modifying number is considered a single unit for the purpose of grouping.</p>
+
+
+<h3>Numbers as modifiers of measurement verbs</h3>
+
+<p>Measurements involve verbs which refer abstractly to different units of measurement. The following table lists a few important units:</p>
+
+<table class="vocabtable2">
+<tr>
+	<td>second</td>
+	<td>sekuq</td>
+</tr>
+<tr>
+	<td>meter</td>
+	<td>mety</td>
+</tr>
+<tr>
+	<td>gram</td>
+	<td>garaq</td>
+</tr>
+<tr>
+	<td>°C</td>
+	<td>keıcıu</td>
+</tr>
+</table>
+
+<p>These verbs refer abstractly to amounts measured in their respective units. For example, <span class="toaq">sekuq</span> “to be a second”, <span class="toaq">gu sẻkuq</span> “to be two seconds”.</p>
+
+<p>These expressions are then used as arguments of verbs that select for units, such as “to last for [time]”.</p>
+
+<button class="listen" onclick="PlaySound('bủaı tíeq nhè róaı mẻty')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Bủaı</th><th>tíeq</th><th>nhè</th><th>róaı</th><th>mẻty.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>long</td><td>the-path</td><td>P-to.extent</td><td>the-eight</td><td>meter</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="5">"The path is 8 meters long."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('lảo jí dùo jó sẻkuq')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Lảo</th><th>jí</th><th>dùo</th><th>jó</th><th>sẻkuq.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>wait</td><td>I</td><td>P-last.for</td><td>the-four</td><td>second</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="5">"I wait for four seconds."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('tủoq chóme nhè sáqfue gảraq')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Tủoq</th><th>chóme</th><th>nhè</th><th>sáqfue</th><th>gảraq.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>heavy</td><td>the-insect</td><td>P-to.extent</td><td>the-three.hundred</td><td>gram</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="5">"The insect weighs 300 grams."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('lỏq náo nhè sáqheı dỉaı kẻıcıu')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Lỏq</th><th>náo</th><th>nhè</th><th>sáqheı</th><th>dỉaı</th><th>kẻıcıu.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>hot</td><td>the-water</td><td>P-to.extent</td><td>the-thirty</td><td>seven</td><td>celcius</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="6">"The water is 37°C hot."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+
+
+
+
+
+
+
+
+<div class="left-btn">
+    <a href="https://toaq.net/refgram/09/" class="button button-default" data-text="fıa"><span>Previous section</span></a>
+</div>
+<div class="right-btn">
+    <a href="https://toaq.net/refgram/11/" class="button button-default" data-text="sıe"><span>Next section</span></a>
+</div>
+
+
+	</div>
+</div>
+
+
+
+
+  <!-- Start Footer -->    
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2017-2021 toaq.net</p>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- initialize jQuery Library --> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Bootstrap -->
+  <script src="../../assets/js/bootstrap.js"></script>
+  <!-- Slick Slider -->
+  <script type="text/javascript" src="../../assets/js/slick.js"></script>
+  <!-- Counter -->
+  <script type="text/javascript" src="../../assets/js/waypoints.js"></script>
+  <script type="text/javascript" src="../../assets/js/jquery.counterup.js"></script>
+  <!-- mixit slider -->
+  <script type="text/javascript" src="../../assets/js/jquery.mixitup.js"></script>
+  <!-- Add fancyBox -->        
+  <script type="text/javascript" src="../../assets/js/jquery.fancybox.pack.js"></script>
+  <!-- Wow animation -->
+  <script type="text/javascript" src="../../assets/js/wow.js"></script> 
+
+  <!-- Custom js -->
+  <script type="text/javascript" src="../../assets/js/custom.js"></script>
+    
+  </body>
+</html>

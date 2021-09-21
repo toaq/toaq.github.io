@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Toaq - A tonal logical language</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/icon" href="../../assets/images/favicon.ico"/>
+    <!-- Font Awesome -->
+    <link href="../../assets/css/font-awesome.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="../../assets/css/bootstrap.css" rel="stylesheet">
+    <!-- Slick slider -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/slick.css"/> 
+    <!-- Fancybox slider -->
+    <link rel="stylesheet" href="../../assets/css/jquery.fancybox.css" type="text/css" media="screen" /> 
+    <!-- Animate css -->
+    <link rel="stylesheet" type="text/css" href="../../assets/css/animate.css"/>  
+     <!-- Theme color -->
+    <link id="switcher" href="../../assets/css/theme-color/default.css" rel="stylesheet">
+    
+    <link href="../../preloader.css" rel="stylesheet">
+    <!-- Main Style -->
+    <link href="../../style.css" rel="stylesheet">
+
+<script defer>
+    function PlaySound(melody) {
+        var path = "../sounds/"
+        var snd = new Audio(path + melody + ".mp3");
+        snd.play();
+    }
+</script>
+
+
+    <!-- Fonts -->
+    <!-- Open Sans for body font -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- Raleway for Title -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+    <!-- Pacifico for 404 page   -->
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+  <!-- BEGAIN PRELOADER -->
+  <div id="preloader">
+    <div class="loader">&nbsp;</div>
+  </div>
+  <!-- END PRELOADER -->    
+
+  <!-- SCROLL TOP BUTTON -->
+    <a class="scrollToTop" href="#"><i class="fa fa-chevron-up"></i></a>
+  <!-- END SCROLL TOP BUTTON -->
+
+
+
+  <!-- Start menu section -->
+  <section id="menu-area">
+    <nav class="navbar navbar-default main-navbar" role="navigation">  
+      <div class="container">
+        <div class="navbar-header">
+          <!-- FOR MOBILE VIEW COLLAPSED BUTTON -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- LOGO -->                                               
+           <a class="navbar-brand logo" href="https://toaq.net/jemu/"><img title="Jemu says Hello!" src="../../assets/images/jemu.png" alt="logo" ></a>                      
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul id="top-menu" class="nav navbar-nav main-nav menu-scroll">
+            <li class="active"><a href="https://toaq.net/">Home</a></li>
+            <li><a href="https://toaq.net/#overview">OVERVIEW</a></li> 
+	    <li><a href="https://toaq.net/#learning">LEARNING</a></li> 
+	    <li><a href="https://toaq.net/#community">COMMUNITY</a></li>
+            <li><a href="https://toaq.net/refgram/00/">GRAMMAR</a></li>                    
+            <li><a href="https://toadua.uakci.pl/">DICTIONARY</a></li>
+          </ul>                            
+        </div><!--/.nav-collapse -->
+                
+      </div>          
+    </nav> 
+  </section>
+  <!-- End menu section -->
+
+
+
+ <div class="textbody">
+       
+
+<div class="welcome-content">
+              <h2 class="tittle">Tense</h2>
+              <span class="tittle-line-2"></span>
+
+
+<p>Toaq does not require tense to be overtly expressed. However, it has a family of temporal verbs, with which one can do so if needed:</p>
+
+<table class="vocabtable">
+<tr>
+	<td><span class="toaq">naı</span></td>
+	<td>present tense (PRE)</td>
+</tr>
+<tr>
+	<td><span class="toaq">pu</span></td>
+	<td>present tense (PST)</td>
+</tr>
+<tr>
+	<td><span class="toaq">jıa</span></td>
+	<td>present tense (FUT)</td>
+</tr>
+</table>
+
+<p>Temporal verbs have scope over the verbal complex and the post-field.</p>
+
+<button class="listen" onclick="PlaySound('nảı tỉ jí fáraqsegua')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Nảı</th><th>tỉ</th><th>jí</th><th>Fáraqsegua.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>PRE</td><td>at</td><td>I</td><td>France</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="4">"I am in France right now."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('nảı mủıdua jí')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Nảı</th><th>mủıdua</th><th>jí.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>PRE</td><td>understand</td><td>I</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="3">"Now I understand."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('pủ jỉu jí tì sa ảomo')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Pủ</th><th>jỉu</th><th>jí</th><th>tì</th><th>sa</th><th>ảomo.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>PST</td><td>born</td><td>I</td><td>P-at</td><td>some</td><td>island</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="6">"I was born on an island."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('pủ pỉe nháobo fủ baq bỉra rào kíachaq')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Pủ</th><th>pỉe</th><th>nháobo</th><th>fủ</th><th>baq</th><th>bỉra</th><th>rào</th><th>kíachaq.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>PST</td><td>drink</td><td>the-their</td><td>offspring</td><td>GEN</td><td>beer</td><td>P-when</td><td>the-Monday</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="8">"Their kid drank beer on Monday."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('jỉa jỏaı míy súq nha')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Jỉa</th><th>jỏaı</th><th>míy</th><th>súq</th><th>nha.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>FUT</td><td>search</td><td>we<sub>(1+3)</sub></td><td>you</td><td>PRM</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="5">"(I promise) we will look for you."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('bủ jỉa fảq háo')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Bủ</th><th>jỉa</th><th>fảq</th><th>háo.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>not</td><td>FUT</td><td>happen</td><td>the-stuff</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="4">"The thing won’t happen."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<p>Tense predicates can also be used as Type II adverbials using the <img class="tn" src="../../assets/images/tones/t7.png"> tone:</p>
+
+<button class="listen" onclick="PlaySound('fả nháo núokua pũ')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Fả</th><th>nháo</th><th>núokua</th><th>pũ.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>go</td><td>they</td><td>the-bedroom</td><td>ADV-PST</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="4">"Go to the bedroom they did."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+<button class="listen" onclick="PlaySound('jảolaqtao jí súq jĩa nha')">
+<table class="example">
+    <tr>
+      <th><div class="exindent"></div></th>
+      <th>Jảolaqtao</th><th>jí</th><th>súq</th><th>jĩa</th><th>nha.</th>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td>call.on.phone</td><td>I</td><td>you</td><td>ADV-FUT</td><td>PRM</td><td class="right"></td>
+    </tr>
+    <tr>
+      <td class="left"></td>
+      <td colspan="5">"Call you on the phone I will."</td><td class="right"></td>
+    </tr>
+  </table><div style="clear:both;"></div>
+</button>
+
+
+
+
+
+
+
+
+
+<div class="left-btn">
+    <a href="https://toaq.net/refgram/10/" class="button button-default" data-text="fıa"><span>Previous section</span></a>
+</div>
+<div class="right-btn">
+    <a href="https://toaq.net/refgram/12/" class="button button-default" data-text="sıe"><span>Next section</span></a>
+</div>
+
+
+	</div>
+</div>
+
+
+
+
+  <!-- Start Footer -->    
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2017-2021 toaq.net</p>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <!-- initialize jQuery Library --> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <!-- Bootstrap -->
+  <script src="../../assets/js/bootstrap.js"></script>
+  <!-- Slick Slider -->
+  <script type="text/javascript" src="../../assets/js/slick.js"></script>
+  <!-- Counter -->
+  <script type="text/javascript" src="../../assets/js/waypoints.js"></script>
+  <script type="text/javascript" src="../../assets/js/jquery.counterup.js"></script>
+  <!-- mixit slider -->
+  <script type="text/javascript" src="../../assets/js/jquery.mixitup.js"></script>
+  <!-- Add fancyBox -->        
+  <script type="text/javascript" src="../../assets/js/jquery.fancybox.pack.js"></script>
+  <!-- Wow animation -->
+  <script type="text/javascript" src="../../assets/js/wow.js"></script> 
+
+  <!-- Custom js -->
+  <script type="text/javascript" src="../../assets/js/custom.js"></script>
+    
+  </body>
+</html>
