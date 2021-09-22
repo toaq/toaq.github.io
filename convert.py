@@ -1,8 +1,9 @@
 for i in range(1, 27):
     page = 'refgram/%02d/index.html' % i
-    html = open(page).read()
-    a, b, c = html.partition('<div class="textbody">')
-    html = "---\nlayout: default\n---\n" + b + c
-    html = html.partition('<!-- Start Footer -->')[0]
+    lines = []
+    bad = set()
+    for i, line in enumerate(open(page)):
+        if 'left-btn' in line: bad |= {i,i+1,i+2,i+3,i+4,i+5}
+        if i not in bad: lines.append(line)
     with open(page, 'w') as f:
-        f.write(html)
+        f.write(''.join(lines))
