@@ -123,6 +123,14 @@ img.jemu{
 
 .left-btn { float: left; }
 .right-btn { float: right; }
+.prev-next {
+	max-width: 550px;
+	padding: 0 10px;
+    margin: -30px auto 30px auto;
+    display: flex;
+    justify-content: space-between;
+	text-align: center;
+}
 
 /* Preloader */
 

@@ -103,6 +103,16 @@
   </section>
   <!-- End menu section -->
   {{ content }}
+
+  {% assign parts = page.url | split: "/" %}
+  {% if parts[1] == "refgram" and parts[2] != "00" %}
+    {% assign prev = parts[2] | minus: 1 | prepend: "00" | slice: -2, 2 %}
+    {% assign next = parts[2] | plus: 1 | prepend: "00" | slice: -2, 2 %}
+    <div class="prev-next">
+      <a href="/refgram/{{ prev }}/" class="button button-default" data-text="fıa"><span>Previous section</span></a>
+      <a href="/refgram/{{ next }}/" class="button button-default" data-text="sıe"><span>Next section</span></a>
+    </div>
+  {% endif %}
   
     <!-- Start Footer -->    
     <footer id="footer">
