@@ -167,7 +167,7 @@ jQuery(function($){
 		menuItems = topMenu.find("a"),
 		// Anchors corresponding to menu items
 		scrollItems = menuItems.map(function(){
-		if($(this).attr("href").indexOf("#") === 0){
+		if($(this).attr("href").indexOf("https://") === -1 && $(this).attr("href").indexOf("http://") === -1){
 			 var item = $($(this).attr("href"));
 		  if (item.length) { return item; }
 		}
@@ -177,9 +177,8 @@ jQuery(function($){
 		// Bind click handler to menu items
 		// so we can get a fancy scroll animation
 		menuItems.click(function(e){
-		  var href = $(this).attr("href");
-		  if (href.indexOf("#") !== 0) return;
-		  var offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+32;
+		  var href = $(this).attr("href"),
+		      offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight+32;
 		  jQuery('html, body').stop().animate({ 
 		      scrollTop: offsetTop
 		  }, 1500);
