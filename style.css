@@ -74,10 +74,8 @@ img{
 }
 
 img.jemu{
-	margin: 0;
-
-	/* padding-bottom: 40px; */
-	
+	display: block;
+	margin: 20px auto -40px auto;
 }
 
 
