@@ -391,8 +391,6 @@ img.jemu{
 	float: none;
 }
 .main-nav li a {
-	*/ color: #636363; */
-	color: black;
 	font-size: 15px;
 	padding: 39px 20px;
 	text-transform: uppercase;
@@ -403,11 +401,11 @@ img.jemu{
 
 .navbar-default .navbar-nav > li > a {
   color: #636363;
-  -webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	transition: all 0.5s;
+  -webkit-transition: color 0.5s;
+	-moz-transition: color 0.5s;
+	-ms-transition: color 0.5s;
+	-o-transition: color 0.5s;
+	transition: color 0.5s;
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -576,7 +574,8 @@ img.jemu{
 }
 .welcome-content{
 	display: block;
-	
+	max-width: 100%;
+
 	margin-top: 50px;
 	margin-left: 0 auto;
 	margin-right: 0 auto;
@@ -609,11 +608,11 @@ img.jemu{
 	line-height: 117px;
 	text-align: center;
 	width: 117px;
-	-webkit-transition: all 0.5s;
-	-moz-transition: all 0.5s;
-	-ms-transition: all 0.5s;
-	-o-transition: all 0.5s;
-	transition: all 0.5s;
+	-webkit-transition: background-color 0.5s;
+	-moz-transition: background-color 0.5s;
+	-ms-transition: background-color 0.5s;
+	-o-transition: background-color 0.5s;
+	transition: background-color 0.5s;
 }
 .single-wc-content .wc-tittle{
 	/* color: #525252; */
@@ -1087,10 +1086,11 @@ table.conjunctionexamples th {
   display: block;
   background-color: white;
   border: none;
-  transition: 0.4s;
+  transition: background-color 0.4s;
   text-decoration: none;
   cursor: pointer;
   border-radius: 5px;
+  overflow-x: scroll;
   width:100%;
 }
 
@@ -1099,6 +1099,7 @@ table.conjunctionexamples th {
   background-color: #ddffcc;
 }
 
+.linkme:hover, .linkme:focus { text-decoration: none; }
 
 .linkme:link {
 	color: black;
@@ -1116,6 +1117,7 @@ img.tn {
 
 
 img.diagram {
+	max-width: 100%;
 	display: block;
 	margin: 0px auto;
 }
