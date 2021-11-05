@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125924205-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125924205-1');
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=1024" />
+<title>Toaq Sounds</title>
+<link href='https://fonts.googleapis.com/css?family=Gamja Flower' rel='stylesheet'>
+<script defer>
+    function PlaySound(melody) {
+        var path = "./sounds/"
+        var snd = new Audio(path + melody + ".mp3");
+        snd.play();
+    }
+</script>
+
+<style>
+.button {
+  background-color: #33cccc;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  margin: 4px 2px;
+  opacity: 1;
+  transition: 0.4s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  font-weight: bold;
+  font-family: 'Gamja Flower';
+  border-radius: 10px;
+  display:inline-block;
+}
+
+.button:hover {
+  opacity: 1;
+  background-color: #ff66a3;
+}
+
+body {
+  background: black;
+  margin: 0px auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+div.v {
+  max-width: 600px;
+  margin: 0px auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+div.c {
+  max-width: 650px;
+  margin: 0px auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+
+div.se {
+  max-width: 1300px;
+  margin: 0px auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+
+
+p, h1 {
+  color: #ffffff;
+  font-family: 'Gamja Flower';
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Gamja Flower';
+  color: #ffffff;
+  padding-top: 30px;
+}
+
+
+</style>
+
+</head>
+<body>
+
+<h1>Interactive Toaq Keyboard</h1>
+
+<div class="v">
+<h2>Vowels</h2>
+
+<button class="button" onclick="PlaySound('a')">a</button>
+<button class="button" onclick="PlaySound('u')">u</button>
+<button class="button" onclick="PlaySound('i')">i</button>
+<button class="button" onclick="PlaySound('o')">o</button>
+<button class="button" onclick="PlaySound('e')">e</button>
+</div>
+
+<h2>Consonants</h2>
+
+<div class="c">
+<button class="button" onclick="PlaySound('b')">b</button>
+<button class="button" onclick="PlaySound('c')">c</button>
+<button class="button" onclick="PlaySound('ch')">ch</button>
+<button class="button" onclick="PlaySound('d')">d</button>
+<button class="button" onclick="PlaySound('f')">f</button>
+<button class="button" onclick="PlaySound('g')">g</button>
+<button class="button" onclick="PlaySound('h')">h</button>
+<button class="button" onclick="PlaySound('j')">j</button>
+<button class="button" onclick="PlaySound('k')">k</button>
+<button class="button" onclick="PlaySound('l')">l</button>
+<button class="button" onclick="PlaySound('m')">m</button>
+<button class="button" onclick="PlaySound('n')">n</button>
+<button class="button" onclick="PlaySound('p')">p</button>
+<button class="button" onclick="PlaySound('q')">q</button>
+<button class="button" onclick="PlaySound('r')">r</button>
+<button class="button" onclick="PlaySound('s')">s</button>
+<button class="button" onclick="PlaySound('sh')">sh</button>
+<button class="button" onclick="PlaySound('t')">t</button>
+</div>
+
+<h2>Syllable Endings</h2>
+
+<div class="se">
+<button class="button" onclick="PlaySound('a')">a</button>	
+<button class="button" onclick="PlaySound('aq')">aq</button>
+<button class="button" onclick="PlaySound('ai')">ai</button>
+<button class="button" onclick="PlaySound('ao')">ao</button>
+<br>
+<button class="button" onclick="PlaySound('u')">u</button>
+<button class="button" onclick="PlaySound('uq')">uq</button>
+<button class="button" onclick="PlaySound('ua')">ua</button>
+<button class="button" onclick="PlaySound('uaq')">uaq</button>
+
+<button class="button" onclick="PlaySound('ui')">ui</button>
+<button class="button" onclick="PlaySound('uo')">uo</button>
+<button class="button" onclick="PlaySound('uoi')">uoi</button>
+<button class="button" onclick="PlaySound('uoq')">uoq</button>
+
+<button class="button" onclick="PlaySound('ue')">ue</button>
+<button class="button" onclick="PlaySound('ueq')">ueq</button>
+
+<button class="button" onclick="PlaySound('uai')">uai</button>
+<button class="button" onclick="PlaySound('uao')">uao</button>
+<br>
+<button class="button" onclick="PlaySound('i')">i</button>
+<button class="button" onclick="PlaySound('iq')">iq</button>
+<button class="button" onclick="PlaySound('ia')">ia</button>
+<button class="button" onclick="PlaySound('iaq')">iaq</button>
+
+<button class="button" onclick="PlaySound('iu')">iu</button>
+<button class="button" onclick="PlaySound('io')">io</button>
+<button class="button" onclick="PlaySound('ioq')">ioq</button>
+
+<button class="button" onclick="PlaySound('ie')">ie</button>
+<button class="button" onclick="PlaySound('ieq')">ieq</button>
+<button class="button" onclick="PlaySound('iai')">iai</button>
+<button class="button" onclick="PlaySound('iao')">iao</button>
+<br>
+<button class="button" onclick="PlaySound('o')">o</button>
+<button class="button" onclick="PlaySound('oq')">oq</button>
+<button class="button" onclick="PlaySound('oa')">oa</button>
+<button class="button" onclick="PlaySound('oaq')">oaq</button>
+
+<button class="button" onclick="PlaySound('oi')">oi</button>
+<button class="button" onclick="PlaySound('oai')">oai</button>
+<button class="button" onclick="PlaySound('oe')">oe</button>
+<br>
+<button class="button" onclick="PlaySound('e')">e</button>
+<button class="button" onclick="PlaySound('eq')">eq</button>
+
+<button class="button" onclick="PlaySound('ea')">ea</button>
+<button class="button" onclick="PlaySound('eaq')">eaq</button>
+
+<button class="button" onclick="PlaySound('ei')">ei</button>
+
+<button class="button" onclick="PlaySound('eo')">eo</button>
+<button class="button" onclick="PlaySound('eoq')">eoq</button>
+</div>
+</body>
+</html>
