@@ -1055,7 +1055,11 @@ table.conjunctionexamples th {
 	table-layout: fixed;
 	width: 100%;
 	max-width: 500px;
-	font-weight: bold;	
+}
+
+.soundsymbols tr {
+	border-top: 1px solid rgba(0,0,0,0.1);
+	border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 
 .soundsymbols td {
@@ -1067,16 +1071,18 @@ table.conjunctionexamples th {
 	color: #197A92;
 	font-size: 22px;
 	text-transform: capitalize;
+	font-weight: bold;
+	margin: -3px 0;
 }
 
-.exword {
+.exword, .alphabet-ipa {
 	color: #cc0066;
-	font-weight: normal;
+	font-size: 13px;
 }
 
-.exeng {
-	color: black;
-	font-weight: normal;
+.alphabet-ipa {
+	opacity: 0.5;
+	letter-spacing: 0.5px;
 }
 
 
