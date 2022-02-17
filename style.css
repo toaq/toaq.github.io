@@ -357,6 +357,12 @@ img.jemu{
 	-o-transition: all 0.5s;
 	transition: all 0.5s;
 }
+.navbar-padding-active {
+  display: block;
+  width: 1px;
+  height: 100px;
+  margin: 0 auto;
+}
 .logo {
 	height: 100px;  
 	

@@ -50,6 +50,7 @@ jQuery(function($){
 	jQuery(window).bind('scroll', function () {
     if ($(window).scrollTop() > 700) {
         $('.main-navbar').addClass('navbar-fixed-top');
+        $('.navbar-padding').addClass('navbar-padding-active');
         $('.logo').addClass('logo-compressed');
         $('.main-nav li a').addClass('less-padding');
         $('.search-area').css('height','44');
@@ -58,6 +59,7 @@ jQuery(function($){
         
 	    } else {
 	        $('.main-navbar').removeClass('navbar-fixed-top');
+          $('.navbar-padding').removeClass('navbar-padding-active');
 	        $('.logo').removeClass('logo-compressed');
 	        $('.main-nav li a').removeClass('less-padding');
 	        $('.search-area').css('height','60');
