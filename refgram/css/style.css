@@ -503,6 +503,7 @@ img.sem {
 	margin-right: auto;
 	padding-bottom: 30px;
 	width: 500px;
+	max-width: 100%;
 }
 
 .tonecontour {
