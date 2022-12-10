@@ -1,0 +1,4673 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Toaq - Syntax</title>
+	<link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="stylesheet" type="text/css" href="../css/r-c-min.css" />
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../css/interlinear.css"/>
+
+	<link rel="stylesheet" type="text/css" href="../css/CMU/cmun-serif.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/SegoeUI/segoe.css"/>
+	
+</head>
+<body>
+
+<img src="../assets/logo.svg" class="logo"></img>
+
+<div class="topnav">
+  <a href="../introduction/">Introduction</a>
+  <a href="../phonology/">Phonology</a>
+  <a href="../orthography/">Orthography</a>
+  <a href="../morphology/">Morphology</a>
+  <a href="../syntax/">Syntax</a>
+  <a href="../semantics/">Semantics</a>
+</div>
+
+<r-c class="fixed-width" >
+    <c1-1>
+
+
+
+<h1>Syntax</h1>
+
+<div class="syntax">
+	<h4>Sentence pattern</h4>
+	<img class="stemplate" src="../assets/patterns/s.svg">
+	<p>Dashed lines indicate optional components.</p>
+	<p>Asterisks indicate components that can be covert.</p>
+</div>
+
+<p>Every clause begins with a (possibly covert) complementizer, optionally followed by a Topic, then the verbal complex precedes all the argument and adverbials. The highest clause is complement to a speech act particle.</p>
+
+
+<p>Simplified, every clause has this shape:<br>
+<span class="mono">[Topic] V (Adv) SO (Adv)</span></p>
+
+<p>Toaq's clause structure is the same at the top level and in subordinate clauses. Whenever there is an embedded clause, it has the same make-up as the box labeled 'clause'.</p>
+
+<p>As the diagram also shows, most components are optional, and two of the mandatory components can be unpronounced. This means that the most minimal complete sentence is a bare verb.</p>
+
+<div class="gloss">
+	ruqxua .<br/>
+	Ruqshua.<br/>
+	rain<br/>
+	! 'It rained.'
+</div>
+
+<p>The two main ways of indicating sentence boundaries are:</p>
+
+<p>
+	• <a href="#speech_acts">speech act particles</a> (→ terminate a sentence)<br>
+	• <a href="#complementizers">complementizers</a> (→ start a new clause)
+</p>
+
+<p>Another, but more situational, method is <a href="#verbs_and_argument_structure">self-termination</a>.</p>
+
+
+
+<h2>Tones</h2>
+
+<p>Toaq's tones have various syntactic functions, which will be discussed in their respective sections. The following table only gives a brief overview of the four tones and their most important functions:</p>
+
+<table class="vocabulary">
+<tbody>
+<tr>
+	<td>
+		<div class="vocabularyg">a</div>
+	</td>
+	<td>
+		<div class="vocabularyt">a</div>
+	</td>
+	<td>
+		<div class="vocabularyd">verbs, predicatizers</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">/a</div>
+	</td>
+	<td>
+		<div class="vocabularyt">á</div>
+	</td>
+	<td>
+		<div class="vocabularyd">determiners, pronouns, conjunctions</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">\a</div>
+	</td>
+	<td>
+		<div class="vocabularyt">ä</div>
+	</td>
+	<td>
+		<div class="vocabularyd">complementizers, clause-initiating words</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">~a</div>
+	</td>
+	<td>
+		<div class="vocabularyt">â</div>
+	</td>
+	<td>
+		<div class="vocabularyd">adverbial adjuncts</div>
+	</td>
+</tr>
+</tbody>
+</tbody>
+</table>
+
+<p>The <img class="tone" src="../assets/tones/d1.png"> tone can be considered the unmarked, default tone. All verbs and many verbal particles  carry this tone, and they can be modified using the other tones.</p>
+
+<p>The <img class="tone" src="../assets/tones/d2.png"> tone is most prominently found on all determiners and pronouns.</p>
+
+<p>The <img class="tone" src="../assets/tones/d3.png"> tone is found on subordinating function words, which includes non-matrix complementizers as well as a few verbal or pre-verbal particles which are followed by clauses (such as the cleft verb). </p>
+
+<p>The <img class="tone" src="../assets/tones/d4.png"> tone is almost exclusively used as a morpheme by itself to form adverbial adjuncts. </p>
+
+
+<h2 id="verbs_and_argument_structure">Verbs and argument structure</h2>
+
+<div class="syntax">
+	<h4>vP pattern</h4>
+	<img class="tree2" src="../assets/patterns/vp.svg">
+	<p>Toaq's word order is VSO.</p>
+	<p>Verbs can have up to three places.</p>
+	<p>If a verb has three places, the indirect object precedes the direct object.</p>
+	<p><span class="mono">S = Subject<br>DO = Direct Object<br>IO = Indirect Object</span></p>
+</div>
+
+<p>Toaq has VSO word order: arguments follow the verb and are supplied from left to right in ascending order. </p>
+
+<p>Verbs can have between zero and three argument places. The vast majority have one or two. </p>
+
+<p><i>Intransitive</i> verbs take exactly one argument:</p>
+
+<div class="gloss">
+	nuo (/PAQDA) .<br/>
+	Nuo páqda.<br/>
+	sleep the-panda<br/>
+	! 'The panda is sleeping.'
+</div>
+
+<p><i>Transitive</i> verbs take two arguments:</p>
+
+<div class="gloss">
+	yuq /w+ao /(SUXI) .<br/>
+	Chuq nháo súshı.<br/>
+	eat *3s* the-sushi<br/>
+	! 'She is eating the sushi.'
+</div>
+
+<p><i>Ditransitive</i> verbs take three arguments:</p>
+
+<div class="gloss">
+	do /ji /w+ao (/SUXI) .<br/>
+	Do jí nháo súshi.<br/>
+	give *1s* *3s* the-sushi<br/>
+	! 'I give her the sushi.'
+</div>
+
+
+<p>Some verbs come in multiple valencies. For example the transitive verb <span class="glyphs">yuq</span> <span class="toaq">chuq</span> "X eats Y" also has an intransitive version of the same spelling which lacks the object:</p>
+
+<div class="gloss">
+	yuq /w+ao .<br/>
+	Chuq nháo.<br/>
+	eat *3s*<br/>
+	! 'He is eating.'
+</div>
+
+<p>When a verb can take a variable number of arguments like this, it is called <i>variadic</i>. This is a common property among transitive verbs, but it is not a universal property among verbs in general.</p>
+
+<p>Nullary verbs don’t involve any explicit participants. They merely express that an action or state is going on:</p>
+
+<div class="gloss">
+	ruqxua .<br/>
+	Ruqshua.<br/>
+	rain<br/>
+	! 'It is raining.'
+</div>
+
+<p>While English distinguishes between verbs, nouns and adjectives on a lexical level, Toaq unites all of these under a single part of speech: verbs. The equivalent of the English noun "language" is a verb, <span class="glyphs">zu</span> <span class="toaq">zu</span> "to be a language". The English adjective "large" is rendered as the verb <span class="glyphs">s+ao</span> <span class="toaq">sao</span> "to be large", and so on. </p>
+
+<p>The following examples illustrate this point further. Note the parallel structure:</p>
+
+<div class="gloss">
+	xua (/XAMU) .<br/>
+	Shua shámu.<br/>
+	fall the-apple<br/>
+	! 'The apple falls.'
+</div>
+
+<div class="gloss">
+	noqgi (/XAMU) .<br/>
+	Noqgı shámu.<br/>
+	delicious the-apple<br/>
+	! 'The apple is delicious.'
+</div>
+
+<div class="gloss">
+	zeo (/XAMU) .<br/>
+	Zeo shámu.<br/>
+	fruit the-apple<br/>
+	! 'The apple is a fruit.'
+</div>
+
+<p id="self_termination">A verb that is defined to take a given number of arguments can only take that amount. The following is not a well-formed sentence:</p>
+
+<div class="gloss">
+	kaqg+ai /ji (/OGUI) /suq .<br/>
+	*&nbsp;Kaqgaı jí óguı súq.<br/>
+	see *1s* the-snake *2s*<br/>
+	! 'I see the snake you'
+</div>
+
+<p>The excessive argument <span class="glyphs">/suq</span> <span class="toaq">súq</span> gets stranded, because the verb cannot take any more arguments. As a consequence, the clause ends automatically, and the extra argument ends up in a new clause. This mechanism is called <i>self-termination</i>: A clause automatically ends as soon as it encounters something which cannot be part of it.</p>
+
+<p>Self-termination can be used to escape subordinate clauses and to start new sentences, both without requiring any explicit boundary marking.</p>
+
+
+<h3>Atomic verbs</h3>
+
+<div class="syntax">
+	<h4>Verb movement pattern</h4>
+	<img class="tree3" src="../assets/patterns/vmove.svg">
+	<p>When it comes to word order, all <a href="../morphology/#stem_morphology">atomic verbs</a> have the same behavior: they move to the left of their arguments (to T), leading to VSO word order.</p>
+</div>
+
+<p>There is no syntactic difference between roots, compounds and loanwords. Below is one example for each stem type in verb position:</p>
+
+<div class="gloss">
+	fa /w+ao (/JEARIAQ) .<br/>
+	Fa nháo jéarıaq.<br/>
+	go *3s* the-store<br/>
+	! 'He went to the store.'
+</div>
+
+<div class="gloss">
+	tij+ao /ama (/M+EIME) .<br/>
+	Tıjao áma méıme.<br/>
+	far.away *1+2+3* the-mountains<br/>
+	! 'We are far away from the mountains.'
+</div>
+
+<div class="gloss">
+	lui tasi /ni (LUE) .<br/>
+	Luı tası ní lue.<br/>
+	*retr* taxi this yellow<br/>
+	! 'That yellow thing used to be a taxi.'
+</div>
+
+<h3 id="cleft_verb">The cleft verb</h3>
+
+<div class="syntax">
+	<h4>Cleft verb pattern</h4>
+	<img class="tree" src="../assets/patterns/cleft.svg">
+	<p>The cleft verb <span class="glyphs">\na</span> <span class="toaq">nä</span> allows an arbitrary argument to be raised out of a clause into a pre-verbal subject position.</p>
+	<p>It corresponds to the English "to be such that" construction.</p>
+	<p>The cleft verb does not participate in serial verbs.</p>
+	<p>Gloss: <span class="sc">cle</span></p>
+</div>
+
+<table class="vocabulary">
+<tbody>
+    <tr>
+    <td>
+	<div class="vocabularyg">\na</div>
+    </td>
+    <td>
+	<div class="vocabularyt">nä</div>
+    </td>
+    <td>
+	<div class="vocabularyd">"to be such that ..." </div>
+    </td>
+  </tr>
+</tbody>
+</table>
+
+<p>The cleft verb <span class="glyphs">\na</span> <span class="toaq">nä</span> is a powerful tool for manipulating word order: it can turn the usual VSO word order into SVO and OVS; and even into SOV and OSV if nested, although this is less often useful.</p>
+
+<p>The following is an example of pseudo-OVS word order:</p>
+
+<div class="gloss">
+	/ni (XATI) , \na l+oi /ji /hoa .<br/>
+	Ní shatı nä loı jí hóa.<br/>
+	this shirt *cle* hate I *rsm*<br/>
+	! 'This shirt is such that I hate it.'
+</div>
+
+<p>(<span class="glyphs">/hoa</span> <span class="toaq">hóa</span> is a resumptive pronoun. See the section on <a href="#relative_clauses">relative clauses</a> for more information on how to refer back to the antecedent.)</p> 
+
+<p>If the subject of a clause is a heavy constituent, such as a content clause or a DP containing a relative clause, fronting the subject avoids center-embedding and thus makes the sentence easier to understand.</p>
+
+<p>Compare the following two sentences:</p>
+
+<div class="gloss">
+	kaqsi /ni * , v\e yuq /hoa (/XAMU) , /suq .<br/>
+	Kaqsı ní, ꝡë chuq hóa shámu, súq.<br/>
+	look.at this *comp* eat *rsm* the-apple *2s*<br/>
+	! 'That one eating the apple is looking at you.'
+</div>
+
+<div class="gloss">
+	/ni * , v\e yuq /hoa (/XAMU) , \na kaqsi /hoa /suq .<br/>
+	Ní, ꝡë chuq hóa shámu, nä kaqsı hóa súq.<br/>
+	this *comp* eat *rsm* the-apple *cle* look.at *rsm* *2s* <br/>
+	! 'That one eating the apple is looking at you.'
+</div>
+
+<p>The second example is easier to understand because it avoids center-embedding. If the relative clause were more complex, the effect would be even more pronounced.</p>
+
+<h3 id="eva">The event accessor verb</h3>
+
+<div class="syntax">
+	<h4>Event accessor pattern</h4>
+	<img class="tree4" src="../assets/patterns/eva.svg">
+	<p>The event accessor (EvA) <span class="glyphs">\e</span> <span class="toaq">ë</span> takes a vP and derives a verb referring to the vP's event place.</p>
+	<p>Gloss: <span class="sc">eva</span></p>
+</div>
+
+<table class="vocabulary">
+<tbody>
+    <tr>
+    <td>
+	<div class="vocabularyg">\e</div>
+    </td>
+    <td>
+	<div class="vocabularyt">ë</div>
+    </td>
+    <td>
+	<div class="vocabularyd">"to be an event of ..." </div>
+    </td>
+  </tr>
+</tbody>
+</table>
+
+<p>Most commonly, they are used as the complement of a determiner:</p>
+
+<div class="gloss">
+	kaqg+ai /ji , /e mar+ao /suq .<br/>
+	Kaqgaı jí é marao súq.<br/>
+	see *1s* the-*eva* dance *2s*<br/>
+	! 'I saw you dance.'
+</div>
+
+
+<h3>Name verbs</h3>
+
+<div class="syntax">
+	<h4>Name verb pattern</h4>
+	<img class="tree2" src="../assets/patterns/mi.svg">
+	<p>Name verbs are formed by the word <span class="glyphs">mi</span> <span class="toaq">mı</span> followed by an arbitrary word.</p>	
+	<p>The resulting expression is a verb with the meaning</p>
+	<p><span class="mono">"to be named &lt;word&gt;"</span></p>
+	<p>Gloss: <span class="sc">name</span></p>
+</div>
+
+<p><span class="glyphs">mi</span> <span class="toaq">mı</span> takes a word and forms a verb that expresses the property of being named that word.</p>
+
+<div class="gloss">
+	mi 'nuaqyu' (/EKU) jibo .<br/>
+	Mı Nuaqchu éku jıbo.<br/>
+	*name* midnight the-horse mine<br/>
+	! 'My horse is called ”Midnight”.'
+</div>
+
+<div class="gloss">
+	nuo (/MI="SARA") .<br/>
+	Nuo mí Sara.<br/>
+	sleep the-*name* Sara<br/>
+	! 'Sara is asleep.'
+</div>
+
+<p><span class="glyphs">mi</span> <span class="toaq">mı</span> can be rephrased in terms of the predicatizer<span class="glyphs">xu</span> <span class="toaq">shu</span>:</p>
+
+<h3>Single-word quotation verbs</h3>
+
+<div class="syntax">
+	<h4>Quote verb pattern</h4>
+	<img class="tree2" src="../assets/patterns/shu.svg">
+	<p>Quote verbs are formed by the word <span class="glyphs">xu</span> <span class="toaq">shu</span> followed by an arbitrary word.</p>	
+	<p>The resulting expression is a verb with the meaning</p>
+	<p><span class="mono">"to be the word &lt;word&gt;"</span></p>
+	<p>Gloss: <span class="sc">word</span></p>
+</div>
+
+<p>For example:</p>
+
+<div class="gloss">
+	xu 'nuaqyu' , v/e yua /hoa (/EKU) jibo .<br/>
+	Shu ‹nuaqchu› ꝡé chua hóa éku jıbo.<br/>
+	*word* midnight the-which name *rsm* the-horse mine<br/>
+	! 'The name of my horse is the word “midnight”.'
+</div>
+
+<p><span class="glyphs">xu</span> <span class="toaq">shu</span> is most commonly used as the complement of a determiner:</p>
+
+<div class="gloss">
+	yo /ji (/XU="ARANE") .<br/>
+	Cho jí shú ‹arane›.<br/>
+	like *1s* the-*word* spider<br/>
+	! 'I like the word “arane”.'
+</div>
+
+<h3>Full-text quotes</h3>
+
+<div class="syntax">
+	<h4>Direct speech pattern</h4>
+	<img class="tree2" src="../assets/patterns/moteo.svg">
+	<p>A text of arbitrary length can be quoted by enclosing it in spoken parentheses:</p>	
+	<p><span class="glyphs">mo</span> <span class="toaq">mo</span>  <span class="mono">&lt;quoted text&gt;</span> <span class="glyphs">teo</span> <span class="toaq">teo</span></p>
+	<p>Gloss: <span class="sc">quote</span> <span class="sc">unquote</span></p>
+</div>
+
+<p>For example:</p>
+
+<div class="gloss">
+	dui:f+ai kuq /w+ao /mo ' m+ai /ji /suq ' teo .<br/>
+	Dụıfaı kuq nháo mó Maı jí súq teo.<br/>
+	*exc*-frequent say *3s* *quote* love *1s* *2s* *unquote*<br/>
+	! 'He said “I love you” too much.'
+</div>
+
+
+
+
+<h2>Serial verbs</h2>
+
+<div class="syntax">
+	<h4>Serial verb pattern</h4>
+	<img class="tree3" src="../assets/patterns/serial.svg">
+	<p>Serial verbs are condensed forms of clausal complements.</p>
+	<p>The individual component verbs form a cluster on the left of the arguments, giving serial verbs their name.</p>
+	<p>Serial verbs can have an unlimited number of component verbs.</p>
+</div>
+
+<p>This section deals with the most important and most powerful mechanism of the verbal complex and the main reason why it’s called the verbal <i>complex</i>.</p>
+
+<p>Serial verbs are, in essence, a shortcut mechanism. They are like compounds in that they create shorter ways of accessing meanings by joining words (having a compound for a complex concept avoids having to paraphrase it every time). But unlike compounds, the meaning of a serial verb is completely predictable from the words that compose it, and the order they appear in. This means that a serial verb is understandable to anyone who knows the words that make it up and knows how serial verbs work, without requiring a dictionary. </p>
+
+<p>While compounds are new lexemes and thus add entirely new meanings to the dictionary, serial verbs do not create new meanings, they merely combine words efficiently to express a more complex meaning and make sentences a lot shorter in the process. And, the more complex a serial verb, the less complex the rest of the sentence!</p>
+
+<p>To understand serial verbs, it is useful to have some understanding of <a href="#complementizer_phrases">complementizer phrases</a>.</p>
+
+<p>The following pair of sentences illustrates the idea behind serial verbs:</p>
+
+<div class="gloss">
+	tua /suq , v\a j+ai /w+ao .<br/>
+	Tua súq ꝡä jaı nháo.<br/>
+	cause *2s* *comp* happy *3s*<br/>
+	! 'You make her happy (lit. you cause that she is happy).'
+</div>
+
+<div class="gloss">
+	tua j+ai /suq /w+ao .<br/>
+	Tua jaı súq nháo.<br/>
+	cause happy *2s* *3s*<br/>
+	! 'You make her happy.'
+</div>
+
+<p>The first sentence contains a simple verb <span class="glyphs">tua</span> <span class="toaq">tua</span> "to bring about something" whose arguments are <span class="glyphs">/ji</span> <span class="toaq">jí</span> "I" and the content clause <span class="glyphs">v\a j+ai /w+ao</span> <span class="toaq">ꝡä jaı nháo</span> "that they are happy". The second sentence has both verbs in the front, and the second argument is not a content clause but just <span class="glyphs">/w+ao</span> <span class="toaq">nháo</span> "she". By moving the verb out of the content clause into the verbal complex of the matrix clause, the content clause is no longer needed, and a level of clausal nesting is eliminated.</p>
+
+<p>Below follows a syntactic analysis of both sentences:</p>
+
+<div class="syntax">	
+	<h4>Without serial verb</h4>
+	<img class="tree5" src="../assets/patterns/serialex1b.svg">
+	<p>This example uses the familiar structure of 2-place verbs covered previously. The object of <span class="glyphs">tua</span> <span class="toaq">tua</span> "to cause" is a content clause (CP), which contains the statement <span class="glyphs">j+ai /w+ao</span> <span class="toaq">jaı nháo</span> "she is happy".</p>
+	<p>
+		<span class="parse">
+			[<sub>TP</sub> 
+				[<sub>T+</sub> <b>tua</b>] 
+				[<sub>vP</sub> 
+					[<sub>DP</sub> <b>súq</b>] 
+					[<sub>v'</sub> 
+						[<sub>v</sub> Ø] 
+						[<sub>VP</sub> 
+							[<sub>V</sub> <s><b>tua</b></s>] 
+							[<sub>CP</sub> 
+								[<sub>C</sub> <b>ꝡä</b>] 
+								[<sub>TP</sub> <b>jaı nháo</b>]
+							]
+						]
+					]
+				]
+			]
+		</span>
+	</p>
+	<p>Because the sentence involves two clauses, it is more complex than the corresponding sentence that uses a serial verb.</p>
+</div>
+
+<p>The corresponding serial verb looks like this:</p>
+
+<div class="syntax">	
+	<h4>With serial verb</h4>
+	<img class="tree5" src="../assets/patterns/serialex1a.svg">
+	<p>The verbs (labeled V<sub>1</sub> and V<sub>2</sub>) move up the tree and form a cluster above the subject.</p>
+	<p>The tree also reveals how <span class="glyphs">/w+ao</span> <span class="toaq">nháo</span> ends up in the correct place, as an argument of <span class="glyphs">j+ai</span> <span class="toaq">jaı</span>.</p>
+	<p>
+		<span class="parse">
+			[<sub>TP</sub> 
+				[<sub>T+</sub> <b>tua jaı</b>] 
+				[<sub>vP</sub> 
+					[<sub>DP</sub> <b>súq</b>] 
+					[<sub>v'</sub> 
+						[<sub>v</sub> Ø] 
+						[<sub>VP</sub> 
+							[<sub>V</sub> <s><b>tua</b></s>] 
+							[<sub>VP</sub> 
+								[<sub>V</sub> <s><b>jaı</b></s>] 
+								[<sub>DP</sub> <b>nháo</b>]
+							]
+						]
+					]
+				]
+			]
+		</span>
+	</p>
+</div>
+
+<p>In general, any verb whose last argument place selects for a complementizer phrase (CP) can head a serial verb. </p>
+
+<p>The argument place can be propositional:</p>
+
+<div class="gloss">
+	dua /sia (POQ) , v\a tea /ji .<br/>
+	Dua sía poq ꝡä tea jí.<br/>
+	know no person *comp* scared *1s*<br/>
+	! 'Nobody knows that I'm scared.'
+</div>
+
+<div class="gloss">
+	dua tea /sia (POQ) /ji .<br/>
+	Dua tea sía poq jí.<br/>
+	know scared no person *1s*<br/>
+	! 'Nobody knows that I'm scared.'
+</div>
+
+<p>or a property place:</p>
+
+<div class="gloss">
+	leo /ji , \la nuo /ja .<br/>
+	Leo jí lä nuo já.<br/>
+	try *1s* λ sleep X<br/>
+	! 'I try to sleep.'
+</div>
+
+<div class="gloss">
+	leo nuo /ji .<br/>
+	Leo nuo jí.<br/>
+	try sleep *1s*<br/>
+	! 'I try to sleep.'
+</div>
+
+<p>Here, the difference in complexity between the two sentences is quite pronounced.</p>
+
+<p>Serial verbs can have an unlimited number of component verbs. They are right-grouping: </p>
+
+<p><span class="mono">(V<sub>1</sub> (V<sub>2</sub> (V<sub>3</sub>)))</span></p>
+
+<p> Here is a relatively long one that still ends up being easy to understand:</p>
+
+<div class="gloss">
+	xo joe tua x+ai tea /w+ao (/AQXE) .<br/>
+	Sho joe tua shaı tea nháo áqshe.<br/>
+	become skilled cause cease scared *3s* the-donkey<br/>
+	! 'He became skilled at making the donkey stop being scared.'
+	</div>
+
+<p>When you see a rising tone verb followed by a falling tone verb, then you're dealing with a serial verb that is used as the complement of the <img class="tone" src="../assets/tones/d2.png"> determiner:</p>
+
+<div class="gloss">
+	leo jara<br/>
+	leo jara<br/>
+	try run<br/>
+	! 'try to run'
+</div>
+
+<div class="gloss">
+	(/LEO) jara<br/>
+	léo jara<br/>
+	the-try run<br/>
+	! 'the one who is trying to run'
+</div>
+
+
+
+<h2 id="object_incorporation">Object incorporation</h2>
+
+<div class="syntax">
+	<h4>Object incorporation pattern</h4>
+	<img class="tree2" src="../assets/patterns/incorporation.svg">
+	<p>Object incorporation is a process by which a verb forms a tight unit with its object such that the two can no longer be separated. The consequence is that when the verb moves to the front of the clause, the object moves along with it.</p>
+	
+	<p>Object incorporation results in VOS word order.</p>
+	
+	<p>It is marked via (tonal) inflection on the object:</p>
+	<p>
+		• if the object is a DP, D is glottalized (<img class="tone" src="../assets/tones/d3.png">).<br>
+		• if the object is a CP, C is hiatusized (<img class="tone" src="../assets/tones/d4.png">).
+	</p>
+</div>
+
+<p>Object incorporation forms a tight unit of verb and object, leading to VOS word order:</p>
+
+<div class="gloss">
+	jo+ai \baq (KURI) /ji .<br/>
+	Joaı bäq kurı jí.<br/>
+	search *gen* berry *1s*<br/>
+	! 'I am berry-searching.'
+</div>
+
+<p>In the above example, <span class="glyphs">\baq</span> <span class="toaq">bäq</span> has its normal rising tone enriched with an inserted glottal stop. Because determiners and pronouns can normally only carry the rising tone, the <img class="tone" src="../assets/tones/d3.png"> mark used on them represents a rising glottal tone. The equivalent sentence without object incorporation would be:</p>
+
+<div class="gloss">
+	jo+ai /ji /baq (KURI) .<br/>
+	Joaı jí báq kurı.<br/>
+	search *1s* *gen* berry<br/>
+	! 'I am searching for berries.'
+</div>
+
+<p>Another example, using a different determiner:</p>
+
+<div class="gloss">
+	ua joe \tu (R+AI) /suq .<br/>
+	Ua, joe tü raı súq!<br/>
+	wow skilled every thing *2s*<br/>
+	! 'Wow, you are good at everything!'
+</div>
+
+<p>Or an incorporated pronoun:</p>
+
+<div class="gloss">
+	kie /ji (/MAI) \ji .<br/>
+	Kıe jí máı jï.<br/>
+	grateful *1s* love *1s*<br/>
+	! 'I am grateful to the ones who love me.'
+</div>
+
+<p>The next examples show an object incorporating verb used as the complement of a determiner:</p>
+
+<div class="gloss">
+	z+ao /ji (/F+AO) \hu lua .<br/>
+	Zao jí fáo hü lua.<br/>
+	familiar *1s* the-end *endo* story<br/>
+	! 'I'm familiar with the end of that story.'
+</div>
+
+<div class="gloss">
+	ku+ai h+ao /ji /ni hea \baq nam .<br/>
+	Kuaı hao jí ní hea bäq nam.<br/>
+	long *salient* *1s* this piece *gen* bread<br/>
+	! 'I'm longing for this piece of bread.'
+</div>
+
+<p>When incorporating a DP headed by the determiner <img class="tone" src="../assets/tones/d2.png">, its allomorph <span class="glyphs">lo</span> <span class="toaq">lo</span> must be used. This is because a word like <span class="glyphs">(/JARAFA)</span> <span class="toaq">járafa</span> pronounced with a rising tone and a glottalized first syllable would be understood as the prefix <span class="toaq">ja-</span> followed by the root <span class="toaq">rafa</span> used as a bound variable (i.e., <span class="toaq">jạ́rafa</span>):</p>
+
+<div class="gloss">
+	mu:yo /w+ao (/JEA) \lo (Y+AO) .<br/>
+	Mụcho nháo jéa lö chao.<br/>
+	*opp*-like *3s* the-buy the vehicle<br/>
+	! 'He dislikes the buyer of the vehicle.'
+</div>
+
+<p>The following is an example of an object incorporating verb as the tail of a serial verb:</p>
+
+<div class="gloss">
+	ma t+ai fa \hu +aipujio /suq ?<br/>
+	Ma taı fa hü aıpujıo súq?<br/>
+	whether succeed go *endo* haunted.house *2s*<br/>
+	! 'Did you manage to go to the haunted house?'
+</div>
+
+
+
+<h2 id="adjectives">The adjectival construction</h2>
+
+<p>Adjectives don't exist as a separate part of speech in Toaq; they are simply verbs.</p>
+
+<p>However, there is a special adjectival construction which corresponds loosely to the way adjectives modify nouns in English. </p>
+
+<p>To keep things simple, the text uses the word <i>adjective</i> interchangeably with <i>adjectival construction</i>.</p>
+
+<div class="syntax">
+	<h4>Adjective pattern</h4>
+	<img class="tree" src="../assets/patterns/adjective.svg">
+	<p>Adjectives follow the phrase they modify.</p>
+	
+	<p>They are separated from the preceding verb by the (usually covert) adjectival prefix <span class="glyphs">ki:</span> <span class="toaq">kı-</span></p>
+	
+	<p>The prefix is <u>only</u> required when the preceding verb has an object place that would otherwise trigger serialization.</p>
+	
+	<p>The adjective itself is structurally identical to a reduced relative clause, which means that it can contain tense and aspect, but no arguments or adverbial adjuncts.</p>
+	
+	<p>Gloss: <span class="sc">adj</span> </p>
+</div>
+
+<p>Adjectives are postpositive. The adjectival prefix <span class="glyphs">ki:</span> <span class="toaq">kı-</span> is rarely needed, because most of the time, the things we describe using adjectives are noun-like things, and those typically don't have object places:</p>
+
+<div class="gloss">
+	orogi kuo<br/>
+	orogı kuo<br/>
+	orchid black<br/>
+	! 'black orchid'
+</div>
+
+<div class="gloss">
+	kue jaq gi<br/>
+	kue jaq gı<br/>
+	book very good<br/>
+	! 'very good book'
+</div>
+
+<div class="gloss">
+	du rua jaq de<br/>
+	du rua jaq de<br/>
+	seem flower very beautiful<br/>
+	! 'very beautiful (thing) which seems to be a flower'
+</div>
+
+<p>When the verb preceding the adjective would form a serial verb with the adjective, the prefix <span class="glyphs">ki:</span> <span class="toaq">kı-</span> can be used to inhibit this behavior:</p>
+
+<div class="gloss">
+	ca nui<br/>
+	ca nuı<br/>
+	cause small<br/>
+	! 'cause to be small'
+</div>
+
+<div class="gloss">
+	ca ki:nui<br/>
+	ca kı̣nuı<br/>
+	cause *adj*-small<br/>
+	! 'small cause'
+</div>
+
+<div class="gloss">
+	lie biaq tuc+ai<br/>
+	lıe bıaq tucaı<br/>
+	experience enough strong<br/>
+	! 'experience being sufficiently strong'
+</div>
+
+<div class="gloss">
+	lie ki:biaq tuc+ai<br/>
+	lıe kı̣bıaq tucaı<br/>
+	experience *adj*-enough strong<br/>
+	! 'sufficiently strong experiencer'
+</div>
+
+<p>It is also possible to avoid <span class="glyphs">ki:</span> <span class="toaq">kı-</span> by changing the valency of the preceding verb, either by replacing it with a more noun-like lexeme (e.g. <span class="toaq">chıe</span> "X learns to Y" &gt; <span class="toaq">chıeche</span> "X is a learner") or by using a prefix that affects the valency in a similar way (e.g. <span class="toaq">joe</span> "X is skilled at Y" &gt; <span class="toaq">tụjoe</span> "X is good at everything"). </p>
+
+<p>Adjectives can be used in similar situations as relative clauses while avoiding much of the complexity of the latter:</p>
+
+<div class="gloss">
+	(/KATO) ti \ni (BUE)<br/>
+	káto tı nï bue<br/>
+	the-cat at this home<br/>
+	! 'the cat in this home'
+</div>
+
+<p>This is less complex than the corresponding relative clause:</p>
+
+<div class="gloss">
+	(/KATO) , v\e ti /hoa /ni (BUE)<br/>
+	káto ꝡë tı hóa ní bue<br/>
+	the-cat *comp* at *rsm* this home<br/>
+	! 'the cat that is in this home'
+</div>
+
+
+<h3 id="possessive_adjectives">Possessive adjectives</h3>
+
+<p>Adjectives are also commonly used to express possession. This involves the <a href="#predicatizers">predicatizer</a> <span class="glyphs">po</span>&nbsp;<span class="toaq">po</span>:</p>
+
+<div class="gloss">
+	kua po (/P+AI)<br/>
+	kua po páı<br/>
+	book of the-friend<br/>
+	! 'a friend's book'
+</div>
+
+<div class="gloss">
+	poq po (/KUA)<br/>
+	poq po kúa<br/>
+	person of the-book<br/>
+	! 'the book's characters'
+</div>
+
+<p>It can also be used to make generic compounds, using a DP headed by the generic determiner <span class="glyphs">/baq</span>&nbsp;<span class="toaq">báq</span>:</p>
+
+<div class="gloss">
+	si+ai po /baq (XITUAQ)<br/>
+	sıaı po báq shıtuaq<br/>
+	blood of *gen* unicorn<br/>
+	! 'unicorn blood'
+</div>
+
+<p>For these kinds of generic adjectivals, there is a special shortcut mechanism, which replaces the normal adjectival <span class="toaq">kı-</span> prefix with a different, more specific, prefix:</p>
+
+
+<table class="letters">
+<tbody>
+  <tr>
+    <td><span class="glyphs">be:</span> <span class="toaq">be-</span><span class="mono"> = </span><span class="toaq">(kı̣)po báq</span><br> (gloss: <span class="sc">ga</span>) </td>
+  </tr>
+</tbody>
+</table>
+
+<p>This prefix offers a less verbose alternative to the previous example:</p>
+
+<div class="gloss">
+	si+ai be:xituaq<br/>
+	sıaı bẹshıtuaq<br/>
+	blood *ga*-unicorn<br/>
+	! 'unicorn blood'
+</div>
+
+
+
+
+<h2 id="predicatizers">Predicatizers</h2>
+
+<div class="syntax">
+	<h4>Predicatizer pattern</h4>
+	<img class="tree" src="../assets/patterns/po.svg">
+	<p>Predicatizers are a small closed class of verbal particles which convert arguments into verbs.</p>
+	<p>Predicatizers form a tight unit with their complement, much like object incorporation, which leads to VOS-like word order.</p>
+	<p>Predicatizers are quantificationally opaque.</p>
+	<p>
+	<table class="vocabulary">
+<tbody>
+    <tr>
+		<td>
+			<div class="vocabularyg">po</div>
+		</td>
+		<td>
+			<div class="vocabularyt">po</div>
+		</td>
+		<td>
+			<div class="vocabularyd">X is related to Y by some salient relation</div>
+		</td>
+  </tr>
+  <tr>
+		<td>
+			<div class="vocabularyg">mea</div>
+		</td>
+		<td>
+			<div class="vocabularyt">mea</div>
+		</td>
+		<td>
+			<div class="vocabularyd">X is/are among the referents of Y</div>
+		</td>
+  </tr>
+  <tr>
+		<td>
+			<div class="vocabularyg">j+ei</div>
+		</td>
+		<td>
+			<div class="vocabularyt">jeı</div>
+		</td>
+		<td>
+			<div class="vocabularyd">X is/are Y (sameness/identity)</div>
+		</td>
+  </tr>
+</tbody>
+</table>
+
+	</p>
+</div>
+
+<p>The predicatizer <span class="glyphs">po</span> <span class="toaq">po</span> relates two arguments by an unspecified relation. It is glossed as "of":</p>
+
+<div class="gloss">
+	po /baq (ELU) (/TISE) .<br/>
+	Po báq elu tíse.<br/>
+	of *gen* elephant the-trace<br/>
+	! 'The trace is of an elephant.'
+</div>
+
+<div class="gloss">
+	kia (/XATI) po (/EYA) .<br/>
+	Kıa shátı po écha.<br/>
+	red the-shirt of the-clown<br/>
+	! 'The clown's shirt is red.'
+</div>
+
+<p><span class="glyphs">po</span> <span class="toaq">po</span> can often be paraphrased using <span class="glyphs">h+ao</span> <span class="toaq">hao</span> "X satisfies the salient property" or "X is related to Y by the salient relation".</p>
+
+<p>Imagine, for example, that A and B are out in the jungle following the trail of a rare snake. Then A says:</p>
+
+<div class="gloss">
+	lui x+aı /ji /(PO) (/OGUI) .<br/>
+	Luı shaı jí pó óguı.<br/>
+	*retr* lose *1s* the-of the-snake<br/>
+	! 'I've lost the snake (lit. the thing of the snake)'
+</div>
+
+<p>A slightly easier way to say the same thing would be to use a serial predicate with <span class="glyphs">h+ao</span>&nbsp;<span class="toaq">hao</span> as the tail:</p>
+
+<div class="gloss">
+	lui x+ai h+ao /ji (/OGUI) .<br/>
+	Luı shaı hao jí óguı.<br/>
+	*retr* lose *salient* *1s* the-snake .<br/>
+	! 'I've lost the snake (lit. I've lost the property of being related to the snake by the salient relation'
+</div>
+
+<p>This trick is very useful and should be made frequent use of. However, when the complement of the predicatizer is a quantified DP, the paraphrase is no longer semantically equivalent. Predicatizers are quantificationally opaque, which means that the complement is bound in-situ rather than in the clause the predicatizer is in.</p>
+
+<div class="gloss">
+	x+ao /ji (/PO) /sa (KUNE) nio .<br/>
+	Shao jí pó sá kune nıo.<br/>
+	want *1s* the-of some dog young<br/>
+	! 'I want a young dog.'
+</div>
+
+<p>This is distinct from "There is a young dog that I want", which would be:</p>
+
+<div class="gloss">
+	/sa (KUNE) nio \na x+ao /ji (/PO) /ho .<br/>
+	Sá kune nıo nä shao jí pó hó.<br/>
+	some dog young *cle* want *1s* the-of *X:anim*<br/>
+	! 'There is a young dog such that I want it.'
+</div>
+
+<p>In the first example, the speaker is not talking about a specific dog, and any young dog will do. In the second example, there is a specific young dog the speaker wants.</p>
+
+<p>The word <span class="glyphs">po</span> <span class="toaq">po</span> is very flexible. While it is basically just <span class="glyphs">h+ao</span> <span class="toaq">hao</span> in different clothing, its special syntax enables it to be useful in different situations. For example, it can be used to form ad-hoc loose compounds:</p>
+
+<div class="gloss">
+	yiejio po /baq (LIQ)<br/>
+	chıejıo po báq lıq<br/>
+	school of *gen* female<br/>
+	! 'girls’ school'
+</div>
+
+<div class="gloss">
+	si+ai po /baq (XITUAQ) <br/>
+	sıaı po báq shıtuaq<br/>
+	blood of *gen* unicorn<br/>
+	! 'unicorn blood'
+</div>
+
+(see also the <a href="#possessive_adjectives">generic adjectival contruction</a>)
+
+<p>The other two predicatizers <span class="glyphs">j+ei</span>&nbsp;<span class="toaq">jeı</span> and <span class="glyphs">mea</span>&nbsp;<span class="toaq">mea</span> deal with identity and amongness respectively.</p>
+
+<p><span class="glyphs">j+ei</span>&nbsp;<span class="toaq">jeı</span> says that the complement and the subject are the same thing(s), i.e., that they have the same referent(s):</p>
+
+<div class="gloss">
+	j+ei (/MUAQTUA) /ni (POQ) .<br/>
+	Jeı múaqtua ní poq.<br/>
+	is the-killer this person<br/>
+	! 'This person is the killer.'
+</div>
+
+<div class="gloss">
+	j+ei /ji /r+oi (/MI=;JOANA;) /hu (GU) .<br/>
+	Jeı jí rói mí Joana hú gu.<br/>
+	is *1s* & the-*name* Joana *endo* two<br/>
+	! 'The aforementioned two are me and Joana.'
+</div>
+
+<p><span class="glyphs">mea</span>&nbsp;<span class="toaq">mea</span> says that the subject's referents are among the referents of the complement:</p>
+
+<div class="gloss">
+	mea (/POQ) gi /suq .<br/>
+	Mea póq gı súq.<br/>
+	among the-person good *2s*<br/>
+	! 'You are one of the good people.'
+</div>
+
+<div class="gloss">
+	mea /ime /w+ao .<br/>
+	Mea íme nháo.<br/>
+	among *1+3* *3s*<br/>
+	! 'She is one of us.'
+</div>
+
+<div class="gloss">
+	mala yi+ait+ao /tu (MEA) /ama .<br/>
+	Mala chıaıtao tú mea áma.<br/>
+	*epst* make.mistake every among *1+2+3*<br/>
+	! 'Everyone among us has made a mistake before.'
+</div>
+
+
+<h2>Determiner phrases</h2>
+
+<div class="syntax">
+	<h4>DP pattern</h4>
+	<img class="tree" src="../assets/patterns/dp.svg">
+	<p>A determiner phrase (DP)  consists of a determiner (D) followed by a reduced* complementizer phrase (CP). **</p>
+	<p><i>Informally: DP ≈ noun</i></p>
+</div>
+
+<p>* The complementizer phrase is reduced in that its verb cannot take any arguments and no adjuncts may be attached to the vP. It also cannot contain a Topic.</p>
+
+<p class="technical">** Technical: n (called <i>little n</i>) is an unpronounced functional head whose presence is required for semantic reasons (<a href="../semantics/">semantics</a>). Learners of the language can simply pretend that the nP isn't there, and that DPs have the structure <span class="mono"></span>D + CP<sub>rel</sub>.</p>
+
+<p>What the above pattern illustrates is that Toaq's equivalent of nouns involves a hidden relative clause. Instead of saying 'the apple' as in English, Toaq uses a construction that corresponds to 'the [thing which is an] apple' (<span class="toaq">shamu</span> 'apple' is a verb in Toaq).</p>
+
+<p>The determiner selects the first argument slot of the complement verb:</p>
+
+<table class="letters">
+<tbody>
+  <tr>
+    <td><span class="toaq">fa</span><br> ___ goes to ___</td>
+    <td><span class="toaq">sá fa</span><br> 'someone who goes'</td>
+  </tr>
+  <tr>
+    <td><span class="toaq">kıa</span><br> ___ is red</td>
+    <td><span class="toaq">sá kıa</span><br> 'something which is red'</td>
+  </tr>
+  <tr>
+    <td><span class="toaq">nam</span><br> ___ is bread</td>
+    <td><span class="toaq">sá nam</span><br> 'something which is bread'</td>
+  </tr>
+</tbody>
+</table>
+
+<p>Apart from not being able to take arguments or adjuncts, the complement of a determiner can be complex:</p>
+
+<div class="gloss">
+	/sa n+ai yufaq (NUO)<br/>
+	sá naı chum nuo<br/>
+	some *pres* *impf* sleep<br/>
+	! 'something [that is] currently sleeping'
+</div>
+
+<p>Tense and aspect are optional:</p>
+
+<div class="gloss">
+	/tu (GAQGURU)<br/>
+	tú gaqguru<br/>
+	every kangaroo<br/>
+	! 'every kangaroo'
+</div>
+
+<p>The following table lists the most important determiners. Afterwards, each determiner will be discussed in more detail.</p>
+
+<table class="vocabulary">
+<tbody>
+  <tr>
+    <th colspan="2">Determiner</th>
+    <th>Meaning</th>
+  </tr>
+  <tr>
+    <td>
+	<div class="vocabularyg">/</div>
+    </td>
+    <td>
+	<div class="vocabularyt"><img class="tone" src="../assets/tones/d2.png"></div>
+    </td>
+    <td>
+	<div class="vocabularyd">"X" (bound)</div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+	<div class="vocabularyg">/sa</div>
+    </td>
+    <td>
+	<div class="vocabularyt">sá</div>
+    </td>
+    <td>
+	<div class="vocabularyd">"some X", "a X"</div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+	<div class="vocabularyg">/tu</div>
+    </td>
+    <td>
+	<div class="vocabularyt">tú</div>
+    </td>
+    <td>
+	<div class="vocabularyd">"every X", "each X"</div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+	<div class="vocabularyg">/tuq</div>
+    </td>
+    <td>
+	<div class="vocabularyt">túq</div>
+    </td>
+    <td>
+	<div class="vocabularyd">"all X"</div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+	<div class="vocabularyg">/sia</div>
+    </td>
+    <td>
+	<div class="vocabularyt">sía</div>
+    </td>
+    <td>
+	<div class="vocabularyd">"no X"</div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+	<div class="vocabularyg">/ni</div>
+    </td>
+    <td>
+	<div class="vocabularyt">ní</div>
+    </td>
+    <td>
+	<div class="vocabularyd">"this X", "that X"</div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+	<div class="vocabularyg">/baq</div>
+    </td>
+    <td>
+	<div class="vocabularyt">báq</div>
+    </td>
+    <td>
+	<div class="vocabularyd">"X in general", "X-kind"</div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+	<div class="vocabularyg">/hi</div>
+    </td>
+    <td>
+	<div class="vocabularyt">hí</div>
+    </td>
+    <td>
+	<div class="vocabularyd">"which X", "what X"</div>
+    </td>
+  </tr>
+  <tr>
+	<td>
+		<div class="vocabularyg">/hu</div>
+	</td>
+	<td>
+		<div class="vocabularyt">hú</div>
+	</td>
+	<td>
+		<div class="vocabularyd">endophoric determiner</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">/ke</div>
+	</td>
+	<td>
+		<div class="vocabularyt">ké</div>
+	</td>
+	<td>
+		<div class="vocabularyd">exophoric determiner</div>
+	</td>
+</tr>
+</tbody>
+</table>
+
+<p>(The lambda determiner is covered in the section on <a href="#properties">properties</a>)</p>
+
+<p>All determiners carry the rising tone.</p>
+
+<p>The determiner <img class="tone" src="../assets/tones/d2.png"> is just the rising tone itself. In order to be pronounceable, it latches onto the following word, i.e. the first word of the complement.</p>
+
+<p><img class="tone" src="../assets/tones/d2.png"> is glossed as "the". This is "the" in the sense of "For every flower in this garden, there is a butterfly that likes <u>the</u> flower." In other words, all it does is reference a <i>bound variable</i>.</p>
+
+<p>This is illustrated by the following example:</p>
+
+<div class="gloss">
+	xao /tu (KUNE) , v\a haqdo /ji (/KUNE) .<br/>
+	Shao tú kune ꝡä haqdo jí kúne.<br/>
+	want every dog *comp* feed *1s* the-dog<br/>
+	! 'Every dog wants me to feed it (the dog).'
+</div>
+
+<p>First, <span class="glyphs">/tu</span> <span class="toaq">tú</span> binds the variable <span class="toaq">kune</span>. Then, <span class="toaq">kúne</span> refers back to the same variable.</p>
+
+<p>For another method of accessing bound variables, see the section on <a href="#anaphoric_pronouns">anaphoric pronouns</a>.</p>
+
+<p>It is also possible to use <img class="tone" src="../assets/tones/d2.png"> without the variable having been explicitly bound. In such instances, the variable is treated as having been bound exophorically, i.e., by the current context or the shared knowledge of the speaker and listener. (The referent may or may not already be part of the discourse.)</p>
+
+<div class="gloss">
+	kuo (/Y+AO) .<br/>
+	Kuo cháo.<br/>
+	black the-vehicle<br/>
+	! 'The vehicle was black.'
+</div>
+
+<p>If no vehicle was previously mentioned, the listener must infer the referent of <span class="glyphs">(/Y+AO)</span> <span class="toaq">cháo</span> from the context. If a vehicle was mentioned, then <span class="glyphs">(/Y+AO)</span> <span class="toaq">cháo</span> probably refers to that vehicle.</p>
+
+<p>The determiners <span class="glyphs">/tu</span> <span class="toaq">tú</span> and <span class="glyphs">/sa</span> <span class="toaq">sá</span> correspond to the quantifiers ∀ and ∃ respectively. Note, however, that while <span class="glyphs">/sa</span> <span class="toaq">sá</span> is a plural quantifier, <span class="glyphs">/tu</span> <span class="toaq">tú</span> is a singular quantifier (meaning it only quantifies over singletons).</p>
+
+<div class="gloss">
+	yum yeo siefa /sa (DEO) .<br/>
+	Chum cheo sıefa sá deo.<br/>
+	*impf* reciprocal follow some child<br/>
+	! 'Some children are chasing each other.'
+</div>
+
+<div class="gloss">
+	tuoq /tu (FUA) .<br/>
+	Tuoq tú fua.<br/>
+	heavy every item.of.furniture<br/>
+	! 'Each item of furniture is heavy.'
+</div>
+
+<p><span class="glyphs">/tuq</span> <span class="toaq">túq</span> 'all' refers to all the things satisfying the predicate, at once. For instance, in a situation with three cows:</p>
+
+<div class="gloss">
+	saq /tuq (GUO_BE) .<br/>
+	Saq túq guobe.<br/>
+	three all cow<br/>
+	! 'All the cows (together) are three.'
+</div>
+
+<p><span class="glyphs">/sia</span> <span class="toaq">sía</span> 'no', is the negation of <span class="glyphs">/sa</span> <span class="toaq">sá</span>. As such, it is also a plural quantifier:</p>
+
+<div class="gloss">
+	yum r+ei /sia (YIEYE) (/JIO) .<br/>
+	Chum reı sía chıeche jío.<br/>
+	*impf* surround no student the-building<br/>
+	! 'No students are surrounding the building.'
+</div>
+
+<div class="gloss">
+	dua /ji /sia * .<br/>
+	Dua jí sía.<br/>
+	know *1s* no<br/>
+	! 'I know nothing.'
+</div>
+
+<p><span class="glyphs">/ni</span> <span class="toaq">ní</span> is the demonstrative determiner. It can be used both for tangible things that can be pointed at and for abstract things.</p>
+
+<div class="gloss">
+	juqguo /ni (H+AO) .<br/>
+	Juqguo ní hao.<br/>
+	Chinese this *salient*<br/>
+	! 'This thingy is Chinese.'
+</div>
+
+<div class="gloss">
+	z+ao /ji /ni (POQ) .<br/>
+	Zao jí ní poq.<br/>
+	familiar *1s* this person<br/>
+	! 'I know this person.'
+</div>
+
+<p>The determiner <span class="glyphs">/baq</span> <span class="toaq">báq</span> creates references to kinds:</p>
+
+<div class="gloss">
+	jo+ai /w+ao /baq (DARAGOQ) .<br/>
+	Joaı nháo báq daragoq.<br/>
+	search *3s* *gen* dragon<br/>
+	! 'She is looking for dragons.'
+</div>
+
+<p>The sentence talks about dragons in general, rather than specific dragons. It also does not claim that any dragons actually exist.</p>
+
+<div class="gloss">
+	ma mala kaqg+ai /suq /baq (RUQNUAM) ?<br/>
+	Ma mala kaqgaı súq báq ruqnuam?<br/>
+	*comp* *exp* see *2s* *gen* rainbow<br/>
+	! 'Have you ever seen a rainbow?'
+</div>
+
+<p>The determiner <span class="glyphs">/hi</span> <span class="toaq">hí</span> is Toaq's primary way of asking wh-questions. By combining it with the appropriate verbs and/or by placing the DP in the appropriate argument place, all of "who", "what", "where", "when", "why", and so on can be derived compositionally.</p>
+
+<div class="gloss">
+	yum jo+ai /suq /hi (R+AI) ?<br/>
+	Chum joaı súq hí raı?<br/>
+	*impf* search *2s* what thing<br/>
+	! 'What are you looking for?'
+</div>
+
+<div class="gloss">
+	nie (/EYA) /hi (KUA) ?<br/>
+	Nıe écha hí kua?<br/>
+	inside clown what room<br/>
+	! 'In which room is the clown?'
+</div>
+
+<div class="gloss">
+	nuo /suq ~ti /hi (RIAQ) ?<br/>
+	Nuo súq tî hí rıaq?<br/>
+	sleep *2s* *a*-at what place<br/>
+	! 'Where (at what place) did you sleep?'
+</div>
+
+<div class="gloss">
+	tixa /suq ~r+ao /hi * ?<br/>
+	Tısha súq râo hí?<br/>
+	arrive *2s* *a*-at what<br/>
+	! 'When did you arrive?'
+</div>
+
+<p>The endophoric determiner <span class="glyphs">/hu</span> <span class="toaq">hú</span> indicates that the referent of the DP was previously mentioned in the text or conversation.</p>
+
+<div class="gloss">
+	riufa /hu (NAQ) .<br/>
+	Rıufa hú naq.<br/>
+	return *endo* male<br/>
+	! 'That guy came back.'
+</div>
+
+<p>The exophoric determiner <span class="glyphs">/ke</span> <span class="toaq">ké</span> indicates that the referent of the DP was <i>not</i> previously mentioned in the text or conversation.</p>
+
+<div class="gloss">
+	/ke (YIETUA) po (/YIEJIO) \na bo /ho /baq (OGUI) .<br/>
+	Ké chıetua po chíejıo nä bo hó báq oguı.<br/>
+	*exo* teach of the-school *cle* have *b:anim* *gen* snake<br/>
+	! '(There is) this teacher at school (who) has a snake.'
+</div>
+
+<p>DPs scope over DPs on their right and are under the scope of DPs on their left:</p>
+
+<div class="gloss">
+	m+ai /tu (API) /sa (RUA) .<br/>
+	Maı tú apı sá rua.<br/>
+	love every bee some flower<br/>
+	! 'For every bee, there is a flower it loves.'
+</div>
+
+<div class="gloss">
+	/sa (RUA) \na m+ai /tu (API) (/RUA) .<br/>
+	Sá rua nä maı tú apı rúa.<br/>
+	some flower *cle* love every bee the-flower<br/>
+	! 'There is a flower such that every bee loves that flower.'
+</div>
+
+
+<h3>DPs with a null complement</h3>
+
+<p>It is possible to use determiners without an overt complement. In such cases, the reduced CP (see pattern) contains nothing but an unpronounced vacuous predicate (<span class="toaq">raı</span> 'to be something'), effectively leaving the DP unrestricted. This strategy is not available to the bare <img class="tone" src="../assets/tones/d2.png"> determiner because it requires an overt complement as a carrier.</p>
+
+<div class="gloss">
+	faq /hi * /moq ?<br/>
+	Faq hí móq?<br/>
+	happen what *int*<br/>
+	! 'What's going on?'
+</div>
+
+<div class="gloss">
+	buq:de /ni * .<br/>
+	Bụqde ní.<br/>
+	*aug*-beautiful this<br/>
+	! 'This is hella pretty.'
+</div>
+
+<p>DPs with a null complement are able to take relative clauses, just like normal DPs. It is helpful to be aware of the way in which the two structures are similar and how they differ:</p>
+
+<p></p>
+
+<div class="gloss">
+	/sa (yuq)<br/>
+	sá chuq<br/>
+	some eat<br/>
+	! 'someone who eats (normal DP, no relative clause)'
+</div>
+
+<div class="gloss">
+	/sa * , v\e yuq /hoa<br/>
+	sá ꝡë chuq hóa<br/>
+	some *comp* eat *rsm*<br/>
+	! 'someone who eats (null complement + relative clause)'
+</div>
+
+<p>Both examples express the same thing. The main difference between the two structures is that in the first example, the DP cannot take any arguments, and therefore self-terminates immediately, while in the second example, there is a full relative clause, which can be arbitrarily complex.</p>
+
+<p>See also the section on <a href="#relative_clauses">relative clauses</a>.</p>
+
+
+
+
+
+<h2>Pronouns and binding</h2>
+
+<p>Every determiner phrase binds a variable. Determiner phrases can optionally be followed by a relative clause, which acts as a restrictor on the domain of the quantifier. When binding a variable this way, the verb following the quantifier becomes the name of the variable. Relative clauses are not part of variable names.</p>
+
+<p>When the complement of the quantifier is a serial verb, only the first verb becomes the name of the variable.</p>
+
+<p>A bound variable can be accessed within the scope of its quantifier in two ways: </p>
+
+<p>
+• by repeating the name of the variable verbatim in the <img class="tone" src="../assets/tones/d2.png"> tone <br>
+• by using a pronoun that shares the variable's pronominal class (see below).
+</p>
+
+<p>Every variable is bound. If a variable is not bound explicitly (by a determiner phrase), then it is treated as having been bound exophorically, i.e., by the current context, the shared knowledge or cultural background of the interlocutors, or similar.</p>
+
+<p>There are two classes of pronouns:</p>
+
+<p>
+• Personal pronouns, which are referring expressions and which aren't anaphoric <br>
+• Anaphoric pronouns: these are bound automatically whenever a verb is bound by a quantifier. Which pronoun is bound by a given verb depends on the verb's pronominal class.
+ </p>
+
+<p>All pronouns carry the <img class="tone" src="../assets/tones/d2.png"> tone.</p>
+
+
+<h3>Personal pronouns</h3>
+
+<div class="syntax">
+	<h4>Personal pronouns</h4>
+	<img class="tree5" src="../assets/patterns/clusivity.svg">
+	
+	<table class="vocabulary">
+<tbody>
+<tr>
+	<td>
+		<div class="vocabularyg">/ji</div>
+	</td>
+	<td>
+		<div class="vocabularyt">jí</div>
+	</td>
+	<td>
+		<div class="vocabularyp">I</div>
+	</td>
+	<td>
+		<div class="vocabularys"><span class="sc">1s</span></div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">/suq</div>
+	</td>
+	<td>
+		<div class="vocabularyt">súq</div>
+	</td>
+	<td>
+		<div class="vocabularyp">you (singular)</div>
+	</td>
+	<td>
+		<div class="vocabularys"><span class="sc">2s</span></div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">/w+ao</div>
+	</td>
+	<td>
+		<div class="vocabularyt">nháo</div>
+	</td>
+	<td>
+		<div class="vocabularyp">he/she/they (singular)</div>
+	</td>
+	<td>
+		<div class="vocabularys"><span class="sc">3s</span></div>
+	</td>
+</tr>
+<tr>
+	<td style="border-bottom: 0px;">
+		<div class="vocabularyg">/umo</div>
+	</td>
+	<td style="border-bottom: 0px;">
+		<div class="vocabularyt">úmo</div>
+	</td>
+	<td>
+		<div class="vocabularyp">we<br> (I & you)</div>
+	</td>
+	<td>
+		<div class="vocabularys"><span class="sc">1+2</span></div>
+	</td>
+</tr>
+<tr>
+	<td style="border-bottom: 0px; border-top: 0px;">
+		<div class="vocabularyg">/ime</div>
+	</td>
+	<td style="border-bottom: 0px; border-top: 0px;">
+		<div class="vocabularyt">íme</div>
+	</td>
+	<td>
+		<div class="vocabularyp">we<br> (I & he/she/they)</div>
+	</td>
+	<td>
+		<div class="vocabularys"><span class="sc">1+3</span></div>
+	</td>
+</tr>
+<tr>
+	<td style="border-top: 0px;">
+		<div class="vocabularyg">/ama</div>
+	</td>
+	<td style="border-top: 0px;">
+		<div class="vocabularyt">áma</div>
+	</td>
+	<td>
+		<div class="vocabularyp">we<br> (I & you & he/she/they)</div>
+	</td>
+	<td>
+		<div class="vocabularys"><span class="sc">1+2+3</span></div>
+	</td>
+</tr>
+<tr>
+	<td style="border-bottom: 0px;">
+		<div class="vocabularyg">/suna</div>
+	</td>
+	<td style="border-bottom: 0px;">
+		<div class="vocabularyt">súna</div>
+	</td>
+	<td>
+		<div class="vocabularyp">you<br>(multiple listeners)</div>
+	</td>
+	<td>
+		<div class="vocabularys"><span class="sc">2p</span></div>
+	</td>
+</tr>
+<tr>
+	<td style="border-top: 0px;">
+		<div class="vocabularyg">/suho</div>
+	</td>
+	<td style="border-top: 0px;">
+		<div class="vocabularyt">súho</div>
+	</td>
+	<td>
+		<div class="vocabularyp">you<br>(you & he/she/they)</div>
+	</td>
+	<td>
+		<div class="vocabularys"><span class="sc">2+3</span></div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">/wana</div>
+	</td>
+	<td>
+		<div class="vocabularyt">nhána</div>
+	</td>
+	<td>
+		<div class="vocabularyp">they (plural)</div>
+	</td>
+	<td>
+		<div class="vocabularys"><span class="sc">3p</span></div>
+	</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>Personal pronouns are marked for number and clusivity.</p>
+
+<p>Grammatically, they behave like ordinary DPs:</p>
+
+<div class="gloss">
+	yi /ji , v\a yo /w+ao /suq .<br/>
+	Chı jí ꝡä cho nháo súq.<br/>
+	believe *1s* *comp* like *3s* *2s*<br/>
+	! 'I believe he likes you.'
+</div>
+
+<div class="gloss">
+	ma yeo p+ai /wana ?<br/>
+	Ma cheo paı nhána?<br/>
+	whether reciprocally friend *3p*<br/>
+	! 'Are they (pl.) friends with each other?'
+</div>
+
+
+
+<p>Every pronoun has a corresponding possessive verb, which is formed by suffixing <span class="glyphs">bo</span> <span class="toaq">bo</span> to the pronoun: </p>
+
+<div class="gloss">
+	kue jibo<br/>
+	kue jıbo<br/>
+	book mine<br/>
+	! 'my book'
+</div>
+
+<div class="gloss">
+	gua wanabo<br/>
+	gua nhanabo<br/>
+	country their<br/>
+	! 'their country'
+</div>
+
+<h3>Impersonal pronoun</h3>
+
+<p>The pronoun <span class="glyphs">/ha</span> <span class="toaq">há</span> is an impersonal animate third-person pronoun, corresponding to English "you", "one", French "on", or German "man".</p>
+
+<div class="gloss">
+	ma d+ai jea /ha /ni (KUE) ?<br/>
+	Ma daı jea há ní kue?<br/>
+	whether *posb.ind* buy *3i.anim* this book<br/>
+	! 'Can one buy this book?'
+</div>
+
+
+<h3>Anaphoric pronouns</h3>
+
+<div class="syntax">
+	<h4>Pronominal classes</h4>
+	<img class="tree6" src="../assets/patterns/gender.svg">
+
+<table class="pronominal">
+<tbody>
+<tr>
+	<th>Class</th>
+	<th colspan="2">Pronoun</th>
+	<th>Gloss</th>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyc">Animate</div>
+	</td>
+	<td>
+		<div class="vocabularyg">/ho</div>
+	</td>
+	<td>
+		<div class="vocabularyt">hó</div>
+	</td>
+	<td>
+		<div class="vocabularys"><span class="sc">X:anim</span></div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyc">Inanimate</div>
+	</td>
+	<td>
+		<div class="vocabularyg">/maq</div>
+	</td>
+	<td>
+		<div class="vocabularyt">máq</div>
+	</td>
+	<td>
+		<div class="vocabularys"><span class="sc">X:inan</span></div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyc">Abstract</div>
+	</td>
+	<td>
+		<div class="vocabularyg">/hoq</div>
+	</td>
+	<td>
+		<div class="vocabularyt">hóq</div>
+	</td>
+	<td>
+		<div class="vocabularys"><span class="sc">X:abst</span></div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyc">Descriptive</div>
+	</td>
+	<td>
+		<div class="vocabularyg">/ta</div>
+	</td>
+	<td>
+		<div class="vocabularyt">tá</div>
+	</td>
+	<td>
+		<div class="vocabularys"><span class="sc">X:desc</span></div>
+	</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<p>The Animate class includes words referring to living organisms and words describing actions. They bind the pronoun <span class="glyphs">/ho</span> <span class="toaq">hó</span>. Examples include:</p>
+
+<p>
+	• <span class="glyphs">kune</span> <span class="toaq">kune</span> "dog" <br>
+	• <span class="glyphs">poq</span> <span class="toaq">poq</span> "person" <br>
+	• <span class="glyphs">t+ao</span> <span class="toaq">tao</span> "to do" <br>
+	• <span class="glyphs">yuq</span> <span class="toaq">chuq</span> "to eat" <br>
+</p>
+
+<p>The Inanimate class includes words which refer to tangible non-living things. They bind the pronoun <span class="glyphs">/maq</span> <span class="toaq">máq</span>. Examples include:</p>
+
+<p>
+	• <span class="glyphs">jio</span> <span class="toaq">jıo</span> "building"<br>
+	• <span class="glyphs">n+ao</span> <span class="toaq">nao</span> "water"<br>
+	• <span class="glyphs">nuofua</span> <span class="toaq">nuofua</span> "bed"<br>
+	• <span class="glyphs">y+ao</span> <span class="toaq">chao</span> "vehicle"<br>
+</p>
+
+<p>The Abstract class includes words which refer to abstract things and concepts. They bind the pronoun <span class="glyphs">/hoq</span> <span class="toaq">hóq</span>:</p>
+
+<p>
+	• <span class="glyphs">sio</span> <span class="toaq">sıo</span> "idea"<br>
+	• <span class="glyphs">juna</span> <span class="toaq">juna</span> "true proposition"<br>
+	• <span class="glyphs">hora</span> <span class="toaq">hora</span> "hour (unit)" <br>
+</p>
+
+<p>The Descriptive class includes all those words which are descriptive (adjective-like) and which can apply to more or less any object. They bind the pronoun <span class="glyphs">/ta</span> <span class="toaq">tá</span></p>
+
+<p>
+	• <span class="glyphs">de</span> <span class="toaq">de</span> "beautiful"<br>
+	• <span class="glyphs">s+ao</span> <span class="toaq">sao</span> "large"<br>
+	• <span class="glyphs">mi</span> <span class="toaq">mı</span> "named ..."<br>
+	• <span class="glyphs">po</span> <span class="toaq">po</span> "of ..."<br>
+</p>
+
+<p>The pronominal classes are a system of lexical animacy, not natural animacy. Which class a word belongs to depends not on the nature of the referent of an expression but on the animacy class of the expression itself. </p>
+<p>If a person is introduced into a sentence via the DP <span class="glyphs">/sa (JUA)</span> <span class="toaq">sá jua</span> "someone strange", the descriptive pronoun <span class="glyphs">/ta</span> <span class="toaq">tá</span> would then refer back to them, even though the referent itself is animate. This way of doing things ensures that there can be no ambiguity as to what class any given expression should have, because no knowledge of the referent is required. Pronominal binding is thus fully unambiguous, and humans and mechanical parsers are on an equal footing when it comes to anaphora resolution.</p>
+
+<div class="gloss">
+	x+ao /sa (POQ) , v\a kaqg+ai /suq /ho .<br/>
+	Shao sá poq ꝡä kaqgaı súq hó.<br/>
+	want some person *comp* see *2s* *X:anim*<br/>
+	! 'There is someone who wants you to see them.'
+</div>
+
+<div class="gloss">
+	bu dua (/DE) , v\a yo /ji /ta .<br/>
+	Bu dua dé ꝡä cho jí tá.<br/>
+	*neg* know the-beautiful *comp* like *1s* *X:desc*<br/>
+	! 'The beautiful one does not know that I like them.'
+</div>
+
+
+<p>Every verb belongs to one of the four pronominal classes, with the following exception:</p>
+
+<p>The verb <span class="glyphs">r+ai</span> <span class="toaq">raı</span> "to be something" does not belong to any of the four pronominal classes. When it is the name of a variable, then only <span class="glyphs">/r+ai</span> <span class="toaq">ráı</span> itself can refer back to that variable (the reflexive <span class="glyphs">aq</span> <span class="toaq">aq</span> and the anaphoric prefix <span class="glyphs">hu:</span> <span class="toaq">hu-</span> also work).</p>
+
+<p>The same goes for any of the nonce variables derived via the prefix <span class="glyphs">wa:</span> <span class="toaq">nha-</span> (gloss <span class="sc">var</span>). This prefix takes an arbitrary verb and turns it into a vacuous verb to be used as the name of a variable, effectively yielding an endless supply of assignable <span class="toaq">raı</span>-variables:</p>
+
+<div class="gloss">
+	/tu (WA;XI) , \na m+ai (/WA;XI) /sa (WA;GU) . <br/>
+	Tú nhạshı nä maı nhạ́shı sá nhạgu.<br/>
+	every *var*-one *cle* love the-*var*-one some *var*-two<br/>
+	! 'Every X is such that X loves some Y.'
+</div>
+
+<p>The above example uses number verbs as variables, but this works with any kind of verb.</p>
+
+<p>The prefix <span class="glyphs">hu:</span> <span class="toaq">hu-</span> provides another back-reference mechanism: it attaches to an arbitrary head and creates an anaphoric pronoun referring to the most recent accessible phrase headed by that head. For example, to refer to the most recent DP headed by <span class="glyphs">/sa</span> <span class="toaq">sá</span>, one would say <span class="glyphs">/hu:sa</span> <span class="toaq">hụ́sa</span>, and to refer to the most recent content clause, one would say <span class="glyphs">/hu:va</span> <span class="toaq">hụ́ꝡa</span>.</p>
+
+<div class="gloss">
+	\ma ti (/RIAQ) (_/EOROPA) \bi bu moaq /ji /hu:ma .<br/>
+	Mä tı ríaq Éoropa bï bu moaq jí hụ́ma.<br/>
+	whether at the-place the-Europe *top* *neg* remember *1s* *prev*:'ma'<br/>
+	! 'As for whether that place is in Europe, I do not remember that.'
+</div>
+
+<div class="gloss">
+	(/GAMA) /r+oi (/ELU) \bi lui jea /ji /hu:r+oi .<br/>
+	Gáma róı élu bï luı jea jí hụ́roı.<br/>
+	the-camel & the-elephant *top* *retr* buy *1s* *prev*:'roı'<br/>
+	! 'The camel and the elephant, I bought them.'
+</div>
+
+<h3>Reflexive and reciprocal pronouns</h3>
+
+<p>In addition to the personal pronouns and anaphoric pronouns, Toaq has two special pronouns that express reflexivity and reciprocity.</p>
+
+<table class="vocabulary">
+<tbody>
+<tr>
+	<td>
+		<div class="vocabularyg">/aq</div>
+	</td>
+	<td>
+		<div class="vocabularyt">áq</div>
+	</td>
+	<td>
+		<div class="vocabularyd">reflexive pronoun (<span class="sc">refl</span>)</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">/yeq</div>
+	</td>
+	<td>
+		<div class="vocabularyt">chéq</div>
+	</td>
+	<td>
+		<div class="vocabularyd">reciprocal pronoun (<span class="sc">recp</span>)</div>
+	</td>
+</tr>
+</tbody>
+</table>
+
+<p>These pronouns refer to the subject irrespective of its pronominal class:</p>
+
+<div class="gloss">
+	tua de /ji /aq .<br/>
+	Tua de jí áq.<br/>
+	cause beautiful *1s* *refl*<br/>
+	! 'I am making myself pretty.'
+</div>
+
+<div class="gloss">
+	soa /ime /yeq .<br/>
+	Soa íme chéq.<br/>
+	help *1+3* *recp*<br/>
+	! 'We helped each other.'
+</div>
+
+<p>The pronoun <span class="glyphs">/aq</span> <span class="toaq">áq</span> must be used whenever possible. Other anaphoric mechanisms skip the subject argument of the clause they are in.</p>
+
+<div class="gloss">
+	yo (/MAMA) /ho .<br/>
+	Cho máma hó.<br/>
+	like the-mom *X:anim*<br/>
+	! 'Mom likes her.'
+</div>
+
+<div class="gloss">
+	yo (/MAMA) /aq .<br/>
+	Cho máma áq.<br/>
+	like the-mom *refl*<br/>
+	! 'Mom likes herself.'
+</div>
+
+<h2 id="complementizers">Complementizer phrases</h2>
+
+<p>Recall the sentence pattern, which is repeated below for convenience:</p>
+
+<div class="syntax">
+	<h4>Sentence pattern</h4>
+	<img class="stemplate" src="../assets/patterns/s.svg">
+	<p>Dashed lines indicate optional components.</p>
+	<p>Asterisks indicate components that can be covert.</p>
+</div>
+
+<p></p>
+
+<div class="syntax">
+	<h4>CP pattern</h4>
+	<img class="tree" src="../assets/patterns/cp.svg">
+	<p>A complementizer phrase (CP) is a clause.</p>
+	
+	<p>It can either be the argument of a verb or the complement of a speech act particle. </p>
+	<p>Depending on which of the two it is, the complementizer carries the following tones:</p>
+	<p>
+		• matrix clause: <img class="tone" src="../assets/tones/d1.png"><br>
+		• subordinate clause: <img class="tone" src="../assets/tones/d3.png">
+	</p>
+	
+<table class="complementizers">
+<tbody>
+<tr>
+	<th rowspan="2"></th>
+	<th colspan="4">Complementizer</th>
+	<th rowspan="2">Meaning</th>
+</tr>
+<tr>
+	<th colspan="2">Matrix</th>
+	<th colspan="2">Subordinate</th>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyc">Declarative clause</div>
+	</td>
+	<td>
+		<div class="vocabularyg">va</div>
+	</td>
+	<td>
+		<div class="vocabularyt">(ꝡa)</div>
+	</td>
+		<td>
+		<div class="vocabularyg">v\a</div>
+	</td>
+	<td>
+		<div class="vocabularyt">ꝡä</div>
+	</td>
+	<td>
+		<div class="vocabularys">"that"</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyc">Polar question</div>
+	</td>
+	<td>
+		<div class="vocabularyg">ma</div>
+	</td>
+	<td>
+		<div class="vocabularyt">ma</div>
+	</td>
+		<td>
+		<div class="vocabularyg">\ma</div>
+	</td>
+	<td>
+		<div class="vocabularyt">mä</div>
+	</td>
+	<td>
+		<div class="vocabularys">"whether"</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyc">Degree question</div>
+	</td>
+	<td>
+		<div class="vocabularyg">tio</div>
+	</td>
+	<td>
+		<div class="vocabularyt">tıo</div>
+	</td>
+		<td>
+		<div class="vocabularyg">\tio</div>
+	</td>
+	<td>
+		<div class="vocabularyt">tïo</div>
+	</td>
+	<td>
+		<div class="vocabularys">"how"</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyc">Relative clause<br>(restrictive)</div>
+	</td>
+	<td>
+		<div class="vocabularyg"></div>
+	</td>
+	<td>
+		<div class="vocabularyt"></div>
+	</td>
+		<td>
+		<div class="vocabularyg">v\e</div>
+	</td>
+	<td>
+		<div class="vocabularyt">ꝡë</div>
+	</td>
+	<td>
+		<div class="vocabularys">"which"</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyc">Relative clause<br>(incidental)</div>
+	</td>
+	<td>
+		<div class="vocabularyg"></div>
+	</td>
+	<td>
+		<div class="vocabularyt"></div>
+	</td>
+		<td>
+		<div class="vocabularyg">\ju</div>
+	</td>
+	<td>
+		<div class="vocabularyt">jü</div>
+	</td>
+	<td>
+		<div class="vocabularys">"which"</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyc">Lambda clause</div>
+	</td>
+	<td>
+		<div class="vocabularyg"></div>
+	</td>
+	<td>
+		<div class="vocabularyt"></div>
+	</td>
+		<td>
+		<div class="vocabularyg">\la</div>
+	</td>
+	<td>
+		<div class="vocabularyt">lä</div>
+	</td>
+	<td>
+		<div class="vocabularys">λ </div>
+	</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+<h3>Propositions / Content clauses</h3>
+
+<p>Propositions, also called content clauses, are headed by the complementizer <span class="glyphs">v\a</span> <span class="toaq">ꝡä</span> (glossed <span class="sc">comp</span>), which corresponds to English "that":</p>
+
+<div class="gloss">
+	dua /ji , v\a guo-be /ni * .<br/>
+	Dua jí, ꝡä guobe ní.<br/>
+	know *1s* *comp* cow this <br/>
+	! 'I know that this is a cow.'
+	</div>
+
+<p>Here, because the CP is the argument of a verb, <span class="glyphs">v\a</span> <span class="toaq">ꝡä</span> carries the <img class="tone" src="../assets/tones/d3.png"> tone. If it were the complement of a speech act particle, such as <span class="glyphs">da</span> <span class="toaq">da</span> in the following example, the complementizer would carry the <img class="tone" src="../assets/tones/d1.png"> tone:</p>
+
+<div class="gloss">
+	va guo-be /ni * da .<br/>
+	Ꝡa guobe ní da.<br/>
+	*comp* cow this *asrt*<br/>
+	! '[I assert] that this is a cow.'
+</div>
+
+<p>When <span class="glyphs">va</span> <span class="toaq">ꝡa</span> is the complement of a speech act particle, it can be omitted:</p>
+
+<div class="gloss">
+	guo-be /ni * da .<br/>
+	Guobe ní da.<br/>
+	cow this *asrt*<br/>
+	! '[I assert] that this is a cow.'
+</div>
+
+<p>And because <span class="glyphs">da</span> <span class="toaq">da</span> is similarly optional, the sentence can be shortened further:</p>
+
+<div class="gloss">
+	guo-be /ni * .<br/>
+	Guobe ní.<br/>
+	cow this<br/>
+	! '[I assert] that this is a cow.'
+</div>
+
+<p>The main reason not to omit <span class="glyphs">va</span> <span class="toaq">ꝡa</span> is that it is the easiest way to mark a sentence boundary, because it doesn't need to be stressed or pronounced with a specific tone (as long as it doesn't receive <img class="tone" src="../assets/tones/d3.png">):</p>
+
+<div class="gloss">
+	guo-be /ni * . va yuq /ho /baq (P+OIBA) . <br/>
+	Guobe ní. Ꝡa chuq hó báq poıba.<br/>
+	cow this *comp* eat *X:anim* *gen* grass<br/>
+	! 'That this is a cow. It is eating grass.'
+</div>
+
+<div class="gloss">
+	dua /ji , v\a yuq (/GUO_BE) /baq (P+OIBA) .<br/>
+	Dua jí, ꝡä chuq gúobe báq poıba.<br/>
+	know *1s* *comp* eat the-cow *gen* grass<br/>
+	! 'I know that the cow is eating grass.'
+</div>
+
+
+<h3>Wh-questions</h3>
+
+<p>Interrogative clauses containing the interrogative determiner <span class="glyphs">/hi</span> <span class="toaq">hí</span> "what" are also headed by the complementizer <span class="glyphs">v\a</span> <span class="toaq">ꝡä</span>:</p>
+
+<div class="gloss">
+	dua /ji v\a yo /suq /hi (R+AI) .<br/>
+	Dua jí ꝡä cho súq hí raı.<br/>
+	know *1s* *comp* like *2s* what something<br/>
+	! 'I know what you like.'
+</div>
+
+<p>In matrix clauses, the complement of wh-clauses is the speech act particle <span class="glyphs">/moq</span> <span class="toaq">móq</span>:</p>
+
+<div class="gloss">
+	x+ao /suq /hi (R+AI) /moq ?<br/>
+	Shao súq hí raı móq?<br/>
+	want *2s* what something *int*<br/>
+	! 'What do you want?'
+</div>
+
+<p>Since there is no other complementizer that wh-clauses can combine with, <span class="glyphs">/moq</span> <span class="toaq">móq</span> can be omitted:</p>
+
+<div class="gloss">
+	faq /hi (R+AI) ?<br/>
+	Faq hí raı?<br/>
+	happen what something<br/>
+	! 'What's happening?'
+</div>
+
+<h3>Polar interrogative clauses</h3>
+
+<p>Polar interrogative clauses are headed by the complementizer <span class="glyphs">\ma</span> <span class="toaq">mä</span> "whether":</p>
+
+<div class="gloss">
+	dua-sue /w+ao /ji \ma daqx+ei /ji .<br/>
+	Duasue nháo jí mä daqsheı jí.<br/>
+	ask *3s* *1s* whether free *1s*<br/>
+	! 'She asked me whether I am free.'
+</div>
+
+<p>In matrix clauses, the complementizer is <span class="glyphs">ma</span> <span class="toaq">ma</span>:</p>
+
+<div class="gloss">
+	ma huo-g+ai /suq /ni * ?<br/>
+	Ma huogaı súq ní?<br/>
+	whether hear *2s* this<br/>
+	! 'Do you hear that?'
+</div>
+
+<p>(<span class="glyphs">/moq</span> <span class="toaq">móq</span> is again optional)</p>
+
+<h3>Degree interrogative clause</h3>
+
+<p>Degree interrogative clauses work like polar interrogatives. But instead of asking whether something is true or false, they ask about the degree to which something is the case. They are headed by the complementizer <span class="glyphs">\tio</span> <span class="toaq">tïo</span>:</p>
+
+<div class="gloss">
+	duax+ao /ji \tio gi (/FAFUAQ) .<br/>
+	Duashao jí tïo gı fáfuaq.<br/>
+	wonder *1s* how good the-movie<br/>
+	! 'I wonder how good the movie is.'
+</div>
+
+<div class="gloss">
+	tio f+oi /suq ?<br/>
+	Tıo foı súq?<br/>
+	how bored *2s*<br/>
+	! 'How bored are you?'
+</div>
+
+
+<h3 id="properties">Property clauses</h3>
+
+<p>Property clauses can be compared to infinitives in English, except that Toaq's properties are much more flexible and allow for an unlimited degree of complexity.</p>
+
+<p>Property clauses correspond more or less exactly to lambda functions. However, they differ structurally in how and where variables are bound, since they are CPs syntactically.</p>
+
+<table class="letters">
+<tbody>
+  <tr>
+    <td>
+		<span class="toaq">
+			lä req já raı
+		</span><br>
+		<span class="semantic">
+			λ<i>x</i>. req(<i>x</i>)
+		</span><br>
+		
+		"the property of being human"
+	</td>
+  </tr>
+</tbody>
+</table>
+
+<p>The lambda determiner <span class="glyphs">/ja</span> <span class="toaq">já</span> binds a variable whose name is the first verb of its complement. In the above example, this is the verb <span class="glyphs">r+ai</span> <span class="toaq">raı</span> "to be something". The choice of variable is arbitrary, much like in the lambda function where the variable <span class="semantic"><i>x</i></span> was chosen.</p>
+
+<p>Once bound, the variable can be reused (via <img class="tone" src="../assets/tones/d2.png">) within the property clause, which is identical to the behavior of other determiners. For example:</p>
+
+<table class="letters">
+<tbody>
+  <tr>
+    <td>
+		<span class="toaq">
+			lä shao já raı ꝡä tuaja ráı
+		</span><br>
+		<span class="semantic">
+			λ<i>x</i>. want(<i>x</i>, {courageous(<i>x</i>)})
+		</span><br>
+		
+		"the property of wishing oneself to be courageous"
+	</td>
+  </tr>
+</tbody>
+</table>
+
+<p>Property clauses are the expected argument type of property places, which are generally indicated as such in the dictionary by the word "property" in the English definition:</p>
+
+<table class="letters">
+<tbody>
+  <tr>
+    <td>
+		<span class="toaq">
+			leo
+		</span> =
+		
+		"X tries to satisfy property Y"<br>
+		(or, more naturally: "X tries to be/do Y")
+	</td>
+  </tr>
+</tbody>
+</table>
+
+<p>Thus, to say "I try to be courageous", one could employ a property clause as follows:</p>
+
+<div class="gloss">
+	leo /ji , \la tuaja /ja (R+AI) .<br/>
+	Leo jí, lä tuaja já raı.<br/>
+	try *1s* λ courageous X something<br/>
+	! 'I try to be courageous.'
+</div>
+
+<p>As with other determiners, the complement may be covert. This has the consequence of not giving the variable a name.</p>
+
+<p>The verb <span class="glyphs">iq</span> <span class="toaq">ıq</span> "X satisfies property Y" is a raw property applicator. The following pair of sentences illustrates the most basic functionality of property clauses:</p>
+
+<div class="gloss">
+	iq /ni , \la tofu /ja * .<br/>
+	Iq ní, lä tofu já.<br/>
+	is this λ tofu X<br/>
+	! 'This satisfies the property of being tofu.'
+</div>
+
+<p>is logically equivalent to</p>
+
+<div class="gloss">
+	tofu /ni .<br/>
+	Tofu ní.<br/>
+	tofu this<br/>
+	! 'This is tofu.'
+</div>
+
+<p>Using <span class="glyphs">iq</span> <span class="toaq">ıq</span> in this way offers an alternative to the <a href="#cleft_verb">cleft verb</a> to manipulate word order.</p>
+
+<p>Here is another example of a more complex property:</p>
+
+<div class="gloss">
+	nieq /suq , \la tua /ja (R+AI) , v\a yo /ji (/R+AI) .<br/>
+	Nıeq súq lä tua já raı ꝡä cho jí ráı.<br/>
+	unskilled *2s* λ cause X something *comp* like *1s* X<br/>
+	! 'You are bad at satisfying the property λx. x causes me to like x.'<br/>
+	! 'You are bad at making me like you.'
+	</div>
+
+<p>Invoking explicit property clauses is somewhat costly and it is desirable to avoid them when possible.</p>
+
+<p>There are two main ways of doing so:</p>
+
+<p>1) Simple properties can typically be avoided by using a serial verb. Instead of</p>
+
+<div class="gloss">
+	leo (/KUNE) , \la kaqga /ja * /ji.<br/>
+	Leo kúne, lä kaqga já jí.<br/>
+	try the-dog λ bite X *1s*<br/>
+	! 'The dog tries to bite me.'
+</div>
+
+<p>one would express this using the equivalent, but shorter, serial verb construction:</p>
+
+<div class="gloss">
+	leo kaqga (/KUNE) /ji.<br/>
+	Leo kaqga kúne jí.<br/>
+	try bite the-dog *1s*<br/>
+	! 'The dog tries to bite me.'
+</div>
+
+<p>2) Most verbs that expect a property argument allow the same place to be filled by a content clause instead. Doing so invokes the following interpretation rule:</p>
+
+<table class="letters">
+<tbody>
+  <tr>
+    <td>
+		<span class="mono">&lt;verb&gt; X CP → &lt;verb&gt; X lä tua já CP</span><br>
+		X &lt;verb&gt; CP → X &lt;verb&gt; to bring about CP
+	</td>
+  </tr>
+</tbody>
+</table>
+
+<p>Using a content clause tends to make it a bit easier to track referents, because the clause is in a sense less abstract:</p>
+
+<div class="gloss">
+	leo (/KUNE) , v\a kaqga /ho /ji.<br/>
+	Leo kúne, ꝡä kaqga hó jí.<br/>
+	try the-dog *comp* bite *X:anim* *1s*<br/>
+	! 'The dog tries to bite me.'
+</div>
+
+<h3>Relative clauses</h3>
+
+<div class="syntax">
+	<h4>Relative clause pattern</h4>
+	<img class="tree" src="../assets/patterns/rel.svg">
+	<p>A relative clause (CP<sub>rel</sub>) is a CP which attaches as an adjunct to an nP.</p>
+	<p><i>Restrictive</i> relative clauses are headed by the complementizer <span class="glyphs">v\e</span>&nbsp;<span class="toaq">ꝡë</span>.</p>
+	<p><i>Incidental</i> relative clauses are headed by the complementizer <span 
+class="glyphs">\ju</span>&nbsp;<span class="toaq">jü</span>.</p>
+	<p>Relative clauses follow the head noun.</p>
+</div>
+
+<p>The content of a CP<sub>rel</sub> equals that of ordinary CPs, with one extra condition: the relative clause must contain a reference to its antecedent. This can be achieved in one of three ways: </p>
+
+<p>
+• the resumptive pronoun <span class="glyphs">/hoa</span> <span class="toaq">hóa</span> (gloss: <span class="sc">rsm</span>)<br>
+• bound variable reference via <img class="tone" src="../assets/tones/d2.png"><br>
+• an anaphoric pronoun which matches the antecedent's pronominal class<br>
+</p>
+
+<div class="gloss">
+	/sa (KUE) , v\e yo /ji /hoa<br/>
+	sá kue, ꝡë cho jí hóa<br/>
+	some book which like *1s* *rsm*<br/>
+	! 'a book that I like'
+</div>
+
+<div class="gloss">
+	/sa (KUE) , v\e yo /ji (/KUA)<br/>
+	sá kue, ꝡë cho jí kúa<br/>
+	some book which like *1s* the-book<br/>
+	! 'a book that I like'
+</div>
+
+<div class="gloss">
+	/sa (KUE) , v\e yo /ji /maq<br/>
+	sá kue, ꝡë cho jí máq<br/>
+	some book which like *1s* *X:inan*<br/>
+	! 'a book that I like'
+</div>
+
+<p>Here is a more complex relative clause:</p>
+
+<div class="gloss">
+	kaqg+ai /ji /sa (DEO) , v\e tua (/KUNE) s+ao , v\a tea (/DEO)<br/>
+	Kaqgaı jí sá deo, ꝡë tua kúne sao, ꝡä tea déo.<br/>
+	see *1s* some child which cause the-dog large *comp* scared the-child<br/>
+	! 'I saw a child that the large dog caused to be scared'
+</div>
+
+<p>In the above example, <span class="glyphs">(/DEO)</span> <span class="toaq">déo</span> "the child" could be replaced by the resumptive pronoun <span class="glyphs">/hoa</span> <span class="toaq">hóa</span>, but not by the animate pronoun <span class="glyphs">/ho</span> <span class="toaq">hó</span>, because it would refer to the dog.</p>
+
+<p>Restrictive relative clauses (introduced by <span class="glyphs">v\e</span> <span class="toaq">ꝡë</span>) restrict the referent set of a DP by acting as a restriction on the domain of the binding quantifier. Incidental relative clauses (introduced by <span class="glyphs">\ju</span> <span class="toaq">jü</span>) make a side claim about an argument. </p>
+
+<p>Another way of thinking about the difference is that restrictive relative clauses provide essential information for identifying what a DP refers to, while incidental clauses merely give additional information about a referent that is not essential for figuring out who or what is being talked about.</p>
+
+<p>In English, incidental relative clauses are separated from the main clause with commas, while restrictive relative clauses aren't. In Toaq, the difference is always marked via different complementizers.</p>
+
+<div class="gloss">
+	m+ai /ji (/KATO) jibo , \ju kuo /ho .<br/>
+	Maı jí káto jıbo, jü kuo hó.<br/>
+	love *1s* the-cat mine *inc.rel* black *X:anim*<br/>
+	! 'I love my cat, which is black.'
+</div>
+
+<div class="gloss">
+	(/MAMA) jibo , \ju bua /ho /baq (MEAQ) , \na poq buq:gi /ho .<br/>
+	Máma jıbo, jü bua hó báq meaq, nä poq bụqgı hó.<br/>
+	the-mom mine *inc.rel* inhabit *X:anim* *gen* boat *cle* person *aug*-good *X:anim*<br/>
+	! 'My mom, who lives on a boat, is a very good person.'
+</div>
+
+
+
+<h3>Self-termination and CPs</h3>
+
+<p>All CPs are able to take advantage of <a href="#self_termination">self-termination</a>:</p>
+
+<div class="gloss">
+	ha:le , v\a xo suhu (/HOE) , v\a dana /suq /ji .<br/>
+	Hạle, ꝡä sho suhu hóe, ꝡä dana súq jí.<br/>
+	*cmpr*-likely *comp* become pig the-sun *comp* defeat *2s* *1s*<br/>
+	! 'It is more likely that the sun turns into a pig than that you beat me.'
+</div>
+
+<div class="gloss">
+	kaqsi /ni * , v\e yuq /hoa (/XAMU) , /suq .<br/>
+	Kaqsı ní, ꝡë chuq hóa shámu, súq.<br/>
+	look.at this *comp* eat *rsm* the-apple *2s*<br/>
+	! 'That one eating the apple is looking at you.'
+</div>
+
+<p>See also the section on the <a href="#cleft_verb">cleft verb</a>.</p>
+
+
+
+<h2>Polarity phrases</h2>
+
+<div class="syntax">
+	<h4>Polarity phrase pattern</h4>
+	<img class="tree4" src="../assets/patterns/negp.svg">
+	<p>Polarity items (Σ) negate or affirm their comple&shy;ment.</p>
+	<p>Their attachment site determines their scope. They usually attach to vPs or TPs.</p>
+</div>
+
+<table class="vocabulary">
+<tbody>
+<tr>
+	<td>
+		<div class="vocabularyg">bu</div>
+	</td>
+	<td>
+		<div class="vocabularyt">bu</div>
+	</td>
+	<td>
+		<div class="vocabularyd">negation (<span class="sc">neg</span>)</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">jeo</div>
+	</td>
+	<td>
+		<div class="vocabularyt">jeo</div>
+	</td>
+	<td>
+		<div class="vocabularyd">affirmation (<span class="sc">aff</span>)</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">+aimu</div>
+	</td>
+	<td>
+		<div class="vocabularyt">aımu</div>
+	</td>
+	<td>
+		<div class="vocabularyd">contrastive negation (<span class="sc">cneg</span>)</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">jeha</div>
+	</td>
+	<td>
+		<div class="vocabularyt">jeha</div>
+	</td>
+	<td>
+		<div class="vocabularyd">contrastive affirmation (<span class="sc">caff</span>)</div>
+	</td>
+</tr>
+</tbody>
+</table>
+
+<p><span class="glyphs">bu</span> <span class="toaq">bu</span> is ordinary negation (¬):</p>
+
+<div class="gloss">
+	bu gama /ni .<br/>
+	Bu gama ní.<br/>
+	*neg* camel this<br/>
+	! 'This is not a camel.'
+</div>
+
+<p><span class="glyphs">jeo</span> <span class="toaq">jeo</span> is the explicit absence of negation. Its pragmatic effect is similar to English "do" in affirmative clauses. </p>
+
+<p>For example, after listing food that A didn't eat on their vacation, A might then continue by saying:</p>
+
+<div class="gloss">
+	jeo xuq /ji /baq (PIEROGI) .<br/>
+	Jeo chuq jí báq pıerogı.<br/>
+	*aff* eat *1s* *gen* pierogi<br/>
+	! 'I did eat pierogi.'
+</div>
+
+<p>A clause that isn't negated is affirmed by default, so <span class="glyphs">jeo</span> <span class="toaq">jeo</span> is never required to make a clause positive. Therefore, using it draws special attention to the absence of negation.</p>
+
+<p><span class="glyphs">+aimu</span> <span class="toaq">aımu</span> and <span class="glyphs">jeha</span> <span class="toaq">jeha</span> are the contrastive counterparts. They additionally contradict a salient proposition from the immediately preceding discourse. They are similar in function to German "doch" and French "si".</p>
+
+<p>For example, if A claims that B is not familiar with Toaq, B might contradict A by answering:</p>
+
+<div class="gloss">
+	jeha z+ao /ji (/TOAQZU) .<br/>
+	Jeha zao jí Tóaqzu.<br/>
+	*caff* familiar *1s* Toaq<br/>
+	! '_Yes_, I _am_ familiar with Toaq.'
+</div>
+
+<p>And if A says to B that the film they're watching together is boring, B might contradict A by saying:</p>
+
+<div class="gloss">
+	+aimu f+oige /ni (FAFUAQ) .<br/>
+	Aımu foıge ní fafuaq.<br/>
+	*cneg* boring this movie<br/>
+	! '_No_, the movie _isn't_ boring.'
+</div>
+
+
+<h2>Tense</h2>
+
+<div class="syntax">
+	<h4>Tense pattern</h4>
+	<img class="tree" src="../assets/patterns/tp.svg">	
+	<p>Tense (T) expresses when something happens relative to the time of utterance. Tense precedes aspect (Asp).</p>
+	
+	<p>There are three basic tenses:</p>
+	<p>• past<br>• present<br>• future</p>
+	
+	<p>Tense need never be overtly marked.</p>
+</div>
+
+<table class="vocabulary">
+<tbody>
+<tr>
+	<td>
+		<div class="vocabularyg">pu</div>
+	</td>
+	<td>
+		<div class="vocabularyt">pu</div>
+	</td>
+	<td>
+		<div class="vocabularyd">past tense (<span class="sc">pst</span>)</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">n+ai</div>
+	</td>
+	<td>
+		<div class="vocabularyt">naı</div>
+	</td>
+	<td>
+		<div class="vocabularyd">present tense (<span class="sc">prs</span>)</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">jia</div>
+	</td>
+	<td>
+		<div class="vocabularyt">jıa</div>
+	</td>
+	<td>
+		<div class="vocabularyd">future tense (<span class="sc">fut</span>)</div>
+	</td>
+</tr>
+</tbody>
+</table>
+
+<div class="gloss">
+	pu jiu (/MI="AROQ") ~ti /(+AOMO) .<br/>
+	Pu jıu mí Aroq tî áomo.<br/>
+	*pst* born the-*name* Aaron *a*-at the-island<br/>
+	! 'Aaron was born on the island.'
+</div>
+
+<div class="gloss">
+	n+ai ti /ji ("/FARAQSEGUA") .<br/>
+	Naı tı jí Fáraqsegua.<br/>
+	*prs* at *1s* the-France<br/>
+	! 'I'm in France right now.'
+</div>
+
+<div class="gloss">
+	jia ruqxua wa .<br/>
+	Jıa ruqshua nha.<br/>
+	*fut* rain *prom*<br/>
+	! 'I promise it will rain.'
+</div>
+
+<p>These tenses also have prefix forms, which attach to a following aspect head. This has no effect on the semantics, but it does reduce the number of  stressed syllables:</p>
+
+<div class="gloss">
+	pu:yum jara /w+ao .<br/>
+	Pụchum jara nháo.<br/>
+	*pst*-*impf* run *3s*<br/>
+	! 'She was running.'
+</div>
+
+<p>Without the prefix form, the sentence would begin with three stressed falling tone syllables in a row. With the prefix, the rhythm follows a more pleasant stressed-unstressed-stressed-unstressed pattern.</p>
+
+<p>In addition to the basic tenses above, there are also the following existential tenses:</p>
+
+<table class="vocabulary">
+<tbody>
+<tr>
+	<td>
+		<div class="vocabularyg">sula</div>
+	</td>
+	<td>
+		<div class="vocabularyt">sula</div>
+	</td>
+	<td>
+		<div class="vocabularyd">unrestricted existential tense (<span class="sc">uet</span>)</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">mala</div>
+	</td>
+	<td>
+		<div class="vocabularyt">mala</div>
+	</td>
+	<td>
+		<div class="vocabularyd">existential past tense (<span class="sc">epst</span>)</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">jela</div>
+	</td>
+	<td>
+		<div class="vocabularyt">jela</div>
+	</td>
+	<td>
+		<div class="vocabularyd">existential future tense (<span class="sc">efut</span>)</div>
+	</td>
+</tr>
+</tbody>
+</table>
+
+<p>In contrast to the normal tenses, existential tenses don't refer to specific time intervals but to the entirety of time. The unrestricted existential tense expresses that there exists at least one moment between the beginning of time and the end of time at which the sentence is true. The past and future versions are restricted to the past or future portions respectively.</p>
+
+<p>Thus, the existential tenses are weaker in affirmative statements and stronger in negated statements:</p>
+
+<div class="gloss">
+	ma pu kaqg+ai /suq /baq (JARAFA) ?<br/>
+	Ma pu kaqgaı súq báq jarafa?<br/>
+	whether *pst* see *2s* *gen* giraffe<br/>
+	! 'Did you see a giraffe? (e.g. on your journey)'
+</div>
+
+<div class="gloss">
+	ma mala kaqg+ai /suq /baq (JARAFA) ?<br/>
+	Ma mala kaqgaı súq báq jarafa?<br/>
+	whether *epst* see *2s* *gen* giraffe<br/>
+	! 'Have you ever seen a giraffe? (in your lifetime)'
+</div>
+
+<div class="gloss">
+	bu pu kaqg+ai /ji /baq (JARAFA) .<br/>
+	Bu pu kaqgaı jí báq jarafa.<br/>
+	*neg* *pst* see *1s* *gen* giraffe<br/>
+	! 'I did not see a giraffe. (e.g. on my journey)'
+</div>
+
+<div class="gloss">
+	bu mala kaqg+ai /ji /baq (JARAFA) .<br/>
+	Bu mala kaqgaı jí báq jarafa.<br/>
+	*neg* *epst* see *1s* *gen* giraffe<br/>
+	! 'I have never seen a giraffe. (in my lifetime)'
+</div>
+
+<p>The past tense <span class="glyphs">pu</span> <span class="toaq">pu</span> and the future tense <span class="glyphs">jia</span> <span class="toaq">jıa</span> can additionally be marked for temporal distance, yielding remote past/future and near past/future tenses:</p>
+
+<table class="vocabulary">
+<tbody>
+<tr>
+	<td>
+		<div class="vocabularyg">puj+ao</div>
+	</td>
+	<td>
+		<div class="vocabularyt">pujao</div>
+	</td>
+	<td>
+		<div class="vocabularyd">remote past tense (<span class="sc">rem.pst</span>)</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">pujui</div>
+	</td>
+	<td>
+		<div class="vocabularyt">pujuı</div>
+	</td>
+	<td>
+		<div class="vocabularyd">near past tense (<span class="sc">near.pst</span>)</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">jiaj+ao</div>
+	</td>
+	<td>
+		<div class="vocabularyt">jıajao</div>
+	</td>
+	<td>
+		<div class="vocabularyd">remote future tense (<span class="sc">rem.fut</span>)</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">jiajuı</div>
+	</td>
+	<td>
+		<div class="vocabularyt">jıajuı</div>
+	</td>
+	<td>
+		<div class="vocabularyd">near future tense (<span class="sc">near.fut</span>)</div>
+	</td>
+</tr>
+</tbody>
+</table>
+
+
+
+<h2>Aspect</h2>
+
+<div class="syntax">
+	<h4>Aspect pattern</h4>
+	<img class="tree" src="../assets/patterns/tp.svg">	
+	
+	<p>Aspect follows tense (if present).</p>
+</div>
+
+<table class="vocabulary">
+<tbody>
+<tr>
+	<td>
+		<div class="vocabularyg">tam</div>
+	</td>
+	<td>
+		<div class="vocabularyt">tam</div>
+	</td>
+	<td>
+		<div class="vocabularyd">perfective aspect (<span class="sc">perf</span>)</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">yum</div>
+	</td>
+	<td>
+		<div class="vocabularyt">chum</div>
+	</td>
+	<td>
+		<div class="vocabularyd">imperfective aspect (<span class="sc">impf</span>)</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">lui</div>
+	</td>
+	<td>
+		<div class="vocabularyt">luı</div>
+	</td>
+	<td>
+		<div class="vocabularyd">retrospective aspect (<span class="sc">retr</span>)</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">za</div>
+	</td>
+	<td>
+		<div class="vocabularyt">za</div>
+	</td>
+	<td>
+		<div class="vocabularyd">prospective aspect (<span class="sc">prsp</span>)</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">ho+ai</div>
+	</td>
+	<td>
+		<div class="vocabularyt">hoaı</div>
+	</td>
+	<td>
+		<div class="vocabularyd">superfective aspect (<span class="sc">sprf</span>)</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">h+ai</div>
+	</td>
+	<td>
+		<div class="vocabularyt">haı</div>
+	</td>
+	<td>
+		<div class="vocabularyd">subfective aspect (<span class="sc">subf</span>)</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">he</div>
+	</td>
+	<td>
+		<div class="vocabularyt">he</div>
+	</td>
+	<td>
+		<div class="vocabularyd">gnomic aspect (<span class="sc">gno</span>)</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">hiq</div>
+	</td>
+	<td>
+		<div class="vocabularyt">hıq</div>
+	</td>
+	<td>
+		<div class="vocabularyd">near retrospective aspect (<span class="sc">near.retr</span>)</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">fi</div>
+	</td>
+	<td>
+		<div class="vocabularyt">fı</div>
+	</td>
+	<td>
+		<div class="vocabularyd">near prospective aspect (<span class="sc">near.prsp</span>)</div>
+	</td>
+</tr>
+</tbody>
+</table>
+
+<p>The perfective aspect <span class="glyphs">tam</span> <span class="toaq">tam</span> views an event as a simple whole and places the event fully within in the reference time.</p>
+
+<img class="aspect" src="../assets/patterns/perfective.svg">
+
+<div class="gloss">
+	pu tam xua (/XAMU) (/JOQHUA) w+aobo .<br/>
+	Pu tam shua shámu jóqhua nhaobo.<br/>
+	*pst* *perf* fall the-apple the-head *3s.poss*<br/>
+	! 'The apple fell on his head.'
+</div>
+
+<p>The imperfective aspect <span class="glyphs">yum</span> <span class="toaq">chum</span> expresses ongoing events:</p>
+
+ <img class="aspect" src="../assets/patterns/imperfective.svg">
+
+<div class="gloss">
+	yum nuo (/KUNE) ~laqcia .<br/>
+	Chum nuo kúne lâqcıa.<br/>
+	*impf* sleep the-dog *a*-soundless<br/>
+	! 'The dog was sleeping silently.'
+</div>
+
+<p>The retrospective aspect <span class="glyphs">lui</span> <span class="toaq">luı</span> expresses that the event is fully in the past of the reference time.</p>
+
+<img class="aspect" src="../assets/patterns/retrospective.svg">
+
+<div class="gloss">
+	lui tixa (/JUO) .<br/>
+	Luı tısha júo.<br/>
+	*retr* arrive the-letter<br/>
+	! 'The letter has arrived.'
+</div>
+
+<p>The prospective aspect <span class="glyphs">za</span> <span class="toaq">za</span> expresses that the event is fully in the future of the reference time.</p>
+
+<img class="aspect" src="../assets/patterns/prospective.svg">
+
+<div class="gloss">
+	za tixa /w+ao .<br/>
+	Za tısha nháo.<br/>
+	*prsp* arrive *3s*<br/>
+	! 'He has yet to arrive.'<br/>
+	! 'He is going to arrive.'
+</div>
+
+<p>The superfective aspect <span class="glyphs">ho+ai</span> <span class="toaq">hoaı</span> expresses that an event is continuing beyond an expected endpoint. It corresponds to English "still":</p>
+
+<img class="aspect" src="../assets/patterns/superfective.svg">
+
+<div class="gloss">
+	ma ho+ai l+ao /suq ?<br/>
+	Ma hoaı lao súq?<br/>
+	whether *sprf* wait *2s*<br/>
+	! 'Are you still waiting?'
+</div>
+
+<p>The subfective aspect <span class="glyphs">h+ai</span> <span class="toaq">haı</span> expresses that an event is taking place earlier than expected. It corresponds to English "already":</p>
+
+<img class="aspect" src="../assets/patterns/subfective.svg">
+
+<div class="gloss">
+	h+ai nie /ji (/KUA) .<br/>
+	Haı nıe jí kúa.<br/>
+	*subf* inside *1s* the-room<br/>
+	! 'I'm already in the room.'
+</div>
+
+<p>The near retrospective aspect <span class="glyphs">hiq</span> <span class="toaq">hıq</span> expresses that an event has just happened, or happened right before the reference time.</p>
+
+<img class="aspect" src="../assets/patterns/near_retrospective.svg">
+
+<div class="gloss">
+	hiq jea /sa * (/NUI_EKU) jibo .<br/>
+	Hıq jea sá núı'eku jıbo.<br/>
+	*near.retr* buy some pony *1s.poss*<br/>
+	! 'Someone just bought my pony.'
+</div>
+
+<p>The near prospective aspect <span class="glyphs">fi</span> <span class="toaq">fı</span> expresses that an event is imminent, on the verge of happening, or about to happen.</p>
+
+<img class="aspect" src="../assets/patterns/near_prospective.svg">
+
+<div class="gloss">
+	fi ruqxua .<br/>
+	Fı ruqshua.<br/>
+	*near.pros* rain<br/>
+	! 'It is about to rain.'
+</div>
+
+<p>The gnomic aspect <span class="glyphs">he</span> <span class="toaq">he</span> expresses general truths, how things are in general:</p>
+
+<div class="gloss">
+	he bu pie /ji /baq (BIRA) .<br/>
+	He bu pıe jí báq bıra.<br/>
+	*gno* *neg* drink *1s* *gen* beer<br/>
+	! 'I don't drink beer.'
+</div>
+
+<p>An aspect may be attached to a following verb as a prefix:</p>
+
+<div class="gloss">
+	mu:yo /ji (/ZA;FAQ) .<br/>
+	Mụcho jí zạ́faq.<br/>
+	*opp*-like *1s* the-*pros*-happen<br/>
+	! 'I dislike the thing that's going to happen.'
+</div>
+
+<p>This is also possible if the aspect carries a tense prefix:</p>
+
+<div class="gloss">
+	n+aiyum:jara /w+ao ~fa (/N+AOMI) .<br/>
+	Naıchụmjara nháo fâ náomı.<br/>
+	*prs*-*impf*-run *3s* *a*-go the-ocean<br/>
+	! 'She is currently running to the ocean.'
+</div>
+
+
+
+<h2>Modals and conditionals</h2>
+
+<div class="syntax">
+	<h4>Modals and conditionals pattern</h4>
+	<img class="tree3" src="../assets/patterns/modalp.svg">
+	
+	<p>Modals are used to make statement about necessity and possibility. They also function as conditionals (<i>if</i>-clauses).</p>
+	
+	<p>Each modality comes in two forms: indicative and subjunctive.</p>
+		
+	<table class="modaltable">
+	<tbody>
+		<tr>
+			<th></th>
+			<th>Indicative</th>
+			<th>Subjunctive</th>
+		</tr>
+		<tr>
+			<td>
+				<div class="vocabularyc">Necessity</div>
+			</td>
+			<td>
+				<span class="glyphs">xe</span> <span class="toaq">she</span>
+			</td>
+			<td>
+				<span class="glyphs">+ao</span> <span class="toaq">ao</span>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div class="vocabularyc">Possibility</div>
+			</td>
+			<td>
+				<span class="glyphs">d+ai</span> <span class="toaq">daı</span>
+			</td>
+			<td>
+				<span class="glyphs">-ea</span> <span class="toaq">ea</span>
+			</td>
+		</tr>
+	</tbody>
+	</table>
+
+	<p>Modals optionally take a CP complement.</p>
+	
+</div>
+</div>
+
+<p>Modals are quantifiers over possible worlds. The CP complement restricts the quantifier:</p>
+
+<p><span class="mono">Modal [restriction] [main clause]</span></p>
+
+<p>This is similar to an "if ... then ..." structure:</p>
+
+<p><span class="mono">If [antecedent] then [consequent]</span></p>
+
+<div class="gloss">
+	~xe , v\a roaq /suq /ji , \na fu /ji /suq .<br/>
+	Shê ꝡä roaq súq jí, nä fu jí súq.<br/>
+	*nec*.*ind* *comp* parent *2s* *1s* *cle* offspring *1s* *2s*<br/>
+	! 'If you are my biological parent, then I'm your biological offspring.'
+</div>
+
+<p>Modals come in two types: indicative and subjunctive. These names are based on the fact that they correspond to English indicative conditionals and subjunctive conditionals, even though Toaq does not grammatically mark for mood.</p>
+
+<p>Subjunctives are also called counterfactuals. They describe situations that are contrary to fact. They correspond to "would" and "could".</p>
+
+<p><span class="glyphs">+ao</span> <span class="toaq">ao</span> expresses the combination <span class="mono">necessity + counterfactual</span>:</p>
+
+<div class="gloss">
+	~+ao , v\a ti /suq /ni , \na buja /ji /suq .<br/>
+	Âo ꝡä tı súq ní, nä buja jí súq.<br/>
+	*nec*.*subj* *comp* at *2s* this *cle* kiss *1s* *2s*<br/>
+	! 'If you were here, I would kiss you.'
+</div>
+
+<p>This sentence implies (presupposes) that "you are not here".</p>
+
+<div class="gloss">
+	~+ao , v\a zudeq /ji ("/TOAQZU") , \na j+ai /ji .<br/>
+	Âo ꝡä zudeq jí Tóaqzu, nä jaı jí.<br/>
+	*nec*.*subj* *comp* can.speak *1s* Toaq *cle* happy *1s*<br/>
+	! 'If I were able to speak Toaq, I would be happy.'
+</div>
+
+<p><span class="glyphs">-ea</span> <span class="toaq">ea</span> expresses the combination <span class="mono">possibility + counterfactual</span>:</p>
+
+<div class="gloss">
+	-~ea , v\a ti /suq /ni , \na soa /suq /ji .<br/>
+	Êa ꝡä tı súq ní, nä soa súq jí.<br/>
+	*posb*.*subj* *comp* at *2s* this *cle* help *2s* *1s*<br/>
+	! 'If you were here, you could help me.'
+</div>
+
+<p>Modals can also be used without an overt complement. This leaves the restriction implicit and corresponds to <i>could/would/can/must</i>-clauses without an <i>if</i>-clause. In such cases, the modal carries a falling tone <img class="tone" src="../assets/tones/d1.png"> and mustn't be followed by <span class="toaq">nä</span>:</p>
+
+<div class="gloss">
+	+ao yo /suq /ni (LUA) .<br/>
+	Ao cho súq ní lua.<br/>
+	*nec*.*subj* like *2s* this story<br/>
+	! 'You would like this story.'
+</div>
+
+<div class="gloss">
+	bu d+ai dua /ji , v\a m+oi /w+ao /hi .<br/>
+	Bu daı dua jí ꝡä moı nháo hí.<br/>
+	*neg* *posb*.*ind* know *1s* *comp* think *3s* what<br/>
+	! 'It's not possible for me to know what she's thinking.'
+</div>
+
+
+<h2>Adverbial adjuncts</h2>
+
+<div class="syntax">
+	<h4>AdjunctP pattern</h4>
+	<img class="tree2" src="../assets/patterns/adjunctp.svg">
+	<p>Adjunct phrases attach to vPs.</p>
+	<p>They can attach on either side.</p>
+	<p>The Adjunct head is <img class="tone" src="../assets/tones/d4.png"> (gloss: <span class="sc">adj</span>)</p>
+	<p>AdjunctPs act as adverbial restrictors of the event variable of the vP.</p>
+	<p>Adverbials can appear in the following places:</p>
+	<p><span class="mono">V (Adv) S O (Adv)</span></p>
+</div>
+
+<p>Adverbials can be grouped into two broad categories:</p>
+
+<p>
+• eventive adverbials <br>
+• subject-sharing adverbials
+</p>
+
+<p>Adverbials are formed by combining the <img class="tone" src="../assets/tones/d4.png"> tone with a verb phrase. If the verb is intransitive, the resulting adverbial will correspond to an adverb in English. If the verb is transitive, the adverbial will correspond to a preposition, taking a complement.</p>
+
+<table class="letters">
+<tbody>
+  <tr>
+    <td><span class="mono"><img class="tone" src="../assets/tones/d4.png"> + V<sub>intr</sub> = adverb</span>
+	<br>
+	<span class="mono"><img class="tone" src="../assets/tones/d4.png"> + V<sub>trans</sub> = preposition</span>
+	</td>
+  </tr>
+</tbody>
+</table>
+
+
+<h3>Eventive adverbials</h3>
+
+<p>Eventive adverbials allow us to add more information about the event expressed by a verb. For example, they let us specify where and when something happened, or certain semantic roles such as purpose, beneficiary, etc).</p>
+
+<p>Using an adverbial in a clause has the effect of claiming that the event expressed by the main verb of the clause also satisfies the first argument place of the adverbial verb:</p>
+
+<div class="gloss">
+	tixa /w+ao ~r+ao (/KIAYAQ) .<br/>
+	Tısha nháo râo kíachaq.<br/>
+	arrive *3s* *a*-when the-Monday<br/>
+	! 'The event of her arriving is simultaneous with Monday.' <br/>
+	! 'She arrives on Monday.'
+</div>
+
+<p>In this example, the arriving event is claimed to satisfy the first place of <span class="glyphs">r+ao</span> <span class="toaq">rao</span> "X takes place at the same time as Y". The second argument place of <span class="glyphs">r+ao</span> <span class="toaq">rao</span> is filled by <span class="glyphs">(/KIAYAQ)</span> <span class="toaq">kíachaq</span> "Monday".</p>
+
+<p>Because eventive adverbials describe events, the first argument of an adverbial verb must be one that can apply to events.</p>
+
+<div class="gloss">
+	yum nuo (/TIQRA) ~nie (/N+AOKUA) .<br/>
+	Chum nuo tíqra nîe náokua.<br/>
+	*impf* sleep the-tiger *a*-inside the-bathroom<br/>
+	! 'The tiger is sleeping in the bathroom.'
+</div>
+
+<p>Here, the event is claimed to satisfy "X is inside the bathroom".</p>
+
+<div class="gloss">
+	ruqxua ~daqbu+ai .<br/>
+	Ruqshua dâqbuaı.<br/>
+	rain *a*-temporally.long<br/>
+	! 'It rained for a long time.'
+</div>
+
+<p>This example contains an intransitive adverbial (<span class="glyphs">daqbu+ai</span> <span class="toaq">daqbuaı</span> "X has a long duration") meaning it does not take a complement. Other than that, it follows the same pattern as the previous examples.</p>
+
+<p>There can be an unlimited number of adverbials in a clause:</p>
+
+<div class="gloss">
+	l+ao (/ARANE) ~tia (/NAM) ~r+ao (/NUAQ) ~xiu , /e tixa /ji .<br/>
+	Lao árane tîa nám râo núaq shîu é tısha jí.<br/>
+	wait the-spider *a*-behind the-bread *a*-when the-night *a*-before *comp* arrive *1s*<br/>
+	! 'The spider waited behind the bread at night before I arrived.'
+</div>
+
+<p>Below is a selection of the sort of verbs that are commonly used as adverbial adjuncts:</p>
+
+<table class="vocabulary">
+<tbody>
+<tr>
+	<td>
+		<div class="vocabularyg">ti</div>
+	</td>
+	<td>
+		<div class="vocabularyt">tı</div>
+	</td>
+	<td>
+		<div class="vocabularyd">X is at location Y</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">nie</div>
+	</td>
+	<td>
+		<div class="vocabularyt">nıe</div>
+	</td>
+	<td>
+		<div class="vocabularyd">X is inside Y</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">bui</div>
+	</td>
+	<td>
+		<div class="vocabularyt">buı</div>
+	</td>
+	<td>
+		<div class="vocabularyd">X is outside Y</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">tijui</div>
+	</td>
+	<td>
+		<div class="vocabularyt">tıjuı</div>
+	</td>
+	<td>
+		<div class="vocabularyd">X is near Y</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">xiu</div>
+	</td>
+	<td>
+		<div class="vocabularyt">shıu</div>
+	</td>
+	<td>
+		<div class="vocabularyd">X is temporally before Y</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">bie</div>
+	</td>
+	<td>
+		<div class="vocabularyt">bıe</div>
+	</td>
+	<td>
+		<div class="vocabularyd">X is temporally after Y</div>
+	</td>
+</tr>
+</tbody>
+</table>
+
+<div class="gloss">
+	~ti (_/ASIA)<br/>
+	tî Ásıa<br/>
+	*a*-at Asia<br/>
+	! 'in Asia'
+</div>
+
+<div class="gloss">
+	~nie (/N+AOMI)<br/>
+	nîe náomı<br/>
+	*a*-inside the-ocean<br/>
+	! 'inside the ocean'
+</div>
+
+<div class="gloss">
+	~tijui (/YUECE)<br/>
+	tîjuı chúece<br/>
+	*a*-near train.station<br/>
+	! 'near the train station'
+</div>
+
+<div class="gloss">
+	~bie (/XUA_C+AO)<br/>
+	bîe shúacao<br/>
+	*a*-after autumn<br/>
+	! 'after (the) autumn'
+</div>
+
+<p>The following table lists examples of verbs that correspond to various semantic roles (this list is not exhaustive):</p>
+
+<table class="vocabulary">
+<tbody>
+<tr>
+	<td>
+		<div class="vocabularyg">bo:tua</div>
+	</td>
+	<td>
+		<div class="vocabularyt">bọtua</div>
+	</td>
+	<td>
+		<div class="vocabularyd">X is brought about by Y</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">bo:t+ao</div>
+	</td>
+	<td>
+		<div class="vocabularyt">bọtao</div>
+	</td>
+	<td>
+		<div class="vocabularyd">X is intentionally caused by agent Y</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">zuo</div>
+	</td>
+	<td>
+		<div class="vocabularyt">zuo</div>
+	</td>
+	<td>
+		<div class="vocabularyd">X is done for purpose Y</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">wuq</div>
+	</td>
+	<td>
+		<div class="vocabularyt">nhuq</div>
+	</td>
+	<td>
+		<div class="vocabularyd">X happens for Y's benefit</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">fana</div>
+	</td>
+	<td>
+		<div class="vocabularyt">fana</div>
+	</td>
+	<td>
+		<div class="vocabularyd">X is a motion event towards Y</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">duo</div>
+	</td>
+	<td>
+		<div class="vocabularyt">duo</div>
+	</td>
+	<td>
+		<div class="vocabularyd">X happens for duration Y</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">kui</div>
+	</td>
+	<td>
+		<div class="vocabularyt">kuı</div>
+	</td>
+	<td>
+		<div class="vocabularyd">X happens for reason Y</div>
+	</td>
+</tr>
+</tbody>
+</table>
+
+<div class="gloss">
+	jea /ji (/KUE) ~zuo v\a xo zudeq /ji ("/IQLIZU") .<br/>
+	Jea jí kúe zûo ꝡä sho zudeq jí Íqlızu.<br/>
+	buy *1s* the-book *a*-for.purpose *comp* become can.speak *1s* the-English.language<br/>
+	! 'I bought the book in order to learn English.'
+</div>
+
+<div class="gloss">
+	tua siq /ji (/KUA) ~wuq (/P+AI) jibo .<br/>
+	Tua sıq jí kúa nhûq páı jıbo.<br/>
+	make clean *1s* the-room *a*-for the-friend mine<br/>
+	! 'I cleaned the room for my friend.'
+</div>
+
+<div class="gloss">
+	xua (/MU+AO) ~bo:t+ao /ji .<br/>
+	Shua múao bộtao jí.<br/>
+	fall the-tree *a*-caused.by *1s*<br/>
+	! 'The tree was felled by me.'
+</div>
+
+<h3>Subject-sharing adverbials</h3>
+
+<p>Subject-sharing adverbials are adverbials formed from verbs whose first argument place cannot apply to events, such as any verb expressing an action. The effect of converting such a verb using the Adjunct tone <img class="tone" src="../assets/tones/d4.png"> is that instead of describing the event of the main verb of the clause further like eventive adverbials, it creates a co-event whose subject (usually the agent) is the same as that of the verb of the containing clause. The main event and the co-event are claimed to take place together, either because they are one and the same event or because they form a larger compound event together:</p>
+
+<div class="gloss">
+	jara /w+ao ~fa (/YUE_CE) .<br/>
+	Jara nháo fâ chúece.<br/>
+	run *3s* *a*-go the-train.station<br/>
+	! 'She runs (going) to the train station.'
+</div>
+
+<p>The verb <span class="glyphs">fa</span> <span class="toaq">fa</span> "to go" is an action. Therefore, the derived adverbial creates a co-event with a shared subject: the event of her running takes place together with the event of the same agent's going to the train station. </p>
+
+<p>Subject-sharing adverbials are a great way to add argument places to a verb. The verb <span class="glyphs">jara</span> <span class="toaq">jara</span> "X runs" does not have an object place for specifiying the destination. By using <span class="glyphs">~fa</span> <span class="toaq">fâ</span>, this place can be added compositionally without needing to add bloat to the definition of <span class="glyphs">jara</span> <span class="toaq">jara</span> itself. This contributes to Toaq being able to function with simpler predicate definitions.</p>
+
+<div class="gloss">
+	saqsu /w+ao ~kuq /xu :kasi: .<br/>
+	Saqsu nháo kûq shú kası.<br/>
+	whisper *3s* *a*-say the-*word* kası<br/>
+	! 'She whispered (saying) the word “kası”.'
+</div>
+
+<p>Here, <span class="glyphs">~kuq</span> <span class="toaq">kûq</span> allows us to specify what word was being whispered, which is not part of <span class="glyphs">saqsu</span> <span class="toaq">saqsu</span>'s definition "X whispers".</p>
+
+<p>Subject-sharing adverbials are efficient and versatile:</p>
+
+<div class="gloss">
+	l+ao /wana ~jeaq f+ei .<br/>
+	Lao nhána jêaq feı.<br/>
+	wait *3p* *a*-increase angry<br/>
+	! 'They waited, getting increasingly angry.'
+</div>
+
+
+<h2>Topic</h2>
+
+<div class="syntax">
+	<h4>Topic pattern</h4>
+	<img class="tree" src="../assets/patterns/topicp.svg">
+	<p>The topic specifies what a sentence is about.</p>
+	<p>The topic precedes the rest of the clause.</p>
+	<p>The topic argument is separated from the rest of the clause by the function word <span class="glyphs">\bi</span> <span class="toaq">bï</span>.</p>
+</div>
+
+<p>The topic is an optional part of every clause which specifies what the clause is about. The material which is placed in the topic may or may not also appear as an argument within the clause. </p>
+
+<div class="gloss">
+	(/KUE) \bi l+oi /ji /maq .<br/>
+	Kúe bï loı jí máq.<br/>
+	the-book *top* hate *1s* *X:inan*<br/>
+	! 'As for the book, I hated it.'
+</div>
+
+<div class="gloss">
+	(/NIYAQ) \bi daqx+ei /ji .<br/>
+	Níchaq bï daqsheı jí.<br/>
+	the-today *top* free *1s*<br/>
+	! 'Regarding today, I'm free.'
+</div>
+
+<p>The topic can only contain referential arguments. To front quantified expressions, the cleft verb <span class="glyphs">\na</span> <span class="toaq">nä</span> should be used:</p>
+
+<div class="gloss">
+	/tu (YAQ) , \na faq /sa (GI) ~r+ao (/YAQ) .<br/>
+	Tú chaq, nä faq sá gı râo cháq.<br/>
+	every day *cle* happen some good *a*-when the-day<br/>
+	! 'Every day is such that something good happens on that day.'
+</div>
+
+
+<h2>Focus</h2>
+
+<div class="syntax">
+	<h4>Focus pattern</h4>
+	<img class="tree4" src="../assets/patterns/focus.svg">
+		
+	<p>The focus particle <span class="glyphs">/ku</span> <span class="toaq">kú</span> marks a constituent as conveying new information.</p>
+	
+	
+</div>
+
+<p>Focus is the part of a sentence that contains new or contrasting information. When you know that someone ate your last remaining banana, but not who did it, and I say to you "I ate the banana" (or "It was me who ate the banana"), the fact that someone ate the banana is known information, and the fact that it was me as opposed to someone else who did the eating is new information and carries what is called the <i>focus</i> of the sentence.</p>
+
+<p>Toaq uses focus inflection (<span class="glyphs">/ku</span> <span class="toaq">kú</span>) to focus-mark a constituent:</p>
+
+<div class="gloss">
+	yuq /ku /ji (/M+AOJA) .<br/>
+	Chuq kú jí máoja.<br/>
+	eat *foc* *1s* the-banana<br/>
+	! 'It was me who ate the banana.'
+</div>
+
+<p>Since <span class="glyphs">/ku</span> <span class="toaq">kú</span> marks new information, it is also the appropriate way of answering wh-questions. If asked <span class="toaq">Chuq súq hí raı?</span> "What did you eat?", the proper answer would be <span class="toaq">kú máoja</span> "[it was]  the banana<sub><span class="sc">foc</span></sub>".</p>
+
+<p><span class="glyphs">/ku</span> <span class="toaq">kú</span> expresses what is known as non-contrastive focus. There is also contrastive focus, marked by the particle <span class="glyphs">/b+ei</span> <span class="toaq">béı</span>. Contrastive focus implies the negation of at least one alternative proposition. The prototypical example of when contrastive focus occurs is when correcting someone else's statement. For example, if A said "You ate the banana", then B might answer:</p>
+
+<div class="gloss">
+	yuq /ji /b+ei (XAMU) .<br/>
+	Chuq jí béı shamu.<br/>
+	eat *1s* the.*cfoc* apple<br/>
+	! '(No,) it was the APPLE that I ate.'
+</div>
+
+<p>Focus can also be attached to other parts of speech via the focus prefix <span class="glyphs">ku:</span> <span class="toaq">ku-</span>:</p>
+
+<div class="gloss">
+	leo ku:riatua /ji (/HEQMA) .<br/>
+	Leo kụrıatua jí héqma.<br/>
+	try *foc*.open *1s* the-container<br/>
+	! 'It is opening it that I'm trying to do with the container.' <br/>
+	! 'I'm trying to OPEN the container.'
+</div>
+
+(context: "What are you trying to do with the container?")
+
+<p>When attached to a head, the entire phrases projected by the head receives focus.</p>
+
+<p>When attaching focus to heads which are purely tonal, the focus marker steals the tone:</p>
+
+<div class="gloss">
+	~ku r+ao (KIAYAQ)<br/>
+	kû rao kíachaq<br/>
+	*foc.adj* when the-monday<br/>
+	! 'ON MONDAY'
+</div>
+
+<h3 id="focusing_adverbs">Focusing adverbs</h3>
+
+<p>Apart from <span class="glyphs">/ku</span> <span class="toaq">kú</span> and <span class="glyphs">/b+ei</span> <span class="toaq">béı</span>, there also exist so-called <i>focusing adverbs</i>, a name which is based on the fact that their English equivalents involve adverbs that interact with focus. In Toaq, they don't involve any actual adverbs and there are instead different ways of realizing focus, depending on the "adverb". The following focusing adverbs exist:</p>
+
+<table class="vocabulary">
+<tbody>
+<tr>
+	<td>
+		<div class="vocabularyg">/to</div>
+	</td>
+	<td>
+		<div class="vocabularyt">tó</div>
+	</td>
+	<td>
+		<div class="vocabularyd">"only"</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">/m+ao</div>
+	</td>
+	<td>
+		<div class="vocabularyt">máo</div>
+	</td>
+	<td>
+		<div class="vocabularyd">"also"</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">/juaq</div>
+	</td>
+	<td>
+		<div class="vocabularyt">júaq</div>
+	</td>
+	<td>
+		<div class="vocabularyd">"even"</div>
+	</td>
+</tr>
+</tbody>
+</table>
+
+<p>In English, there exist pairs of sentences like "I only gave a banana<sub>Foc</sub> to you" vs "I only gave a banana to you<sub>Foc</sub>", where the position of focus (expressed prosodically via stress) interacts with the adverb "only" to produce different meanings. This dependency is also known as <i>association with focus</i>.</p>
+
+<p>In Toaq, the situation is simpler: the focusing adverb is simply placed in front of the focused constituent:</p>
+
+<div class="gloss">
+	du v\a fa /to /suq (/RIAQ) .<br/>
+	Du ꝡä fa tó súq ríaq.<br/>
+	seem *comp* go only *2s* the-place<br/>
+	! 'It seems like only YOU went to the place.'
+</div>
+
+<div class="gloss">
+	jea /w+ao /m+ao:baq (NAM) .<br/>
+	Jea nháo mạ́obaq nam.<br/>
+	buy *3s* also-*gen* bread<br/>
+	! 'He also bought BREAD.'
+</div>
+
+<div class="gloss">
+	dua /juaq /ji /hu * .<br/>
+	Dua júaq jí hú.<br/>
+	know even *1s* *endo*<br/>
+	! 'Even I know that.'
+</div>
+
+
+<p>Focus particles scope over DPs and focus particles on their right and are under the scope of DPs and focus particles on their left:</p>
+
+<div class="gloss">
+	z+ao /to /ji /tu (TOA) .<br/>
+	Zao tó jí tú toa.<br/>
+	know only *1s* every word<br/>
+	! 'Only I know every word. (other people may know a lot of words, but nobody except me knows every word)'
+</div>
+
+<div class="gloss">
+	/tu (TOA) \na z+ao /to /ji /hoa .<br/>
+	Tú toa nä zao tó jí hóa.<br/>
+	every word *cle* know only *1s* *rsm*<br/>
+	! 'Every word is such that I'm the only one who knows it. (nobody else knows any words)'
+</div>
+
+
+<h2>Coordination</h2>
+
+<div class="syntax">
+	<h4>Coordination pattern</h4>
+	<img class="tree" src="../assets/patterns/&p.svg">
+	<p>Conjunctions are placed between two matching conjuncts of the same syntactic type.</p>
+	
+</div>
+
+<p>The first type of conjunction is the plural coordinator:</p>
+
+<table class="vocabulary">
+<tbody>
+<tr>
+	<td>
+		<div class="vocabularyg">/r+oi</div>
+	</td>
+	<td>
+		<div class="vocabularyt">róı</div>
+	</td>
+	<td>
+		<div class="vocabularyd">and (plural coordinator) (<span class="sc">&</span>)</div>
+	</td>
+</tr>
+</tbody>
+</table>
+
+<p>This conjunction joins two DPs (or, less commonly, CPs) into a single expression which refers to the referents of both conjunct DPs taken together. For instance, <span class="glyphs">/ji /r+oi /suq</span> <span class="toaq">jí róı súq</span> "I and you", refers to the speaker and the listener together. It is equivalent to <span class="glyphs">/umo</span> <span class="toaq">úmo</span> "we (1+2)".</p>
+
+<div class="gloss">
+	gu /suq /r+oi /ji .<br/>
+	Gu súq róı jí.<br/>
+	two *2s* & *1s*<br/>
+	! 'You and I are two in number.'
+</div>
+
+<p><span class="toaq">róı</span>-joined expressions are equivalent to ordinary plural expressions.</p>
+
+<div class="gloss">
+	yeo yo (/DEO) .<br/>
+	Cheo cho déo.<br/>
+	reciprocal like the-child<br/>
+	! 'The children like each other.'
+</div>
+
+<div class="gloss">
+	yeo yo (/LIQDEO) /r+oi (/NAQDEO) .<br/>
+	Cheo cho líqdeo róı náqdeo.<br/>
+	reciprocal like the-girl & the-boy<br/>
+	! 'The girl and the boy like each other.'
+</div>
+
+<p><span class="technical">ⓘ Recall the optional sandhi rules, which allow RRR to be pronounced RLR</span></p>
+
+<p>The second type of conjunction is the clausal conjunction. It is called that because any expression involving it can always be paraphrased as a conjunction of two clauses.</p>
+
+<table class="vocabulary">
+<tbody>
+<tr>
+	<td>
+		<div class="vocabularyg">/ru</div>
+	</td>
+	<td>
+		<div class="vocabularyt">rú</div>
+	</td>
+	<td>
+		<div class="vocabularyd">and</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">/ra</div>
+	</td>
+	<td>
+		<div class="vocabularyt">rá</div>
+	</td>
+	<td>
+		<div class="vocabularyd">inclusive or</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">/ro</div>
+	</td>
+	<td>
+		<div class="vocabularyt">ró</div>
+	</td>
+	<td>
+		<div class="vocabularyd">exclusive or</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">/ri</div>
+	</td>
+	<td>
+		<div class="vocabularyt">rí</div>
+	</td>
+	<td>
+		<div class="vocabularyd">or ... ? (connective question)</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">/keo</div>
+	</td>
+	<td>
+		<div class="vocabularyt">kéo</div>
+	</td>
+	<td>
+		<div class="vocabularyd">but</div>
+	</td>
+</tr>
+</tbody>
+</table>
+
+<p>Almost any two matching conjuncts can be conjoined by these conjunctions, where "matching" is defined as being of the same syntactic type (DP, CP, TP, etc).</p>
+
+<div class="gloss">
+	kuo (/KUNE) /ru (/KATO) .<br/>
+	Kuo kúne rú káto.<br/>
+	black the-dog and the-dog<br/>
+	! 'The dog and the cat are black.'<br/>
+	! 'The dog is black and the cat is black.'
+</div>
+
+<div class="gloss">
+	z+ai /ji v\a pu jea /suq /baq (NAO) /ra /baq (ZEOZE) .<br/>
+	Zaı jí ꝡä pu jea súq báq nao rá báq zeoze.<br/>
+	hope *1s*  *comp* *pst* buy *2s* *gen* water or *gen* juice<br/>
+	! 'I hope you bought water or juice.'
+</div>
+
+<p>The conjunction <span class="glyphs">/ri</span> <span class="toaq">rí</span> asks the listener to fill in the appropriate conjunction in its place or to indicate which of the conjuncts makes the sentence true:</p>
+
+<div class="gloss">
+	+ao jea /suq (/XIUKUNE) /ri (/GOSO) ?<br/>
+	Ao jea súq shíukune rí góso?<br/>
+	would buy *2s* the-raccoon or? the-chicken<br/>
+	! 'Would you buy the raccoon or the chicken?'<br/>
+	! 'Which of [the raccoon & the chicken] would you buy?'
+</div>
+
+<div class="gloss">
+	/baq (KAFE) /ri /baq (Y+AI) ?<br/>
+	báq kafe rí báq chaı?<br/>
+	*gen* coffee or? *gen* tea<br/>
+	! 'Coffee or tea?'
+</div>
+
+<p>Because DPs and CPs are different syntactic types, examples like the following are possible:</p>
+
+<div class="gloss">
+	dua /ji , v\a nie /suq (/KUA) , /ru , v\a f+ei /suq .<br/>
+	Dua jí, ꝡä nıe súq kúa, rú ꝡä feı súq.<br/>
+	know *1s* *comp* inside *2s* the-room and *comp* angry *2s*<br/>
+	! 'I know that you are in the room and that you are angry.'
+</div>
+
+<p>One important syntactic type which is by default ignored by conjunctions is V, the bare verb (normally, one would instead make use of an adjectival construction). This has a big advantage:</p>
+
+<div class="gloss">
+	(/KUE) , \na kaqg+ai /suq /hoa /ru jea /ji /hoa .<br/>
+	Kúe nä kaqgaı súq hóa rú jea jí hóa.<br/>
+	the-book *cle* see *2s* *rsm* and buy *1s* *rsm*<br/>
+	! 'The book is such that [you saw it] and [I bought it].'
+</div>
+
+<p>Instead of connecting the two most local matching constituents, which would be two verbs, the conjunction instead connects two tense phrases. </p>
+
+<div class="gloss">
+	yo /ji /suq /ru yo /suq /ji .<br/>
+	Cho jí súq rú cho súq jí.<br/>
+	like *1s* *2s* and like *2s* *1s*<br/>
+	! 'I like you and you like me.'
+</div>
+
+<p>The following table contains examples of the most important types of coordination:</p>
+
+<table class="conjunctionexamples">
+    <tr>
+      <th>Type</th>
+      <th colspan="3">Example</th>
+    </tr>
+    <tr>
+      <td rowspan="2">Determiner phrases (DP)</td>
+      <td><span class="toaq">súq</span></td>
+      <td><span class="toaq">rú</span></td>
+      <td><span class="toaq">jí</span></td>
+    </tr>
+    <tr>
+      <td colspan="3"><span class="w">"you and I"</span></td>
+    </tr>
+	<tr>
+      <td rowspan="2">Content clauses (CP)</td>
+      <td><span class="toaq">ꝡä ruqshua</span></td>
+      <td><span class="toaq">rú</span></td>
+      <td><span class="toaq">ꝡä koa búı</span></td>
+    </tr>
+    <tr>
+      <td colspan="3"><span class="w">"that it's raining and that it's cold outside"</span></td>
+    </tr>
+	<tr>
+      <td rowspan="2">Relative clauses (CP<sub>rel</sub>)</td>
+      <td><span class="toaq">ꝡë cho hóa báq rua</span></td>
+      <td><span class="toaq">rú</span></td>
+      <td><span class="toaq">ꝡë geı hóa sía fuq</span></td>
+    </tr>
+    <tr>
+      <td colspan="3"><span class="w">"who likes flowers and who is wearing no clothes "</span></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Prepositions</td>
+      <td><span class="toaq">nîe</span></td>
+      <td><span class="toaq">rá</span></td>
+      <td><span class="toaq">gûq</span></td>
+    </tr>
+    <tr>
+      <td colspan="3"><span class="w">"in or under"</span></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Adverbial adjuncts</td>
+      <td><span class="toaq">bîe gújue </span></td>
+      <td><span class="toaq">kéo</span></td>
+      <td><span class="toaq">shîu róaıjue</span></td>
+    </tr>
+    <tr>
+      <td colspan="3"><span class="w">"after February but before August"</span></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Tense phrases (TP)</td>
+      <td><span class="toaq">jara kúne</span></td>
+      <td><span class="toaq">rú</span></td>
+      <td><span class="toaq">koı jí</span></td>
+    </tr>
+    <tr>
+      <td colspan="3"><span class="w">"The dog runs and I walk"</span></td>
+    </tr>
+	 <tr>
+      <td rowspan="2">Verbs (V)</td>
+      <td><span class="toaq">loq</span></td>
+      <td><span class="toaq">ra</span></td>
+      <td><span class="toaq">koa</span></td>
+    </tr>
+    <tr>
+      <td colspan="3"><span class="w">"hot or cold"</span></td>
+    </tr>
+  </table>
+
+
+
+
+
+
+
+
+
+
+
+<h3>Overriding the default attachment behavior of conjunctions</h3>
+
+<table class="vocabulary">
+<tbody>
+<tr>
+	<td>
+		<img class="tone" src="../assets/tones/d2.png">
+	</td>
+	<td>
+		  <span class="mono">conjunction</span>
+	</td>
+	<td>
+		<div class="vocabularyd">default precedence:<br>locally conjoins any two matching types</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<img class="tone" src="../assets/tones/d1.png">
+	</td>
+	<td>
+		  <span class="mono">conjunction</span>
+	</td>
+	<td>
+		<div class="vocabularyd">force most local scope:<br>allows coordinating DP with CP, and V with V.</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<img class="tone" src="../assets/tones/d4.png">
+	</td>
+	<td>
+		  <span class="mono">conjunction</span>
+	</td>
+	<td>
+		<div class="vocabularyd">skip first possible attachment site</div>
+	</td>
+</tr>
+</tbody>
+</table>
+
+<p>At times, the default attachment behavior of conjunctions is not what is needed. For example, sometimes, it may be necessary to join a DP with CP. This is done by using a <img class="tone" src="../assets/tones/d1.png"> tone on the conjunction:</p>
+
+<div class="gloss">
+	ruaq /w+ao /sa (JUA) ru , v\a tie-cia /suq . <br/>
+	Ruaq nháo sá jua ru ꝡä tıecıa súq.<br/>
+	assert *3s* some strange and *comp* naked *2s*<br/>
+	! 'He claimed something strange and that you were naked.'
+</div>
+
+<p>Or if you want to connect verbs and an adjectival construction isn't cutting it:</p>
+
+<div class="gloss">
+	kia ra kuo /maq .<br/>
+	Kıa ra kuo máq<br/>
+	red or black *X:inan*<br/>
+	! 'It's red or black.'
+</div>
+
+<p>A slightly more unusual effect can be achieved by using the <img class="tone" src="../assets/tones/d4.png"> tone on a conjunction. This has the effect of skipping the first conjunct which would be picked out by the default rules, and instead using the next possible conjunct:</p>
+
+<div class="gloss">
+	dua /ji , v\a yi /suq , v\a sahuruaq /ji , ~ru , v\a bu sahuruaq /ji .<br/>
+	Dua jí, ꝡä chı súq, ꝡä sahuruaq jí, rû ꝡä bu sahuruaq jí.<br/>
+	know *1s* *comp* believe *2s* *comp* lie *1s* and *comp* *neg* lie *1s*<br/>
+	! 'I know [that you believe that I lied] and [that I didn't lie].'
+</div>
+
+
+<h3>Nonce coordination</h3>
+
+<p>Finally, the prefix <span class="glyphs">na:</span> <span class="toaq">na-</span> converts transitive verbs into conjunctions:</p>
+
+<table class="vocabulary">
+<tbody>
+<tr>
+	<td>
+		<div class="vocabularyg">na:</div>
+	</td>
+	<td>
+		<div class="vocabularyt">na-</div>
+	</td>
+	<td>
+		<div class="vocabularyd"><span class="mono">V → conjunction</span> conversion</div>
+	</td>
+</tr>
+</tbody>
+</table>
+
+<p>This prefix makes examples like the following possible:</p>
+
+<div class="gloss">
+	nuo /suq /na:r+ao /ji .<br/>
+	Nuo súq nạ́rao jí.<br/>
+	sleep *2s* *conj*-when *1s*<br/>
+	! 'You sleep at the same as I do.'
+</div>
+
+<p>This can be paraphrased as:</p>
+
+<div class="gloss">
+	/e nuo /suq \na r+ao /hoa /e nuo /ji .<br/>
+	É nuo súq nä rao hóa é nuo jí.<br/>
+	the-event sleep *2s* *cle* when *rsm* the-event sleep *1s*<br/>
+	! 'Your sleeping temporally overlaps with my sleeping.'
+</div>
+
+<p>More examples:</p>
+
+<div class="gloss">
+	tixa /w+ao /na:bie /suq .<br/>
+	Tısha nháo nạ́bıe súq.<br/>
+	arrive *3s* *conj*-after *2s*<br/>
+	! 'He arrived after you did.'
+</div>
+
+<div class="gloss">
+	jea /w+ao /na:boq /ji (/KUE) .<br/>
+	Jea nháo nạ́boq jí kúe.<br/>
+	buy *3s* *conj*-prevent *1s* the-book<br/>
+	! 'He bought the book, preventing me from buying the book.'
+</div>
+
+
+
+
+<h2 id="speech_acts">Speech acts</h2>
+
+<div class="syntax">
+	<h4>Speech act pattern</h4>
+	<img class="tree" src="../assets/patterns/sap.svg">
+	<p>The speech act phrase (SAP) is the highest phrase of a sentence.</p>
+	<p>Every Toaq sentence is an SAP.</p>
+</div>
+
+<p>Speech acts are indicated by sentence-final particles.</p>
+
+<p>These particles specify the illocutionary force of an utterance, i.e., whether a sentence is an assertion, a command, a question, and so on.
+
+<p>A speech act particle ends the sentence, at which point any further material necessarily belongs to the next sentence. This means that apart from their semantic content, speech act particles also function as sentence boundary markers at a mere structural level.</p>
+
+<p>The speech act particles are:</p>
+
+<table class="vocabulary">
+<tbody>
+    <tr>
+    <td>
+	<div class="vocabularyg">da<br>~da</div>
+    </td>
+    <td>
+	<div class="vocabularyt">da<br>dâ</div>
+    </td>
+    <td>
+	<div class="vocabularyd">assertive  (<span class="sc">asrt</span>)<br>explanatory assertive  (<span class="sc">expl</span>)</div>
+    </td>
+  </tr>
+<tr>
+	<td>
+		<div class="vocabularyg">ka</div>
+	</td>
+	<td>
+		<div class="vocabularyt">ka</div>
+	</td>
+	<td>
+		<div class="vocabularyd">performative  (<span class="sc">perform</span>)</div>
+	</td>
+</tr>
+<tr>
+    <td>
+	<div class="vocabularyg">/moq<br>~moq</div>
+    </td>
+    <td>
+	<div class="vocabularyt">móq<br>môq</div>
+    </td>
+    <td>
+	<div class="vocabularyd">interrogative (<span class="sc">int</span>)<br>rhetorical interrogative (<span class="sc">rhet.int</span>)</div>
+    </td>
+  </tr>
+   </tr>
+      <tr>
+    <td>
+	<div class="vocabularyg">ba</div>
+    </td>
+    <td>
+	<div class="vocabularyt">ba</div>
+    </td>
+    <td>
+	<div class="vocabularyd">optative (<span class="sc">opt</span>)</div>
+    </td>
+  </tr>
+   </tr>
+      <tr>
+    <td>
+	<div class="vocabularyg">wa</div>
+    </td>
+    <td>
+	<div class="vocabularyt">nha</div>
+    </td>
+    <td>
+	<div class="vocabularyd">promissive  (<span class="sc">prom</span>)</div>
+    </td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">doa</div>
+	</td>
+	<td>
+		<div class="vocabularyt">doa</div>
+	</td>
+	<td>
+		<div class="vocabularyd">permissive  (<span class="sc">perm</span>)</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">vo</div>
+	</td>
+	<td>
+		<div class="vocabularyt">ꝡo</div>
+	</td>
+	<td>
+		<div class="vocabularyd">admonitive (<span class="sc">adm</span>)</div>
+	</td>
+</tr>
+</tbody>
+</table>
+
+
+<p><span class="glyphs">da</span> <span class="toaq">da</span> is the default speech act particle. It is optional and automatically implied when  the complement CP contains no question words. Its communicative purpose is to mark a sentence as an assertion.</p>
+
+<div class="gloss">
+	geo /ni (Y+AO) da .<br/>
+	Geo ní chao da.<br/>
+	old this vehicle *asrt*<br/>
+	! 'This vehicle is old.'
+</div>
+
+<p>This is identical in meaning to:</p>
+
+<div class="gloss">
+	geo /ni (Y+AO) .<br/>
+	Geo ní chao.<br/>
+	old this vehicle<br/>
+	! 'This vehicle is old.'
+</div>
+
+<p>However, it can still be productive to use an explicit <span class="glyphs">da</span> <span class="toaq">da</span>: it serves as an unambiguous sentence boundary, and it can also be helpful for signaling to the listener that the current sentence is complete, especially when it isn't obvious from the structure of the sentence that the speaker does not intend to add more arguments.</p>
+
+<p>When leaving <span class="glyphs">da</span> <span class="toaq">da</span> implicit, then, in order to avoid sentence boundary ambiguities, the following sentence should begin with a matrix complementizer (usually <span class="glyphs">va</span> <span class="toaq">ꝡa</span>), or a conjunction like <span class="glyphs">keo</span> <span class="toaq">keo</span> "but".</p>
+
+<div class="gloss">
+	jua /hu . va duax+ao /ji , v\a lui faq /hi * .<br/>
+	Jua hú. Ꝡa duashao jí ꝡä luı faq hí. <br/>
+	strange *endo* *comp* wonder *1s* *comp* *retr* happen what<br/>
+	! 'That's strange. I wonder what happened.'
+</div>
+
+<p>When <span class="glyphs">da</span> <span class="toaq">da</span> carries the rising-falling tone <img class="tone" src="../assets/tones/d4.png">, its meaning changes from a mere assertion to an explanation. For example, if A asks "Why aren't you working on your project?", B might answer:</p>
+
+<div class="gloss">
+	dui nuoku+ai /ji ~da .<br/>
+	Duı nuokuaı jí dâ.<br/>
+	too.much tired *1s* *expl*<br/>
+	! '[It's that] I'm too tired.'
+</div>
+
+<p>The speech act particle <span class="glyphs">ka</span> <span class="toaq">ka</span> "hereby" creates performative statements. These are true by virtue of being uttered. Common examples are apologies, greetings, and pronouncements. </p>
+
+<div class="gloss">
+	hio /ji /suq ka .<br/>
+	Hıo jí súq ka.<br/>
+	greet *1s* *2s* *perform*<br/>
+	! 'I hereby greet you.'<br/>
+	! 'In uttering this very sentence, I greet you.'
+</div>
+
+<div class="gloss">
+	kuaq kie /ji ka .<br/>
+	Kuaq kıe jí ka.<br/>
+	express grateful *1s* *perform*<br/>
+	! 'I hereby express my gratitude.'
+</div>
+
+<div class="gloss">
+	seo /suna /yeq ka .<br/>
+	Seo súna chéq ka.<br/>
+	spouse *2p* *recp* *perform*<br/>
+	! 'I now pronounce you husband and wife.'
+</div>
+
+<p>The interrogative <span class="glyphs">/moq</span> <span class="toaq">móq</span> is used to form questions. These questions can be polar questions (yes-no questions, i.e. sentences with a mả complementizer):</p>
+
+<div class="gloss">
+	ma dua /wana v\a ruqxua /moq ?<br/>
+	Ma dua nhána ꝡä ruqshua móq?<br/>
+	whether know *3p* *comp* rain *int*<br/>
+	! 'Do they know that it's raining?'
+</div>
+
+<p>or wh-questions (sentences with one or more <span class="glyphs">/hi</span> <span class="toaq">hí</span> in the matrix clause):</p>
+
+<div class="gloss">
+	nie /hi * (/TI+AI) /moq ?<br/>
+	Nıe hí tíaı móq?<br/>
+	inside what the-box *int*<br/>
+	! 'What's in the box?'
+</div>
+
+<p>Whenever the matrix clause contains at least one <span class="glyphs">/hi</span> <span class="toaq">hí</span> or begins with an interrogative complementizer, <span class="glyphs">/moq</span> <span class="toaq">móq</span> can be omitted:</p>
+
+<div class="gloss">
+	ma z+ao /suq /w+ao ?<br/>
+	Ma zao súq nháo?<br/>
+	whether know *2s* *3s*<br/>
+	! 'Do you know him?'
+</div>
+
+<p>With the <img class="tone" src="../assets/tones/d4.png"> tone, <span class="glyphs">/moq</span> <span class="toaq">móq</span> turns into a rhetorical question, i.e. a question which does not expect an answer:</p>
+
+<div class="gloss">
+	yum t+ao /ji /hi ~moq ?<br/>
+	Chum tao jí hí môq?<br/>
+	*impf* do *1s* what *int.rhet*<br/>
+	! 'What am I doing?'
+</div>
+
+<p>The optative <span class="glyphs">ba</span> <span class="toaq">ba</span> expresses wishes, hopes and general purpose imperatives.</p>
+
+<div class="gloss">
+	t+ai (/GAQME) ba !<br/>
+	Taı gáqme ba.<br/>
+	succeed the-team *opt*<br/>
+	! 'May the team succeed.'
+</div>
+
+<div class="gloss">
+	riu roe /suq ba !<br/>
+	Rıu roe súq ba.<br/>
+	return healthy *2s* *opt*<br/>
+	! '[I hope you] get well soon.'
+</div>
+
+<div class="gloss">
+	l+ao /tu (POQ) ba !<br/>
+	Lao tú poq ba.<br/>
+	wait every person *opt*<br/>
+	! 'Everybody wait.'
+</div>
+
+<p>The promissive <span class="glyphs">wa</span> <span class="toaq">nha</span> expresses promises and threats:</p>
+
+<div class="gloss">
+	xo zudeq /ji ("/TOAQZU") wa !<br/>
+	Sho zudeq jí Tóaqzu nha<br/>
+	become speak.language *1s* the-Toaq.language *prom*<br/>
+	! 'I'm going to become a speaker of Toaq!'
+</div>
+
+<div class="gloss">
+	jia faq /sia (HUI) wa !<br/>
+	Jıa faq sía huı nha.<br/>
+	*fut* happen no bad *prom*<br/>
+	! '[I promise] nothing bad is going to happen.'
+</div>
+
+<div class="gloss">
+	soa /ji /suq ~r+ao (/JIAYAQ) wa !<br/>
+	Soa jí súq râo jíachaq nha.<br/>
+	help *1s* *2s* *a*-when the-tomorrow *prom*<br/>
+	! '[I promise] I will help you tomorrow.'
+</div>
+
+<p>The permissive <span class="glyphs">doa</span> <span class="toaq">doa</span> is used to grant permission or to make an offer:</p>
+
+<div class="gloss">
+	tui /suq doa !<br/>
+	Tuı súq doa.<br/>
+	sit *2s* *perm*<br/>
+	! 'Feel free to take a seat.'
+</div>
+
+<p>The admonitive <span class="glyphs"></span> <span class="toaq"></span> expresses warnings by providing information the listener should heed:</p>
+
+<div class="gloss">
+	jia ruqxua ~r+ao (/NIYAQ) vo !<br/>
+	Jıa ruqshua râo níchaq ꝡo.<br/>
+	*fut* rain *a*-when the-today *adm*<br/>
+	! '[Be aware] it's going to rain today.'
+</div>
+
+<div class="gloss">
+	arane vo !<br/>
+	Arane ꝡo!<br/>
+	spider *adm*<br/>
+	! 'There's a spider!'
+</div>
+
+<h2>Retroactive CP cleft</h2>
+
+<div class="syntax">
+	<h4>Retroactive CP cleft pattern</h4>
+	<img class="tree3" src="../assets/patterns/retroactive.svg">
+	<p>This pattern is a variation on the <a href="#cleft_verb">cleft verb</a>.</p>
+	<p>The retroactive CP cleft takes an entire ongoing sentence, wraps it up in a CP, and then places this CP in the subject position of a cleft verb.</p>
+	<p>Gloss: <span class="sc">retrocle</span></p>
+</div>
+
+<p>For example:</p>
+
+<div class="gloss">
+	kaqg+ai /suq /baq (+AIPU) , \go bu yi /ji /hoa .<br/>
+	Kaqgaı súq báq aıpu, gö bu chı jí hóa.<br/>
+	see *2s* *gen* ghost *retrocle* *neg* believe *1s* *rsm*<br/>
+	! '[that] You saw a ghost, I don't believe (that).'
+</div>
+
+
+
+<h2>Parentheticals</h2>
+
+<div class="syntax">
+	<h4>Parenthetical pattern</h4>
+	
+	<p>A parenthetical is a piece of text inserted within another text. The inserted text is surrounded by spoken parentheses:</p>
+	
+	<p><span class="toaq">kïo</span> <span class="mono">&lt;inserted text&gt; </span> <span class="toaq">kı</span></p>
+</div>
+
+<p>For example:</p>
+
+<div class="gloss">
+	~r+ao (/KOAC+AO) \kio yo /ji /baq (KOA_C+AO) ki \na b+ai /ji /baq (NI+AOPOQ) .<br/>
+	Râo kóacao (kïo cho jí báq koacao kı) nä baı jí báq nıaopoq.<br/>
+	*a*-when the-winter ( like *1s* *gen* winter ) *cle* build *gen* snow.figure<br/>
+	! 'This winter (I like winter) I built a snow figure.'
+</div>
+
+
+<h2>Vocative</h2>
+
+<div class="syntax">
+	<h4>Vocative pattern</h4>
+	<img class="tree4" src="../assets/patterns/vocative.svg">
+	
+	<p>The vocative particle <span class="glyphs">/h+oi</span> <span class="toaq">hóı</span> marks a DP as the addressee of the current utterance.</p>
+	<p>Vocative phrases can stand freely in the clause and do not function as arguments.</p>
+	<p>Gloss: <span class="sc">voc</span></p>
+</div>
+
+<p>For example:</p>
+
+<div class="gloss">
+	bueti /ji /h+oi (/MAMA) .<br/>
+	Buetı jí hóı máma.<br/>
+	at.home *1s* *voc* the-mom<br/>
+	! 'I'm home, mom.'
+</div>
+
+
+<h2>Interjections</h2>
+
+<p>Interjections are syntactically primitive particles which express full propositions all by themselves. They do not interact with other words.</p>
+
+<p>Where applicable, an interjection can be pronounced with a rising intonation to inquire about the listener’s situation regarding the emotion or mental state expressed by the interjection. For instance, one might say <span class="glyphs">/ahi</span> <span class="toaq">áhı</span> "are you feeling pain?" when someone stubs their toe.</p>
+
+<p>Similarly, where applicable, an interjection can be pronounced with a rising-falling intonation to express empathy regarding the state expressed by the interjection. For example, <span class="glyphs">~oro</span> <span class="toaq">ôro</span> "that must suck for you".</p>
+
+<h3>Emotive interjections</h3>
+
+<p>Emotive interjections express the emotions and sensations of the speaker.</p>
+
+<table class="vocabulary">
+<tbody>
+    <tr>
+		<td>
+			<div class="vocabularyg">aja</div>
+		</td>
+		<td>
+			<div class="vocabularyt">aja</div>
+		</td>
+		<td>
+			<div class="vocabularyd">happiness, "yay"</div>
+		</td>
+  </tr>
+  <tr>
+		<td>
+			<div class="vocabularyg">i-fu</div>
+		</td>
+		<td>
+			<div class="vocabularyt">ıfu</div>
+		</td>
+		<td>
+			<div class="vocabularyd">disgust, "ew"</div>
+		</td>
+  </tr>
+  <tr>
+		<td>
+			<div class="vocabularyg">ume</div>
+		</td>
+		<td>
+			<div class="vocabularyt">ume</div>
+		</td>
+		<td>
+			<div class="vocabularyd">pleasure, "mmm"</div>
+		</td>
+  </tr>
+  <tr>
+		<td>
+			<div class="vocabularyg">ahi</div>
+		</td>
+		<td>
+			<div class="vocabularyt">ahı</div>
+		</td>
+		<td>
+			<div class="vocabularyd">pain, "ouch"</div>
+		</td>
+  </tr>
+  <tr>
+		<td>
+			<div class="vocabularyg">u-fu</div>
+		</td>
+		<td>
+			<div class="vocabularyt">ufu</div>
+		</td>
+		<td>
+			<div class="vocabularyd">relief, "phew"</div>
+		</td>
+  </tr>
+  <tr>
+		<td>
+			<div class="vocabularyg">oro</div>
+		</td>
+		<td>
+			<div class="vocabularyt">oro</div>
+		</td>
+		<td>
+			<div class="vocabularyd">annoyance, exasperation, "ugh"</div>
+		</td>
+  </tr>
+  <tr>
+		<td>
+			<div class="vocabularyg">epi</div>
+		</td>
+		<td>
+			<div class="vocabularyt">epı</div>
+		</td>
+		<td>
+			<div class="vocabularyd">excitement</div>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div class="vocabularyg">kud+ao</div>
+		</td>
+		<td>
+			<div class="vocabularyt">kudao</div>
+		</td>
+		<td>
+			<div class="vocabularyd">longing, yearning, craving</div>
+		</td>
+	</tr>
+</tbody>
+</table>
+
+
+
+<h3>Cognitive interjections</h3>
+
+<p>Cognitive interjections express the state of knowledge and thoughts of the speaker.</p>
+
+<table class="vocabulary">
+<tbody>
+    <tr>
+		<td>
+			<div class="vocabularyg">a</div>
+		</td>
+		<td>
+			<div class="vocabularyt">a</div>
+		</td>
+		<td>
+			<div class="vocabularyd">discovery, "ah"</div>
+		</td>
+  </tr>
+  <tr>
+		<td>
+			<div class="vocabularyg">-ua</div>
+		</td>
+		<td>
+			<div class="vocabularyt">ua</div>
+		</td>
+		<td>
+			<div class="vocabularyd">"wow"</div>
+		</td>
+  </tr>
+  <tr>
+		<td>
+			<div class="vocabularyg">-obe</div>
+		</td>
+		<td>
+			<div class="vocabularyt">obe</div>
+		</td>
+		<td>
+			<div class="vocabularyd">surprise, "oh"</div>
+		</td>
+  </tr>
+  <tr>
+		<td>
+			<div class="vocabularyg">upa</div>
+		</td>
+		<td>
+			<div class="vocabularyt">upa</div>
+		</td>
+		<td>
+			<div class="vocabularyd">admitting a mistake, "oops"</div>
+		</td>
+  </tr>
+  <tr>
+		<td>
+			<div class="vocabularyg">-o+ai</div>
+		</td>
+		<td>
+			<div class="vocabularyt">oaı</div>
+		</td>
+		<td>
+			<div class="vocabularyd">concern or realization of a problem, "uh-oh"</div>
+		</td>
+  </tr>
+  <tr>
+		<td>
+			<div class="vocabularyg">-ub+ai</div>
+		</td>
+		<td>
+			<div class="vocabularyt">ubaı</div>
+		</td>
+		<td>
+			<div class="vocabularyd">"alas"</div>
+		</td>
+  </tr>
+  <tr>
+		<td>
+			<div class="vocabularyg">yiro</div>
+		</td>
+		<td>
+			<div class="vocabularyt">chıro</div>
+		</td>
+		<td>
+			<div class="vocabularyd">"darn", "f*ck", "sh*t"</div>
+		</td>
+  </tr>
+  <tr>
+		<td>
+			<div class="vocabularyg">bege</div>
+		</td>
+		<td>
+			<div class="vocabularyt">bege</div>
+		</td>
+		<td>
+			<div class="vocabularyd">"meh", indifference</div>
+		</td>
+  </tr>
+</tbody>
+</table>
+
+
+<h3>Conative interjections</h3>
+
+<p>Conative interjections are directed at another person. They are aimed at getting someone’s attention or they demand an action or response from someone.</p>
+
+<table class="vocabulary">
+<tbody>
+    <tr>
+		<td>
+			<div class="vocabularyg">eni</div>
+		</td>
+		<td>
+			<div class="vocabularyt">enı</div>
+		</td>
+		<td>
+			<div class="vocabularyd">"here", "take this", "look at this"</div>
+		</td>
+  </tr>
+  <tr>
+		<td>
+			<div class="vocabularyg">+aiba</div>
+		</td>
+		<td>
+			<div class="vocabularyt">aıba</div>
+		</td>
+		<td>
+			<div class="vocabularyd">"come on", "let's go", encouragement, enticement</div>
+		</td>
+  </tr>
+  <tr>
+		<td>
+			<div class="vocabularyg">hiyu</div>
+		</td>
+		<td>
+			<div class="vocabularyt">hıchu</div>
+		</td>
+		<td>
+			<div class="vocabularyd">soliciting a response</div>
+		</td>
+  </tr>
+  <tr>
+		<td>
+			<div class="vocabularyg">-oe</div>
+		</td>
+		<td>
+			<div class="vocabularyt">oe</div>
+		</td>
+		<td>
+			<div class="vocabularyd">"hey", getting someone's attention</div>
+		</td>
+  </tr>
+  <tr>
+		<td>
+			<div class="vocabularyg">xeba</div>
+		</td>
+		<td>
+			<div class="vocabularyt">sheba</div>
+		</td>
+		<td>
+			<div class="vocabularyd">"clear the way", "move", "excuse me"</div>
+		</td>
+	</tr>
+</tbody>
+</table>
+
+
+
+<h3>Phatic interjections</h3>
+
+<p>Phatic interjections are used in the establishment and maintenance of communicative contact. They express one's attitude towards ongoing discourse and are used in various interactional routines.</p>
+
+<table class="vocabulary">
+<tbody>
+    <tr>
+		<td>
+			<div class="vocabularyg">wo<br>/wo</div>
+		</td>
+		<td>
+			<div class="vocabularyt">nho<br>nhó</div>
+		</td>
+		<td>
+			<div class="vocabularyd">"yes"<br>"is that so?"</div>
+		</td>
+  </tr>
+  <tr>
+		<td>
+			<div class="vocabularyg">zi<br>/zi</div>
+		</td>
+		<td>
+			<div class="vocabularyt">zı<br>zí</div>
+		</td>
+		<td>
+			<div class="vocabularyd">"no"<br>"isn't it?"</div>
+		</td>
+  </tr>
+  <tr>
+		<td>
+			<div class="vocabularyg">jadi</div>
+		</td>
+		<td>
+			<div class="vocabularyt">jadı</div>
+		</td>
+		<td>
+			<div class="vocabularyd">"hello"</div>
+		</td>
+  </tr>
+  <tr>
+		<td>
+			<div class="vocabularyg">xadi</div>
+		</td>
+		<td>
+			<div class="vocabularyt">shadı</div>
+		</td>
+		<td>
+			<div class="vocabularyd">"welcome"</div>
+		</td>
+  </tr>
+  <tr>
+		<td>
+			<div class="vocabularyg">kiji</div>
+		</td>
+		<td>
+			<div class="vocabularyt">kıjı</div>
+		</td>
+		<td>
+			<div class="vocabularyd">"thanks"</div>
+		</td>
+  </tr>
+  <tr>
+		<td>
+			<div class="vocabularyg">ina<br>/ina</div>
+		</td>
+		<td>
+			<div class="vocabularyt">ına<br>ína</div>
+		</td>
+		<td>
+			<div class="vocabularyd">"roger", "got it", "understood"<br>"understood?"</div>
+		</td>
+  </tr>
+  <tr>
+		<td>
+			<div class="vocabularyg">iwa<br>/iwa</div>
+		</td>
+		<td>
+			<div class="vocabularyt">ınha<br>ínha</div>
+		</td>
+		<td>
+			<div class="vocabularyd">"will comply"<br>"are you going to comply?"</div>
+		</td>
+  </tr>
+  <tr>
+		<td>
+			<div class="vocabularyg">kuxe</div>
+		</td>
+		<td>
+			<div class="vocabularyt">kushe</div>
+		</td>
+		<td>
+			<div class="vocabularyd">"sorry"</div>
+		</td>
+  </tr>
+  <tr>
+		<td>
+			<div class="vocabularyg">jaga</div>
+		</td>
+		<td>
+			<div class="vocabularyt">jaga</div>
+		</td>
+		<td>
+			<div class="vocabularyd">"congratulations", "I'm happy for you"</div>
+		</td>
+  </tr>
+  <tr>
+		<td>
+			<div class="vocabularyg">yaya</div>
+		</td>
+		<td>
+			<div class="vocabularyt">chacha</div>
+		</td>
+		<td>
+			<div class="vocabularyd">"go ahead", "alright", giving permission</div>
+		</td>
+  </tr>
+  <tr>
+		<td>
+			<div class="vocabularyg">uq</div>
+		</td>
+		<td>
+			<div class="vocabularyt">uq</div>
+		</td>
+		<td>
+			<div class="vocabularyd">"mhm", signifying that you're still following along</div>
+		</td>
+  </tr>
+  <tr>
+		<td>
+			<div class="vocabularyg">eju</div>
+		</td>
+		<td>
+			<div class="vocabularyt">eju</div>
+		</td>
+		<td>
+			<div class="vocabularyd">"let's see...", searching, remembering, calculating, deciding</div>
+		</td>
+  </tr>
+  <tr>
+		<td>
+			<div class="vocabularyg">ele</div>
+		</td>
+		<td>
+			<div class="vocabularyt">ele</div>
+		</td>
+		<td>
+			<div class="vocabularyd">responding or commenting on a question: "I don't care either way", not leaning to either side</div>
+		</td>
+  </tr>
+  <tr>
+		<td>
+			<div class="vocabularyg">boju</div>
+		</td>
+		<td>
+			<div class="vocabularyt">boju</div>
+		</td>
+		<td>
+			<div class="vocabularyd">requesting to take the floor, "may I speak?"</div>
+		</td>
+  </tr>
+</tbody>
+</table>
+
+
+
+<a href="../semantics/" class="button" data-text="sıe"><span class="technical">▶</span> Proceed to the next chapter</a>
+
+
+    </c1-1>
+</r-c>
+
+<div class="topnav">
+  <a href="../introduction/">Introduction</a>
+  <a href="../phonology/">Phonology</a>
+  <a href="../orthography/">Orthography</a>
+  <a href="../morphology/">Morphology</a>
+  <a href="../syntax/">Syntax</a>
+  <a href="../semantics/">Semantics</a>
+</div>
+
+</body>
+
+<script type="text/javascript" src="../css/interlinear.js"></script>
+</html>

@@ -1,0 +1,93 @@
+@font-face {
+  font-family: 'Derani';
+  src: url('../assets/derani.ttf') format('truetype');
+}
+
+.gloss {
+	margin-bottom: 20px;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.formatted-gloss {
+	clear: both;
+}
+
+.gloss-error {
+	color: red;
+}
+
+.gloss-label ~ .gloss-full {
+	margin-left: 40px; /* This is the same width as the label plus segment margin */
+	margin-bottom: 3px;
+}
+
+/* This is the generalized css for when a title is used */
+.gloss-label ~ .gloss-full ~ .gloss-segment {
+	margin-left: 40px;
+}
+
+.gloss-segment + .gloss-segment {
+	margin-left: 0px !important;
+}
+
+.gloss-label {
+	width: 30px;
+}
+
+.gloss-full > .gloss-row1{
+	margin-right: 15px;
+}
+
+.gloss-label a {
+	text-decoration: none;
+	font-size: 15px;
+}
+
+.gloss-merged {
+	margin-left: -25px;
+}
+
+.gloss-segment {
+	float: left;
+	margin-right: 10px;
+}
+
+
+.morpheme {
+	text-transform: lowercase;
+	font-variant: small-caps;
+	-moz-font-feature-settings: "lnum";
+  -webkit-font-feature-settings: "lnum";
+  font-feature-settings: "lnum";
+}
+
+.morpheme-fake-caps {
+	font-size: .7em;
+	text-transform: uppercase;
+}
+
+/*
+Row Classes
+*/
+.source {
+	font-weight: bold;
+	color: #00aaff;
+}
+
+.translation {
+	
+}
+
+.morphemes {
+	font-style: italic;
+	color: #aaaaaa;
+}
+
+.citation {
+    font-family: 'Derani';
+    font-size: 27px;
+    color: #ee3399;
+}
