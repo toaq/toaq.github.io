@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Toaq - Morphology</title>
+	<link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="stylesheet" type="text/css" href="../css/r-c-min.css" />
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../css/interlinear.css"/>
+	
+	<link rel="stylesheet" type="text/css" href="../../css/SegoeUI/segoe.css"/>
+
+
+</head>
+<body>
+
+<img src="../assets/logo.svg" class="logo"></img>
+
+<div class="topnav">
+  <a href="../introduction/">Introduction</a>
+  <a href="../phonology/">Phonology</a>
+  <a href="../orthography/">Orthography</a>
+  <a href="../morphology/">Morphology</a>
+  <a href="../syntax/">Syntax</a>
+  <a href="../semantics/">Semantics</a>
+</div>
+
+<r-c class="fixed-width" >
+    <c1-1>
+
+<h1>Morphology</h1>
+
+<p>Toaq can be described as having opaque lexical morphology and transparent derivational morphology. Toaq is highly analytic, while featuring a productive system of derivational prefixes.</p>
+
+<p>Toaq's morphemes fall into the following broad categories:<br>
+• verbs<br>
+• function words<br>
+• tones<br>
+• prefixes</p>
+
+<h2>A self-segregating morphology</h2>
+
+<p>Toaq has a self-segregating morphology (SSM): Any sequence of phonemes (or in writing, graphemes) can always be broken down into individual morphemes  unambiguously. It is always unambiguous where words begin and end, and it is always unambiguous how individual words break down into stem morphemes and derivational morphemes. SSM is a necessary property for a monoparsing language, but it also makes the language easier to learn and to speak, because there is less chance for confusion.</p>
+
+<p>Toaq's SSM algorithm can be described by the following schema:</p>
+
+<div class="syntax">
+	<h4>SSM pattern</h4>
+	<p>
+		<span class="mono">
+			words <- (stressed_syllable unstressed_syllable*)+ 
+			<br>
+			morphemes <- (prefix+ infix)? stem
+		</span>
+	</p>
+	<p>* = zero or more<br>
+		+ = one or more<br>
+		? = optional
+	</p>
+	<p>Words are stressed on the first syllable, which means text can be segmented into words by stress alone.</p>
+	<p>Prefixes and stem are separated by a special infix.</p>
+</div>
+
+<p>Note that even though stress is enough to detect word boundaries, the contrast is strengthened further by the fact that <br>
+• open stressed syllables are longer, and <br>
+•  tonal contour changes always coincide with stressed syllables.</p>
+
+<p>If a speaker fails to stress the first syllable of a word but retains the tone contour change, the word can still be segmented unambigously.</p>
+
+<p>If a speaker ignores tones but correctly places stress on every word, the text will still only be able to be broken down in a single way, although it might parse differently, since tones are syntactically significant morphemes, and dropping them is unlikely to leave the syntax unaffected. However, a fluent listener would still be able to get the gist most of the time.</p>
+
+<p>A more in-depth description of Toaq word formation follows below.</p>
+
+<h2>Word morphology</h2>
+
+<div class="syntax">
+	<h4>Word pattern</h4>
+	<img class="wtemplate" src="../assets/patterns/w.svg">
+	<p>Dashed lines indicate optional components.</p>
+</div>
+
+<p>Before delving into derivational morphology, we will look at stem morphology.</p>
+
+<h2>Stem morphology</h2>
+
+<p>Toaq’s verbs fall into two structural categories: atomic verbs and analytic verbs.</p>
+
+<p>Atomic verbs are lexical entries composed of a single word. They include the roots (e.g. <span class="glyphs">rua</span> <span class="toaq">rua</span> "flower", <span class="glyphs">jara</span> <span class="toaq">jara</span> "to run"), compounds (e.g. <span class="glyphs">yietua</span> <span class="toaq">chıetua</span> "to teach", <span class="glyphs">huosi</span> <span class="toaq">huosı</span> "to listen") and loanwords (e.g. <span class="glyphs">kafe</span> <span class="toaq">kafe</span> "coffee", <span class="glyphs">elu</span> <span class="toaq">elu</span> "elephant").</p>
+
+<p>All stems are atomic verbs.</p>
+
+<p>Analytic verbs are verbs which are syntactically derived from other parts of speech with the help of verbal particles (also known as <i>predicatizers</i>). These can be further divided into subcategories depending on which part of speech is being converted into a verb. Analytic verbs are covered in the chapter on <a href="../syntax/">syntax</a>.</p>
+
+<h3>Roots</h3>
+
+<p>Roots are the monomorphemic building blocks of the lexicon.</p>
+
+<p>The shortest root shape is the monosyllabic CV shape. Examples include: <span class="glyphs">fa</span> <span class="toaq">fa</span> "to go", <span class="glyphs">si</span> <span class="toaq">sı</span> "to pay attention", <span class="glyphs">gi</span> <span class="toaq">gı</span> "to be good".</p>
+
+<p>There is no upper limit on root length. Some longer roots are: <span class="glyphs">jara</span> <span class="toaq">jara</span> "to run", <span class="glyphs">kaqga</span> <span class="toaq">kaqga</span> "to bite", <span class="glyphs">mar+ao</span> <span class="toaq">marao</span> "to dance".</p>
+
+<p>Because there is no upper limit on length, Toaq's root space is theoretically infinite.</p>
+
+<h3>Compound verbs</h3>
+
+<p>Compound verbs are stems which consist of more than one morpheme. The component morphemes can be roots or function words, though they are more frequently the former. Compounding is the primary mechanism by which Toaq’s lexicon can be extended naturally and endlessly.</p>
+
+<p>Compounds are formed by simple juxtaposition:</p>
+
+<p><span class="glyphs">kue</span> <span class="toaq">kue</span> "book" + <span class="glyphs">jio</span> <span class="toaq">jıo</span> "building" = <span class="glyphs">kuejio</span> <span class="toaq">kuejıo</span> "library"</p>
+
+<p><span class="glyphs">nie</span> <span class="toaq">nıe</span> "inside" + <span class="glyphs">fa</span> <span class="toaq">fa</span> "go" = <span class="glyphs">niefa</span> <span class="toaq">nıefa</span> "to enter"</p>
+
+<p>Standard compounds are head-final, that is, the most fundamental component comes last and modifying/specifying components precede it. A <span class="glyphs">kuejio</span> <span class="toaq">kuejıo</span> is a type of building, what kind of building? One that has to do with books. <span class="glyphs">niefa</span> <span class="toaq">nıefa</span> is a type of going, not a kind of being inside.</p>
+
+<p>This means that, if the compound is derived from a <a href="serial_verbs">serial verb</a>, the order of the serial verb is reversed in the compound: </p>
+
+<p><span class="glyphs">tua yie</span> <span class="toaq">tua chıe</span> "to make learn" → <span class="glyphs">yietua</span> <span class="toaq">chıetua</span> "to teach".</p>
+
+<p>Compounding is recursive: a stem formed via compounding can compound with another stem. In practice, compounds with more than three components are rare and are often replaced by shorter roots.</p>
+
+<p>A compound is a single word, and therefore only the first syllable is stressed.</p>
+
+<h3>Loanwords</h3>
+
+<p>Loanwords are stems that are imported directly from other languages, with the necessary sound changes to make the source word fit Toaq’s phonotactics. Loanwords tend to be specific concepts for which no easy compound is available. Such concepts include animals and plants, anatomical vocabulary, country names, and more.</p>
+
+<p>As loanwords are monomorphemic, they can be considered roots, too.</p>
+
+<p>The following are examples of loanwords:</p>
+
+<p><span class="glyphs">elu</span> <span class="toaq">elu</span> "elephant"</p>
+
+<p><span class="glyphs">kafe</span> <span class="toaq">kafe</span> "coffee"</p>
+
+<p><span class="glyphs">gureq</span> <span class="toaq">gureq</span> "kidney"</p>
+
+
+<h2>Function words</h2>
+
+<p>Function words are words that perform various syntactic functions. They give structure to a sentence and help specify how verbs relate to each other.</p>
+
+<p>Function word morphemes have the same shape as verbal morphemes. They are made up of one or more syllables. Examples include:</p>
+
+<p><span class="glyphs">/tuq</span> <span class="toaq">túq</span> "all"</p>
+
+<p><span class="glyphs">\ma</span> <span class="toaq">mä</span> "whether"</p>
+
+<p><span class="glyphs">/ime</span> <span class="toaq">íme</span> "we (excluding the listener)"</p>
+
+<p>Every function word carries a tone. As a rule of thumb, function words which form verbs carry the falling tone, and other function words carry one of the other tones.</p>
+
+<p>The different function word classes are covered in the chapter on <a href="../syntax/">syntax</a>.</p>
+
+
+<h2>Derivational morphology</h2>
+
+<div class="syntax">
+	<h4>Word pattern</h4>
+	<img class="wtemplate" src="../assets/patterns/w.svg">
+	<p>Dashed lines indicate optional components.</p>
+</div>
+
+<p>Having already covered what stems are, the text now turns to the other things that can be part of a word: prefixes.</p>
+
+<p>Prefixes are bound morphemes which can only occur attached to a stem. Lexically, they occupy their own separate word space, meaning that a hypothetical prefix <span class="glyphs">fa:</span> <span class="toaq">fa-</span> is definitionally independent from the stem <span class="glyphs">fa</span> <span class="toaq">fa</span>. Since the two cannot appear in the same place, this is not a possible source of ambiguity.</p>
+
+<p>When talking about prefixes, they are always written with a hyphen after them to distinguish them from stems. <span class="toaq">na-</span> is a prefix, <span class="toaq">na</span> is a stem.</p>
+
+<p>All prefixes are one <i>raku</i> in length.</p>
+
+<p>Examples of possible shapes: <span class="toaq">na-</span>, <span class="toaq">buq-</span>,  <span class="toaq">guaı-</span></p>
+
+<p>Examples of impossible shapes: *<span class="toaq">nana-</span>, *<span class="toaq">naqru-</span>, *<span class="toaq">naımaq-</span>,</p>
+
+<p>The prefix-stem boundary is marked by an infix which is placed "inside" the prefix that immediately precedes the stem. This infix has the same form as the glottal tone, minus the tone. In other words, a glottal stop is inserted inside the first vowel of the final prefix:</p>
+
+<table class="letters">
+<tbody>
+  <tr>
+    <td><span class="mono">V → VʔV</span></td>
+  </tr>
+</tbody>
+</table>
+
+<p>In the romanization, this infix is indicated with a dot under the vowel:</p>
+
+<table class="letters">
+<tbody>
+  <tr>
+    <td><span class="glyphs">mu:j+ai</span> <span class="toaq">mụjaı</span></td>
+  </tr>
+</tbody>
+</table>
+
+<p>Everything up to and including the glottalized syllable is a prefix, everything after it the stem.</p>
+
+<p>There is no limit on the number of prefixes that can be attached to a stem.</p>
+
+<p>Prefixes and stem group as follows:</p>
+
+<table class="letters">
+<tbody>
+  <tr>
+    <td><span class="mono">(α (β (γ .. (ω (stem))..)))</span><br><br>
+	<img width="300px" src="../assets/patterns/prefixes.svg">
+	</td>
+  </tr>
+</tbody>
+</table>
+
+<p>The next subsections present a number of example prefixes and prefix families. The coverage is not exhaustive.</p>
+
+<h3>Negation prefixes</h3>
+
+<table class="vocabulary">
+<tbody>
+<tr>
+	<td>
+		<div class="vocabularyg">bu:</div>
+	</td>
+	<td>
+		<div class="vocabularyt">bu-</div>
+	</td>
+	<td>
+		<div class="vocabularyd">"non-X" (<span class="sc">neg</span>)</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">mu:</div>
+	</td>
+	<td>
+		<div class="vocabularyt">mu-</div>
+	</td>
+	<td>
+		<div class="vocabularyd">"un-X" (opposite) (<span class="sc">opp</span>)</div>
+	</td>
+</tr>
+</tbody>
+</table>
+
+<div class="gloss">
+	y+ao bu:kia<br/>
+	chao bụkıa<br/>
+	vehicle *neg*-red<br/>
+	! 'non-red vehicle'
+</div>
+
+<div class="gloss">
+	du mu:j+ai /suq .<br/>
+	Du mụjaı súq.<br/>
+	seem *opp*-happy *2s*<br/>
+	! 'You seem unhappy.'
+</div>
+
+
+<h3>Passivizer prefixes</h3>
+
+<table class="vocabulary">
+<tbody>
+<tr>
+	<td>
+		<div class="vocabularyg">bo:</div>
+	</td>
+	<td>
+		<div class="vocabularyt">bo-</div>
+	</td>
+	<td>
+		<div class="vocabularyd">passive (<span class="sc">pass</span>)</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">te:</div>
+	</td>
+	<td>
+		<div class="vocabularyt">te-</div>
+	</td>
+	<td>
+		<div class="vocabularyd">perfect participle (<span class="sc">ppf</span>)</div>
+	</td>
+</tr>
+</tbody>
+</table>
+
+<div class="gloss">
+	bu bo:yo /ji (/KUNE) .<br/>
+	Bu bọcho jí kúne.<br/>
+	*neg* *pass*-like *1s* the-dog <br/>
+	! 'I'm not liked by the dog.'
+</div>
+
+<div class="gloss">
+	te:poaq<br/>
+	tẹpoaq<br/>
+	*ppf*-break<br/>
+	! 'broken'
+</div>
+
+
+<h3>Comparative and superlative prefixes</h3>
+
+<table class="vocabulary">
+<tbody>
+<tr>
+	<td>
+		<div class="vocabularyg">ha:</div>
+	</td>
+	<td>
+		<div class="vocabularyt">ha-</div>
+	</td>
+	<td>
+		<div class="vocabularyd">"more X", "X-er", comparative (<span class="sc">cmpr</span>)</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">su:</div>
+	</td>
+	<td>
+		<div class="vocabularyt">su-</div>
+	</td>
+	<td>
+		<div class="vocabularyd">"most X", "X-est", superlative (<span class="sc">sup</span>)</div>
+	</td>
+</tr>
+</tbody>
+</table>
+
+<div class="gloss">
+	ha:s+ao<br/>
+	hạsao<br/>
+	*cmpr*-large<br/>
+	! 'larger'
+</div>
+
+<div class="gloss">
+	su:s+ao<br/>
+	sụsao<br/>
+	*sup*-large<br/>
+	! 'largest'
+</div>
+
+<div class="gloss">
+	ha:gi<br/>
+	hạgı<br/>
+	*cmpr*-good<br/>
+	! 'better'
+</div>
+
+<div class="gloss">
+	su:gi<br/>
+	sụgı<br/>
+	*sup*-good<br/>
+	! 'best'
+</div>
+
+
+<h3>Degree prefixes</h3>
+
+<table class="vocabulary">
+<tbody>
+<tr>
+	<td>
+		<div class="vocabularyg">ge:</div>
+	</td>
+	<td>
+		<div class="vocabularyt">ge-</div>
+	</td>
+	<td>
+		<div class="vocabularyd">diminutive (<span class="sc">dim</span>)</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">buq:</div>
+	</td>
+	<td>
+		<div class="vocabularyt">buq-</div>
+	</td>
+	<td>
+		<div class="vocabularyd">augmentative (<span class="sc">aug</span>)</div>
+	</td>
+</tr>
+</tbody>
+</table>
+
+<div class="gloss">
+	ge:heqti<br/>
+	gẹheqtı<br/>
+	*dim*-duck<br/>
+	! 'duckling'
+</div>
+
+<div class="gloss">
+	buq:joe<br/>
+	bụqjoe<br/>
+	*aug*-skilled<br/>
+	! 'super skilled'
+</div>
+
+<h3>Telicity prefixes</h3>
+
+<table class="vocabulary">
+<tbody>
+<tr>
+	<td>
+		<div class="vocabularyg">fa:</div>
+	</td>
+	<td>
+		<div class="vocabularyt">fa-</div>
+	</td>
+	<td>
+		<div class="vocabularyd">telic (<span class="sc">tel</span>)</div>
+	</td>
+</tr>
+<tr>
+	<td>
+		<div class="vocabularyg">rui:</div>
+	</td>
+	<td>
+		<div class="vocabularyt">ruı-</div>
+	</td>
+	<td>
+		<div class="vocabularyd">atelic (<span class="sc">atel</span>)</div>
+	</td>
+</tr>
+</tbody>
+</table>
+
+<p>The telic prefix <span class="glyphs">fa:</span> <span class="toaq">fa-</span> expresses that the action described by the stem heads for a particular endpoint or culmination point.</p>
+
+<div class="gloss">
+	yuq /ji (/N+AOKUSU) .<br/>
+	Chuq jí náokusu.<br/>
+	eat *1s* the-water.melon<br/>
+	! 'I ate (of) the water melon.'
+</div>
+
+<div class="gloss">
+	fa:yuq /ji (/N+AOKUSU) .<br/>
+	Fạchuq jí náokusu.<br/>
+	*tel*-eat *1s* the-water.melon<br/>
+	! 'I ate up the water melon.'
+</div>
+
+<p>The atelic prefix <span class="glyphs">rui:</span> <span class="toaq">ruı-</span> expresses the opposite: an action that doesn't head for a point of completion:</p>
+
+<div class="gloss">
+	rui:b+ai /ji /baq (ANIJIO) \nuiduo .<br/>
+	Rụıbaı jí báq anıjıo nûıduo.<br/>
+	*atel*-build *1s* *gen* sand.castle *adj*-little.while <br/>
+	! 'I built a sand castle for a little while (without finishing it).'
+</div>
+
+<p>This does not necessarily mean that the person got interrupted or suddenly decided to stop. Instead, the verb describes a more state-like version of building which isn't meant to lead to a point of completion.</p>
+
+<h3>Multiple prefixes</h3>
+
+<p>There is no hard-coded limit on the number of prefixes that can be attached to a stem. </p>
+
+<div class="gloss">
+	jo+ai /ji /baq (NUOFUA) bumu:foaq .<br/>
+	Joaı jí báq nuofua bumụfoaq.<br/>
+	search *1s* *gen* bed *neg*-*opp*-comfortable<br/>
+	! 'I'm looking for a non-uncomfortable bed.'
+</div>
+
+<h3>Other kinds of prefixes</h3>
+
+<p>The above examples show only a portion of what is possible with prefixes. </p>
+
+<p>Apart from <span class="mono">V&nbsp;→&nbsp;V</span> prefixes, there also exist prefixes which turn verbs into other parts of speech. A few <span class="mono">V&nbsp;→&nbsp;Function word</span> and <span class="mono">Non-V&nbsp;→&nbsp;Non-V</span> prefixes are covered in the chapter on <a href="../syntax/">syntax</a>.</p>
+
+<p>Some parts of speech (e.g. Tense) have a prefix (clitic) form in addition to their normal isolating form. These forms aren't derivational like the above examples, but phonologically they behave just like prefixes.</p>
+
+
+<h2>Tonal morphemes</h2>
+
+<p>A few of Toaq's morphemes are bare tones: those tones, by themselves, are function words.</p>
+
+<p>For example, the following two phrases have the same syntactic structure:</p>
+
+<div class="gloss">
+	/sa (LUA)<br/>
+	sá lua<br/>
+	some story<br/>
+	! 'a story'
+</div>
+
+<div class="gloss">
+	/(LUA)<br/>
+	lúa<br/>
+	the-story<br/>
+	! 'the story'
+</div>
+
+<p>Both examples feature a determiner followed by a verb. In the second example, that determiner is the rising tone, which is pronounced "on top of" the verb. The difference is phonological, but not syntactic.</p>
+
+<p>The determiner morpheme <img class="tone" src="../assets/tones/d2.png"> has the conditional allomorph <span class="glyphs">lo</span> <span class="toaq">lo</span> which only occurs when <img class="tone" src="../assets/tones/d2.png"> cannot be used (see also <a href="../syntax/#object_incorporation">object incorporation</a>).</p>
+
+<p>Since tones are syntactic, their exact functions will be covered in the chapter on <a href="../syntax/">syntax</a>.</p>
+
+
+<a href="../syntax/" class="button" data-text="sıe"><span class="technical">▶</span> Proceed to the next chapter</a>
+
+
+
+
+
+
+
+    </c1-1>
+</r-c>
+
+<div class="topnav">
+  <a href="../introduction/">Introduction</a>
+  <a href="../phonology/">Phonology</a>
+  <a href="../orthography/">Orthography</a>
+  <a href="../morphology/">Morphology</a>
+  <a href="../syntax/">Syntax</a>
+  <a href="../semantics/">Semantics</a>
+</div>
+
+</body>
+
+<script type="text/javascript" src="../css/interlinear.js"></script>
+</html>

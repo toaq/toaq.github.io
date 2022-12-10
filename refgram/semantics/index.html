@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Toaq - Semantics</title>
+	<link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="stylesheet" type="text/css" href="../css/r-c-min.css" />
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  
+    <link rel="stylesheet" type="text/css" href="../css/interlinear.css"/>
+
+	<link rel="stylesheet" type="text/css" href="../css/CMU/cmun-serif.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/SegoeUI/segoe.css"/>
+	
+</head>
+<body>
+
+<img src="../assets/logo.svg" class="logo"></img>
+
+<div class="topnav">
+  <a href="../introduction/">Introduction</a>
+  <a href="../phonology/">Phonology</a>
+  <a href="../orthography/">Orthography</a>
+  <a href="../morphology/">Morphology</a>
+  <a href="../syntax/">Syntax</a>
+  <a href="../semantics/">Semantics</a>
+</div>
+
+<r-c class="fixed-width" >
+    <c1-1>
+
+<h1>Semantics</h1>
+
+<p><span class="technical">Disclaimer: </span>The information presented in this chapter is by no means necessary for learners of the language. </p>
+
+<p>The central goal of the formal semantics outlined here is to compositionally derive the logical meaning of any Toaq utterance directly from its syntactic parse tree.</p>
+
+<p>Being designed to be a loglang, there must be an unambiguous mapping from every Toaq utterance to its logical form and by extension, its meaning.</p>
+
+<p>This chapter attempts to show how this is accomplished.</p>
+
+
+
+<h2>Types and variables</h2>
+
+<div class="syntax">
+
+	<h4>Basic types and variables</h4>
+
+	<table class="types">
+	<tbody>
+		<tr>
+			<th></th>
+			<th>Type</th>
+			<th>Variables</th>
+		</tr>
+		<tr>
+			<td>individuals</td>
+			<td><span class="semantic">e</span></td>
+			<td><span class="semantic"><i>a, b, c</i>, ..., ráı, ...</span></td>
+		</tr>
+		<tr>
+			<td>truth-values</td>
+			<td><span class="semantic">t</span></td>
+			<td><span class="semantic"></span></td>
+		</tr>
+		<tr>
+			<td>events</td>
+			<td><span class="semantic">v</span></td>
+			<td><span class="semantic"><i>e, e', e'', ...</i></span></td>
+		</tr>
+		<tr>
+			<td>time intervals</td>
+			<td><span class="semantic">i</span></td>
+			<td><span class="semantic"><i>t, t', t'', ...</i></span></td>
+		</tr>
+		<tr>
+			<td>worlds</td>
+			<td><span class="semantic">s</span></td>
+			<td><span class="semantic"><i>w, w', w'', ...</i></span></td>
+		</tr>
+	</tbody>
+	</table>
+	
+		<h4>Complex types (selection)</h4>
+
+	<table class="types">
+	<tbody>
+		<tr>
+			<th></th>
+			<th>Type</th>
+			<th></th>
+		</tr>
+		<tr>
+			<td>V<sub>intrans</sub>, V<sub>trans</sub></td>
+			<td><span class="semantic">&lt;e,&lt;v,t&gt;&gt;</span></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>V<sub>ditrans</sub></td>
+			<td><span class="semantic">&lt;e,&lt;e,&lt;v,t&gt;&gt;&gt;</span></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Q</td>
+			<td><span class="semantic">&lt;&lt;e,t&gt;,&lt;&lt;e,t&gt;,t&gt;&gt;</span></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>&(<span class="toaq">róı</span>)</td>
+			<td><span class="semantic">&lt;e,&lt;e,e&gt;&gt;</span></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Asp</td>
+			<td><span class="semantic">&lt;&lt;v,t&gt;,&lt;i,t&gt;&gt;</span></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>T</td>
+			<td><span class="semantic">&lt;i,t&gt;</span></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Propositions</td>
+			<td><span class="semantic">&lt;s,t&gt;</span></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td>Properties</td>
+			<td><span class="semantic">&lt;e,t&gt; or &lt;s,&lt;e,t&gt;&gt;</span></td>
+			<td></td>
+		</tr>
+	</tbody>
+	</table>
+	
+	
+</div>
+
+
+<h2>Tree notation conventions</h2>
+
+<div class="syntax">
+	<h4>Tree notation</h4>
+	<img class="sem" src="treenotation.svg" width="360px">
+	
+	<p><span class="gold">gold</span> = node labels and types</p>
+	<p><span class="gold">::</span> separates label from type, e.g. <span class="gold">DP :: e</span></p>
+	
+	<p>Semantic denotations are colored <span class="semantic">red</span>, e.g. <span class="semantic">λ<i>x</i>. hao(<i>x</i>)</span>. </p>
+	
+	<p><span class="toaq">Toaq</span> words and phrases are light blue like everywhere else.</p>
+</div>
+
+
+
+
+
+<h2 id="composition_rules">Composition rules</h2>
+
+<p>This section lists the different composition rules which are used in the process of computing the denotations of Toaq sentences.</p>
+
+<div class="syntax" id="functional_application">
+	<h4>Functional Application (FA)</h4>
+	<img class="sem" src="abstract.svg" width="160px">
+	<p>If <span class="semantic">β</span> is a head and <span class="semantic">γ</span> its complement, then<br> 
+	
+	<span class="semantic">⟦α⟧ = ⟦β⟧(⟦γ⟧)</span></p>
+	
+	<p><i>Functional Application</i> is the most common composition rule. It applies to the following head classes:</p>
+	<p>
+	<span class="mono">V, D, Asp, T, Modal(P), Σ, &, SA, Q, C</span>
+	</p>
+</div>
+
+<div class="syntax" id="predicate_modification">
+	<h4>Predicate Modification (PM)</h4>
+	<img class="sem" src="abstract.svg" width="160px">
+	<p>If <span class="semantic">β</span> or <span class="semantic">γ</span> is an adjunct, then<br>
+
+	<span class="semantic">⟦α⟧ = λ<i>x</i>. ⟦β⟧(<i>x</i>) ∧ ⟦γ⟧(<i>x</i>)</span></p>
+	
+	<p><i>Predicate Modification</i> applies to:</p>
+	<p>
+	<span class="mono">CP<sub>rel</sub>, AdjunctP, aP</span>
+	</p>
+</div>
+
+<div class="syntax" id="predicate_abstraction">
+	<h4>Predicate Abstraction (PA)</h4>
+	<img class="sem" src="abstract.svg" width="160px">
+	<p>If <span class="semantic">β</span> is a QP or FocusAdvP with the index <span class="semantic">i</span>, then<br>
+
+	<span class="semantic">⟦β<sub>i</sub> γ⟧<sup>g</sup> = ⟦β⟧(λ<i>x</i>. ⟦γ⟧<sup>g[<i>x</i>/<i>i</i>]</sup>)</span></p>
+	
+	<p><span class="semantic">g[<i>x</i>/<i>i</i>]</span> is that variable assignment which is identical to <span class="semantic">g</span> except that every constituent with the index <span class="semantic">i</span> is replaced by <span class="semantic"><i>x</i></span>.</p>
+	
+	<p><i>Predicate Abstraction</i> applies to:</p>
+	<p>
+	<span class="mono">QP, FocusAdvP</span>
+	</p>
+</div>
+
+<div class="syntax" id="event_identification">
+	<h4>Event Identification (EI)</h4>
+	<img class="sem" src="abstract.svg" width="160px">
+	<p>If <span class="semantic">β</span> is a non-vacuous v head and γ is a VP, then<br>
+
+	<span class="semantic">⟦α⟧ = λ<i>x</i>.λ<i>e</i>. ⟦β⟧(<i>x</i>)(<i>e</i>) ∧ ⟦γ⟧(<i>e</i>)</span></p>
+	
+	<p><i>Event Identification</i> applies to:</p>
+	<p>
+	<span class="mono">v</span>
+	</p>
+</div>
+
+
+<h2>Variables and pronouns</h2>
+
+<p>The denotation of an expression which contains variables depends on what value each variable has. This is determined by an assignment function <span class="semantic">g</span>, which assigns a unique value to each variable.</p>
+
+<p>The meaning of <span class="semantic">likes(x, y)</span> is different for the assignments <br><span class="semantic">g<sub>1</sub> = {x → Mary, y → John}</span>, and <br><span class="semantic">g<sub>2</sub> = {x → Mary, y → Susan}</span>.</p>
+
+<p>We therefore write <span class="semantic">⟦α⟧<sup>g</sup></span> to indicate that we compute the denotation of <span class="semantic">α</span> relative to an assignment <span class="semantic">g</span>. We say that <span class="semantic">g<sub>2</sub>(y) = Susan</span>. The examples in this chapter involve numeric variables (indices), so you will see things like <span class="semantic">g(7)</span>. The numbers are arbitrary and hold no significance.</p>
+
+<p>Similarly, things should be evaluated relative to a specific context. For example, the pronoun <span class="toaq">jí</span> refers to different speakers in different contexts. We therefore write a superscript <span class="semantic">c</span> to indicate that the meaning of an expression is evaluated relative to a context <span class="semantic">c</span>.</p>
+
+<p>Taken together, this results in <span class="semantic">⟦α⟧<sup>g,c</sup> = β</span> "the denotation of α relative to a variable assignment g and a context c is β".</p>
+
+
+
+
+<div class="syntax">
+	<h4>Personal pronoun denotations</h4>
+	<p>The personal pronouns follow this pattern:</p>
+	<p>
+		<span class="semantic">
+			⟦<span class="toaq">jí</span>⟧<sup>g,c</sup> = the speaker in c<br>
+			⟦<span class="toaq">súq</span>⟧<sup>g,c</sup> = the listener in c
+			<br>
+			⟦<span class="toaq">úmo</span>⟧<sup>g,c</sup> = the speaker in c + the listener in c
+			<br>
+			...
+		</span>
+	</p>	
+</div>
+
+<div class="syntax">
+	<h4>Anaphoric pronouns and bound variables</h4>
+	<p>For any other DP, the denotation is as follows:</p>
+	<p>If a DP <span class="semantic">α</span> is an anaphoric pronoun or a bound variable, <span class="semantic">g</span> is a variable assignment, and <span class="semantic">i</span> is the DP's index, then<br>
+	<span class="semantic">⟦α<sub>i</sub>⟧<sup>g</sup> = g(i)</span></p>
+	
+	<p>
+	For example:<br>
+		<span class="semantic">
+			<span class="semantic">⟦<span class="toaq">kúne</span><sub>5</sub>⟧<sup>g</sup> = g(5)</span>
+		</span>
+	</p>
+	<p>See also: <a href="#determiner_phrases">determiner phrase denotation</a></p>
+</div>
+
+
+
+<h2>Verb phrases</h2>
+
+<div class="syntax">
+	<h4>VP denotation</h4>
+	<p>The verb composes with its internal argument to form a VP.</p>
+	<p>The internal argument satisfies the object place, leaving the VP with one open event place.</p>
+	
+	<img class="sem" src="verbpsem.svg" width="250px">
+	
+	<p>
+		<span class="semantic">
+			⟦<span class="l">V</span>⟧ = λ<i>x</i>.λ<i>e</i>. <span class="l">V</span>(<i>x</i>)(<i>e</i>)
+			<br>
+			⟦<span class="l">VP</span>⟧ = ⟦<span class="l">V</span>⟧(<span class="l">&lt;object&gt;</span>)
+			<br>
+			 = [λ<i>x</i>.λ<i>e</i>. <span class="l">V</span>(<i>x</i>)(<i>e</i>)](<span class="l">&lt;object&gt;</span>)
+			<br>
+			= λ<i>e</i>. <span class="l">V</span>(<span class="l">&lt;object&gt;</span>)(<i>e</i>)
+		</span>
+	</p>
+	<p>For example:</p>
+	<p>
+		<span class="semantic">
+			⟦<span class="toaq">gaı súq</span>⟧
+			<br>
+			= ⟦<span class="toaq">gaı</span>⟧(<span class="toaq">súq</span>)
+			<br>
+			 = [λ<i>x</i>.λ<i>e</i>. <span class="toaq">gaı</span>(<i>x</i>)(<i>e</i>)](<span class="toaq">súq</span>)
+			<br>
+			= λ<i>e</i>. <span class="toaq">gaı</span>(<span class="toaq">súq</span>)(<i>e</i>)
+			<br>
+			= λ<i>e</i>. <i>e</i> is an event of perceiving the listener 
+		</span>
+	</p>
+</div>
+
+<p></p>
+
+<div class="syntax">
+	<h4>Intransitive verbs</h4>
+	
+	<p>The subject of an unaccusative verb merges as the complement of the verb, where it receives <span class="sc">theme</span> or <span class="sc">experiencer</span>.</p>
+	
+	<img class="sem" src="vpunaccusativesem.svg" width="380px">
+	
+	<p><span class="semantic">
+	⟦<span class="l">V</span>⟧(⟦<span class="l">DP</span>⟧)<br>
+	= [λ<i>x</i>.λ<i>e</i>. shua(<i>x</i>)(<i>e</i>)](g(9))<br>
+	= λ<i>e</i>. shua(g(9))(<i>e</i>)<br>
+	= λ<i>e</i>. <i>e</i> is an event of g(9) falling</span>, defined only if <span class="semantic">g(9) is rain</span>
+	
+	</span></p>
+	
+	<p>The subject of an unergative verbs originates in Spec,vP, where it receives its <span class="sc">agent</span> role (via <i>Event Identification</i>):</p>
+	
+	<img class="sem" src="vpunergativesem.svg" width="500px">
+	
+	<p><span class="semantic">
+	⟦<span class="l">v</span>⟧(⟦<span class="l">VP</span>⟧)<br>
+	= [λ<i>x</i>.λ<i>e</i>. <span class="sc2">agent</span>(<i>e</i>) = <i>x</i>](λ<i>x</i>.λ<i>e</i>. shua(<i>x</i>)(<i>e</i>))<br>
+	= λ<i>x</i>.λ<i>e</i>. saqsu(<i>e</i>) ∧ <span class="sc2">agent</span>(<i>e</i>) = <i>x</i></span></p>
+	<p><span class="semantic">
+	[λ<i>x</i>.λ<i>e</i>. saqsu(<i>e</i>) ∧ <span class="sc2">agent</span>(<i>e</i>) = <i>x</i>](jí)<br>
+	= λ<i>e</i>. saqsu(<i>e</i>) ∧ <span class="sc2">agent</span>(<i>e</i>) = jí<br>
+	= λ<i>e</i>. <i>e</i> is an event of the speaker whispering</span>
+	
+	</span></p>
+	
+</div>
+
+
+
+<div class="syntax">
+	<h4>Transitive and ditransitive verbs</h4>
+	<p>Transitives and ditransitives have an external agent argument which originates in Spec,vP. It receives its role from the <i>v</i> head. v combines with its sister via <i>Event Identification</i>:</p>
+	
+	<img class="sem" src="vpsem.svg" width="520px">
+	
+	<p>
+		<span class="semantic">
+			λ<i>e</i>. buja(g(1))(<i>e</i>) ∧ <span class="sc2">agent</span>(<i>e</i>) = súq<br>
+			= λ<i>e</i>. <i>e</i> is an event of kissing g(1) ∧ the listener is the agent of <i>e</i>, </span> <br>defined only if <span class="semantic"> g(1) is an equine
+		</span>
+	</p>
+	
+	<p>With ditransitive verbs, the indirect object precedes the direct object:</p>
+	
+	<img class="sem" src="vpsemb.svg" width="630px">
+	
+	<p>
+	<span class="semantic">
+			λ<i>e</i>. do(súq, g(6))(<i>e</i>) ∧ <span class="sc2">agent</span>(<i>e</i>) = jí<br>
+			= λ<i>e</i>. <i>e</i> is an event of giving g(6) to the listener ∧ the speaker is the agent of <i>e</i>, </span> <br>defined only if <span class="semantic"> g(6) is a book
+		</span>
+	</p>
+	
+</div>
+
+<p></p>
+
+
+<h3 id="cleft_verb">Cleft verb</h3>
+
+<div class="syntax">
+	<h4>Cleft verb denotation</h4>
+	
+	<img class="sem" src="cleftsem.svg" width="460px">
+	
+	<p>The cleft verb <span class="toaq">nä</span> allows a single argument to be fronted. This argument must appear in the complement of <span class="toaq">nä</span>.</p>
+	
+	<p><span class="toaq">nä</span> is used purely for manipulating word order. It does not add any semantic content.</p>
+	
+</div>
+
+
+<h3 id="event_accessor">Event accessor verb</h3>
+
+<div class="syntax">
+	<h4>Event accessor denotation</h4>
+	
+	<img class="sem" src="evasem.svg" width="450px">
+	<p>The event accessor <span class="toaq">ë</span> turns the event argument of a vP into a surface argument in order to make it accessible for surface arguments or to serve as the complement of a determiner.</p>
+	
+	<p><span class="toaq">márao</span> "the one who dances"<br>
+	<span class="toaq">é marao</span> "the event of dancing"</p>
+</div>
+
+
+<h3 id="predicatizers">Predicatizers</h3>
+
+<div class="syntax">
+	<h4>Predicatizer denotation</h4>
+	<img class="sem" src="posem.svg" width="500px">
+	<p>Predicatizers are quantificationally opaque: if the complement is a quantified DP, the DP is QP-bound locally rather than by a QP in the clause that contains the predicatizer. To properly model this behavior, we posit the presence of a CP, which acts as a scope boundary.</p>
+	<p>The above example has a referring expression (<span class="toaq">jí</span> "the speaker") as the complement. The following example features a quantified DP. </p>
+	<img class="sem" src="posemb.svg" width="95%">
+	<p>This example shows how <span class="toaq">sá paı</span> takes local scope, yielding:</p>
+	<p><span class="semantic">
+		λ<i>x</i><sub><i>i</i></sub>. ∃<i>x</i> : paı(<i>x</i>). hao(<i>x</i><sub><i>i</i></sub>, <i>x</i>)
+	</span>, which means<br>
+	"X is such that there exists a friend with which X is related via the salient relation",<br>
+	for the phrase <span class="toaq">po sá paı</span>.
+	</p>
+</div>
+
+<h2 id="determiner_phrases">Determiner phrases</h2>
+
+<div class="syntax">
+	<h4>Determiner phrase denotation</h4>
+	<img class="sem" src="dpsem.svg" width="500px">
+	
+	<p>Determiner phrases are complex structures of type <span class="semantic">e</span>.  They are composed of a determiner (D) followed by an nP. The nP consists of an unprounced n head, which contains a phi feature (animacy) and an index. Both are passed up the tree to give the projected DP an index and a phi feature.</p>
+	
+	<p>The phi feature is presuppositional:</p>
+	
+	<p><span class="semantic">⟦<span class="l">n<sub>i</sub></span>⟧ = λ<i>P</i>: φ(g(i)). <i>P</i></span>, i.e., the function returns <span class="semantic">P</span> if <span class="semantic">g(i)</span> has the feature <span class="semantic">φ</span>, and is undefined otherwise.</p>
+	
+	<p>There is only one denotation for every determiner, or put another way, there is only one determiner in Toaq: bound-<i>the</i>.</p>
+	
+	<p><span class="semantic">⟦<span class="l">D nP<sub>i</sub></span>⟧ = λ<i>P</i>: <i>P</i>(g(<i>i</i>)). g(<i>i</i>)</span></p>
+	
+	<p>This again contains a presupposition: if <span class="semantic">g(i)</span> satisfies the predicate <span class="semantic">P</span>, then the function returns <span class="semantic">g(i)</span>, otherwise it is undefined. This ensures that the main semantic content (in CP<sub>rel</sub>) makes a contribution, while the denotation of the DP is just a variable.</p>
+	
+	<p>For example, the DP <span class="toaq">tú poq</span></p>
+	
+	<img class="sem" src="dpsemb.svg" width="500px">
+	
+	<p>has the denotation <span class="semantic">g(3)</span>, is presupposed to satisfy <span class="semantic">λ<i>x</i>.poq(<i>x</i>)</span>, and is animate.</p>
+	
+	<p>The nP also moves and merges with a higher Q head, which is where the DP variable actually gets bound (see below).</p>
+	
+</div>
+
+
+<h2 id="quantifier_phrases">Quantifier phrases</h2>
+
+<p>Quantified DPs have the same denotation as unquantified DPs. This is because the actual quantificational force stems from a syntactically higher quantifier phrase (QP), while all DPs are merely bound variables.</p>
+
+<p>Q heads are phonologically null. The presence and value of a Q head is observable via its morphological exponent D(eterminer), the head of the DP it binds. For example, an existential quantifier binds a (definite) DP headed by <span class="toaq">sá</span>, and a universal quantifier binds a DP headed by <span class="toaq">tú</span>. In other words, all determiners are allomorphs of the bound variable determiner <img class="tone" src="../assets/tones/d2.png">.</p>
+
+<div class="syntax">
+	<h4>Quantifier scope pattern</h4>
+	<img class="tree4" src="qpscope.svg">
+	<p>Every quantifier phrase (QP) binds a DP in its scope.</p>
+	<p>The scope of a QP is its sister.</p>
+</div>
+
+<div class="syntax">
+	<h4>QP pattern</h4>
+	<img class="tree4" src="../assets/patterns/qp.svg">
+	<p>A quantifier phrase (QP) is a quantifier followed by an nP.</p>
+	<p>The nP originates in a DP, from where it moves to the complement of Q to restricts the quantifier. The nP carries an index, which is passed to the QP. </p>
+	<p>Every QP binds a DP with the same index.</p>
+	
+	<img class="sem" src="qpsem.svg" width="99%">
+	
+	<p>Here, the nP <span class="toaq">ruq</span> moves out of the DP and into the complement of Q to restrict the quantifier ∃, and to provide the QP with an index.</p>
+	
+	<p>Quantifiers are of type <span class="semantic">&lt;&lt;e,t&gt;,&lt;&lt;e,t&gt;,t&gt;&gt;</span>, meaning they take two one-place predicates as arguments. The first predicate (the nP) acts as a restriction on the domain of the quantifier. The second predicate is the scope of the quantifier.</p>
+	
+	<p>A QP combines with its sister via <i>Predicate Abstraction</i>.</p>
+	
+	<p>
+	<span class="semantic">⟦<span class="l">QP<sub>7</sub> TP</span>⟧<sup>g,c</sup></span><br>
+	= 	<span class="semantic">
+	⟦<span class="l">QP<sub>7</sub></span>⟧(λ<i>x</i>. ⟦<span class="l">TP</span>⟧<sup>g[x/7]</sup>)</span><br>
+	= 	<span class="semantic">
+	[λ<i>S</i>. ∃<i>x</i> : ruq(<i>x</i>). <i>S</i>(<i>x</i>)](λ<i>x</i>. ⟦<span class="l">TP</span>⟧<sup>g[x/7]</sup>)</span><br>
+	= <span class="semantic">
+	[λ<i>S</i>. ∃<i>x</i> : ruq(<i>x</i>). <i>S</i>(<i>x</i>)](λ<i>x</i>. ∃<i>e</i>. shua(<i>x</i>)(<i>e</i>))	</span><br>
+	= <span class="semantic">
+	∃<i>x</i> : ruq(<i>x</i>). ∃<i>e</i>. shua(<i>x</i>)(<i>e</i>)</span><br>
+	= <span class="semantic">There exist(s) some <i>x</i> such that <i>x</i> is rain, such that there exists an event <i>e</i> of <i>x</i> falling.</span>
+	</p>
+</div>
+
+
+<h2 id="propositions">Intensions and propositions</h2>
+
+<p>As they are written, the examples elsewhere in this chapter are purely extensional. This was done in order to keep the trees and the various type annotations as simple and small as possible. In reality, every verb has a world variable, and this results in many types growing a world place. Where this is not written explicitly, it is implied. </p>
+
+<p>Verb denotations actually have the following form:</p>
+
+<div class="syntax">
+	<p><span class="semantic">⟦<span class="toaq">nuo</span>⟧<sup>g,c,w</sup></span> = <span class="semantic">λ<i>x</i>.λ<i>e</i>.λ<i>w</i>. nuo<sub><i>w</i></sub>(<i>x</i>)(<i>e</i>)</span><br>
+	which has the type <span class="semantic">&lt;e,&lt;v,&lt;s,t&gt;&gt;&gt;</span></p>	
+</div>
+
+<p>For better readability and to separate it from all the other variables, the world variable appears as a subscript. When evaluating an expression, a superscript w indicates that the expression is evaluated relative to a (possible) world:</p>
+
+<p><span class="semantic">⟦α⟧<sup>w</sup></span> is the extension of <span class="semantic">α</span> at world <span class="semantic">w</span> and<br>
+<span class="semantic">λ<i>w</i>. ⟦α⟧<sup>w</sup></span> is the intension of <span class="semantic">α</span>.</p>
+
+<p><span class="semantic">λ<i>w</i>. jara<sub><i>w</i></sub>(jí)</span> is a function (of type <span class="semantic">&lt;s,t&gt;</span>) which returns true iff the speaker runs in world <span class="semantic">w</span>.</p>
+
+<p>This is what propositions are, which, in Toaq, are complementizer phrases headed by <span class="toaq">ꝡä</span>. Proposition-taking verbs, such as <span class="toaq">chı</span> "to believe", take intensions as complements:</p>
+
+<div class="syntax">
+	<h4>Propositional verbs</h4>
+	<img class="sem" src="propvsem.svg" width="580px">
+	
+	<p>The denotation of the CP <span class="toaq">ꝡä nuo kúne</span> "that the dog is asleep" is <br>
+	<span class="semantic">λ<i>w</i>. ∃<i>e'</i>. nuo<sub><i>w</i></sub>(kúne)(<i>e'</i>)</span>, i.e.,<br>
+	a function which returns True if there is an event of the dog being asleep in <span class="semantic"><i>w</i></span> (at time <span class="semantic">t</span>, ...). 	
+	This CP combines with the verb via <i>Intensional Functional Application</i>:</p>
+		
+	<img class="sem" src="abstract.svg" width="160px">
+	<p>If <span class="semantic">β</span> is an intension-taking function, and <span class="semantic">γ</span> is an intensional complement, then, for any possible world <span class="semantic">w</span>:<br> 
+	
+	<span class="semantic">
+	⟦α⟧<sup>w</sup> = ⟦β⟧<sup>w</sup>(λ<i>w'</i>. ⟦γ⟧<sup>w'</sup>)
+	</span></p>
+	
+	<p>What the verb does with the proposition depends on the definition of the verb. For <span class="toaq">chı</span>, we can say that</p>
+	
+	<p><span class="semantic">chı(jí, {λ<i>w</i>. ∃<i>e'</i>. nuo<sub><i>w</i></sub>(kúne)(<i>e'</i>)})</span> expresses that</p>
+	
+	<p>"Every possible world <span class="semantic"><i>w</i></span> which is compatible with the beliefs of the speaker is one in which the dog is asleep at time <span class="semantic">t</span>", or in short, "The speaker believes that the dog is asleep."</p>
+</div>
+
+
+
+
+
+<h2 id="adjuncts">Adjuncts</h2>
+
+<p>There are two kinds of adjuncts in Toaq: Adverbial adjuncts (AdjunctP) and relative clauses (CP<sub>rel</sub>). Both compose via <a href="#composition_rules">predicate modification</a>.</p>
+
+<h3>Adjunct phrases</h3>
+
+<div class="syntax">
+	<h4>Adverbial adjunct denotation</h4>
+	<img class="sem" src="adjunctpsem.svg" width="450px">
+	
+	<p>Adverbials are adjuncts to vPs. They combine with their sister via <i>Predicate Modification</i>. They act as restrictions on the event variable of the vP.</p>
+	<p>
+		<span class="semantic">
+			⟦<span class="l">[<sub><i>v</i>P</sub> [<i>v</i>P] [<sub>AdjunctP</sub> Adjunct VP]]</span>⟧<sup>g,c</sup>  <br>
+			= λ<i>x</i>. ⟦<span class="l"><i>v</i>P</span>⟧(<i>x</i>) ∧ ⟦<span class="l">AdjunctP</span>⟧(<i>x</i>) <br>
+			= λ<i>x</i>. ⟦<span class="toaq">nuokuaı súq</span>⟧(<i>x</i>) ∧ ⟦<span class="toaq">bîe jóafao</span>⟧(<i>x</i>) <br>
+			= λ<i>x</i>. [λ<i>e</i>. nuokuaı(súq)(<i>e</i>)](<i>x</i>) ∧ [λ<i>x</i>. bıe(<i>x</i>, jóafao)](<i>x</i>) <br>
+			= λ<i>e</i>. nuokuaı(súq)(<i>e</i>) ∧ bıe(<i>e</i>, jóafao) <br>
+			
+			= λ<i>e</i>. <i>e</i> is an event of the listener being tired ∧ <i>e</i> is after the weekend
+			
+		</span>
+	</p>
+</div>
+
+<h3>Relative clauses</h3>
+
+<div class="syntax">
+	<h4>Relative clause denotation</h4>
+	<img class="sem" src="cprelsem.svg" width="500px">
+	
+	<p>Relative clauses are adjuncts to nPs. They combine with their sister via <i>Predicate Modification</i>:</p>
+	<p>
+		<span class="semantic">
+			⟦<span class="l">[<sub><i>n</i>P</sub> [<i>n</i>P CP<sub>rel</sub>]]</span>⟧<sup>g,c</sup>  <br>
+			= λ<i>x</i>. ⟦<span class="l"><i>n</i>P</span>⟧(<i>x</i>) ∧ ⟦<span class="l">CP<sub>rel</sub></span>⟧(<i>x</i>) <br>
+			= λ<i>x</i>. ⟦<span class="toaq">poq</span>⟧(<i>x</i>) ∧ ⟦<span class="toaq">ꝡë kaqgaı jí hóa</span>⟧(<i>x</i>) <br>
+			= λ<i>x</i>. [λ<i>x</i>. poq(<i>x</i>)](<i>x</i>) ∧ [λ<i>x</i>. kaqgaı(jí, <i>x</i>)](<i>x</i>) <br>
+			= λ<i>x</i>. poq(<i>x</i>) ∧ kaqgaı(jí, <i>x</i>) <br>
+			
+			= λ<i>x</i>. <i>x</i> is a person ∧ the speaker sees <i>x</i> 
+			
+		</span>
+	</p>
+</div>
+
+
+
+
+<h2>Polarity phrases</h2>
+
+<div class="syntax">
+	<h4>Negation</h4>
+	<img class="sem" src="negsem.svg" width="270px">
+	
+	<p>Polarity (Σ) is a flexible category which can attach to many kinds of phrases. The type-agnostic definitions are:</p>
+	
+	<p><span class="toaq">bu</span> = <span class="semantic">λ<i>P</i>. ¬<i>P</i></span></p>
+	
+	<p><span class="toaq">jeo</span> = <span class="semantic">λ<i>P</i>. †<i>P</i></span></p>
+	
+	<p>
+		<span class="semantic">
+			 
+			
+		</span>
+	</p>
+</div>
+
+<h2>Aspect and Tense</h2>
+
+<div class="syntax">
+	<h4>Aspect and Tense</h4>
+	<img class="sem" src="tenseaspectsem.svg" width="520px">
+	
+	<p>Tense and aspect work together. Aspect acts on the vP first, and deals with the vP's event variable by relating it to a time interval. This interval is then supplied by a tense.</p>
+	
+</div>
+
+<div class="syntax">
+	<h4>Aspect denotations</h4>
+	
+	<table class="semtable">
+	<tbody>
+		<tr>
+			<th>Aspect</th>
+			<th>Denotation</th>
+		</tr>
+		<tr>
+			<td><span class="toaq">tam</span></td>
+			<td><span class="semantic">λ<i>P</i>. λ<i>t</i>. ∃<i>e</i>. τ(<i>e</i>) ⊆ <i>t</i> ∧ <i>P</i>(<i>e</i>)
+</span></td>
+		</tr>
+		<tr>
+			<td><span class="toaq">chum</span></td>
+			<td><span class="semantic">λ<i>P</i>. λ<i>t</i>. ∀<i>w'</i> ∈ <i>IW</i>(<i>w</i>,<i>t'</i>). ∃<i>e</i>.  <i>t</i> ⊆ τ(<i>e</i>) ∧ <i>P<sub>w'</sub></i>(<i>e</i>)
+</span></td>
+		</tr>
+		<tr>
+			<td><span class="toaq">luı</span></td>
+			<td><span class="semantic">λ<i>P</i>. λ<i>t</i>. ∃<i>e</i>. τ(<i>e</i>) &lt; <i>t</i> ∧ <i>P</i>(<i>e</i>)
+</span></td>
+		</tr>
+		<tr>
+			<td><span class="toaq">za</span></td>
+			<td><span class="semantic">λ<i>P</i>. λ<i>t</i>. ∃<i>e</i>. τ(<i>e</i>) &gt; <i>t</i> ∧ <i>P</i>(<i>e</i>)
+</span></td>
+		</tr>
+		<tr>
+			<td><span class="toaq">hoaı</span></td>
+			<td><span class="semantic">λ<i>P</i>. λ<i>t</i>. ∃<i>e</i>.  <i>t</i> ⊆ τ(<i>e</i>) ∧ <i>t</i> &gt; ExpEnd(<i>e</i>) ∧ <i>P</i>(<i>e</i>)
+</span></td>
+		</tr>
+		<tr>
+			<td><span class="toaq">haı</span></td>
+			<td><span class="semantic">λ<i>P</i>. λ<i>t</i>. ∃<i>e</i>.  <i>t</i> ⊆ τ(<i>e</i>) ∧ <i>t</i> &lt; ExpStart(<i>e</i>) ∧ <i>P</i>(<i>e</i>)
+</span></td>
+		</tr>
+		<tr>
+			<td><span class="toaq">hıq</span></td>
+			<td><span class="semantic">λ<i>P</i>. λ<i>t</i>. ∃<i>e</i>. τ(<i>e</i>) &lt;<sub>near</sub> <i>t</i> ∧ <i>P</i>(<i>e</i>)
+</span></td>
+		</tr>
+		<tr>
+			<td><span class="toaq">fı</span></td>
+			<td><span class="semantic">λ<i>P</i>. λ<i>t</i>. ∃<i>e</i>. τ(<i>e</i>) &gt;<sub>near</sub> <i>t</i> ∧ <i>P</i>(<i>e</i>)
+</span></td>
+		</tr>
+	</tbody>
+	</table>
+
+	
+	<p><span class="technical">Symbols:</span><br>
+	<span class="semantic">&lt;</span> : the "before" relation: a time inverval <span class="semantic">t</span> is before a time interval <span class="semantic">t'</span> if every moment in <span class="semantic">t</span> temporally precedes every moment in <span class="semantic">t'</span>.<br>
+	<span class="semantic">&gt;</span> : the "after" relation<br>
+	<span class="semantic">⊆</span> : the "subinterval" relation: interval <span class="semantic">t</span> is included in interval <span class="semantic">t'</span><br>
+	<span class="semantic">τ()</span> : the temporal trace function, which maps an event to its temporal trace / its runtime</span><br>
+	<span class="semantic"><i>IW(w,t)</i></span> : the set of inertia worlds for world <span class="semantic">w</span> at time <span class="semantic">t</span>, where an inertia world <span class="semantic">w'</span> is a world which, up to <span class="semantic">t</span>, is exactly like <span class="semantic">w</span>, but then it continues at <span class="semantic">t</span> in a way that is normal or natural for the given verb. This modal treatment of <span class="toaq">chum</span> makes it possible to use this aspect even if the event never ends up getting completed. <span class="toaq">Chum baı jí báq anıjıo</span> "I was building a sand castle... when I remembered I had somewhere else to be". The event never fully takes place in <span class="semantic">w</span>, but it does in <span class="semantic">w'</span>.	
+	</p>
+</div>
+
+<div class="syntax">
+	<h4>Tense denotations</h4>
+	
+	<p>The tenses <span class="toaq">pu, naı, jıa</span> are pronominal: they refer to a (salient) time interval, and the temporal position of this interval is presupposed to be before, including, or after, the utterance time.</p>
+	
+	<table class="semtable">
+	<tbody>
+		<tr>
+			<th>Tense</th>
+			<th>Denotation</th>
+		</tr>
+		<tr>
+			<td><span class="toaq">pu</span></td>
+			<td><span class="semantic">⟦<span class="toaq">pu</span>⟧<sup>g,c</sup></span> is only defined if <span class="semantic">c</span> provides a time interval <span class="semantic">t</span> such that <br>
+			<span class="semantic">t < t<sub>0</sub></span>.<br>
+			If defined, then <span class="semantic">⟦<span class="toaq">pu</span>⟧<sup>g,c</sup></span> = <span class="semantic">t</span>.</td>
+		</tr>
+		<tr>
+			<td><span class="toaq">naı</span></td>
+			<td><span class="semantic">⟦<span class="toaq">naı</span>⟧<sup>g,c</sup></span> is only defined if <span class="semantic">c</span> provides a time interval <span class="semantic">t</span> such that <br>
+			<span class="semantic">t ⊆ t<sub>0</sub></span>.<br>
+			If defined, then <span class="semantic">⟦<span class="toaq">naı</span>⟧<sup>g,c</sup></span> = <span class="semantic">t</span>.</td>
+		</tr>
+		<tr>
+			<td><span class="toaq">jıa</span></td>
+			<td><span class="semantic">⟦<span class="toaq">jıa</span>⟧<sup>g,c</sup></span> is only defined if <span class="semantic">c</span> provides a time interval <span class="semantic">t</span> such that <br>
+			<span class="semantic">t > t<sub>0</sub></span>.<br>
+			If defined, then <span class="semantic">⟦<span class="toaq">jıa</span>⟧<sup>g,c</sup></span> = <span class="semantic">t</span>.</td>
+		</tr>
+	</tbody>
+	</table>
+
+	<p><span class="technical">Symbols:</span><br>
+	<span class="semantic">&lt;</span> : the "before" relation<br>
+	<span class="semantic">&gt;</span> : the "after" relation<br>
+	<span class="semantic">⊆</span> : the "subinterval" relation<br>
+	<span class="semantic">t<sub>0</sub></span> : the utterance time / speech time<br>
+	</p>
+
+	<img class="sem" src="tenseaspectsem.svg" width="520px">
+	<p><span class="semantic">∃<i>e</i>. τ(<i>e</i>) < t ∧ tısha(tíqra, jáqgala)(<i>e</i>)</span> reads:<br>
+	"There is an event <span class="semantic">e</span> whose runtime is before <span class="semantic">t</span> and <span class="semantic">e</span> is an event of the tiger arriving in the jungle, <br>where <span class="semantic">t</span> is presupposed to be included in the utterance time <span class="semantic">t<sub>0</sub></span>."
+	</p>
+	<p><span class="toaq">Naı luı tısha tíqra jáqgala.</span><br>
+	"The tiger has arrived in the jungle."</p>
+	
+	<p>The tenses <span class="toaq">sula, mala, jela</span> are existential and non-presuppositional:</p>
+	
+	<table class="semtable">
+	<tbody>
+		<tr>
+			<th>Tense</th>
+			<th>Denotation</th>
+		</tr>
+		<tr>
+			<td><span class="toaq">sula</span></td>
+			<td><span class="semantic">λ<i>P</i>. ∃<i>t</i> <i>P</i>(<i>t</i>)</span></td>
+		</tr>
+		<tr>
+			<td><span class="toaq">mala</span></td>
+			<td><span class="semantic">λ<i>P</i>. ∃<i>t</i> : <i>t</i> &lt; t<sub>0</sub>. <i>P</i>(<i>t</i>)</span></td>
+		</tr>
+		<tr>
+			<td><span class="toaq">jela</span></td>
+			<td><span class="semantic">λ<i>P</i>. ∃<i>t</i> : <i>t</i> &gt; t<sub>0</sub>. <i>P</i>(<i>t</i>)</span></td>
+		</tr>
+	</tbody>
+	</table>
+	
+</div>
+
+
+<h2>Focusing adverbs</h2>
+
+<div class="syntax">
+	<h4>Focus adverb denotation</h4>
+	
+	<p>Focusing adverbs (see also <a href="../syntax/#focusing_adverbs">the syntax section on them</a>) have a structure that is similar to that of QPs, but with rather different denotations.</p>
+
+	<p>An interesting property of Focus particles is that they contain presuppositions. For example, <span class="toaq">mao</span> “also” does not add meaning to the claim itself, but contains the presupposition that other contextually relevant things satisfy the predicate, too.</p>
+	
+	<p>The following example shows the general structure:</p>
+	
+	<img class="sem" src="focadvsem.svg" width="99%">
+	
+	<p><span class="semantic">f</span> stands for the focus-marked constituent, and <span class="semantic">A<sup>f</sup></span> is the set of contextually available alternatives to the focus-marked constituent.</p>
+	
+	<p>In the above example, <span class="toaq">[only]</span> has the denotation <br><span class="semantic">λ<i>f</i>. λ<i>P</i>. ∀<i>x</i> : (<i>x</i> ∈ A<sup>f</sup> ∧ <i>x</i> ≠ <i>f</i>). ¬<i>P</i>(<i>x</i>)</span>,<br> but it also contains a presupposition, namely that the f-marked constituent satisfies the predicate. Below is a table containing each focusing adverbs along with presupposition and claim (the presupposition being the part between colon and period):</p>
+	
+	<table class="semtable">
+	<tbody>
+		<tr>
+			<th></th>
+			<th>Presupposition</th>
+			<th>Claim</th>
+		</tr>
+		<tr>
+			<td>[only]&nbsp;(<span class="toaq">tó</span>)<br><span class="semantics">λ<i>f</i>. λ<i>P</i>: </span></td>
+			<td><br><span class="semantics"><i>P</i>(<i>x</i>).</span></td>
+			<td><br><br><span class="semantics">∀<i>x</i> : (<i>x</i> ∈ A<sup>f</sup> ∧ <i>x</i> ≠ <i>f</i>). ¬<i>P</i>(<i>x</i>)</td>
+		</tr>
+		<tr>
+			<td>[also]&nbsp;(<span class="toaq">máo</span>)<br><span class="semantics">λ<i>f</i>. λ<i>P</i>:</span></td>
+			<td><br><span class="semantics">∃<i>x</i> : (<i>x</i> ∈ A<sup>f</sup> ∧ <i>x</i> ≠ <i>f</i>). <i>P</i>(<i>x</i>).</td>
+			<td><br><span class="semantics"><i>P</i>(<i>x</i>)</span></td>
+		</tr>
+		<tr>
+			<td>[even]&nbsp;(<span class="toaq">júaq</span>)<br><span class="semantics">λ<i>f</i>. λ<i>P</i>: </span></td>
+			<td><br><span class="semantics">∀<i>x</i> : (<i>x</i> ∈ A<sup>f</sup> ∧ <i>x</i> ≠ <i>f</i>). <i>P</i>(<i>x</i>) &gt;<sub>likely</sub> <i>P</i>(<i>f</i>).</td>
+			<td><br><span class="semantics"><i>P</i>(<i>x</i>)</span></td>
+		</tr>
+	</tbody>
+	</table>
+</div>
+
+
+<h2>Modals and conditionals</h2>
+
+<div class="syntax">
+	<h4>ModalP denotation</h4>
+		
+	<img class="sem" src="modpsem.svg" width="99%">
+	
+	<p>Toaq's modals are, in essence, quantifiers over possible worlds. Because of this, we can use the same structure that QPs use: </p>
+	
+	<p><span class="mono">Q : [restriction]. [scope]</span></p>
+	
+	<p>The <span class="mono">restriction</span> restricts the possible worlds to those in which the modal complement is true.</p>
+	
+	<p>The <span class="mono">scope</span> specifies what the worlds in that restricted set are like.</p>
+	
+	<p>The ModalP combines with its sister via <i>Functional Application</i>.</p>
+	
+	<p><span class="semantic"><span class="sc2">ao</span></span> is a function which creates the "<span class="toaq">ao</span>-worlds" of a world <span class="semantic">w</span>. It returns the set of minimally different worlds supplied by context <span class="semantic">c</span> in which the complement is true, and it is only defined if the complement is false in <span class="semantic">w<sub>0</sub></span> (or whatever  reference world we're currently in). This last part is what makes <span class="toaq">ao</span> a "subjunctive" conditional.</p>
+	
+	<p>The above example arrives at<br>
+	<span class="semantic">
+	∀<i>w</i> ∈ <span class="sc2">ao</span>(<i>w</i>) : ∃<i>e</i>. tı<sub><i>w</i></sub>(súq, ní)(<i>e</i>). <br>∃<i>e'</i>. buja<sub><i>w</i></sub>(súq)(<i>e'</i>) ∧ <span class="sc2">agent</span>(<i>e'</i>) = jí
+	</span>
+	</p>
+	
+	<p>"Every <span class="toaq">ao</span>-world in which you are here<br>
+	is a world in which I kiss you." (Presupposition: "You are not here")
+	</p>
+	<p>"If you were here, I would kiss you."</p>
+	
+	<p>The following table lists the four basic modal denotations:</p>
+	
+	<table class="semtable">
+	<tbody>
+		<tr>
+			<th>Modal</th>
+			<th>Denotation</th>
+		</tr>
+		<tr>
+			<td><span class="toaq">she</span></td>
+			<td><span class="semantic">λ<i>R</i>.λ<i>S</i>. ∀<i>w</i> ∈ <span class="sc2">she</span><sub>w'</sub>(<i>w</i>) : <i>R</i>(<i>w</i>). <i>S</i>(<i>w</i>)</span></td>
+		</tr>
+		<tr>
+			<td><span class="toaq">daı</span></td>
+			<td><span class="semantic">λ<i>R</i>.λ<i>S</i>. ∃<i>w</i> ∈ <span class="sc2">she</span><sub>w'</sub>(<i>w</i>) : <i>R</i>(<i>w</i>). <i>S</i>(<i>w</i>)</span></td>
+		</tr>
+		<tr>
+			<td><span class="toaq">ao</span></td>
+			<td><span class="semantic">λ<i>R</i>.λ<i>S</i>. ∀<i>w</i> ∈ <span class="sc2">ao</span><sub>w'</sub>(<i>w</i>) : <i>R</i>(<i>w</i>). <i>S</i>(<i>w</i>)</span></td>
+		</tr>
+		<tr>
+			<td><span class="toaq">ea</span></td>
+			<td><span class="semantic">λ<i>R</i>.λ<i>S</i>. ∃<i>w</i> ∈ <span class="sc2">ao</span><sub>w'</sub>(<i>w</i>) : <i>R</i>(<i>w</i>). <i>S</i>(<i>w</i>)</span></td>
+		</tr>
+	</tbody>
+	</table>
+	
+	<p><span class="toaq">she</span>-worlds are "indicative", i.e. factual, while <span class="toaq">ao</span>-worlds are "subjunctive", i.e. counterfactual.</p>
+</div>
+
+
+
+
+<h2>Coordinate structure denotations</h2>
+
+<p>The semantic type of a conjunction depends on the type of its conjuncts.</p>
+
+<p>Conjuncts fall into two broad categories: <br>
+• argument conjuncts, which include DPs and CPs, and<br>
+• verbal and clausal conjuncts, which include everything else</p>
+
+<p>Argument conjuncts always involve the plural coordinator <span class="glyphs">/r+oi</span> <span class="toaq">róı</span>, which inflects for quantification over the coordinate structure. When the structure is not quantified, the plural coordinator is spelled <span class="toaq">róı</span>.</p>
+
+<p>When the structure is existentially quantified, it is spelled <span class="toaq">rá</span>.</p>
+
+<p>When it is universally quantified, it is spelled <span class="toaq">rú</span>.</p>
+
+<p>Note the parallel vowels:<br>
+<span class="toaq">sá</span> → <span class="toaq">rá</span><br>
+<span class="toaq">tú</span> → <span class="toaq">rú</span></p>
+
+<p>For example, <span class="toaq">jí rú súq</span> is a plural-coordinated structure with a universal quantifier over its referents:</p>
+
+<p><span class="toaq">jí rú súq</span> → 
+<span class="toaq">tú mea jí róı súq</span></p>
+
+<p>In contrast, all other coordination involves the familiar connectives (e.g. <span class="semantic">∧</span> and <span class="semantic">∨</span>) and clausal or verbal conjuncts.</p>
+
+
+
+<div class="syntax">
+	<h4>DP conjuncts</h4>
+	
+	<p>The basic, uninflected, plural coordinate structure looks as follows:</p>
+	
+	<img class="sem" src="&dpsem.svg" width="500px">
+	
+	<p><span class="toaq">róı</span> can be inflected to indicate the presence of a higher QP which quantifies over the referents of the conjuncts:</p>
+	
+	<img class="sem" src="&dpsemb.svg" width="98%">
+	
+	<p>In other words, the change from <span class="toaq">róı</span> to <span class="toaq">rú</span> has resulted in a change from</p>
+	<p><span class="semantic">∃<i>e</i>. nuo([súq & jí])(<i>e</i>)<br>= ∃<i>e</i>. <i>e</i> is an event of [the listener & the speaker] being asleep</span></p>
+		<p>to</p>
+		<p><span class="semantic">∀<i>x</i> : mea(<i>x</i>, [súq & jí]). ∃<i>e</i>. nuo(<i>x</i>)(<i>e</i>)<br>
+		= ∀<i>x</i> : <i>x</i> is among [the listener & the speaker]). ∃<i>e</i>. <i>e</i> is an event of <i>x</i> being asleep</span></p>
+	<p>I.e., every individual among the referents of the coordinate DP <span class="toaq">súq róı jí</span> is claimed to satisfy the predicate.</p>
+	<p>Likewise for <span class="toaq">rá</span>:</p>
+	
+</div>
+
+<p>The remaining cases are straightforward:</p>
+
+
+<div class="syntax">
+	<h4>Adverbial conjuncts</h4>
+	
+	<img class="sem" src="&adjunctpsem.svg" width="550px">
+	
+	<p></p>
+</div>
+
+<div class="syntax">	
+	<h4>Preposition conjuncts</h4>
+	
+	<p>These are identical to full adverbial conjuncts, except that the conjuncts share the same complement:</p>
+	
+	<img class="sem" src="&prepositionsem.svg" width="550px">
+	
+	<p>
+	<span class="semantic">
+		⟦<span class="toaq">nîe rú gûq tíaı</span>⟧<sup>g,c</sup><br>
+			= λ<i>x</i>. <i>x</i> is in the box ∧ <i>x</i> is under the box 
+			
+	</span>
+	</p>
+</div>
+
+<div class="syntax">
+	<h4>Relative clause conjuncts</h4>
+	
+	<img class="sem" src="&cprelsem.svg" width="680px">
+	
+	<p>
+		<span class="semantic">
+		⟦<span class="l">[<sub>&P</sub> CPrel [<sub>&'</sub> & CPrel]]</span>⟧<sup>g,c</sup>  <br>
+			 
+			
+			= λ<i>x</i>. <i>x</i> likes flowers ∧ <i>x</i> is wearing no clothes 
+			
+		</span>
+	</p>
+</div>
+
+
+<div class="syntax">
+	<h4>Tense phrase conjuncts</h4>
+	
+	<img class="sem" src="&tpsem.svg" width="580px">
+	
+	<p>
+		<span class="semantic">
+		⟦<span class="l">[<sub>&P </sub>TP [<sub>&'</sub> & TP]]</span>⟧<sup>g,c</sup>  <br>
+			= ⟦<span class="l">[<sub>&P</sub> [<sub>TP</sub> <span class="toaq">joaı súq báq rua</span>] [<sub>&'</sub> [<sub>&</sub> <span class="toaq">rú</span>] [<sub>TP</sub> <span class="toaq">sea jí</span>]]]</span>⟧<sup>g,c</sup><br> 
+			= (<span class="sc2">gen</span> <i>r</i> : rua(<i>r</i>). ∃<i>e</i>. joaı(súq, <i>r</i>)(<i>e</i>)) ∧ (∃<i>e'</i>. sea(jí)(<i>e'</i>))<br> 
+			= (∃<i>e</i>. <i>e</i> an event of looking for flowers and the agent of <i>e</i> is the listener in c) ∧ (∃<i>e'</i>. <i>e'</i> is an event of the speaker in c relaxing)
+			
+		</span>
+		<p>(tense and aspect omitted)</p>
+	</p>
+</div>
+
+
+
+
+<h2>You have reached the end of the text</h2>
+
+
+    </c1-1>
+</r-c>
+
+<div class="topnav">
+  <a href="../introduction/">Introduction</a>
+  <a href="../phonology/">Phonology</a>
+  <a href="../orthography/">Orthography</a>
+  <a href="../morphology/">Morphology</a>
+  <a href="../syntax/">Syntax</a>
+  <a href="../semantics/">Semantics</a>
+</div>
+
+</body>
+
+<script type="text/javascript" src="../css/interlinear.js"></script>
+</html>
