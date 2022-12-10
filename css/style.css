@@ -11,6 +11,7 @@ body {
     color: white;
     background-image: url("../images/jemubg.png");
     background-size: cover;	
+    background-attachment: fixed;
 }
 
 a { 
@@ -43,6 +44,10 @@ p { line-height: 1.9; }
 .navbar-expand-lg {
     padding-left: 0;
     padding-right: 0;
+}
+
+.navbar-nav {
+    flex-wrap: wrap;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link { padding: 0; }
@@ -191,3 +196,30 @@ hr { border-top: 1px solid white; }
     color: #9CC;
 }
 
+@media (max-width: 800px) {
+    .tm-bg {
+        display: none;
+    }
+
+    .content {
+        background: rgba(0, 0, 0, 0.5);
+        flex-grow: 1;
+    }
+
+    .tm-row {
+        flex-direction: column;
+    }
+
+    .tm-col-left, .tm-col-right {
+        width: unset;
+    }
+
+    .tm-col-right {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+    .tm-logo {
+        display: none;
+    }
+}
