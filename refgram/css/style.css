@@ -126,7 +126,7 @@ tr:hover {background-color: #006699;}
 
 .vocabulary {
      table-layout: auto;
-     width: 420px;
+     max-width: 420px;
      margin-left: auto;
      margin-right: auto;
 }
@@ -167,7 +167,7 @@ tr:hover {background-color: #006699;}
 	text-align: left;	
 }
 .vocabularyd {
-	width: 250px;
+	max-width: 250px;
 }
 .vocabularyp {
 	width: 180px;
@@ -189,7 +189,7 @@ tr:hover {background-color: #006699;}
 
 
 .letters {
-     width: 400px;
+     max-width: 400px;
      margin-left: auto;
      margin-right: auto;
 }
@@ -303,13 +303,15 @@ a:hover {
 .topnav {
   text-align: center;
   display:flex;
+	flex-wrap: wrap;
+	gap: 32px;
+	padding: 24px 0;
   justify-content:center;
 }
 
 .topnav a {  
   display: block;
   text-align: center;
-  padding: 24px 16px;
   text-decoration: none;
   margin: 0 2px;
 }
@@ -360,78 +362,53 @@ a:hover {
 .syntax h4 {
 	
 }
+.tree, .tree2, .tree3, .tree4, .tree5, .tree6, .stemplate, .wtemplate {
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 100%;
+}
 .tree {
   float: right;
-  margin-left: auto;
-  margin-right: auto;
   width: 250px;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-bottom: 30px;
 }
 .tree2 {
   float: right;
-  margin-left: auto;
-  margin-right: auto;
   width: 300px;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-bottom: 30px;
 }
 .tree3 {
   float: right;
-  margin-left: auto;
-  margin-right: auto;
   width: 350px;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-bottom: 30px;
 }
 .tree4 {
   float: right;
-  margin-left: auto;
-  margin-right: auto;
   width: 200px;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-bottom: 30px;
 }
 .tree5 {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 430px;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 .tree6 {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 330px;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 .stemplate {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 90%;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-bottom: 30px;
 }
 .wtemplate {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
   width: 50%;
-  padding-left: 20px;
-  padding-right: 20px;
   padding-bottom: 30px;
 }
 
@@ -497,7 +474,7 @@ img.sem {
 
 .pronominal {
      table-layout: auto;
-     width: 420px;
+     max-width: 420px;
      margin-left: auto;
      margin-right: auto;
 }
@@ -604,7 +581,7 @@ table.conjunctionexamples th {
 
 .types {
      table-layout: auto;
-     width: 420px;
+     max-width: 420px;
      margin-left: auto;
      margin-right: auto;
 }
@@ -614,7 +591,7 @@ table.conjunctionexamples th {
 
 .semtable {
      table-layout: auto;
-     width: 620px;
+     max-width: 620px;
      margin-left: auto;
      margin-right: auto;
 }
@@ -624,7 +601,7 @@ table.conjunctionexamples th {
 
 .modaltable {
      table-layout: fixed;
-     width: 500px;
+     max-width: 500px;
      margin-left: auto;
      margin-right: auto;
 
@@ -656,7 +633,7 @@ table.conjunctionexamples th {
 
 .vowels {
 	table-layout: auto;
-	width: 400px;
+	max-width: 400px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -664,4 +641,18 @@ table.conjunctionexamples th {
 .vowels td:first-child {
 	color: #FFFFFF;
 	text-align: center;
+}
+
+@media (max-width: 800px) {
+	.fixed-width > * {
+		padding: 0px 20px 0px 20px;
+		border: none;
+	}
+
+	.tree, .tree2, .tree3, .tree4, .tree5, .tree6 {
+		float: unset !important;
+		display: block;
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
 }
