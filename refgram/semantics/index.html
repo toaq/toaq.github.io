@@ -34,7 +34,7 @@
 <r-c class="fixed-width" >
     <c1-1>
 
-<h1>Semantics</h1>
+<h1 id="semantics"><a href="#semantics">Semantics</a></h1>
 
 <p><span class="technical">Disclaimer: </span>The information presented in this chapter is by no means necessary for learners of the language. </p>
 
@@ -46,11 +46,11 @@
 
 
 
-<h2>Types and variables</h2>
+<h2 id="types_and_variables"><a href="#types_and_variables">Types and variables</a></h2>
 
 <div class="syntax">
 
-	<h4>Basic types and variables</h4>
+	<h4 id="basic_types_and_variables"><a href="#basic_types_and_variables">Basic types and variables</a></h4>
 
 	<table class="types">
 	<tbody>
@@ -87,7 +87,7 @@
 	</tbody>
 	</table>
 	
-		<h4>Complex types (selection)</h4>
+		<h4 id="complex_types_selection"><a href="#complex_types_selection">Complex types (selection)</a></h4>
 
 	<table class="types">
 	<tbody>
@@ -143,10 +143,10 @@
 </div>
 
 
-<h2>Tree notation conventions</h2>
+<h2 id="tree_notation_conventions"><a href="#tree_notation_conventions">Tree notation conventions</a></h2>
 
 <div class="syntax">
-	<h4>Tree notation</h4>
+	<h4 id="tree_notation"><a href="#tree_notation">Tree notation</a></h4>
 	<img class="sem" src="treenotation.svg" width="360px">
 	
 	<p><span class="gold">gold</span> = node labels and types</p>
@@ -161,12 +161,12 @@
 
 
 
-<h2 id="composition_rules">Composition rules</h2>
+<h2 id="composition_rules"><a href="#composition_rules">Composition rules</a></h2>
 
 <p>This section lists the different composition rules which are used in the process of computing the denotations of Toaq sentences.</p>
 
 <div class="syntax" id="functional_application">
-	<h4>Functional Application (FA)</h4>
+	<h4 id="functional_application_fa"><a href="#functional_application_fa">Functional Application (FA)</a></h4>
 	<img class="sem" src="abstract.svg" width="160px">
 	<p>If <span class="semantic">β</span> is a head and <span class="semantic">γ</span> its complement, then<br> 
 	
@@ -179,7 +179,7 @@
 </div>
 
 <div class="syntax" id="predicate_modification">
-	<h4>Predicate Modification (PM)</h4>
+	<h4 id="predicate_modification_pm"><a href="#predicate_modification_pm">Predicate Modification (PM)</a></h4>
 	<img class="sem" src="abstract.svg" width="160px">
 	<p>If <span class="semantic">β</span> or <span class="semantic">γ</span> is an adjunct, then<br>
 
@@ -192,7 +192,7 @@
 </div>
 
 <div class="syntax" id="predicate_abstraction">
-	<h4>Predicate Abstraction (PA)</h4>
+	<h4 id="predicate_abstraction_pa"><a href="#predicate_abstraction_pa">Predicate Abstraction (PA)</a></h4>
 	<img class="sem" src="abstract.svg" width="160px">
 	<p>If <span class="semantic">β</span> is a QP or FocusAdvP with the index <span class="semantic">i</span>, then<br>
 
@@ -207,7 +207,7 @@
 </div>
 
 <div class="syntax" id="event_identification">
-	<h4>Event Identification (EI)</h4>
+	<h4 id="event_identification_ei"><a href="#event_identification_ei">Event Identification (EI)</a></h4>
 	<img class="sem" src="abstract.svg" width="160px">
 	<p>If <span class="semantic">β</span> is a non-vacuous v head and γ is a VP, then<br>
 
@@ -220,7 +220,7 @@
 </div>
 
 
-<h2>Variables and pronouns</h2>
+<h2 id="variables_and_pronouns"><a href="#variables_and_pronouns">Variables and pronouns</a></h2>
 
 <p>The denotation of an expression which contains variables depends on what value each variable has. This is determined by an assignment function <span class="semantic">g</span>, which assigns a unique value to each variable.</p>
 
@@ -236,7 +236,7 @@
 
 
 <div class="syntax">
-	<h4>Personal pronoun denotations</h4>
+	<h4 id="personal_pronoun_denotations"><a href="#personal_pronoun_denotations">Personal pronoun denotations</a></h4>
 	<p>The personal pronouns follow this pattern:</p>
 	<p>
 		<span class="semantic">
@@ -251,7 +251,7 @@
 </div>
 
 <div class="syntax">
-	<h4>Anaphoric pronouns and bound variables</h4>
+	<h4 id="anaphoric_pronouns_and_bound_variables"><a href="#anaphoric_pronouns_and_bound_variables">Anaphoric pronouns and bound variables</a></h4>
 	<p>For any other DP, the denotation is as follows:</p>
 	<p>If a DP <span class="semantic">α</span> is an anaphoric pronoun or a bound variable, <span class="semantic">g</span> is a variable assignment, and <span class="semantic">i</span> is the DP's index, then<br>
 	<span class="semantic">⟦α<sub>i</sub>⟧<sup>g</sup> = g(i)</span></p>
@@ -267,10 +267,10 @@
 
 
 
-<h2>Verb phrases</h2>
+<h2 id="verb_phrases"><a href="#verb_phrases">Verb phrases</a></h2>
 
 <div class="syntax">
-	<h4>VP denotation</h4>
+	<h4 id="vp_denotation"><a href="#vp_denotation">VP denotation</a></h4>
 	<p>The verb composes with its internal argument to form a VP.</p>
 	<p>The internal argument satisfies the object place, leaving the VP with one open event place.</p>
 	
@@ -306,7 +306,7 @@
 <p></p>
 
 <div class="syntax">
-	<h4>Intransitive verbs</h4>
+	<h4 id="intransitive_verbs"><a href="#intransitive_verbs">Intransitive verbs</a></h4>
 	
 	<p>The subject of an unaccusative verb merges as the complement of the verb, where it receives <span class="sc">theme</span> or <span class="sc">experiencer</span>.</p>
 	
@@ -340,7 +340,7 @@
 
 
 <div class="syntax">
-	<h4>Transitive and ditransitive verbs</h4>
+	<h4 id="transitive_and_ditransitive_verbs"><a href="#transitive_and_ditransitive_verbs">Transitive and ditransitive verbs</a></h4>
 	<p>Transitives and ditransitives have an external agent argument which originates in Spec,vP. It receives its role from the <i>v</i> head. v combines with its sister via <i>Event Identification</i>:</p>
 	
 	<img class="sem" src="vpsem.svg" width="520px">
@@ -368,10 +368,10 @@
 <p></p>
 
 
-<h3 id="cleft_verb">Cleft verb</h3>
+<h3 id="cleft_verb"><a href="#cleft_verb">Cleft verb</a></h3>
 
 <div class="syntax">
-	<h4>Cleft verb denotation</h4>
+	<h4 id="cleft_verb_denotation"><a href="#cleft_verb_denotation">Cleft verb denotation</a></h4>
 	
 	<img class="sem" src="cleftsem.svg" width="460px">
 	
@@ -382,10 +382,10 @@
 </div>
 
 
-<h3 id="event_accessor">Event accessor verb</h3>
+<h3 id="event_accessor_verb"><a href="#event_accessor_verb">Event accessor verb</a></h3>
 
 <div class="syntax">
-	<h4>Event accessor denotation</h4>
+	<h4 id="event_accessor_denotation"><a href="#event_accessor_denotation">Event accessor denotation</a></h4>
 	
 	<img class="sem" src="evasem.svg" width="450px">
 	<p>The event accessor <span class="toaq">ë</span> turns the event argument of a vP into a surface argument in order to make it accessible for surface arguments or to serve as the complement of a determiner.</p>
@@ -395,10 +395,10 @@
 </div>
 
 
-<h3 id="predicatizers">Predicatizers</h3>
+<h3 id="predicatizers"><a href="#predicatizers">Predicatizers</a></h3>
 
 <div class="syntax">
-	<h4>Predicatizer denotation</h4>
+	<h4 id="predicatizer_denotation"><a href="#predicatizer_denotation">Predicatizer denotation</a></h4>
 	<img class="sem" src="posem.svg" width="500px">
 	<p>Predicatizers are quantificationally opaque: if the complement is a quantified DP, the DP is QP-bound locally rather than by a QP in the clause that contains the predicatizer. To properly model this behavior, we posit the presence of a CP, which acts as a scope boundary.</p>
 	<p>The above example has a referring expression (<span class="toaq">jí</span> "the speaker") as the complement. The following example features a quantified DP. </p>
@@ -412,10 +412,10 @@
 	</p>
 </div>
 
-<h2 id="determiner_phrases">Determiner phrases</h2>
+<h2 id="determiner_phrases"><a href="#determiner_phrases">Determiner phrases</a></h2>
 
 <div class="syntax">
-	<h4>Determiner phrase denotation</h4>
+	<h4 id="determiner_phrase_denotation"><a href="#determiner_phrase_denotation">Determiner phrase denotation</a></h4>
 	<img class="sem" src="dpsem.svg" width="500px">
 	
 	<p>Determiner phrases are complex structures of type <span class="semantic">e</span>.  They are composed of a determiner (D) followed by an nP. The nP consists of an unprounced n head, which contains a phi feature (animacy) and an index. Both are passed up the tree to give the projected DP an index and a phi feature.</p>
@@ -441,21 +441,21 @@
 </div>
 
 
-<h2 id="quantifier_phrases">Quantifier phrases</h2>
+<h2 id="quantifier_phrases"><a href="#quantifier_phrases">Quantifier phrases</a></h2>
 
 <p>Quantified DPs have the same denotation as unquantified DPs. This is because the actual quantificational force stems from a syntactically higher quantifier phrase (QP), while all DPs are merely bound variables.</p>
 
 <p>Q heads are phonologically null. The presence and value of a Q head is observable via its morphological exponent D(eterminer), the head of the DP it binds. For example, an existential quantifier binds a (definite) DP headed by <span class="toaq">sá</span>, and a universal quantifier binds a DP headed by <span class="toaq">tú</span>. In other words, all determiners are allomorphs of the bound variable determiner <img class="tone" src="../assets/tones/d2.png">.</p>
 
 <div class="syntax">
-	<h4>Quantifier scope pattern</h4>
+	<h4 id="quantifier_scope_pattern"><a href="#quantifier_scope_pattern">Quantifier scope pattern</a></h4>
 	<img class="tree4" src="qpscope.svg">
 	<p>Every quantifier phrase (QP) binds a DP in its scope.</p>
 	<p>The scope of a QP is its sister.</p>
 </div>
 
 <div class="syntax">
-	<h4>QP pattern</h4>
+	<h4 id="qp_pattern"><a href="#qp_pattern">QP pattern</a></h4>
 	<img class="tree4" src="../assets/patterns/qp.svg">
 	<p>A quantifier phrase (QP) is a quantifier followed by an nP.</p>
 	<p>The nP originates in a DP, from where it moves to the complement of Q to restricts the quantifier. The nP carries an index, which is passed to the QP. </p>
@@ -484,7 +484,7 @@
 </div>
 
 
-<h2 id="propositions">Intensions and propositions</h2>
+<h2 id="intensions_and_propositions"><a href="#intensions_and_propositions">Intensions and propositions</a></h2>
 
 <p>As they are written, the examples elsewhere in this chapter are purely extensional. This was done in order to keep the trees and the various type annotations as simple and small as possible. In reality, every verb has a world variable, and this results in many types growing a world place. Where this is not written explicitly, it is implied. </p>
 
@@ -505,7 +505,7 @@
 <p>This is what propositions are, which, in Toaq, are complementizer phrases headed by <span class="toaq">ꝡä</span>. Proposition-taking verbs, such as <span class="toaq">chı</span> "to believe", take intensions as complements:</p>
 
 <div class="syntax">
-	<h4>Propositional verbs</h4>
+	<h4 id="propositional_verbs"><a href="#propositional_verbs">Propositional verbs</a></h4>
 	<img class="sem" src="propvsem.svg" width="580px">
 	
 	<p>The denotation of the CP <span class="toaq">ꝡä nuo kúne</span> "that the dog is asleep" is <br>
@@ -531,14 +531,14 @@
 
 
 
-<h2 id="adjuncts">Adjuncts</h2>
+<h2 id="adjuncts"><a href="#adjuncts">Adjuncts</a></h2>
 
 <p>There are two kinds of adjuncts in Toaq: Adverbial adjuncts (AdjunctP) and relative clauses (CP<sub>rel</sub>). Both compose via <a href="#composition_rules">predicate modification</a>.</p>
 
-<h3>Adjunct phrases</h3>
+<h3 id="adjunct_phrases"><a href="#adjunct_phrases">Adjunct phrases</a></h3>
 
 <div class="syntax">
-	<h4>Adverbial adjunct denotation</h4>
+	<h4 id="adverbial_adjunct_denotation"><a href="#adverbial_adjunct_denotation">Adverbial adjunct denotation</a></h4>
 	<img class="sem" src="adjunctpsem.svg" width="450px">
 	
 	<p>Adverbials are adjuncts to vPs. They combine with their sister via <i>Predicate Modification</i>. They act as restrictions on the event variable of the vP.</p>
@@ -556,10 +556,10 @@
 	</p>
 </div>
 
-<h3>Relative clauses</h3>
+<h3 id="relative_clauses"><a href="#relative_clauses">Relative clauses</a></h3>
 
 <div class="syntax">
-	<h4>Relative clause denotation</h4>
+	<h4 id="relative_clause_denotation"><a href="#relative_clause_denotation">Relative clause denotation</a></h4>
 	<img class="sem" src="cprelsem.svg" width="500px">
 	
 	<p>Relative clauses are adjuncts to nPs. They combine with their sister via <i>Predicate Modification</i>:</p>
@@ -580,10 +580,10 @@
 
 
 
-<h2>Polarity phrases</h2>
+<h2 id="polarity_phrases"><a href="#polarity_phrases">Polarity phrases</a></h2>
 
 <div class="syntax">
-	<h4>Negation</h4>
+	<h4 id="negation"><a href="#negation">Negation</a></h4>
 	<img class="sem" src="negsem.svg" width="270px">
 	
 	<p>Polarity (Σ) is a flexible category which can attach to many kinds of phrases. The type-agnostic definitions are:</p>
@@ -600,10 +600,10 @@
 	</p>
 </div>
 
-<h2>Aspect and Tense</h2>
+<h2 id="aspect_and_tense"><a href="#aspect_and_tense">Aspect and Tense</a></h2>
 
 <div class="syntax">
-	<h4>Aspect and Tense</h4>
+	<h4 id="aspect_and_tense"><a href="#aspect_and_tense">Aspect and Tense</a></h4>
 	<img class="sem" src="tenseaspectsem.svg" width="520px">
 	
 	<p>Tense and aspect work together. Aspect acts on the vP first, and deals with the vP's event variable by relating it to a time interval. This interval is then supplied by a tense.</p>
@@ -611,7 +611,7 @@
 </div>
 
 <div class="syntax">
-	<h4>Aspect denotations</h4>
+	<h4 id="aspect_denotations"><a href="#aspect_denotations">Aspect denotations</a></h4>
 	
 	<table class="semtable">
 	<tbody>
@@ -673,7 +673,7 @@
 </div>
 
 <div class="syntax">
-	<h4>Tense denotations</h4>
+	<h4 id="tense_denotations"><a href="#tense_denotations">Tense denotations</a></h4>
 	
 	<p>The tenses <span class="toaq">pu, naı, jıa</span> are pronominal: they refer to a (salient) time interval, and the temporal position of this interval is presupposed to be before, including, or after, the utterance time.</p>
 	
@@ -744,10 +744,10 @@
 </div>
 
 
-<h2>Focusing adverbs</h2>
+<h2 id="focusing_adverbs"><a href="#focusing_adverbs">Focusing adverbs</a></h2>
 
 <div class="syntax">
-	<h4>Focus adverb denotation</h4>
+	<h4 id="focus_adverb_denotation"><a href="#focus_adverb_denotation">Focus adverb denotation</a></h4>
 	
 	<p>Focusing adverbs (see also <a href="../syntax/#focusing_adverbs">the syntax section on them</a>) have a structure that is similar to that of QPs, but with rather different denotations.</p>
 
@@ -788,10 +788,10 @@
 </div>
 
 
-<h2>Modals and conditionals</h2>
+<h2 id="modals_and_conditionals"><a href="#modals_and_conditionals">Modals and conditionals</a></h2>
 
 <div class="syntax">
-	<h4>ModalP denotation</h4>
+	<h4 id="modalp_denotation"><a href="#modalp_denotation">ModalP denotation</a></h4>
 		
 	<img class="sem" src="modpsem.svg" width="99%">
 	
@@ -851,7 +851,7 @@
 
 
 
-<h2>Coordinate structure denotations</h2>
+<h2 id="coordinate_structure_denotations"><a href="#coordinate_structure_denotations">Coordinate structure denotations</a></h2>
 
 <p>The semantic type of a conjunction depends on the type of its conjuncts.</p>
 
@@ -879,7 +879,7 @@
 
 
 <div class="syntax">
-	<h4>DP conjuncts</h4>
+	<h4 id="dp_conjuncts"><a href="#dp_conjuncts">DP conjuncts</a></h4>
 	
 	<p>The basic, uninflected, plural coordinate structure looks as follows:</p>
 	
@@ -903,7 +903,7 @@
 
 
 <div class="syntax">
-	<h4>Adverbial conjuncts</h4>
+	<h4 id="adverbial_conjuncts"><a href="#adverbial_conjuncts">Adverbial conjuncts</a></h4>
 	
 	<img class="sem" src="&adjunctpsem.svg" width="550px">
 	
@@ -911,7 +911,7 @@
 </div>
 
 <div class="syntax">	
-	<h4>Preposition conjuncts</h4>
+	<h4 id="preposition_conjuncts"><a href="#preposition_conjuncts">Preposition conjuncts</a></h4>
 	
 	<p>These are identical to full adverbial conjuncts, except that the conjuncts share the same complement:</p>
 	
@@ -927,7 +927,7 @@
 </div>
 
 <div class="syntax">
-	<h4>Relative clause conjuncts</h4>
+	<h4 id="relative_clause_conjuncts"><a href="#relative_clause_conjuncts">Relative clause conjuncts</a></h4>
 	
 	<img class="sem" src="&cprelsem.svg" width="680px">
 	
@@ -944,7 +944,7 @@
 
 
 <div class="syntax">
-	<h4>Tense phrase conjuncts</h4>
+	<h4 id="tense_phrase_conjuncts"><a href="#tense_phrase_conjuncts">Tense phrase conjuncts</a></h4>
 	
 	<img class="sem" src="&tpsem.svg" width="580px">
 	
@@ -963,7 +963,7 @@
 
 
 
-<h2>You have reached the end of the text</h2>
+<h2 id="you_have_reached_the_end_of_the_text"><a href="#you_have_reached_the_end_of_the_text">You have reached the end of the text</a></h2>
 
 
     </c1-1>
