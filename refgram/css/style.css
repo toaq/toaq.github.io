@@ -14,12 +14,12 @@ html {
 
 body {
     margin:0; /* Remove the default page margin */
- 
+
     color:#FEFEFE;
     font-family: 'Segoe UI', sans-serif;
     font-size: 17px;
 
-    
+
 }
 
 .logo {
@@ -56,9 +56,14 @@ h2, h3 {
     padding-top: 30px;
 }
 
+h1 a, h2 a, h3 a, h4 a {
+    color: inherit;
+    font-variant: inherit;
+    text-decoration: none;
+}
 
 p {
-    text-align: justify;    
+    text-align: justify;
     line-height: 1.8em;
 }
 
@@ -67,7 +72,7 @@ p {
 }
 
 .pderani {
-    text-align: justify;    
+    text-align: justify;
     line-height: 3.5em;
 }
 
@@ -139,7 +144,7 @@ tr:hover {background-color: #006699;}
 	font-family: 'Derani';
 	color: #ee3399;
 	font-size: 24px;
-	font-weight: normal;	
+	font-weight: normal;
 }
 .vocabularyg2 {
 	width: 62px;
@@ -149,7 +154,7 @@ tr:hover {background-color: #006699;}
 	font-family: 'Derani';
 	color: #ee3399;
 	font-size: 24px;
-	font-weight: normal;	
+	font-weight: normal;
 }
 
 .vocabularyt {
@@ -157,14 +162,14 @@ tr:hover {background-color: #006699;}
 	color: #00aaff;
 	font-weight: bold;
 	border-left: 0px;
-	text-align: left;	
+	text-align: left;
 }
 .vocabularyt2 {
 	max-width: 60px;
 	color: #00aaff;
 	font-weight: bold;
 	border-left: 0px;
-	text-align: left;	
+	text-align: left;
 }
 .vocabularyd {
 	max-width: 250px;
@@ -177,7 +182,7 @@ tr:hover {background-color: #006699;}
 	padding-right: 20px;
 }
 .vocabularyc {
-	
+
 	padding-right: 20px;
 }
 .vocabulary td { padding-left: 20px; }
@@ -213,7 +218,7 @@ tr:hover {background-color: #006699;}
 
 .soundsymbols {
 	table-layout: fixed;
-	width: 100%;		
+	width: 100%;
 }
 .soundsymbols tr:hover {
         background-color: unset !important;
@@ -239,14 +244,14 @@ tr:hover {background-color: #006699;}
 	font-size: 40px;
 	font-family: Derani;
 	padding-bottom: 20px;
-	
+
 }
 
 
 .exword {
 	color: #ffccff;
 	font-weight: normal;
-	
+
 	font-size: 17px;
 }
 
@@ -254,7 +259,7 @@ tr:hover {background-color: #006699;}
 	font-size: 16px;
 	letter-spacing: 0.5px;
 	color: #FFFFFF;
-	
+
 }
 
 .listen {
@@ -285,12 +290,12 @@ tr:hover {background-color: #006699;}
     border-style: solid;
     border-color: #00aaff;
     padding:0px 100px 0px 100px;
-    
+
 }
 
 
 a {
-    color:#cc3399; 
+    color:#cc3399;
     font-variant: small-caps;
 }
 a:hover {
@@ -309,7 +314,7 @@ a:hover {
   justify-content:center;
 }
 
-.topnav a {  
+.topnav a {
   display: block;
   text-align: center;
   text-decoration: none;
@@ -339,7 +344,7 @@ a:hover {
 .botnav a.active {
 }
 
-.botnav a {  
+.botnav a {
   display: block;
   text-align: center;
   padding: 10px 16px;
@@ -353,14 +358,14 @@ a:hover {
 	overflow: hidden;
 	width: 100%;
 	background-color: black;
-	margin-bottom: 5px;	
+	margin-bottom: 5px;
 }
 .syntax p {
 	padding-left: 30px;
 	padding-right: 30px;
 }
 .syntax h4 {
-	
+
 }
 .tree, .tree2, .tree3, .tree4, .tree5, .tree6, .stemplate, .wtemplate {
 	margin-left: auto;
@@ -430,7 +435,7 @@ img.sem {
 }
 .sc2 {
 	font-variant: small-caps;
-	
+
 }
 
 .mono {
@@ -527,7 +532,7 @@ img.sem {
 
 .tones {
 	table-layout: fixed;
-	
+
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -538,10 +543,10 @@ img.sem {
 }
 .allotone {
 	overflow: hidden;
-	width: 100%;	
+	width: 100%;
 }
 
-	
+
 
 .rimes td {
 	color: #FFFFFF;
