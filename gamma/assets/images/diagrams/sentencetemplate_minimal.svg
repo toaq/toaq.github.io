@@ -1,3 +1,507 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="733px" height="453px" viewBox="-0.5 -0.5 733 453"><defs><linearGradient x1="0%" y1="0%" x2="0%" y2="100%" id="mx-gradient-ffffff-0.9-ffffff-0.1-s-0"><stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9"/><stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.1"/></linearGradient><linearGradient x1="0%" y1="0%" x2="0%" y2="100%" id="mx-gradient-dae8fc-1-7ea6e0-1-s-0"><stop offset="0%" style="stop-color:#dae8fc"/><stop offset="100%" style="stop-color:#7ea6e0"/></linearGradient></defs><g><rect x="1" y="1" width="730" height="450" fill="#dafa94" stroke="#72c91b" stroke-width="3" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 728px; height: 1px; padding-top: 8px; margin-left: 2px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 27px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; "><br />Sentence</div></div></div></foreignObject><text x="366" y="35" fill="#000000" font-family="Helvetica" font-size="27px" text-anchor="middle" font-weight="bold">&#xa;Sentence</text></switch></g><rect x="11" y="111" width="510" height="330" fill="#f8cecc" stroke="#b85450" stroke-width="3" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 508px; height: 1px; padding-top: 118px; margin-left: 12px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 27px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; "><br />                               Clause</div></div></div></foreignObject><text x="266" y="145" fill="#000000" font-family="Helvetica" font-size="27px" text-anchor="middle" font-weight="bold">&#xa;                               Clause</text></switch></g><rect x="21" y="121" width="230" height="310" fill="#e51400" stroke="#b20000" stroke-width="3" pointer-events="all"/><path d="M 19 119 L 19 245 Q 136 338 253 245 L 253 119 Z" fill="url(#mx-gradient-ffffff-0.9-ffffff-0.1-s-0)" stroke="none" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 228px; height: 1px; padding-top: 276px; margin-left: 22px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 27px; font-family: Helvetica; color: #ffffff; line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; "><div style="font-size: 27px"><font style="font-size: 27px">Complementizer</font></div></div></div></div></foreignObject><text x="136" y="284" fill="#ffffff" font-family="Helvetica" font-size="27px" text-anchor="middle" font-weight="bold">Complementizer</text></switch></g><rect x="261" y="231" width="250" height="200" fill="#72c91b" stroke="#2d7600" stroke-width="3" pointer-events="all"/><path d="M 259 229 L 259 311 Q 386 371 513 311 L 513 229 Z" fill="url(#mx-gradient-ffffff-0.9-ffffff-0.1-s-0)" stroke="none" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 248px; height: 1px; padding-top: 331px; margin-left: 262px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 27px; font-family: Helvetica; color: #050505; line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; "><font style="font-size: 27px">Verbal Complex</font></div></div></div></foreignObject><text x="386" y="339" fill="#050505" font-family="Helvetica" font-size="27px" text-anchor="middle" font-weight="bold">Verbal Complex</text></switch></g><rect x="531" y="61" width="190" height="380" fill="url(#mx-gradient-dae8fc-1-7ea6e0-1-s-0)" stroke="#6c8ebf" stroke-width="3" pointer-events="all"/><path d="M 529 59 L 529 213 Q 626 327 723 213 L 723 59 Z" fill="url(#mx-gradient-ffffff-0.9-ffffff-0.1-s-0)" stroke="none" pointer-events="all"/><g transform="translate(-0.5 -0.5)"><switch><foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"><div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 188px; height: 1px; padding-top: 251px; margin-left: 532px;"><div style="box-sizing: border-box; font-size: 0; text-align: center; "><div style="display: inline-block; font-size: 27px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; "><font style="font-size: 27px">Illocution</font></div></div></div></foreignObject><text x="626" y="259" fill="#000000" font-family="Helvetica" font-size="27px" text-anchor="middle" font-weight="bold">Illocution</text></switch></g></g><switch><g requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"/><a transform="translate(0,-5)" xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems" target="_blank"><text text-anchor="middle" font-size="10px" x="50%" y="100%">Viewer does not support full SVG 1.1</text></a></switch></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   width="733px"
+   height="453px"
+   viewBox="-0.5 -0.5 733 453"
+   id="svg70"
+   sodipodi:docname="sentencetemplate_minimal.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <sodipodi:namedview
+     id="namedview72"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050" />
+  <defs
+     id="defs12">
+    <linearGradient
+       x1="0%"
+       y1="0%"
+       x2="0%"
+       y2="100%"
+       id="mx-gradient-ffffff-0.9-ffffff-0.1-s-0">
+      <stop
+         offset="0%"
+         style="stop-color:#ffffff;stop-opacity:0.9"
+         id="stop2" />
+      <stop
+         offset="100%"
+         style="stop-color:#ffffff;stop-opacity:0.1"
+         id="stop4" />
+    </linearGradient>
+    <linearGradient
+       x1="0%"
+       y1="0%"
+       x2="0%"
+       y2="100%"
+       id="mx-gradient-dae8fc-1-7ea6e0-1-s-0">
+      <stop
+         offset="0%"
+         style="stop-color:#dae8fc"
+         id="stop7" />
+      <stop
+         offset="100%"
+         style="stop-color:#7ea6e0"
+         id="stop9" />
+    </linearGradient>
+  </defs>
+  <g
+     id="g60">
+    <path
+       id="rect14"
+       style="fill:#dafa94;stroke:#72c91b;stroke-width:3"
+       d="M 1,1 H 731 V 451 H 1 Z" />
+    <g
+       transform="translate(-0.5,-0.5)"
+       id="g20">
+      <switch
+         id="switch18">
+        <foreignObject
+           style="overflow: visible; text-align: left;"
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <xhtml:div
+             style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 728px; height: 1px; padding-top: 8px; margin-left: 2px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0; text-align: center; ">
+              <xhtml:div
+                 style="display: inline-block; font-size: 27px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; "><xhtml:br />
+Sentence</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <g
+           aria-label="Sentence"
+           id="text16"
+           style="font-weight:bold;font-size:27px;font-family:Helvetica;text-anchor:middle">
+          <path
+             d="m 323.1375,29.087 c 0,-3.105 -1.566,-4.563 -5.211,-5.265 l -3.078,-0.594 c -2.889,-0.567 -3.726,-1.134 -3.726,-2.565 0,-1.485 1.323,-2.43 3.402,-2.43 2.565,0 4.131,1.08 4.131,3.078 h 3.78 c 0,-4.158 -2.916,-6.318 -7.722,-6.318 -4.725,0 -7.452,2.214 -7.452,6.048 0,3.078 1.539,4.509 5.535,5.292 l 2.754,0.54 c 2.7,0.54 3.699,1.107 3.699,2.7 0,1.647 -1.512,2.511 -3.969,2.511 -2.754,0 -4.428,-1.161 -4.428,-3.267 h -3.942 c 0,4.212 3.132,6.507 8.154,6.507 5.076,0 8.073,-2.241 8.073,-6.237 z"
+             id="path75" />
+          <path
+             d="m 338.2305,28.25 c 0,-5.022 -2.538,-8.073 -6.831,-8.073 -4.185,0 -6.75,2.835 -6.75,7.722 0,4.671 2.538,7.344 6.669,7.344 3.267,0 5.913,-1.485 6.75,-4.347 h -3.726 c -0.324,1.053 -1.512,1.458 -2.889,1.458 -1.782,0 -2.916,-0.81 -3.024,-3.645 h 9.774 z m -3.942,-2.052 h -5.805 c 0.243,-2.025 1.188,-3.132 2.862,-3.132 1.62,0 2.754,1.053 2.943,3.132 z"
+             id="path77" />
+          <path
+             d="m 353.80949,35 v -9.774 c 0,-3.213 -1.782,-5.049 -4.887,-5.049 -1.971,0 -3.294,0.729 -4.374,2.349 V 20.42 h -3.78 V 35 h 3.78 v -8.748 c 0,-1.728 1.215,-2.862 3.051,-2.862 1.62,0 2.43,0.891 2.43,2.619 V 35 Z"
+             id="path79" />
+          <path
+             d="m 363.69149,35 v -2.646 c -0.378,0.054 -0.594,0.081 -0.864,0.081 -0.999,0 -1.242,-0.297 -1.242,-1.593 v -7.614 h 2.106 v -2.511 h -2.106 v -3.915 h -3.78 v 3.915 h -1.863 v 2.511 h 1.863 v 8.64 c 0,2.295 1.215,3.24 3.699,3.24 0.837,0 1.512,-0.081 2.187,-0.108 z"
+             id="path81" />
+          <path
+             d="m 378.59552,28.25 c 0,-5.022 -2.538,-8.073 -6.831,-8.073 -4.185,0 -6.75,2.835 -6.75,7.722 0,4.671 2.538,7.344 6.669,7.344 3.267,0 5.913,-1.485 6.75,-4.347 h -3.726 c -0.324,1.053 -1.512,1.458 -2.889,1.458 -1.782,0 -2.916,-0.81 -3.024,-3.645 h 9.774 z m -3.942,-2.052 h -5.805 c 0.243,-2.025 1.188,-3.132 2.862,-3.132 1.62,0 2.754,1.053 2.943,3.132 z"
+             id="path83" />
+          <path
+             d="m 394.17451,35 v -9.774 c 0,-3.213 -1.782,-5.049 -4.887,-5.049 -1.971,0 -3.294,0.729 -4.374,2.349 V 20.42 h -3.78 V 35 h 3.78 v -8.748 c 0,-1.728 1.215,-2.862 3.051,-2.862 1.62,0 2.43,0.891 2.43,2.619 V 35 Z"
+             id="path85" />
+          <path
+             d="m 410.02351,29.951 h -3.618 c -0.486,1.512 -1.242,2.241 -2.7,2.241 -1.917,0 -3.078,-1.539 -3.078,-4.374 0,-2.673 0.702,-4.59 3.078,-4.59 1.539,0 2.268,0.729 2.7,2.646 h 3.618 c -0.27,-3.564 -2.646,-5.697 -6.291,-5.697 -4.347,0 -6.885,2.673 -6.885,7.641 0,4.806 2.511,7.425 6.831,7.425 3.537,0 5.994,-2.187 6.345,-5.292 z"
+             id="path87" />
+          <path
+             d="m 425.1165,28.25 c 0,-5.022 -2.538,-8.073 -6.831,-8.073 -4.185,0 -6.75,2.835 -6.75,7.722 0,4.671 2.538,7.344 6.669,7.344 3.267,0 5.913,-1.485 6.75,-4.347 h -3.726 c -0.324,1.053 -1.512,1.458 -2.889,1.458 -1.782,0 -2.916,-0.81 -3.024,-3.645 h 9.774 z m -3.942,-2.052 h -5.805 c 0.243,-2.025 1.188,-3.132 2.862,-3.132 1.62,0 2.754,1.053 2.943,3.132 z"
+             id="path89" />
+        </g>
+      </switch>
+    </g>
+    <path
+       id="rect22"
+       style="fill:#f8cecc;stroke:#b85450;stroke-width:3"
+       d="M 11,111 H 521 V 441 H 11 Z" />
+    <g
+       transform="translate(-0.5,-0.5)"
+       id="g28">
+      <switch
+         id="switch26">
+        <foreignObject
+           style="overflow: visible; text-align: left;"
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <xhtml:div
+             style="display: flex; align-items: unsafe flex-start; justify-content: unsafe center; width: 508px; height: 1px; padding-top: 118px; margin-left: 12px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0; text-align: center; ">
+              <xhtml:div
+                 style="display: inline-block; font-size: 27px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; "><xhtml:br />
+                               Clause</xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <g
+           aria-label="                               Clause"
+           id="text24"
+           style="font-weight:bold;font-size:27px;font-family:Helvetica;text-anchor:middle">
+          <path
+             d="m 356.57146,138.277 h -3.942 c -0.243,2.511 -1.836,3.645 -4.347,3.645 -3.132,0 -4.968,-2.403 -4.968,-6.696 0,-4.347 1.917,-6.777 5.103,-6.777 2.187,0 3.618,0.999 4.212,3.537 h 3.861 c -0.351,-4.536 -3.78,-6.993 -8.208,-6.993 -5.562,0 -9.018,3.807 -9.018,10.179 0,6.318 3.429,10.152 8.91,10.152 4.887,0 8.154,-2.538 8.397,-7.047 z"
+             id="path93" />
+          <path
+             d="m 363.15946,145 v -19.683 h -3.78 V 145 Z"
+             id="path95" />
+          <path
+             d="m 379.22447,145 v -0.459 c -0.675,-0.621 -0.864,-1.026 -0.864,-1.782 v -8.1 c 0,-2.97 -2.025,-4.482 -5.967,-4.482 -3.942,0 -5.994,1.674 -6.237,5.049 h 3.645 c 0.189,-1.512 0.81,-1.998 2.673,-1.998 1.458,0 2.187,0.486 2.187,1.458 0,1.539 -1.134,1.377 -3.024,1.701 l -1.512,0.27 c -2.889,0.513 -4.293,1.755 -4.293,4.401 0,2.835 1.998,4.185 4.428,4.185 1.62,0 3.105,-0.702 4.428,-2.079 0,0.756 0.081,1.404 0.432,1.836 z m -4.563,-6.237 c 0,2.187 -1.08,3.429 -2.997,3.429 -1.269,0 -2.052,-0.486 -2.052,-1.566 0,-1.107 0.594,-1.512 2.16,-1.809 l 1.296,-0.243 c 0.999,-0.189 1.161,-0.243 1.593,-0.459 z"
+             id="path97" />
+          <path
+             d="m 394.69544,145 v -14.58 h -3.78 v 8.748 c 0,1.728 -1.215,2.862 -3.051,2.862 -1.62,0 -2.43,-0.864 -2.43,-2.619 v -8.991 h -3.78 v 9.774 c 0,3.213 1.782,5.049 4.887,5.049 1.971,0 3.294,-0.729 4.374,-2.16 V 145 Z"
+             id="path99" />
+          <path
+             d="m 410.62545,140.68 v -0.189 c 0,-1.674 -0.945,-2.916 -2.862,-3.483 l -4.779,-1.377 c -1.053,-0.297 -1.323,-0.54 -1.323,-1.134 0,-0.81 0.864,-1.35 2.187,-1.35 1.809,0 2.7,0.648 2.727,1.971 h 3.645 c -0.054,-3.078 -2.43,-4.941 -6.345,-4.941 -3.699,0 -5.994,1.863 -5.994,4.86 0,1.782 0.486,2.754 3.186,3.591 l 4.509,1.404 c 0.945,0.297 1.269,0.594 1.269,0.999 0,0.891 -1.053,1.242 -2.808,1.242 -1.728,0 -2.646,-0.324 -2.97,-1.89 h -3.699 c 0.108,3.186 2.457,4.86 6.885,4.86 4.104,0 6.372,-1.62 6.372,-4.563 z"
+             id="path101" />
+          <path
+             d="m 425.77244,138.25 c 0,-5.022 -2.538,-8.073 -6.831,-8.073 -4.185,0 -6.75,2.835 -6.75,7.722 0,4.671 2.538,7.344 6.669,7.344 3.267,0 5.913,-1.485 6.75,-4.347 h -3.726 c -0.324,1.053 -1.512,1.458 -2.889,1.458 -1.782,0 -2.916,-0.81 -3.024,-3.645 h 9.774 z m -3.942,-2.052 h -5.805 c 0.243,-2.025 1.188,-3.132 2.862,-3.132 1.62,0 2.754,1.053 2.943,3.132 z"
+             id="path103" />
+        </g>
+      </switch>
+    </g>
+    <path
+       id="rect30"
+       style="fill:#e51400;stroke:#b20000;stroke-width:3"
+       d="M 21,121 H 251 V 431 H 21 Z" />
+    <path
+       d="m 19,119 v 126 q 117,93 234,0 V 119 Z"
+       fill="url(#mx-gradient-ffffff-0.9-ffffff-0.1-s-0)"
+       stroke="none"
+       pointer-events="all"
+       id="path32" />
+    <g
+       transform="translate(-0.5,-0.5)"
+       id="g38">
+      <switch
+         id="switch36">
+        <foreignObject
+           style="overflow: visible; text-align: left;"
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 228px; height: 1px; padding-top: 276px; margin-left: 22px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0; text-align: center; ">
+              <xhtml:div
+                 style="display: inline-block; font-size: 27px; font-family: Helvetica; color: #ffffff; line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; ">
+                <xhtml:div
+                   style="font-size: 27px">
+                  <xhtml:font
+                     style="font-size: 27px">Complementizer</xhtml:font>
+                </xhtml:div>
+              </xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <g
+           aria-label="Complementizer"
+           id="text34"
+           style="font-weight:bold;font-size:27px;font-family:Helvetica;text-anchor:middle;fill:#ffffff">
+          <path
+             d="m 49.41102,277.277 h -3.942 c -0.243,2.511 -1.836,3.645 -4.347,3.645 -3.132,0 -4.968,-2.403 -4.968,-6.696 0,-4.347 1.917,-6.777 5.103,-6.777 2.187,0 3.618,0.999 4.212,3.537 h 3.861 c -0.351,-4.536 -3.78,-6.993 -8.208,-6.993 -5.562,0 -9.018,3.807 -9.018,10.179 0,6.318 3.429,10.152 8.91,10.152 4.887,0 8.154,-2.538 8.397,-7.047 z"
+             id="path107" />
+          <path
+             d="m 65.773024,276.818 c 0,-4.941 -2.673,-7.641 -7.236,-7.641 -4.455,0 -7.182,2.754 -7.182,7.533 0,4.806 2.727,7.533 7.209,7.533 4.428,0 7.209,-2.754 7.209,-7.425 z m -3.78,-0.054 c 0,2.727 -1.404,4.428 -3.429,4.428 -2.052,0 -3.429,-1.701 -3.429,-4.482 0,-2.781 1.377,-4.482 3.429,-4.482 2.079,0 3.429,1.674 3.429,4.536 z"
+             id="path109" />
+          <path
+             d="m 89.155025,284 v -10.314 c 0,-2.835 -1.728,-4.509 -4.644,-4.509 -1.836,0 -3.132,0.648 -4.266,2.16 -0.702,-1.377 -2.16,-2.16 -3.969,-2.16 -1.674,0 -2.754,0.567 -3.996,2.052 v -1.809 h -3.753 V 284 h 3.78 v -8.748 c 0,-1.782 0.972,-2.862 2.592,-2.862 1.269,0 2.052,0.729 2.052,1.89 V 284 h 3.78 v -8.748 c 0,-1.782 0.972,-2.862 2.592,-2.862 1.269,0 2.052,0.729 2.052,1.89 V 284 Z"
+             id="path111" />
+          <path
+             d="m 106.543,276.71 c 0,-4.32 -2.295,-7.533 -6.102,-7.533 -1.835997,0 -3.131997,0.783 -4.049997,2.403 v -2.16 h -3.78 v 20.466 h 3.78 v -7.83 c 0.918,1.62 2.214,2.187 4.049997,2.187 3.51,0 6.102,-3.105 6.102,-7.533 z m -3.78,0.054 c 0,2.646 -1.323,4.32 -3.185997,4.32 -1.89,0 -3.186,-1.647 -3.186,-4.374 0,-2.727 1.296,-4.374 3.186,-4.374 1.916997,0 3.185997,1.647 3.185997,4.428 z"
+             id="path113" />
+          <path
+             d="m 113.131,284 v -19.683 h -3.78 V 284 Z"
+             id="path115" />
+          <path
+             d="m 129.223,277.25 c 0,-5.022 -2.538,-8.073 -6.831,-8.073 -4.185,0 -6.75,2.835 -6.75,7.722 0,4.671 2.538,7.344 6.669,7.344 3.267,0 5.913,-1.485 6.75,-4.347 h -3.726 c -0.324,1.053 -1.512,1.458 -2.889,1.458 -1.782,0 -2.916,-0.81 -3.024,-3.645 h 9.774 z m -3.942,-2.052 h -5.805 c 0.243,-2.025 1.188,-3.132 2.862,-3.132 1.62,0 2.754,1.053 2.943,3.132 z"
+             id="path117" />
+          <path
+             d="m 152.30799,284 v -10.314 c 0,-2.835 -1.728,-4.509 -4.644,-4.509 -1.836,0 -3.132,0.648 -4.266,2.16 -0.702,-1.377 -2.16,-2.16 -3.969,-2.16 -1.674,0 -2.754,0.567 -3.996,2.052 v -1.809 h -3.753 V 284 h 3.78 v -8.748 c 0,-1.782 0.972,-2.862 2.592,-2.862 1.269,0 2.052,0.729 2.052,1.89 V 284 h 3.78 v -8.748 c 0,-1.782 0.972,-2.862 2.592,-2.862 1.269,0 2.052,0.729 2.052,1.89 V 284 Z"
+             id="path119" />
+          <path
+             d="m 168.23799,277.25 c 0,-5.022 -2.538,-8.073 -6.831,-8.073 -4.185,0 -6.75,2.835 -6.75,7.722 0,4.671 2.538,7.344 6.669,7.344 3.267,0 5.913,-1.485 6.75,-4.347 h -3.726 c -0.324,1.053 -1.512,1.458 -2.889,1.458 -1.782,0 -2.916,-0.81 -3.024,-3.645 h 9.774 z m -3.942,-2.052 h -5.805 c 0.243,-2.025 1.188,-3.132 2.862,-3.132 1.62,0 2.754,1.053 2.943,3.132 z"
+             id="path121" />
+          <path
+             d="m 183.81699,284 v -9.774 c 0,-3.213 -1.782,-5.049 -4.887,-5.049 -1.971,0 -3.294,0.729 -4.374,2.349 v -2.106 h -3.78 V 284 h 3.78 v -8.748 c 0,-1.728 1.215,-2.862 3.051,-2.862 1.62,0 2.43,0.891 2.43,2.619 V 284 Z"
+             id="path123" />
+          <path
+             d="m 193.69898,284 v -2.646 c -0.378,0.054 -0.594,0.081 -0.864,0.081 -0.999,0 -1.242,-0.297 -1.242,-1.593 v -7.614 h 2.106 v -2.511 h -2.106 v -3.915 h -3.78 v 3.915 h -1.863 v 2.511 h 1.863 v 8.64 c 0,2.295 1.215,3.24 3.699,3.24 0.837,0 1.512,-0.081 2.187,-0.108 z"
+             id="path125" />
+          <path
+             d="m 200.15199,284 v -14.58 h -3.78 V 284 Z m 0.054,-16.335 v -3.78 h -3.78 v 3.78 z"
+             id="path127" />
+          <path
+             d="m 214.70499,284 v -3.051 h -7.398 l 7.155,-8.478 v -3.051 h -11.34 v 3.051 h 6.723 l -7.209,8.478 V 284 Z"
+             id="path129" />
+          <path
+             d="m 229.74399,277.25 c 0,-5.022 -2.538,-8.073 -6.831,-8.073 -4.185,0 -6.75,2.835 -6.75,7.722 0,4.671 2.538,7.344 6.669,7.344 3.267,0 5.913,-1.485 6.75,-4.347 h -3.726 c -0.324,1.053 -1.512,1.458 -2.889,1.458 -1.782,0 -2.916,-0.81 -3.024,-3.645 h 9.774 z m -3.942,-2.052 h -5.805 c 0.243,-2.025 1.188,-3.132 2.862,-3.132 1.62,0 2.754,1.053 2.943,3.132 z"
+             id="path131" />
+          <path
+             d="m 240.57098,273.038 v -3.834 c -0.216,-0.027 -0.351,-0.027 -0.459,-0.027 -1.728,0 -3.24,1.134 -4.05,3.105 v -2.862 h -3.78 V 284 h 3.78 v -7.749 c 0,-2.214 1.107,-3.321 3.321,-3.321 0.405,0 0.675,0.027 1.188,0.108 z"
+             id="path133" />
+        </g>
+      </switch>
+    </g>
+    <path
+       id="rect40"
+       style="fill:#72c91b;stroke:#2d7600;stroke-width:3"
+       d="M 261,231 H 511 V 431 H 261 Z" />
+    <path
+       d="m 259,229 v 82 q 127,60 254,0 v -82 z"
+       fill="url(#mx-gradient-ffffff-0.9-ffffff-0.1-s-0)"
+       stroke="none"
+       pointer-events="all"
+       id="path42" />
+    <g
+       transform="translate(-0.5,-0.5)"
+       id="g48">
+      <switch
+         id="switch46">
+        <foreignObject
+           style="overflow: visible; text-align: left;"
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 248px; height: 1px; padding-top: 331px; margin-left: 262px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0; text-align: center; ">
+              <xhtml:div
+                 style="display: inline-block; font-size: 27px; font-family: Helvetica; color: #050505; line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; ">
+                <xhtml:font
+                   style="font-size: 27px">Verbal Complex</xhtml:font>
+              </xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <g
+           aria-label="Verbal Complex"
+           id="text44"
+           style="font-weight:bold;font-size:27px;font-family:Helvetica;text-anchor:middle;fill:#050505">
+          <path
+             d="m 302.24604,319.317 h -4.077 l -4.293,14.823 -4.374,-14.823 h -4.077 l 6.642,19.683 h 3.429 z"
+             id="path137" />
+          <path
+             d="m 315.74603,332.25 c 0,-5.022 -2.538,-8.073 -6.831,-8.073 -4.185,0 -6.75,2.835 -6.75,7.722 0,4.671 2.538,7.344 6.669,7.344 3.267,0 5.913,-1.485 6.75,-4.347 h -3.726 c -0.324,1.053 -1.512,1.458 -2.889,1.458 -1.782,0 -2.916,-0.81 -3.024,-3.645 h 9.774 z m -3.942,-2.052 h -5.805 c 0.243,-2.025 1.188,-3.132 2.862,-3.132 1.62,0 2.754,1.053 2.943,3.132 z"
+             id="path139" />
+          <path
+             d="m 326.57302,328.038 v -3.834 c -0.216,-0.027 -0.351,-0.027 -0.459,-0.027 -1.728,0 -3.24,1.134 -4.05,3.105 v -2.862 h -3.78 V 339 h 3.78 v -7.749 c 0,-2.214 1.107,-3.321 3.321,-3.321 0.405,0 0.675,0.027 1.188,0.108 z"
+             id="path141" />
+          <path
+             d="m 342.61102,331.899 c 0,-4.131 -2.295,-7.722 -6.129,-7.722 -1.809,0 -3.105,0.675 -4.023,2.133 v -6.993 h -3.78 V 339 h 3.78 v -1.674 c 0.918,1.242 2.187,1.917 4.023,1.917 3.483,0 6.129,-2.943 6.129,-7.344 z m -3.78,-0.162 c 0,2.646 -1.323,4.347 -3.186,4.347 -1.917,0 -3.186,-1.647 -3.186,-4.428 0,-2.646 1.296,-4.32 3.186,-4.32 1.863,0 3.186,1.701 3.186,4.401 z"
+             id="path143" />
+          <path
+             d="m 357.73102,339 v -0.459 c -0.675,-0.621 -0.864,-1.026 -0.864,-1.782 v -8.1 c 0,-2.97 -2.025,-4.482 -5.967,-4.482 -3.942,0 -5.994,1.674 -6.237,5.049 h 3.645 c 0.189,-1.512 0.81,-1.998 2.673,-1.998 1.458,0 2.187,0.486 2.187,1.458 0,1.539 -1.134,1.377 -3.024,1.701 l -1.512,0.27 c -2.889,0.513 -4.293,1.755 -4.293,4.401 0,2.835 1.998,4.185 4.428,4.185 1.62,0 3.105,-0.702 4.428,-2.079 0,0.756 0.081,1.404 0.432,1.836 z m -4.563,-6.237 c 0,2.187 -1.08,3.429 -2.997,3.429 -1.269,0 -2.052,-0.486 -2.052,-1.566 0,-1.107 0.594,-1.512 2.16,-1.809 l 1.296,-0.243 c 0.999,-0.189 1.161,-0.243 1.593,-0.459 z"
+             id="path145" />
+          <path
+             d="m 364.18401,339 v -19.683 h -3.78 V 339 Z"
+             id="path147" />
+          <path
+             d="m 392.10201,332.277 h -3.942 c -0.243,2.511 -1.836,3.645 -4.347,3.645 -3.132,0 -4.968,-2.403 -4.968,-6.696 0,-4.347 1.917,-6.777 5.103,-6.777 2.187,0 3.618,0.999 4.212,3.537 h 3.861 c -0.351,-4.536 -3.78,-6.993 -8.208,-6.993 -5.562,0 -9.018,3.807 -9.018,10.179 0,6.318 3.429,10.152 8.91,10.152 4.887,0 8.154,-2.538 8.397,-7.047 z"
+             id="path149" />
+          <path
+             d="m 408.46401,331.818 c 0,-4.941 -2.673,-7.641 -7.236,-7.641 -4.455,0 -7.182,2.754 -7.182,7.533 0,4.806 2.727,7.533 7.209,7.533 4.428,0 7.209,-2.754 7.209,-7.425 z m -3.78,-0.054 c 0,2.727 -1.404,4.428 -3.429,4.428 -2.052,0 -3.429,-1.701 -3.429,-4.482 0,-2.781 1.377,-4.482 3.429,-4.482 2.079,0 3.429,1.674 3.429,4.536 z"
+             id="path151" />
+          <path
+             d="m 431.84601,339 v -10.314 c 0,-2.835 -1.728,-4.509 -4.644,-4.509 -1.836,0 -3.132,0.648 -4.266,2.16 -0.702,-1.377 -2.16,-2.16 -3.969,-2.16 -1.674,0 -2.754,0.567 -3.996,2.052 v -1.809 h -3.753 V 339 h 3.78 v -8.748 c 0,-1.782 0.972,-2.862 2.592,-2.862 1.269,0 2.052,0.729 2.052,1.89 V 339 h 3.78 v -8.748 c 0,-1.782 0.972,-2.862 2.592,-2.862 1.269,0 2.052,0.729 2.052,1.89 V 339 Z"
+             id="path153" />
+          <path
+             d="m 449.23399,331.71 c 0,-4.32 -2.295,-7.533 -6.102,-7.533 -1.836,0 -3.132,0.783 -4.05,2.403 v -2.16 h -3.78 v 20.466 h 3.78 v -7.83 c 0.918,1.62 2.214,2.187 4.05,2.187 3.51,0 6.102,-3.105 6.102,-7.533 z m -3.78,0.054 c 0,2.646 -1.323,4.32 -3.186,4.32 -1.89,0 -3.186,-1.647 -3.186,-4.374 0,-2.727 1.296,-4.374 3.186,-4.374 1.917,0 3.186,1.647 3.186,4.428 z"
+             id="path155" />
+          <path
+             d="m 455.822,339 v -19.683 h -3.78 V 339 Z"
+             id="path157" />
+          <path
+             d="m 471.91398,332.25 c 0,-5.022 -2.538,-8.073 -6.831,-8.073 -4.185,0 -6.75,2.835 -6.75,7.722 0,4.671 2.538,7.344 6.669,7.344 3.267,0 5.913,-1.485 6.75,-4.347 h -3.726 c -0.324,1.053 -1.512,1.458 -2.889,1.458 -1.782,0 -2.916,-0.81 -3.024,-3.645 h 9.774 z m -3.942,-2.052 h -5.805 c 0.243,-2.025 1.188,-3.132 2.862,-3.132 1.62,0 2.754,1.053 2.943,3.132 z"
+             id="path159" />
+          <path
+             d="m 486.65597,339 -4.86,-7.344 4.752,-7.236 h -4.536 l -2.349,4.401 -2.376,-4.401 h -4.536 l 4.752,7.236 -4.86,7.344 h 4.536 l 2.484,-4.536 2.457,4.536 z"
+             id="path161" />
+        </g>
+      </switch>
+    </g>
+    <path
+       id="rect50"
+       style="fill:url(#mx-gradient-dae8fc-1-7ea6e0-1-s-0);stroke:#6c8ebf;stroke-width:3"
+       d="M 531,61 H 721 V 441 H 531 Z" />
+    <path
+       d="m 529,59 v 154 q 97,114 194,0 V 59 Z"
+       fill="url(#mx-gradient-ffffff-0.9-ffffff-0.1-s-0)"
+       stroke="none"
+       pointer-events="all"
+       id="path52" />
+    <g
+       transform="translate(-0.5,-0.5)"
+       id="g58">
+      <switch
+         id="switch56">
+        <foreignObject
+           style="overflow: visible; text-align: left;"
+           pointer-events="none"
+           width="100%"
+           height="100%"
+           requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+          <xhtml:div
+             style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 188px; height: 1px; padding-top: 251px; margin-left: 532px;">
+            <xhtml:div
+               style="box-sizing: border-box; font-size: 0; text-align: center; ">
+              <xhtml:div
+                 style="display: inline-block; font-size: 27px; font-family: Helvetica; color: #000000; line-height: 1.2; pointer-events: all; font-weight: bold; white-space: normal; word-wrap: normal; ">
+                <xhtml:font
+                   style="font-size: 27px">Illocution</xhtml:font>
+              </xhtml:div>
+            </xhtml:div>
+          </xhtml:div>
+        </foreignObject>
+        <g
+           aria-label="Illocution"
+           id="text54"
+           style="font-weight:bold;font-size:27px;font-family:Helvetica;text-anchor:middle">
+          <path
+             d="m 571.7435,259 v -19.683 h -4.05 V 259 Z"
+             id="path165" />
+          <path
+             d="m 579.0875,259 v -19.683 h -3.78 V 259 Z"
+             id="path167" />
+          <path
+             d="m 586.5935,259 v -19.683 h -3.78 V 259 Z"
+             id="path169" />
+          <path
+             d="m 603.87349,251.818 c 0,-4.941 -2.673,-7.641 -7.236,-7.641 -4.455,0 -7.182,2.754 -7.182,7.533 0,4.806 2.727,7.533 7.209,7.533 4.428,0 7.209,-2.754 7.209,-7.425 z m -3.78,-0.054 c 0,2.727 -1.404,4.428 -3.429,4.428 -2.052,0 -3.429,-1.701 -3.429,-4.482 0,-2.781 1.377,-4.482 3.429,-4.482 2.079,0 3.429,1.674 3.429,4.536 z"
+             id="path171" />
+          <path
+             d="m 619.1015,253.951 h -3.618 c -0.486,1.512 -1.242,2.241 -2.7,2.241 -1.917,0 -3.078,-1.539 -3.078,-4.374 0,-2.673 0.702,-4.59 3.078,-4.59 1.539,0 2.268,0.729 2.7,2.646 h 3.618 c -0.27,-3.564 -2.646,-5.697 -6.291,-5.697 -4.347,0 -6.885,2.673 -6.885,7.641 0,4.806 2.511,7.425 6.831,7.425 3.537,0 5.994,-2.187 6.345,-5.292 z"
+             id="path173" />
+          <path
+             d="m 634.62649,259 v -14.58 h -3.78 v 8.748 c 0,1.728 -1.215,2.862 -3.051,2.862 -1.62,0 -2.43,-0.864 -2.43,-2.619 v -8.991 h -3.78 v 9.774 c 0,3.213 1.782,5.049 4.887,5.049 1.971,0 3.294,-0.729 4.374,-2.16 V 259 Z"
+             id="path175" />
+          <path
+             d="m 644.64349,259 v -2.646 c -0.378,0.054 -0.594,0.081 -0.864,0.081 -0.999,0 -1.242,-0.297 -1.242,-1.593 v -7.614 h 2.106 v -2.511 h -2.106 v -3.915 h -3.78 v 3.915 h -1.863 v 2.511 h 1.863 v 8.64 c 0,2.295 1.215,3.24 3.699,3.24 0.837,0 1.512,-0.081 2.187,-0.108 z"
+             id="path177" />
+          <path
+             d="m 651.0965,259 v -14.58 h -3.78 V 259 Z m 0.054,-16.335 v -3.78 h -3.78 v 3.78 z"
+             id="path179" />
+          <path
+             d="m 668.37649,251.818 c 0,-4.941 -2.673,-7.641 -7.236,-7.641 -4.455,0 -7.182,2.754 -7.182,7.533 0,4.806 2.727,7.533 7.209,7.533 4.428,0 7.209,-2.754 7.209,-7.425 z m -3.78,-0.054 c 0,2.727 -1.404,4.428 -3.429,4.428 -2.052,0 -3.429,-1.701 -3.429,-4.482 0,-2.781 1.377,-4.482 3.429,-4.482 2.079,0 3.429,1.674 3.429,4.536 z"
+             id="path181" />
+          <path
+             d="m 684.25249,259 v -9.774 c 0,-3.213 -1.782,-5.049 -4.887,-5.049 -1.971,0 -3.294,0.729 -4.374,2.349 v -2.106 h -3.78 V 259 h 3.78 v -8.748 c 0,-1.728 1.215,-2.862 3.051,-2.862 1.62,0 2.43,0.891 2.43,2.619 V 259 Z"
+             id="path183" />
+        </g>
+      </switch>
+    </g>
+  </g>
+  <switch
+     id="switch68">
+    <g
+       requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility"
+       id="g62" />
+    <a
+       transform="translate(0,-5)"
+       xlink:href="https://www.diagrams.net/doc/faq/svg-export-text-problems"
+       target="_blank"
+       id="a66">
+      <g
+         aria-label="Viewer does not support full SVG 1.1"
+         id="text64"
+         style="font-size:10px;text-anchor:middle">
+        <path
+           d="m 287.32502,445.86 -2.55,7.14 h -0.9 l -2.55,-7.14 h 0.94 l 1.61,4.58 q 0.16,0.44 0.27,0.83 0.11,0.38 0.18,0.73 0.07,-0.35 0.18,-0.74 0.11,-0.39 0.27,-0.84 l 1.6,-4.56 z"
+           id="path186" />
+        <path
+           d="m 288.62502,445.63 q 0.2,0 0.35,0.14 0.16,0.13 0.16,0.42 0,0.28 -0.16,0.42 -0.15,0.14 -0.35,0.14 -0.22,0 -0.37,-0.14 -0.15,-0.14 -0.15,-0.42 0,-0.29 0.15,-0.42 0.15,-0.14 0.37,-0.14 z m 0.43,2.01 V 453 h -0.88 v -5.36 z"
+           id="path188" />
+        <path
+           d="m 292.82502,447.54 q 0.69,0 1.18,0.3 0.5,0.3 0.76,0.85 0.27,0.54 0.27,1.27 v 0.53 h -3.67 q 0.02,0.91 0.46,1.39 0.45,0.47 1.25,0.47 0.51,0 0.9,-0.09 0.4,-0.1 0.82,-0.28 v 0.77 q -0.41,0.18 -0.81,0.26 -0.4,0.09 -0.95,0.09 -0.76,0 -1.35,-0.31 -0.58,-0.31 -0.91,-0.92 -0.32,-0.62 -0.32,-1.51 0,-0.88 0.29,-1.51 0.3,-0.63 0.83,-0.97 0.54,-0.34 1.25,-0.34 z m -0.01,0.72 q -0.63,0 -1,0.41 -0.36,0.4 -0.43,1.12 h 2.73 q -0.01,-0.68 -0.32,-1.1 -0.31,-0.43 -0.98,-0.43 z"
+           id="path190" />
+        <path
+           d="m 300.57501,452.99 -0.92,-3.02 q -0.13,-0.41 -0.23,-0.8 -0.09,-0.4 -0.14,-0.62 h -0.04 q -0.04,0.22 -0.13,0.62 -0.09,0.39 -0.23,0.81 l -0.96,3.01 h -1 l -1.47,-5.36 h 0.91 l 0.74,2.86 q 0.11,0.43 0.21,0.87 0.1,0.44 0.14,0.73 h 0.04 q 0.04,-0.17 0.09,-0.42 0.06,-0.25 0.13,-0.52 0.07,-0.28 0.14,-0.5 l 0.95,-3.02 h 0.96 l 0.92,3.02 q 0.11,0.34 0.21,0.74 0.11,0.4 0.15,0.69 h 0.04 q 0.03,-0.25 0.13,-0.69 0.11,-0.44 0.23,-0.9 l 0.75,-2.86 h 0.9 l -1.49,5.36 z"
+           id="path192" />
+        <path
+           d="m 306.125,447.54 q 0.69,0 1.18,0.3 0.5,0.3 0.76,0.85 0.27,0.54 0.27,1.27 v 0.53 h -3.67 q 0.02,0.91 0.46,1.39 0.45,0.47 1.25,0.47 0.51,0 0.9,-0.09 0.4,-0.1 0.82,-0.28 v 0.77 q -0.41,0.18 -0.81,0.26 -0.4,0.09 -0.95,0.09 -0.76,0 -1.35,-0.31 -0.58,-0.31 -0.91,-0.92 -0.32,-0.62 -0.32,-1.51 0,-0.88 0.29,-1.51 0.3,-0.63 0.83,-0.97 0.54,-0.34 1.25,-0.34 z m -0.01,0.72 q -0.63,0 -1,0.41 -0.36,0.4 -0.43,1.12 h 2.73 q -0.01,-0.68 -0.32,-1.1 -0.31,-0.43 -0.98,-0.43 z"
+           id="path194" />
+        <path
+           d="m 312.19499,447.54 q 0.15,0 0.32,0.02 0.18,0.01 0.31,0.04 l -0.11,0.81 q -0.13,-0.03 -0.29,-0.05 -0.15,-0.02 -0.29,-0.02 -0.41,0 -0.77,0.23 -0.36,0.22 -0.58,0.63 -0.21,0.4 -0.21,0.94 V 453 h -0.88 v -5.36 h 0.72 l 0.1,0.98 h 0.04 q 0.26,-0.44 0.67,-0.76 0.41,-0.32 0.97,-0.32 z"
+           id="path196" />
+        <path
+           d="m 318.32499,453.1 q -1,0 -1.6,-0.69 -0.6,-0.7 -0.6,-2.08 0,-1.38 0.6,-2.08 0.61,-0.71 1.61,-0.71 0.62,0 1.01,0.23 0.4,0.23 0.65,0.56 h 0.06 q -0.01,-0.13 -0.04,-0.38 -0.02,-0.26 -0.02,-0.41 v -2.14 h 0.88 v 7.6 h -0.71 l -0.13,-0.72 h -0.04 q -0.24,0.34 -0.64,0.58 -0.4,0.24 -1.03,0.24 z m 0.14,-0.73 q 0.85,0 1.19,-0.46 0.35,-0.47 0.35,-1.41 v -0.16 q 0,-1 -0.33,-1.53 -0.33,-0.54 -1.22,-0.54 -0.71,0 -1.07,0.57 -0.35,0.56 -0.35,1.51 0,0.96 0.35,1.49 0.36,0.53 1.08,0.53 z"
+           id="path198" />
+        <path
+           d="m 327.23499,450.31 q 0,1.33 -0.68,2.06 -0.67,0.73 -1.82,0.73 -0.71,0 -1.27,-0.32 -0.55,-0.33 -0.87,-0.95 -0.32,-0.63 -0.32,-1.52 0,-1.33 0.67,-2.05 0.67,-0.72 1.82,-0.72 0.73,0 1.28,0.33 0.56,0.32 0.87,0.94 0.32,0.61 0.32,1.5 z m -4.05,0 q 0,0.95 0.37,1.51 0.38,0.55 1.2,0.55 0.81,0 1.19,-0.55 0.38,-0.56 0.38,-1.51 0,-0.95 -0.38,-1.49 -0.38,-0.54 -1.2,-0.54 -0.82,0 -1.19,0.54 -0.37,0.54 -0.37,1.49 z"
+           id="path200" />
+        <path
+           d="m 330.69499,447.54 q 0.69,0 1.18,0.3 0.5,0.3 0.76,0.85 0.27,0.54 0.27,1.27 v 0.53 h -3.67 q 0.02,0.91 0.46,1.39 0.45,0.47 1.25,0.47 0.51,0 0.9,-0.09 0.4,-0.1 0.82,-0.28 v 0.77 q -0.41,0.18 -0.81,0.26 -0.4,0.09 -0.95,0.09 -0.76,0 -1.35,-0.31 -0.58,-0.31 -0.91,-0.92 -0.32,-0.62 -0.32,-1.51 0,-0.88 0.29,-1.51 0.3,-0.63 0.83,-0.97 0.54,-0.34 1.25,-0.34 z m -0.01,0.72 q -0.63,0 -1,0.41 -0.36,0.4 -0.43,1.12 h 2.73 q -0.01,-0.68 -0.32,-1.1 -0.31,-0.43 -0.98,-0.43 z"
+           id="path202" />
+        <path
+           d="m 337.75498,451.52 q 0,0.78 -0.58,1.18 -0.58,0.4 -1.56,0.4 -0.56,0 -0.97,-0.09 -0.4,-0.09 -0.71,-0.25 v -0.8 q 0.32,0.16 0.77,0.3 0.46,0.13 0.93,0.13 0.67,0 0.97,-0.21 0.3,-0.22 0.3,-0.58 0,-0.2 -0.11,-0.36 -0.11,-0.16 -0.4,-0.32 -0.28,-0.16 -0.81,-0.36 -0.52,-0.2 -0.89,-0.4 -0.37,-0.2 -0.57,-0.48 -0.2,-0.28 -0.2,-0.72 0,-0.68 0.55,-1.05 0.56,-0.37 1.46,-0.37 0.49,0 0.91,0.1 0.43,0.09 0.8,0.26 l -0.3,0.7 q -0.34,-0.14 -0.71,-0.24 -0.37,-0.1 -0.76,-0.1 -0.54,0 -0.83,0.18 -0.28,0.17 -0.28,0.47 0,0.22 0.13,0.38 0.13,0.15 0.43,0.3 0.31,0.14 0.82,0.34 0.51,0.19 0.87,0.39 0.36,0.2 0.55,0.49 0.19,0.28 0.19,0.71 z"
+           id="path204" />
+        <path
+           d="m 344.23498,447.54 q 0.96,0 1.45,0.47 0.49,0.46 0.49,1.5 V 453 h -0.87 v -3.43 q 0,-1.29 -1.2,-1.29 -0.89,0 -1.23,0.5 -0.34,0.5 -0.34,1.44 V 453 h -0.88 v -5.36 h 0.71 l 0.13,0.73 h 0.05 q 0.26,-0.42 0.72,-0.62 0.46,-0.21 0.97,-0.21 z"
+           id="path206" />
+        <path
+           d="m 352.49498,450.31 q 0,1.33 -0.68,2.06 -0.67,0.73 -1.82,0.73 -0.71,0 -1.27,-0.32 -0.55,-0.33 -0.87,-0.95 -0.32,-0.63 -0.32,-1.52 0,-1.33 0.67,-2.05 0.67,-0.72 1.82,-0.72 0.73,0 1.28,0.33 0.56,0.32 0.87,0.94 0.32,0.61 0.32,1.5 z m -4.05,0 q 0,0.95 0.37,1.51 0.38,0.55 1.2,0.55 0.81,0 1.19,-0.55 0.38,-0.56 0.38,-1.51 0,-0.95 -0.38,-1.49 -0.38,-0.54 -1.2,-0.54 -0.82,0 -1.19,0.54 -0.37,0.54 -0.37,1.49 z"
+           id="path208" />
+        <path
+           d="m 355.67498,452.38 q 0.2,0 0.41,-0.03 0.21,-0.04 0.34,-0.08 v 0.67 q -0.14,0.07 -0.4,0.11 -0.26,0.05 -0.5,0.05 -0.42,0 -0.78,-0.14 -0.35,-0.15 -0.57,-0.51 -0.22,-0.36 -0.22,-1.01 v -3.12 h -0.76 v -0.42 l 0.77,-0.35 0.35,-1.14 h 0.52 v 1.23 h 1.55 v 0.68 h -1.55 v 3.1 q 0,0.49 0.23,0.73 0.24,0.23 0.61,0.23 z"
+           id="path210" />
+        <path
+           d="m 363.58498,451.52 q 0,0.78 -0.58,1.18 -0.58,0.4 -1.56,0.4 -0.56,0 -0.97,-0.09 -0.4,-0.09 -0.71,-0.25 v -0.8 q 0.32,0.16 0.77,0.3 0.46,0.13 0.93,0.13 0.67,0 0.97,-0.21 0.3,-0.22 0.3,-0.58 0,-0.2 -0.11,-0.36 -0.11,-0.16 -0.4,-0.32 -0.28,-0.16 -0.81,-0.36 -0.52,-0.2 -0.89,-0.4 -0.37,-0.2 -0.57,-0.48 -0.2,-0.28 -0.2,-0.72 0,-0.68 0.55,-1.05 0.56,-0.37 1.46,-0.37 0.49,0 0.91,0.1 0.43,0.09 0.8,0.26 l -0.3,0.7 q -0.34,-0.14 -0.71,-0.24 -0.37,-0.1 -0.76,-0.1 -0.54,0 -0.83,0.18 -0.28,0.17 -0.28,0.47 0,0.22 0.13,0.38 0.13,0.15 0.43,0.3 0.31,0.14 0.82,0.34 0.51,0.19 0.87,0.39 0.36,0.2 0.55,0.49 0.19,0.28 0.19,0.71 z"
+           id="path212" />
+        <path
+           d="M 369.36498,447.64 V 453 h -0.72 l -0.13,-0.71 h -0.04 q -0.26,0.42 -0.72,0.62 -0.46,0.19 -0.98,0.19 -0.97,0 -1.46,-0.46 -0.49,-0.47 -0.49,-1.49 v -3.51 h 0.89 v 3.45 q 0,1.28 1.19,1.28 0.89,0 1.23,-0.5 0.35,-0.5 0.35,-1.44 v -2.79 z"
+           id="path214" />
+        <path
+           d="m 373.61498,447.54 q 0.99,0 1.59,0.69 0.61,0.69 0.61,2.08 0,1.37 -0.61,2.08 -0.6,0.71 -1.6,0.71 -0.62,0 -1.03,-0.23 -0.4,-0.24 -0.63,-0.55 h -0.06 q 0.02,0.17 0.04,0.43 0.02,0.26 0.02,0.45 v 2.2 h -0.88 v -7.76 h 0.72 l 0.12,0.73 h 0.04 q 0.24,-0.35 0.63,-0.59 0.39,-0.24 1.04,-0.24 z m -0.16,0.74 q -0.82,0 -1.16,0.46 -0.33,0.46 -0.35,1.4 v 0.17 q 0,0.99 0.32,1.53 0.33,0.53 1.21,0.53 0.49,0 0.8,-0.27 0.32,-0.27 0.47,-0.73 0.16,-0.47 0.16,-1.07 0,-0.92 -0.36,-1.47 -0.35,-0.55 -1.09,-0.55 z"
+           id="path216" />
+        <path
+           d="m 379.76498,447.54 q 0.99,0 1.59,0.69 0.61,0.69 0.61,2.08 0,1.37 -0.61,2.08 -0.6,0.71 -1.6,0.71 -0.62,0 -1.03,-0.23 -0.4,-0.24 -0.63,-0.55 h -0.06 q 0.02,0.17 0.04,0.43 0.02,0.26 0.02,0.45 v 2.2 h -0.88 v -7.76 h 0.72 l 0.12,0.73 h 0.04 q 0.24,-0.35 0.63,-0.59 0.39,-0.24 1.04,-0.24 z m -0.16,0.74 q -0.82,0 -1.16,0.46 -0.33,0.46 -0.35,1.4 v 0.17 q 0,0.99 0.32,1.53 0.33,0.53 1.21,0.53 0.49,0 0.8,-0.27 0.32,-0.27 0.47,-0.73 0.16,-0.47 0.16,-1.07 0,-0.92 -0.36,-1.47 -0.35,-0.55 -1.09,-0.55 z"
+           id="path218" />
+        <path
+           d="m 388.02498,450.31 q 0,1.33 -0.68,2.06 -0.67,0.73 -1.82,0.73 -0.71,0 -1.27,-0.32 -0.55,-0.33 -0.87,-0.95 -0.32,-0.63 -0.32,-1.52 0,-1.33 0.67,-2.05 0.67,-0.72 1.82,-0.72 0.73,0 1.28,0.33 0.56,0.32 0.87,0.94 0.32,0.61 0.32,1.5 z m -4.05,0 q 0,0.95 0.37,1.51 0.38,0.55 1.2,0.55 0.81,0 1.19,-0.55 0.38,-0.56 0.38,-1.51 0,-0.95 -0.38,-1.49 -0.38,-0.54 -1.2,-0.54 -0.82,0 -1.19,0.54 -0.37,0.54 -0.37,1.49 z"
+           id="path220" />
+        <path
+           d="m 391.91497,447.54 q 0.15,0 0.32,0.02 0.18,0.01 0.31,0.04 l -0.11,0.81 q -0.13,-0.03 -0.29,-0.05 -0.15,-0.02 -0.29,-0.02 -0.41,0 -0.77,0.23 -0.36,0.22 -0.58,0.63 -0.21,0.4 -0.21,0.94 V 453 h -0.88 v -5.36 h 0.72 l 0.1,0.98 h 0.04 q 0.26,-0.44 0.67,-0.76 0.41,-0.32 0.97,-0.32 z"
+           id="path222" />
+        <path
+           d="m 395.33497,452.38 q 0.2,0 0.41,-0.03 0.21,-0.04 0.34,-0.08 v 0.67 q -0.14,0.07 -0.4,0.11 -0.26,0.05 -0.5,0.05 -0.42,0 -0.78,-0.14 -0.35,-0.15 -0.57,-0.51 -0.22,-0.36 -0.22,-1.01 v -3.12 h -0.76 v -0.42 l 0.77,-0.35 0.35,-1.14 h 0.52 v 1.23 h 1.55 v 0.68 h -1.55 v 3.1 q 0,0.49 0.23,0.73 0.24,0.23 0.61,0.23 z"
+           id="path224" />
+        <path
+           d="m 402.22498,448.32 h -1.35 V 453 h -0.88 v -4.68 h -0.94 v -0.41 l 0.94,-0.3 v -0.31 q 0,-1.04 0.46,-1.49 0.46,-0.46 1.28,-0.46 0.32,0 0.58,0.06 0.27,0.05 0.46,0.12 l -0.23,0.69 q -0.16,-0.05 -0.37,-0.1 -0.21,-0.05 -0.43,-0.05 -0.44,0 -0.66,0.3 -0.21,0.29 -0.21,0.92 v 0.35 h 1.35 z"
+           id="path226" />
+        <path
+           d="M 407.67498,447.64 V 453 h -0.72 l -0.13,-0.71 h -0.04 q -0.26,0.42 -0.72,0.62 -0.46,0.19 -0.98,0.19 -0.97,0 -1.46,-0.46 -0.49,-0.47 -0.49,-1.49 v -3.51 h 0.89 v 3.45 q 0,1.28 1.19,1.28 0.89,0 1.23,-0.5 0.35,-0.5 0.35,-1.44 v -2.79 z"
+           id="path228" />
+        <path
+           d="m 410.25497,453 h -0.88 v -7.6 h 0.88 z"
+           id="path230" />
+        <path
+           d="m 412.83497,453 h -0.88 v -7.6 h 0.88 z"
+           id="path232" />
+        <path
+           d="m 421.30497,451.09 q 0,0.95 -0.69,1.48 -0.69,0.53 -1.86,0.53 -0.6,0 -1.11,-0.09 -0.51,-0.09 -0.85,-0.25 v -0.86 q 0.36,0.16 0.89,0.29 0.54,0.13 1.11,0.13 0.8,0 1.2,-0.31 0.41,-0.31 0.41,-0.84 0,-0.35 -0.15,-0.59 -0.15,-0.24 -0.52,-0.44 -0.36,-0.21 -1.01,-0.44 -0.91,-0.33 -1.38,-0.81 -0.46,-0.48 -0.46,-1.31 0,-0.57 0.29,-0.97 0.29,-0.41 0.8,-0.63 0.52,-0.22 1.19,-0.22 0.59,0 1.08,0.11 0.49,0.11 0.89,0.29 l -0.28,0.77 q -0.37,-0.16 -0.81,-0.27 -0.43,-0.11 -0.9,-0.11 -0.67,0 -1.01,0.29 -0.34,0.28 -0.34,0.75 0,0.36 0.15,0.6 0.15,0.24 0.49,0.43 0.34,0.19 0.92,0.41 0.63,0.23 1.06,0.5 0.44,0.26 0.66,0.63 0.23,0.37 0.23,0.93 z"
+           id="path234" />
+        <path
+           d="m 427.77497,445.86 -2.55,7.14 h -0.9 l -2.55,-7.14 h 0.94 l 1.61,4.58 q 0.16,0.44 0.27,0.83 0.11,0.38 0.18,0.73 0.07,-0.35 0.18,-0.74 0.11,-0.39 0.27,-0.84 l 1.6,-4.56 z"
+           id="path236" />
+        <path
+           d="m 431.74496,449.23 h 2.47 v 3.5 q -0.58,0.19 -1.17,0.28 -0.59,0.09 -1.34,0.09 -1.11,0 -1.87,-0.44 -0.76,-0.45 -1.16,-1.27 -0.39,-0.83 -0.39,-1.96 0,-1.12 0.44,-1.94 0.44,-0.82 1.26,-1.27 0.83,-0.46 2,-0.46 0.6,0 1.13,0.11 0.54,0.11 1,0.31 l -0.34,0.78 q -0.38,-0.17 -0.86,-0.29 -0.47,-0.12 -0.98,-0.12 -1.28,0 -2,0.77 -0.71,0.77 -0.71,2.11 0,0.85 0.27,1.51 0.28,0.65 0.87,1.02 0.59,0.36 1.55,0.36 0.47,0 0.8,-0.05 0.33,-0.05 0.6,-0.12 v -2.12 h -1.57 z"
+           id="path238" />
+        <path
+           d="m 441.10497,453 h -0.86 v -4.99 q 0,-0.43 0.01,-0.69 0.01,-0.26 0.03,-0.54 -0.16,0.16 -0.29,0.27 -0.13,0.11 -0.33,0.28 l -0.76,0.62 -0.46,-0.59 1.93,-1.5 h 0.73 z"
+           id="path240" />
+        <path
+           d="m 443.99497,452.46 q 0,-0.37 0.18,-0.52 0.18,-0.15 0.43,-0.15 0.26,0 0.44,0.15 0.19,0.15 0.19,0.52 0,0.36 -0.19,0.52 -0.18,0.16 -0.44,0.16 -0.25,0 -0.43,-0.16 -0.18,-0.16 -0.18,-0.52 z"
+           id="path242" />
+        <path
+           d="m 449.50498,453 h -0.86 v -4.99 q 0,-0.43 0.01,-0.69 0.01,-0.26 0.03,-0.54 -0.16,0.16 -0.29,0.27 -0.13,0.11 -0.33,0.28 l -0.76,0.62 -0.46,-0.59 1.93,-1.5 h 0.73 z"
+           id="path244" />
+      </g>
+    </a>
+  </switch>
+</svg>
