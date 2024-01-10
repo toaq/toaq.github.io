@@ -16,7 +16,7 @@ body {
     margin:0; /* Remove the default page margin */
 
     color:#FEFEFE;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Segoe UI', 'Noto Sans', sans-serif;
     font-size: 17px;
 
 
@@ -79,7 +79,7 @@ p {
 .toaq {
     color: #00aaff;
     font-weight: bold;
-    font-family: 'Segoe UI';
+    font-family: 'Segoe UI', 'Noto Sans', sans-serif;
     font-size: 17px;
 }
 
@@ -450,11 +450,11 @@ img.sem {
 .parse b {
 	color: #00aaff;
 	font-size: 17px;
-	font-family: 'Segoe UI';
+	font-family: 'Segoe UI', 'Noto Sans', sans-serif;
 }
 .parse s {
 	color: red;
-	font-family: 'Segoe UI';
+	font-family: 'Segoe UI', 'Noto Sans', sans-serif;
 	font-weight: bold;
 	font-size: 20px;
 }
@@ -472,7 +472,7 @@ img.sem {
 .l {
     color: #6666FF;
     font-weight: bold;
-    font-family: "Segoe UI";
+    font-family: 'Segoe UI', 'Noto Sans', sans-serif;
     font-size: 17px;
 }
 
