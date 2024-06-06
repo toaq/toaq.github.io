@@ -9,7 +9,7 @@ body {
     font-weight: 300;
     overflow-x: hidden;
     color: white;
-    background-image: url("../images/jemubg.png");
+    background-image: url("../images/jemubg.webp");
     background-size: cover;	
     background-attachment: fixed;
 }
