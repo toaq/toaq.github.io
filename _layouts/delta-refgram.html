@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Toaq - {{ page.title }}</title>
+	<link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="robots" content="index, follow" />
+
+    <link rel="stylesheet" type="text/css" href="../css/r-c-min.css" />
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+    <link rel="stylesheet" type="text/css" href="../css/interlinear.css"/>
+	<link rel="stylesheet" type="text/css" href="../../css/SegoeUI/segoe.css"/>
+
+
+</head>
+<body>
+
+<img src="../assets/logo.webp" class="logo"></img>
+
+{% assign chapters = site.pages | where: "layout", "delta-refgram" | sort: "order" %}
+
+<div class="topnav">
+{% for chapter in chapters %}
+  <a href="{{ chapter.url | relative_url}}">{{ chapter.title }}</a>
+{% endfor %}
+</div>
+
+<r-c class="fixed-width" >
+    <c1-1>
+
+{{ content }}
+
+{% if page.order < chapters.size %}
+{% assign next = page.order %}
+<a href="{{ chapters[next].url | relative_url }}" class="button" data-text="sıe"><span class="technical">▶</span> Proceed to the next chapter</a>
+{% endif %}
+
+
+
+    </c1-1>
+</r-c>
+
+<div class="topnav">
+  {% for chapter in chapters %}
+    <a href="{{ chapter.url | relative_url}}">{{ chapter.title }}</a>
+  {% endfor %}
+  </div>
+
+</body>
+
+<script type="text/javascript" src="../css/interlinear.js"></script>
+</html>

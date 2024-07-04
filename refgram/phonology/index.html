@@ -1,38 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <title>Toaq - Phonology</title>
-	<link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <meta name="robots" content="index, follow" />
-
-    <link rel="stylesheet" type="text/css" href="../css/r-c-min.css" />
-
-    <link rel="stylesheet" type="text/css" href="../css/style.css" />
-  
-    <link rel="stylesheet" type="text/css" href="../css/interlinear.css"/>
-	<link rel="stylesheet" type="text/css" href="../../css/SegoeUI/segoe.css"/>
-
-
-</head>
-<body>
-
-<img src="../assets/logo.webp" class="logo"></img>
-
-<div class="topnav">
-  <a href="../introduction/">Introduction</a>
-  <a href="../phonology/">Phonology</a>
-  <a href="../orthography/">Orthography</a>
-  <a href="../morphology/">Morphology</a>
-  <a href="../syntax/">Syntax</a>
-  <a href="../semantics/">Semantics</a>
-</div>
-
-<r-c class="fixed-width" >
-    <c1-1>
-
+---
+title: Phonology
+order: 2
+layout: delta-refgram
+---
 <h1 id="phonology"><a href="#phonology">Phonology</a></h1>
 
 <p>Toaq has 22 consonant phonemes and five vowel phonemes. Syllables have the form <span class="mono">CV(Q)</span>. There are no consonant clusters in syllable onsets, but a coda consonant may end up adjacent to the initial consonant of the following syllable. </p>
@@ -210,7 +180,7 @@
 <p>/a/ may not be followed by any vowel with which it does not form a falling dipthong.</p>
 
 <p>/o/ may not be followed by /u/.</p>
-	    
+
 <p>When two /m/ meet at a syllable boundary, a schwa must be inserted between them.</p>
 
 <p>/w~j/ cannot precede /i/ or /u/.</p>
@@ -223,18 +193,18 @@
 <div class="syntax">
 	<h4 id="syllable_pattern"><a href="#syllable_pattern">Syllable pattern</a></h4>
 	<img class="tree" src="../assets/patterns/syllable.svg">
-	
+
 	<p>All Toaq syllables have the shape<br>
 	<span class="mono">(C)V(Q)</span> or <span class="mono">(C)F</span></p>
-	
+
 	<p>
 		<span class="mono">C</span> = onset consonant<br>
 		<span class="mono">V</span> = vowel<br>
 		<span class="mono">F</span> = falling diphthong<br>
 		<span class="mono">Q</span> = {/ŋ/, /m/}
-	
+
 	</p>
-	
+
 	<p>Word-initial syllables must contain an onset, while word-internal syllables may lack an onset. </p>
 </div>
 
@@ -254,9 +224,9 @@
 <div class="syntax">
 	<h4 id="raku_pattern"><a href="#raku_pattern">raku pattern</a></h4>
 	<img class="tree2" src="../assets/patterns/raku.svg">
-	
+
 	<p>A <i>raku</i> consists of a mandatory onset, followed by a rime, which consists of a mandatory nucleus followed by an optional coda. The coda consists of two optional components: the secondary nucleus and the final.</p>
-	
+
 	<p>The onset is an initial consonant (C), which is any consonant that  isn't /ŋ/.</p>
 	<p>The nucleus is any vowel (<span class="mono">V</span>) or any falling dipthong (<span class="mono">F</span>).</p>
 	<p>The secondary nucleus is any vowel (<span class="mono">V</span>) or any falling dipthong (<span class="mono">F</span>).</p>
@@ -313,7 +283,7 @@
   </tr>
 </tbody>
 </table>
-  
+
  <p>For reference, the following grid contains every possible <i>raku</i> rime (in slightly abstracted form for reasons of space). Any missing cells are due to more general phonotactic constraints, rather than being <i>raku</i>-specific exceptions.</p>
 
 <table class="rimes">
@@ -490,7 +460,7 @@
 
 <div class="allotone">
 	<img class="tonecontour2" src="../assets/patterns/d2b.svg">
-	
+
 	<p>Whenever two consecutive words carry the rising tone <img class="tone" src="../assets/tones/d2.png">, the second rising tone may optionally be pronounced as a low tone.</p>
 	<p><span class="mono">RR → RL<br>
 	RRR → RLR
@@ -499,14 +469,14 @@
 
 <div class="allotone">
 	<img class="tonecontour2" src="../assets/patterns/d4b.svg">
-	
+
 	<p>The rising-falling tone <img class="tone" src="../assets/tones/d4.png"> can optionally be pronounced as a falling-rising tone, or really any contour which contains a hiatus. Because of this, the <img class="tone" src="../assets/tones/d4.png"> tone is also known as the <i>hiatus tone</i>, after its defining characteristic.</p>
 	<p>When this allotone is used on a raku containing multiple vowels, the hiatus is inserted between the first and second vowel, and no additional hiatus needs to be inserted, because the first vowel already carries a stressed downward tone contour. </p>
 </div>
 
 <div class="allotone">
 	<img class="tonecontour2" src="../assets/patterns/d1b.svg">
-	
+
 	<p>After a pause, such as when pausing briefly between sentences, the falling tone <img class="tone" src="../assets/tones/d1.png"> can optionally be pronounced as an unstressed low tone.</p>
 </div>
 
@@ -541,29 +511,3 @@
 	• vowel length<br>
 	• tonal contour break</p>
 </div>
-
-<a href="../orthography/" class="button" data-text="sıe"><span class="technical">▶</span> Proceed to the next chapter</a>
-
-
-
-
-
-
-
-
-    </c1-1>
-</r-c>
-
-<div class="topnav">
-  <a href="../introduction/">Introduction</a>
-  <a href="../phonology/">Phonology</a>
-  <a href="../orthography/">Orthography</a>
-  <a href="../morphology/">Morphology</a>
-  <a href="../syntax/">Syntax</a>
-  <a href="../semantics/">Semantics</a>
-</div>
-
-</body>
-
-<script type="text/javascript" src="../css/interlinear.js"></script>
-</html>
