@@ -297,6 +297,7 @@ a {
     color:#cc3399;
     font-variant: small-caps;
 }
+
 a:hover {
     color:#cc3399; /* Hovered link color */
 }
@@ -662,4 +663,43 @@ table.conjunctionexamples th {
 		padding-left: 0 !important;
 		padding-right: 0 !important;
 	}
+}
+
+@media (min-width: 1200px) {
+  .delta-refgram .toc {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: block;
+    border-top: none;
+    border-bottom: none;
+    width: calc(min(15%, 250px));
+    overflow-y: auto;
+  }
+  .delta-refgram {
+    margin-left: calc(max(-15%, -250px));
+    position: relative;
+  }
+}
+
+.toc {
+  border: 1px solid #00aaff;
+  margin: auto;
+  padding: 0.5em 2em;
+  display: table;
+  font-size: 14px;
+}
+
+.toc ol {
+  padding-inline-start: 20px;
+}
+
+.toc a {
+  text-decoration: none;
+  font-variant: normal;
+}
+
+.toc a:hover {
+  text-decoration: underline;
 }

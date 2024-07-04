@@ -17,7 +17,7 @@
 
 
 </head>
-<body>
+<body class="delta-refgram">
 
 <img src="../assets/logo.webp" class="logo"></img>
 
@@ -32,6 +32,9 @@
 <r-c class="fixed-width" >
     <c1-1>
 
+<div class="toc">
+    {% include toc.html html=content ordered=true h_min=2 h_max=3 sanitize=true %}
+</div>
 {{ content }}
 
 {% if page.order < chapters.size %}
