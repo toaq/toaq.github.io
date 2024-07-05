@@ -697,7 +697,13 @@ table.conjunctionexamples th {
   text-decoration: underline;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1050px) {
+  @media ( max-width: 1250px) {
+    .fixed-width > * {
+      padding: 0px 20px 0px 20px;
+      border: none;
+    }
+  }
   .delta-refgram .toc {
     position: fixed;
     right: 0;
@@ -706,7 +712,8 @@ table.conjunctionexamples th {
     display: block;
     border-top: none;
     border-bottom: none;
-    width: calc(min(15%, 250px));
+    width: 270px;
+    box-sizing: border-box;
     overflow-y: hidden;
   }
   .toc-header {
@@ -716,7 +723,7 @@ table.conjunctionexamples th {
     display: block;
   }
   .delta-refgram {
-    margin-left: calc(max(-15%, -250px));
+    padding-right: 270px;
     position: relative;
   }
 }
