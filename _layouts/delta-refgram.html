@@ -33,6 +33,8 @@
     <c1-1>
 
 <div class="toc">
+    <div class="toc-header">Table of contents</div>
+    <div class="toc-title"><a style="color:white" href="#">{{ page.title }}</a></div>
     {% include toc.html html=content ordered=true h_min=2 h_max=3 sanitize=true %}
 </div>
 {{ content }}
@@ -56,4 +58,5 @@
 </body>
 
 <script type="text/javascript" src="../css/interlinear.js"></script>
+<script type="text/javascript" src="../css/toc.js"></script>
 </html>

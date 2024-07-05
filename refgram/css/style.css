@@ -665,30 +665,23 @@ table.conjunctionexamples th {
 	}
 }
 
-@media (min-width: 1200px) {
-  .delta-refgram .toc {
-    position: fixed;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    display: block;
-    border-top: none;
-    border-bottom: none;
-    width: calc(min(15%, 250px));
-    overflow-y: auto;
-  }
-  .delta-refgram {
-    margin-left: calc(max(-15%, -250px));
-    position: relative;
-  }
-}
-
 .toc {
   border: 1px solid #00aaff;
   margin: auto;
   padding: 0.5em 2em;
   display: table;
   font-size: 14px;
+}
+
+.toc-header {
+  text-align: center;
+}
+
+.toc-title {
+  display: none;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .toc ol {
@@ -702,4 +695,28 @@ table.conjunctionexamples th {
 
 .toc a:hover {
   text-decoration: underline;
+}
+
+@media (min-width: 1200px) {
+  .delta-refgram .toc {
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: block;
+    border-top: none;
+    border-bottom: none;
+    width: calc(min(15%, 250px));
+    overflow-y: hidden;
+  }
+  .toc-header {
+    display: none;
+  }
+  .toc-title {
+    display: block;
+  }
+  .delta-refgram {
+    margin-left: calc(max(-15%, -250px));
+    position: relative;
+  }
 }
