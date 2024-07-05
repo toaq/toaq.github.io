@@ -10,7 +10,7 @@ function handleScroll() {
             if (!header) continue;
             const top = header.getBoundingClientRect().top;
             if (top < window.innerHeight / 5) {
-                a.style.color = "white";
+                a.style.color = "inherit";
                 if (scrollable) {
                     a.scrollIntoView({ block: "center" });
                 }
@@ -18,7 +18,7 @@ function handleScroll() {
             }
         }
     }
-    document.querySelector(".toc-title>a").style.color = done ? "" : "white";
+    document.querySelector(".toc-title>a").style.color = done ? "" : "inherit";
 }
 
 window.addEventListener("scroll", handleScroll);

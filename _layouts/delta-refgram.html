@@ -19,6 +19,9 @@
 </head>
 <body class="delta-refgram">
 
+<button type="button" class="button" style="padding:8px 16px; margin: 8px 8px -16px"
+    onclick="document.body.parentElement.className = /light/.test(document.body.parentElement.className) ? '' : 'light';">Theme</button>
+
 <img src="../assets/logo.webp" class="logo"></img>
 
 {% assign chapters = site.pages | where: "layout", "delta-refgram" | sort: "order" %}

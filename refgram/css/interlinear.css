@@ -74,20 +74,20 @@ Row Classes
 */
 .source {
 	font-weight: bold;
-	color: #00aaff;
+	color: var(--toaq-color);
 }
 
 .translation {
-	
+
 }
 
 .morphemes {
 	font-style: italic;
-	color: #aaaaaa;
+	color: var(--morphemes-color);
 }
 
 .citation {
     font-family: 'Derani';
     font-size: 24px;
-    color: #ee3399;
+    color: var(--derani-color);
 }
