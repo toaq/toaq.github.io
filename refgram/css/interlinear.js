@@ -2,7 +2,7 @@
 //Add configure method
 //and then method for redisplaying the glosses.
 (function (root){
-	
+
 	//default options
 	var options = {
 				citationClass: 'citation',
@@ -34,27 +34,27 @@
 			raw: {},
 			layout: function(line){
 				/*
-					This regex matches in this priority: 
+					This regex matches in this priority:
 						1. Words grouped by double quotes "
 						2. Words groupd by single quotes ' (this includes a word medial single quotes. so 'you're cute' would
 							match the entire string)
 						3. Single words
 
 						** If there is a ! in front of the line, it will match the whole line if the rest of the phrase
-							is surrounded by quotes of some sort. This is used for pulling out full lines. 
+							is surrounded by quotes of some sort. This is used for pulling out full lines.
 
 					The regex:
 						(!\s)? -- include a ![space] at the front
 						("|'((?!\s)|^)) -- match a double quote, or a single quote that is proceeded by a space, or beg. of line
 						.+? -- any character, non-greedy
-						("|(?=').*?"|'((?=\s)|$)) -- double quote, a double quote even if there is a single quote in there, 
+						("|(?=').*?"|'((?=\s)|$)) -- double quote, a double quote even if there is a single quote in there,
 														a single quote followed by a space, end of line
 						|[^\s]+  -- or characters that aren't spaces (e.g. a single word)
 
 				*/
 
 				var preformatArray = line.match(/(!\s)?("|'((?!\s)|^)).+?("|(?=').*?"|'((?=\s)|$))|[^\s]+/g);
-				
+
 				if(options.useSmallCaps){
 					if(options.useFakeSmallCaps)
 						preformatArray = preformatArray.map(setFakeSmallCaps);
@@ -118,23 +118,21 @@
 					wordIdxlines =  equalizeArrayLength(lines.map(this.layout));
 					wordzips = zipn(wordIdxlines);
 
-					console.log(wordzips);
-
 					if(options.numberGlosses) {
 						output = "<div class=\"gloss-segment gloss-label\"><a id=\"mua"+(i+1)+"\" href=\"#mua"+(i+1)+"\">("+(i+1)+")</a></div>";
 					}
-					
+
 					output += "<title>";
 
 					/*
-						Wordzips: 
+						Wordzips:
 
 						My s Marko
 						1PL COM Marko
 						We with Marko
 
 						Becomes an array of the columns
-						[ 
+						[
 							[My, 1PL, We],
 							[s, COM, with],
 							[Marko, Marko, Marko]
@@ -146,7 +144,6 @@
 					skipRow = [];
 
 					for(var col = 0; col < wordzips.length; col++){
-						console.log(col);
 						var formattedGloss = "",
 							currentColumn = wordzips[col],
 							firstChar = "";
@@ -186,7 +183,7 @@
 									formattedGloss += "<br/>";
 							}
 						}
-						
+
 						formattedGloss += "</div>";
 						output += formattedGloss;
 					}

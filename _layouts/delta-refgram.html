@@ -1,26 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>Toaq - {{ page.title }}</title>
+  <meta charset="utf-8" />
+  <title>Toaq - {{ page.title }}</title>
 	<link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="" />
-    <meta name="robots" content="index, follow" />
-
-    <link rel="stylesheet" type="text/css" href="../css/r-c-min.css" />
-
-    <link rel="stylesheet" type="text/css" href="../css/style.css" />
-
-    <link rel="stylesheet" type="text/css" href="../css/interlinear.css"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="" />
+  <meta name="robots" content="index, follow" />
+  <meta name="color-scheme" content="dark light">
+  <link rel="stylesheet" type="text/css" href="../css/r-c-min.css" />
+  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" type="text/css" href="../css/interlinear.css"/>
 	<link rel="stylesheet" type="text/css" href="../../css/SegoeUI/segoe.css"/>
-
-
+  <script type="text/javascript" src="../css/toc.js"></script>
+  <script>
+    if (getTheme() === 'light') {
+      document.getElementsByTagName('html')[0].classList.add("light");
+    }
+  </script>
 </head>
 <body class="delta-refgram">
 
-<button type="button" class="button" style="padding:8px 16px; margin: 8px 8px -16px"
-    onclick="document.body.parentElement.className = /light/.test(document.body.parentElement.className) ? '' : 'light';">Theme</button>
+<button type="button" class="button theme-button" style="float: left; padding:8px 16px; margin: 8px 8px -100% 8px">Toggle theme</button>
 
 <img src="../assets/logo.webp" class="logo"></img>
 
@@ -37,7 +38,7 @@
 
 <div class="toc">
     <div class="toc-header">Table of contents</div>
-    <div class="toc-title"><a style="color:white" href="#">{{ page.title }}</a></div>
+    <div class="toc-title"><a class="current" href="#">{{ page.title }}</a></div>
     {% include toc.html html=content ordered=true h_min=2 h_max=3 sanitize=true %}
 </div>
 {{ content }}
@@ -61,5 +62,4 @@
 </body>
 
 <script type="text/javascript" src="../css/interlinear.js"></script>
-<script type="text/javascript" src="../css/toc.js"></script>
 </html>

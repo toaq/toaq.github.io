@@ -637,7 +637,6 @@ table.conjunctionexamples th {
   display: inline-block;
   font-size: 16px;
   margin: 24px 2px;
-  transition-duration: 0.4s;
   cursor: pointer;
   border: 1px solid var(--toaq-color);
 }
@@ -702,6 +701,10 @@ button.button {
   font-variant: normal;
 }
 
+.toc a.current {
+  font-weight: bold;
+}
+
 .toc a:hover {
   text-decoration: underline;
 }
@@ -714,6 +717,7 @@ button.button {
     }
   }
   .delta-refgram .toc {
+    padding-top: 2em;
     position: fixed;
     right: 0;
     top: 0;
@@ -738,22 +742,21 @@ button.button {
   }
 }
 
-@media (prefers-color-scheme: light) {
-  html {
-    --text-color: #282828;
-    --technical-color: #00aa00;
-    --derani-color: #cc3399;
-    --toaq-color: #0088ee;
-    --heading-color: #282828;
-    --morphemes-color: #888888;
-    --semantic-color: #cc3399;
-  }
-  .syntax { background-color: white; }
-  body { background-color: #f0f0f0; }
-  img[src*=svg] { filter: invert() grayscale(1) contrast(0.3); }
-  tr:hover {background-color: #dddddd;}
-  .exword { color: inherit; }
-  .listen:hover { background-color: #dddddd; }
-  .fixed-width > * { border-style: none; }
-  .gold { color: #ffc000; }
+html.light {
+  --text-color: #282828;
+  --technical-color: #00aa00;
+  --derani-color: #cc3399;
+  --toaq-color: #0088ee;
+  --heading-color: #282828;
+  --morphemes-color: #888888;
+  --semantic-color: #cc3399;
 }
+html.light .toc { border: none; background: #00000008; }
+html.light .syntax { background-color: white; }
+html.light body { background-color: #f8f8f8; }
+html.light img[src*=svg] { filter: invert() grayscale(1) contrast(0.3); }
+html.light tr:hover {background-color: #dddddd;}
+html.light .exword { color: inherit; }
+html.light .listen:hover { background-color: #dddddd; }
+html.light .fixed-width > * { border-style: none; }
+html.light .gold { color: #ffc000; }
